@@ -1,0 +1,146 @@
+{
+"025 Pikachu" : [{
+    "forms": ["-original-cap", "-johto-cap", "-hoenn-cap", "-sinnoh-cap", "-unova-cap", "-kalos-cap", "-alola-cap"],
+    "form-names": ["kanto cap", "johto cap", "hoenn cap", "sinnoh cap", "unova cap", "kalos cap", "alola cap"]
+}],
+"201 Unown" : [{
+    "forms": ["-a", "-b", "-c", "-d", "-e", "-f", "-g", "-h", "-i", "-j", "-k", "-l", "-m", "-n", "-o", "-p", "-q", "-r", "-s", "-t", "-u", "-v", "-w", "-x", "-y", "-z", "-qm", "-em"],
+    "form-names": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "qm", "em"]
+}],
+"351 Castform" : [{
+    "forms": ["", "-rainy", "-snowy", "-sunny"],
+    "form-names": ["normal", "rainy", "snowy", "sunny"]
+}],
+"386 Deoxys": [{
+    "forms": ["-normal", "-attack", "-defense", "-speed"],
+    "form-names": ["normal", "attack", "defense", "speed"]
+}],
+"412 Burmy": [{
+    "forms": ["-plant", "-sandy", "-trash"],
+    "form-names": ["plant cloak", "sandy cloak", "trash cloak"]
+}],  
+"413 Wormadam": [{
+    "forms": ["-plant", "-sandy", "-trash"],
+    "form-names": ["plant cloak", "sandy cloak", "trash cloak"]
+}],  
+"421 Cherrim": [{
+    "forms": ["-overcast", "-sunshine"],
+    "form-names": ["overcast", "sunshine"]
+}],
+"422 Shellos": [{
+    "forms": ["-west", "-east"],
+    "form-names": ["west sea", "east sea"]
+}],
+"423 Gastrodon": [{
+    "forms": ["-west", "-east"],
+    "form-names": ["west sea", "east sea"]
+}],
+"479 Rotom": [{
+    "forms": ["", "-fan", "-frost", "-heat", "-mow", "-wash"],
+    "form-names": ["normal", "fan", "frost", "heat", "mow", "wash"]
+}],
+"492 Shaymin": [{
+    "forms": ["-land", "-sky"],
+    "form-names": ["land", "sky"]
+}],
+"550 Basculin": [{
+    "forms": ["-red-striped", "-blue-striped"],
+    "form-names": ["red striped", "blue striped"]
+}],
+"585 Deerling": [{
+    "forms": ["-spring", "-summer", "-autumn", "-winter"],
+    "form-names": ["spring", "summer", "autumn", "winter"]
+}],
+"586 Sawsbuck": [{
+    "forms": ["-spring", "-summer", "-autumn", "-winter"],
+    "form-names": ["spring", "summer", "autumn", "winter"]
+}],
+"641 Tornadus": [{
+    "forms": ["-incarnate", "-therian"],
+    "form-names": ["incarnate", "therian"]
+}],
+"642 Thundurus": [{
+    "forms": ["-incarnate", "-therian"],
+    "form-names": ["incarnate", "therian"]
+}],
+"645 Landorus": [{
+    "forms": ["-incarnate", "-therian"],
+    "form-names": ["incarnate", "therian"]
+}],
+"646 Kyurem": [{
+    "forms": ["", "-black", "-white"],
+    "form-names": ["normal", "black", "white"]
+}],
+"647 Keldeo": [{
+    "forms": ["-ordinary", "-resolute"],
+    "form-names": ["ordinary", "resolute"]
+}],
+"648 Meloetta": [{
+    "forms": ["-aria", "-pirouette"],
+    "form-names": ["aria", "pirouette"]
+}],
+"658 Greninja": [{
+    "forms": ["", "-ash"],
+    "form-names": ["normal", "ash"]
+}],
+"666 Vivillon": [{
+    "forms": ["-meadow", "-archipelago", "-continental", "-elegant", "-fancy", "-garden", "-high-plains", "-icy-snow", "-jungle", "-marine", "-modern", "-monsoon", "-ocean", "-poke-ball", "-polar", "-river", "-sandstorm", "-savanna", "-sun", "-tundra"],
+    "form-names": ["meadow", "archipelago", "continental", "elegant", "fancy", "garden", "high plains", "icy snow", "jungle", "marine", "modern", "monsoon", "ocean", "pok&eacuteball", "polar", "river", "sandstorm", "savanna", "sun", "tundra"]
+}],
+"669 Flabebe": [{
+    "forms": ["-red", "-orange", "-yellow", "-blue", "-white"],
+    "form-names": ["red", "orange", "yellow", "blue", "white"]
+}],
+"670 Floette": [{
+    "forms": ["-red", "-orange", "-yellow", "-blue", "-white"],
+    "form-names": ["red", "orange", "yellow", "blue", "white"]
+}],
+"671 Florges": [{
+    "forms": ["-red", "-orange", "-yellow", "-blue", "-white"],
+    "form-names": ["red", "orange", "yellow", "blue", "white"]
+}],
+"710 Pumpkaboo": [{
+    "forms": ["-small", "-average", "-large", "-super"],
+    "form-names": ["small", "average", "large", "super"]
+}],
+"711 Gourgeist": [{
+    "forms": ["-small", "-average", "-large", "-super"],
+    "form-names": ["small", "average", "large", "super"]
+}],
+"718 Zygarde": [{
+    "forms": ["-10", "-50"],
+    "form-names": ["10%", "50%"]
+}],
+"720 Hoopa": [{
+    "forms": ["-confined", "-unbound"],
+    "form-names": ["confined", "unbound"]
+}],
+"741 Oricorio": [{
+    "forms": ["-baile", "-pau", "-pom-pom", "-sensu"],
+    "form-names": ["baile", "pau", "pom pom", "sensu"]
+}],
+"745 Lycanroc": [{
+    "forms": ["-midday", "-dusk", "-midnight"],
+    "form-names": ["midday", "dusk", "midnight"]
+}],
+"774 Minior": [{
+    "forms": ["-meteor", "-red-core", "-orange-core", "-yellow-core", "-green-core", "-blue-core", "-indigo-core", "-violet-core"],
+    "form-names": ["meteor", "red core", "orange core", "yellow core", "green core", "blue core", "indigo core", "violet core"]
+}],
+"800 Necrozma": [{
+    "forms": ["", "-dawn-wings", "-dusk-mane"],
+    "form-names": ["normal", "dawn wings", "dusk mane"]
+}],
+"801 Magearna": [{
+    "forms": ["", "-original"],
+    "form-names": ["normal", "original color"]
+}],
+"849 Toxtricity": [{
+    "forms": ["-amped", "-low-key"],
+    "form-names": ["amped", "low key"]
+}],
+"869 Alcremie": [{
+    "flavors": ["vanilla-cream", "caramel-swirl", "lemon-cream", "matcha-cream", "mint-cream", "rainbow-swirl", "ruby-cream", "ruby-swirl", "salted-cream"],
+    "toppings": ["berry", "clover", "flower", "love", "ribbon", "star", "strawberry"]
+}]
+}
