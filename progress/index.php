@@ -56,6 +56,7 @@
             <li>Plan out how to best store user dexes</li>
             <li>Login drop-down in navigation, with below-nav bar of user stats/logout/profile only visible after login</li>
 			<li>Accessibility audit and improvements</li>
+			<li>SSL certificate</li>
 		</ul>
         <h3>Low priority</h3>
 		<ul>
