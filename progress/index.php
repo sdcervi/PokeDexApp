@@ -46,17 +46,10 @@
 		<h2>Features to add:</h2>
         <h3>High priority</h3>
 		<ul>
-            <li>Figure out how to auto-pull to live site after I push to master on local dev instance</li>
-            <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
-            <li>Add expand/collapse icons for boxes</li>
-			<li>Lazyload images</li>
             <li>Printer-friendly layout, or printable PDF</li>
-            <li>High contrast mode</li>
-			<li>Functional user login</li>
-            <li>Plan out how to best store user dexes</li>
+			<li>Functional user login with dexes</li>
             <li>Login drop-down in navigation, with below-nav bar of user stats/logout/profile only visible after login</li>
 			<li>Accessibility audit and improvements</li>
-			<li>SSL certificate</li>
 		</ul>
         <h3>Low priority</h3>
 		<ul>
@@ -67,6 +60,10 @@
                 <li>Orange: trading</li>
                 <li>Blue: placing</li>
             </ul>
+            <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
+            <li>Add expand/collapse icons for boxes</li>
+			<li>Lazyload images</li>
+            <li>High contrast mode</li>
 			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
 			<li>Dynamically updating caught count/% for each box</li>
             <li>Transparency in favicon</li>
