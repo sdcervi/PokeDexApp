@@ -64,11 +64,14 @@
             <li>Add expand/collapse icons for boxes</li>
 			<li>Lazyload images</li>
             <li>High contrast mode</li>
+			<li>SSL certificate</li>
 			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
 			<li>Dynamically updating caught count/% for each box</li>
             <li>Transparency in favicon</li>
             <li>Single sign on via Google/etc</li>
             <li>Sticky footer</li>
+			<li>Abbreviate div IDs for shorter line lengths</li>
+			<li>Show/hide usage key</li>
 			<li>New database fields for gen-specific dex numbers (i.e. Generation: 3 - DexNo: XXX. Generation 4 - DexNo: YYY)</li>
             <li>Add Pumpkaboo and Gourgeist metrics to alt names</li>
             <!--
@@ -100,6 +103,20 @@
             Large Size: 30.9 lbs (14kg)
             Super Size: 86 lbs (39kg)-->
 		</ul>
+		<!--
+			Git sync: buddy.works
+			indexOf and splice functions for database edits
+			Factory functions
+			Comment code and refactor
+			Card display function to call each time
+			forEach loops?
+			Semantic sections
+			Browser QA
+				OS
+				Browser
+				ADA
+			CSS variables
+		-->
 		
 		<h2>Bugs to squish</h2>
 		<ul>
