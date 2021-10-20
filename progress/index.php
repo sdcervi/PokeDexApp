@@ -116,6 +116,7 @@
 				Browser
 				ADA
 			CSS variables
+			CSS variables for light/dark theme options and way to remember (data field in DB?)
 		-->
 		
 		<h2>Bugs to squish</h2>
