@@ -63,6 +63,7 @@
             <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
             <li>Add expand/collapse icons for boxes</li>
 			<li>Lazyload images</li>
+			<li>Table of contents on side of screen in margin, scrolls with contents?</li>
             <li>High contrast mode</li>
 			<li>SSL certificate</li>
 			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
