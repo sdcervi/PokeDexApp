@@ -75,50 +75,7 @@
 			<li>Show/hide usage key</li>
 			<li>New database fields for gen-specific dex numbers (i.e. Generation: 3 - DexNo: XXX. Generation 4 - DexNo: YYY)</li>
             <li>Add Pumpkaboo and Gourgeist metrics to alt names</li>
-            <!--
-            PUMPKABOO
-            1'00"	0.3 m
-            Small Size
-            1'04"	0.4 m
-            Average Size
-            1'08"	0.5 m
-            Large Size
-            2'07"	0.8 m
-            Super Size
-            7.7 lbs.	3.5 kg
-            Small Size
-            11.0 lbs.	5.0 kg
-            Average Size
-            16.5 lbs.	7.5 kg
-            Large Size
-            33.1 lbs.	15.0 kg
-            Super Size
-
-            GOURGEIST
-            Small Size: 2'4" (0.7)
-            Average Size: 2'11" (0.9m)
-            Large Size: 3'7" (1.1m)
-            Super Size: 5'7" (1.7m)
-            Small Size: 20.9 lbs (9.5kg)
-            Average Size: 27.6 lbs. (12.5kg)
-            Large Size: 30.9 lbs (14kg)
-            Super Size: 86 lbs (39kg)-->
 		</ul>
-		<!--
-			Git sync: buddy.works
-			indexOf and splice functions for database edits
-			Factory functions
-			Comment code and refactor
-			Card display function to call each time
-			forEach loops?
-			Semantic sections
-			Browser QA
-				OS
-				Browser
-				ADA
-			CSS variables
-			CSS variables for light/dark theme options and way to remember (data field in DB?)
-		-->
 		
 		<h2>Bugs to squish</h2>
 		<ul>
