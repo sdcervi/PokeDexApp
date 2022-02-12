@@ -84,7 +84,12 @@
 		
 		<h2>Changelog</h2>
 		<ul>
-		<ul>
+            <li>2022-02-11</li>
+            <ul>
+                <li>Added Galarian alt forms for Slowking, Articuno, Zapdos, and Moltres</li>
+				<li>Added female Rhyhorn alt form</li>
+				<li>Added World Cap Pikachu alt form</li>
+            </ul>
             <li>2020-11-25</li>
             <ul>
                 <li>Added the rest of Generation 8's sprites to the main dex and alt dexes</li>
