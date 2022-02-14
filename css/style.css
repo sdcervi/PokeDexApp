@@ -64,10 +64,6 @@ table.evo-table thead>tr>th>span {
 	font-weight: normal!important;
 }
 
-table.evo-table td {
-	opacity: 0.1;
-}
-
 table.evo-table img {
 	max-width: 100px;
 	height: auto;

@@ -30,6 +30,12 @@
 
       gtag('config', 'UA-166061118-1');
     </script>
+	
+	<style>
+		table.evo-table td {
+			opacity: 0.1;
+		}
+	</style>
 
 </head>
 
