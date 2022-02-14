@@ -53,14 +53,19 @@ table.evo-table {
 
 table.evo-table thead>tr>th {
 	text-align: center;
+	font-size: 0.8em;
 }
 
 table.evo-table tbody>tr>th {
 	text-align: right;
 }
 
-table.evo-table tbody>tr>th>span {
+table.evo-table thead>tr>th>span {
 	font-weight: normal!important;
+}
+
+table.evo-table td {
+	opacity: 0.1;
 }
 
 table.evo-table img {
