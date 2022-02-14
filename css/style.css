@@ -46,6 +46,34 @@ h3.show-hide {
     clear: both;
 }
 
+/* Page styles */
+table.evo-table {
+	width: auto;
+}
+
+table.evo-table thead>tr>th {
+	text-align: center;
+}
+
+table.evo-table tbody>tr>th {
+	text-align: right;
+}
+
+table.evo-table tbody>tr>th>span {
+	font-weight: normal!important;
+}
+
+table.evo-table img {
+	max-width: 100px;
+	height: auto;
+}
+
+table.evo-table input {
+	height: 16px;
+    width: 16px;
+    margin-left: -2.5rem!important;
+}
+
 /* Dex boxes */
 .card-deck {
     justify-content: center;
