@@ -84,6 +84,10 @@
 		
 		<h2>Changelog</h2>
 		<ul>
+            <li>2022-02-14</li>
+            <ul>
+                <li>Got git repo sync to work; now pushes from git repo to FTP automatically at 1AM daily</li>
+            </ul>
             <li>2022-02-13</li>
             <ul>
                 <li>Added an <a href="../alts/">Alt Forms Guide</a> to have information on complex alt forms such as Alcremie and Pumpkaboo</li>
