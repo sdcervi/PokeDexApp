@@ -189,7 +189,7 @@
         "dexEntry-normal-094",
         "dexEntry-normal-330",
         "dexEntry-normal-815",
-        "alolanDexEntry-normal-026"
+        "alolanDexEntry-normal-026",
     ];
 
     let wishlist = [
@@ -210,8 +210,6 @@
         "galarianDexEntry-normal-145",
         "galarianDexEntry-normal-146",
         "galarianDexEntry-normal-199",
-        "femaleDexEntry-normal-111",
-        "maleDexEntry-normal-111",
         "femaleDexEntry-normal-404",
         "maleDexEntry-normal-418",
         "femaleDexEntry-normal-418",
@@ -277,18 +275,6 @@
         "vivillonDexEntry-normal-savanna",
         "vivillonDexEntry-normal-sun",
         "alcremieDexEntry-normal-caramel-swirl-strawberry",
-        "alcremieDexEntry-normal-lemon-cream-berry",
-        "alcremieDexEntry-normal-lemon-cream-flower",
-        "alcremieDexEntry-normal-lemon-cream-love",
-        "alcremieDexEntry-normal-lemon-cream-ribbon",
-        "alcremieDexEntry-normal-lemon-cream-star",
-        "alcremieDexEntry-normal-lemon-cream-strawberry",
-        "alcremieDexEntry-normal-matcha-cream-berry",
-        "alcremieDexEntry-normal-matcha-cream-flower",
-        "alcremieDexEntry-normal-matcha-cream-love",
-        "alcremieDexEntry-normal-matcha-cream-ribbon",
-        "alcremieDexEntry-normal-matcha-cream-star",
-        "alcremieDexEntry-normal-mint-cream-berry",
         "alcremieDexEntry-normal-mint-cream-clover",
         "alcremieDexEntry-normal-mint-cream-flower",
         "alcremieDexEntry-normal-mint-cream-love",
@@ -304,14 +290,7 @@
         "alcremieDexEntry-normal-rainbow-swirl-strawberry",
         "alcremieDexEntry-normal-ruby-cream-star",
         "alcremieDexEntry-normal-ruby-cream-strawberry",
-        "alcremieDexEntry-normal-ruby-swirl-strawberry",
-        "alcremieDexEntry-normal-salted-cream-berry",
-        "alcremieDexEntry-normal-salted-cream-clover",
-        "alcremieDexEntry-normal-salted-cream-flower",
-        "alcremieDexEntry-normal-salted-cream-love",
-        "alcremieDexEntry-normal-salted-cream-ribbon",
-        "alcremieDexEntry-normal-salted-cream-star",
-        "alcremieDexEntry-normal-salted-cream-strawberry",
+        "alcremieDexEntry-normal-ruby-swirl-strawberry"
     ];
     
     for (i = 0; i < wishlist.length; i++) {
