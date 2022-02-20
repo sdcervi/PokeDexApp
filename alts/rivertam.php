@@ -247,10 +247,6 @@
 <script>
 	
 	let wishList = [
-		"ruby-cream-star",
-		"ruby-cream-strawberry",
-		"caramel-swirl-strawberry",
-		"ruby-swirl-strawberry",
 		"mint-cream-clover",
 		"mint-cream-flower",
 		"mint-cream-love",

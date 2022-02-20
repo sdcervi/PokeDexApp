@@ -274,7 +274,6 @@
         "vivillonDexEntry-normal-sandstorm",
         "vivillonDexEntry-normal-savanna",
         "vivillonDexEntry-normal-sun",
-        "alcremieDexEntry-normal-caramel-swirl-strawberry",
         "alcremieDexEntry-normal-mint-cream-clover",
         "alcremieDexEntry-normal-mint-cream-flower",
         "alcremieDexEntry-normal-mint-cream-love",
@@ -287,10 +286,7 @@
         "alcremieDexEntry-normal-rainbow-swirl-love",
         "alcremieDexEntry-normal-rainbow-swirl-ribbon",
         "alcremieDexEntry-normal-rainbow-swirl-star",
-        "alcremieDexEntry-normal-rainbow-swirl-strawberry",
-        "alcremieDexEntry-normal-ruby-cream-star",
-        "alcremieDexEntry-normal-ruby-cream-strawberry",
-        "alcremieDexEntry-normal-ruby-swirl-strawberry"
+        "alcremieDexEntry-normal-rainbow-swirl-strawberry"
     ];
     
     for (i = 0; i < wishlist.length; i++) {
