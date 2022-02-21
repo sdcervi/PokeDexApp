@@ -136,7 +136,10 @@
 		"collapse-gender-forms-normal-2",
 		"collapse-gender-forms-normal-3",
 		"collapse-gender-forms-normal-4",
-		"collapse-gender-forms-normal-7"
+		"collapse-gender-forms-normal-7",
+		"collapse-alcremie-1",
+		"collapse-alcremie-2",
+		"collapse-alcremie-3"
     ];
     for (i = 0; i < completeBoxes.length; i++) {
         document.getElementById(completeBoxes[i]).classList.remove("show");
@@ -273,20 +276,7 @@
         "vivillonDexEntry-normal-river",
         "vivillonDexEntry-normal-sandstorm",
         "vivillonDexEntry-normal-savanna",
-        "vivillonDexEntry-normal-sun",
-        "alcremieDexEntry-normal-mint-cream-clover",
-        "alcremieDexEntry-normal-mint-cream-flower",
-        "alcremieDexEntry-normal-mint-cream-love",
-        "alcremieDexEntry-normal-mint-cream-ribbon",
-        "alcremieDexEntry-normal-mint-cream-star",
-        "alcremieDexEntry-normal-mint-cream-strawberry",
-        "alcremieDexEntry-normal-rainbow-swirl-berry",
-        "alcremieDexEntry-normal-rainbow-swirl-clover",
-        "alcremieDexEntry-normal-rainbow-swirl-flower",
-        "alcremieDexEntry-normal-rainbow-swirl-love",
-        "alcremieDexEntry-normal-rainbow-swirl-ribbon",
-        "alcremieDexEntry-normal-rainbow-swirl-star",
-        "alcremieDexEntry-normal-rainbow-swirl-strawberry"
+        "vivillonDexEntry-normal-sun"
     ];
     
     for (i = 0; i < wishlist.length; i++) {

@@ -227,7 +227,7 @@ if ($dextype == 'shiny')
 }
 
 echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="Alcremie ' . $boxCounter . '">';
-echo '<div class="card-header" id="alcremie' . $boxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-alcremie' . $boxCounter . '" aria-expanded="true" aria-controls="collapse-alcremie' . $boxCounter . '"><h3>Alcremie Forms ' . $boxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-alcremie' . $boxCounter . '">';
+echo '<div class="card-header" id="alcremie' . $boxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-alcremie-' . $boxCounter . '" aria-expanded="true" aria-controls="collapse-alcremie-' . $boxCounter . '"><h3>Alcremie Forms ' . $boxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-alcremie-' . $boxCounter . '">';
 
 echo '<div class="row">';
 
@@ -249,7 +249,7 @@ for ($flavorCounter = 0; $flavorCounter < $num_flavors; $flavorCounter++) {
                 $boxCounter++;
                 echo '</div></div></div>';
                 echo '<div class="card col-12 col-lg-6 dex-box" aria-labelledby="Alcremie ' . $boxCounter . '">';
-                echo '<div class="card-header" id="alcremie' . $boxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-alcremie' . $boxCounter . '" aria-expanded="true" aria-controls="collapse-alcremie' . $boxCounter . '"><h3>Alcremie Forms ' . $boxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-alcremie' . $boxCounter . '">';
+                echo '<div class="card-header" id="alcremie' . $boxCounter . '"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-alcremie-' . $boxCounter . '" aria-expanded="true" aria-controls="collapse-alcremie-' . $boxCounter . '"><h3>Alcremie Forms ' . $boxCounter . '</h3></button></div><div class="card-body collapse show" id="collapse-alcremie-' . $boxCounter . '">';
                 echo '<div class="row">';
             }
             else {
