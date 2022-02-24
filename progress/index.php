@@ -47,7 +47,7 @@
         <h3>High priority</h3>
 		<ul>
             <li>Printer-friendly layout, or printable PDF</li>
-			<li>Functional user login with dexes</li>
+			<li>Functional user login with ability to save, store, and recall dexes</li>
             <li>Login drop-down in navigation, with below-nav bar of user stats/logout/profile only visible after login</li>
 			<li>Accessibility audit and improvements</li>
 		</ul>
@@ -57,8 +57,8 @@
             <ul>
                 <li>Black: caught</li>
                 <li>Light gray: not caught</li>
-                <li>Orange: trading</li>
-                <li>Blue: placing</li>
+                <li>Bright orange: trading</li>
+                <li>Medium-dark blue: placing</li>
             </ul>
             <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
             <li>Add expand/collapse icons for boxes</li>
@@ -74,7 +74,32 @@
 			<li>Abbreviate div IDs for shorter line lengths</li>
 			<li>Show/hide usage key</li>
 			<li>New database fields for gen-specific dex numbers (i.e. Generation: 3 - DexNo: XXX. Generation 4 - DexNo: YYY)</li>
-            <li>Add Pumpkaboo and Gourgeist metrics to alt names</li>
+            <li>Add Pumpkaboo and Gourgeist metrics to Alts page, add link in boxes</li>
+			<!--	PUMPKABOO
+					Small	1’0” (0.3m)	7.7lb (3.5kg)
+					Average	1’4” (0.4m)	11.0lb (5.0kg)
+					Large	1’8” (0.5m)	16.5lb (7.5kg)
+					Super	2’7” (0.8m)	33.1lb (15.0kg)
+
+					GOURGEIST
+					Small	2’4”	(0.7m)	20.9lb (9.5kg)
+					Average	2’11” (0.9m)	27.6lb (12.5kg)
+					Large	3’7” (1.1m)	30.9 lbs (14kg)
+					Super	5’7” (1.7m)	86 lbs (39kg)
+			-->
+			<li>Add Alcremie alts guide link in boxes</li>
+			<li>Sinistea and Polteageist alt forms (same sprite)</li>
+			<li>Furfrou trims</li>
+			<li>CSS animations for expand/collapse</li>
+			<li>indexOf and splice functions for database edits</li>
+			<li>Factory functions</li>
+			<li>Code refactor and comment for better clarity, readability, and maintainability</li>
+			<li>Card display function to call instead of repeating code in each print segment</li>
+			<li>forEach loops instead of for?</li>
+			<li>Semantic HTML improvements</li>
+			<li>Browser QA: OS, Browser, ADA</li>
+			<li>CSS variables for color palette for different themes, store in user DB entry to remember?</li>
+			<li>Collapse all completed boxes</li>
 		</ul>
 		
 		<h2>Bugs to squish</h2>
