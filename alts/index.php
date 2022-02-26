@@ -76,7 +76,7 @@
 			<tbody>
 			
 				<tr>
-					<th scope="row" class="align-middle"><img src="https://archives.bulbagarden.net/media/upload/3/3a/Bag_Berry_Sweet_Sprite.png" alt="Berry"/></th>
+					<th scope="row" class="align-middle"><img src="../assets/icons/sweet-berry.webp" alt="Berry"/></th>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-vanilla-cream-berry.png" alt="">
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-ruby-cream-berry.png" alt="">
@@ -98,7 +98,7 @@
 				</tr>
 			
 				<tr>
-					<th scope="row" class="align-middle"><img src="https://archives.bulbagarden.net/media/upload/e/e5/Bag_Clover_Sweet_Sprite.png" alt="Clover"/></th>
+					<th scope="row" class="align-middle"><img src="../assets/icons/sweet-clover.webp" alt="Clover"/></th>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-vanilla-cream-clover.png" alt="">
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-ruby-cream-clover.png" alt="">
@@ -120,7 +120,7 @@
 				</tr>
 			
 				<tr>
-					<th scope="row" class="align-middle"><img src="https://archives.bulbagarden.net/media/upload/9/9e/Bag_Flower_Sweet_Sprite.png" alt="Flower"/></th>
+					<th scope="row" class="align-middle"><img src="../assets/icons/sweet-flower.webp" alt="Flower"/></th>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-vanilla-cream-flower.png" alt="">
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-ruby-cream-flower.png" alt="">
@@ -142,7 +142,7 @@
 				</tr>
 			
 				<tr>
-					<th scope="row" class="align-middle"><img src="https://archives.bulbagarden.net/media/upload/d/d1/Bag_Love_Sweet_Sprite.png" alt="Love"/></th>
+					<th scope="row" class="align-middle"><img src="../assets/icons/sweet-love.webp" alt="Love"/></th>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-vanilla-cream-love.png" alt="">
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-ruby-cream-love.png" alt="">
@@ -163,7 +163,7 @@
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 			
 				<tr>
-					<th scope="row" class="align-middle"><img src="https://archives.bulbagarden.net/media/upload/7/70/Bag_Ribbon_Sweet_Sprite.png" alt="Ribbon"/></th>
+					<th scope="row" class="align-middle"><img src="../assets/icons/sweet-ribbon.webp" alt="Ribbon"/></th>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-vanilla-cream-ribbon.png" alt="">
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-ruby-cream-ribbon.png" alt="">
@@ -185,7 +185,7 @@
 				</tr>
 			
 				<tr>
-					<th scope="row" class="align-middle"><img src="https://archives.bulbagarden.net/media/upload/c/cd/Bag_Star_Sweet_Sprite.png" alt="Star"/></th>
+					<th scope="row" class="align-middle"><img src="../assets/icons/sweet-star.webp" alt="Star"/></th>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-vanilla-cream-star.png" alt="">
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-ruby-cream-star.png" alt="">
@@ -207,7 +207,7 @@
 				</tr>
 			
 				<tr>
-					<th scope="row" class="align-middle"><img src="https://archives.bulbagarden.net/media/upload/b/b6/Bag_Strawberry_Sweet_Sprite.png" alt="Strawberry"/></th>
+					<th scope="row" class="align-middle"><img src="../assets/icons/sweet-strawberry.webp" alt="Strawberry"/></th>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-vanilla-cream-strawberry.png" alt="">
 							<input class="form-check-input" type="checkbox" value="" id=""></td>
 					<td><img src="https://img.pokemondb.net/sprites/home/normal/alcremie-ruby-cream-strawberry.png" alt="">
