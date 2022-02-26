@@ -43,7 +43,7 @@
 		
 		<h1>Feedback</h1>
         
-        <p>Have a bug to report? Noticed an error in the dex? General feedback and comments? Please fill out the form below, and thank you for using our dex tracker!</p>
+        <p>Have a bug to report? Noticed an error in the dex? General feedback and comments? Please fill out the form below, and thank you for using my dex tracker!</p>
         
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebJQD63XsA52dJIz6v38EATaND6T-jjBayy77TtUuhQYuRmg/viewform?embedded=true" width="100%" height="1080px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 	

@@ -47,39 +47,7 @@
 		
 		<p><a href="https://github.com/sdcervi/PokeDexApp/commits">Click here to view the most up-to-date changelog</a>.</p>
 		
-		<p>If you have a feature request, came across a bug or error, or otherwise want to reach out, you can either <a href="https://github.com/sdcervi/PokeDexApp/issues/new/choose">submit a new issue and browse existing ones there</a>, or <a href="../feedback/">send me an email about it</a>.</p>
-		
-		
-		
-		
-		
-        <h3>Low priority</h3>
-		<ul>
-            <li>Pixel block thumbnail preview of boxes with colors, or Bootstrap progress bars</li>
-            <ul>
-                <li>Black: caught</li>
-                <li>Light gray: not caught</li>
-                <li>Bright orange: trading</li>
-                <li>Medium-dark blue: placing</li>
-            </ul>
-            <li>Add a "mark/unmark all as caught" at the box level and at the dex level</li>
-            <li>Add expand/collapse icons for boxes</li>
-			<li>Lazyload images</li>
-			<li>Table of contents on side of screen in margin, scrolls with contents?</li>
-			<li>iOS and Android apps, for phone and tablet. Look into service to port webapp to native?</li>
-			<li>Dynamically updating caught count/% for each box</li>
-            <li>Transparency in favicon</li>
-            <li>Sticky footer</li>
-			<li>Abbreviate div IDs for shorter line lengths</li>
-			<li>Add Alcremie alts guide link in boxes</li>
-			<li>CSS animations for expand/collapse</li>
-			<li>indexOf and splice functions for database edits</li>
-			<li>Factory functions</li>
-			<li>Code refactor and comment for better clarity, readability, and maintainability</li>
-			<li>Card display function to call instead of repeating code in each print segment</li>
-			<li>forEach loops instead of for?</li>
-			<li>Collapse all completed boxes</li>
-		</ul>
+		<p>If you have a feature request, came across a bug or error, or otherwise want to reach out, you can either <a href="https://github.com/sdcervi/PokeDexApp/issues/new/choose">submit a new issue on GitHub and browse existing ones there</a>, or <a href="../feedback/">send me an email about it</a>.</p>
 	
 	</div>
 	
