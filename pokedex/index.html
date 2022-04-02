@@ -52,13 +52,54 @@
     
 </header>
 
-<main class="flex-shrink-0" role="main">
-    
-    <section class="jumbotron text-center">
-		<div class="container">
-			<h2>Homepage coming soon</h2>		
-			<p class="lead text-muted">Tailored toward Pok&eacute;mon Home users, this Dex tracker is designed to help you catalog your entire collection&mdash;regional forms, alt forms, and shinies included.</p>			
-		</div>
+<main class="flex-shrink-0 pt-4" role="main">
+	
+	<section class="container">
+		
+		<article>
+		
+			<h2 class="dex-heading">National Dex</h2>
+
+			<h3 class="show-hide">
+				<button class="btn btn-link" type="button" aria-expanded="true" aria-controls="collapse-nat" id="collapse-nat" onclick="changeCollapseState('collapse-nat', 'nat-dex')">Collapse</button>
+				</h3>
+
+			<div class="card-deck collapse show" id="nat-dex"></div>
+			
+		</article>
+		
+		<article>
+		
+			<h2 class="dex-heading">Alt Forms</h2>
+
+			<h3 class="show-hide"><button class="btn btn-link" type="button" aria-expanded="true" aria-controls="collapse-alt" id="collapse-alt" onclick="changeCollapseState('collapse-alt', 'alt-dex')">Collapse</button></h3>
+
+			<div class="card-deck collapse show" id="alt-dex"></div>
+		
+		</article>
+		
+		<article>
+		
+			<h2 class="dex-heading">Shiny National Dex</h2>
+
+			<h3 class="show-hide"><button class="btn btn-link" type="button" aria-expanded="true" aria-controls="collapse-shiny-nat" id="collapse-shiny-nat" onclick="changeCollapseState('collapse-shiny-nat', 'shiny-nat-dex')">Expand</button></h3>
+
+			<div class="card-deck collapse" id="shiny-nat-dex"></div>
+			
+		</article>
+		
+		<article>
+		
+			<h2 class="dex-heading">Shiny Alt Forms</h2>
+
+			<h3 class="show-hide"><button class="btn btn-link" type="button" aria-expanded="true" aria-controls="collapse-shiny-alt" id="collapse-shiny-alt" onclick="changeCollapseState('collapse-shiny-alt', 'shiny-alt-dex')">Expand</button></h3>
+
+			<div class="clear"></div>
+
+			<div class="card-deck collapse" id="shiny-alt-dex"></div>
+	
+		</article>
+		
 	</section>
 	
 </main>
