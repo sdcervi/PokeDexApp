@@ -18,7 +18,7 @@ primaryNav.innerHTML = primaryNavContents;
 // Set up footer contents
 const footer = document.getElementById('footer');
 let footerContents = '<div class="container">';
-footerContents += '<p class="small text-center">Site design and layout by <a href="https://stephaniecervi.net">Stephanie Cervi</a>. Pok&eacute;mon images, names, forms, and other relevant information are the property of Nintendo.</p></div>';
+footerContents += '<p class="small text-center">Site design and layout by <a href="https://stephaniecervi.net" target="_blank">Stephanie Cervi</a>. Pok&eacute;mon images, names, forms, and other relevant information are the property of Nintendo.</p></div>';
 
 footer.innerHTML = footerContents;
 
@@ -29,7 +29,7 @@ let filename = currentPage.slice(1, -1);
 if (!filename) {
 	filename = 'home';
 }
-let navID = "nav-" + filename;
+let navID = `nav-${filename}`;
 
 const navElement = document.getElementById(navID);
 if (navElement) {

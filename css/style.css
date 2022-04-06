@@ -1,216 +1,70 @@
 /* CSS Document */
 
 /* Global styles */
-@page {
-  size: auto;
-}
+@page { size: auto; }
 
-main {
-    margin-top: 55px;
-}
+main { margin-top: 55px; padding-top: 2em; }
 
-.btn-link.focus, .btn-link:focus, .btn-link:hover {
-    text-decoration: none;
-    box-shadow: none;
-}
+.btn-link.focus, .btn-link:focus, .btn-link:hover { text-decoration: none; box-shadow: none; }
+a:focus, a:hover { text-decoration: none; color: deepskyblue; }
 
-a:focus, a:hover {
-    text-decoration: none;
-    color: deepskyblue;
-}
+h1 { margin-top: 80px; }
+h2.dex-heading { text-align: center; margin-bottom: 1em; }
+h3.show-hide { text-align: center; }
 
-h1 {
-    margin-top: 80px;
-}
-
-h2.dex-heading {
-    text-align: center;
-}
-
-h3.show-hide {
-    text-align: center;
-}
-
-.container.info-page {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+.container.info-page { max-width: 1200px; margin: 0 auto; }
 
 @media only screen and (min-width: 1200px) {
-	.container, .container-lg, .container-md, .container-sm, .container-xl {
-		max-width: 100%;
-	}
+	.container, .container-lg, .container-md, .container-sm, .container-xl { max-width: 100%; }
 }
 
-.clear {
-    clear: both;
-}
+.clear { clear: both; }
+
+h4.usage-key { color: black;  margin-top: 10px; }
 
 /* Page styles */
-table.evo-table {
-	width: auto;
-}
-
-table.evo-table thead>tr>th {
-	text-align: center;
-	font-size: 0.8em;
-}
-
-table.evo-table tbody>tr>th {
-	text-align: right;
-}
-
-table.evo-table thead>tr>th>span {
-	font-weight: normal!important;
-}
-
-table.evo-table img {
-	max-width: 100px;
-	height: auto;
-}
-
-table.evo-table input {
-	height: 16px;
-    width: 16px;
-    margin-left: -2.5rem!important;
-}
+table.evo-table { width: auto; }
+table.evo-table thead>tr>th { text-align: center; font-size: 0.8em; }
+table.evo-table tbody>tr>th { text-align: right; }
+table.evo-table thead>tr>th>span { font-weight: normal!important; }
+table.evo-table img { max-width: 100px; height: auto; }
+table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!important; }
 
 /* Dex boxes */
-.card-deck {
-    justify-content: center;
-}
+.card-deck { justify-content: center; }
 
-.dex-box {
-	padding: 0;
-	min-width: 535px;
-    max-width: 535px;
-	margin-bottom: 30px!important;
-}
+.dex-box { padding: 0; min-width: 535px; max-width: 535px; margin-bottom: 30px!important; }
+.dex-box .btn { padding: 0; margin: 0; }
+.dex-box h3 { margin: 0; }
 
-.dex-box .btn {
-	padding: 0;
-	margin: 0;
-}
-
-.dex-box h3 {
-	margin: 0;
-}
-
-span.box-caught {
-	float: right;
-	color: grey;
-}
+span.box-caught { float: right; color: grey; }
 
 /* Dex entries */
-.dex-entry {
-	padding: 0 0.25rem;
-	border: none;
-	margin-right: 0!important;
-	margin-left: 0!important;
-}
-
-.dex-entry .card-body {
-	padding: 0;
-    margin-bottom: 15px!important;
-}
-
-.dex-entry img { 
-	max-width: 100%;
-	padding-bottom: 10px;
-	display: block;
-	margin: 0 auto;
-}
-
-h4.dex-entry-number {
-	text-align: center;
-	font-weight: bold;
-	font-size: 0.75em;
-	margin-bottom: 0;
-}
-
-h4.dex-entry-name {
-	text-align: center;
-	font-size: 0.7em;
-	text-transform: capitalize;
-	margin-bottom: 0;
-}
-
-h4.dex-entry-form {
-	text-align: center;
-	font-size: 0.6em;
-	text-transform: capitalize;
-	margin-bottom: 0;
-}
+.dex-col { padding: 0; }
+.dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; }
+.dex-entry .card-body { padding: 0; margin-bottom: 15px!important; }
+.dex-entry img { max-width: 100%; padding-bottom: 5px; display: block; margin: 0 auto; }
+h4.dex-entry-number { text-align: center; font-weight: bold; font-size: 0.75em; margin-bottom: 0; }
+h4.dex-entry-name { text-align: center; font-size: 0.7em; text-transform: capitalize; margin-bottom: 0; }
+h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capitalize; margin-bottom: 0; }
 
 @media only screen and (max-width: 576px) {
-    .dex-box {
-        min-width: inherit;
-        max-width: 100%;
-    }
-    .dex-entry {
-        padding: 0 2px;
-    } 
-    .dex-entry h4.name {
-        font-size: 0.7em;
-        padding: 0;
-    }
-
-    .dex-entry h4.form {
-        font-size: 0.6em;
-        padding: 0;
-    }
+    .dex-box { min-width: inherit; max-width: 100%;  }
+    .dex-entry { padding: 0 2px; } 
+    .dex-entry h4.name { font-size: 0.7em; padding: 0; }
+    .dex-entry h4.form { font-size: 0.6em; padding: 0; }
 }
 
 @media only print {
-    
-    /*body {
-        margin: 0;
-        padding: 0;
-    }*/
-    
-    .dex-box {
-        min-width: 500px;
-        max-width: inherit;
-    }
+    .dex-box { min-width: 500px; max-width: inherit; }
 }
 
 /* Dex states */
-.dex-entry img {
-	opacity: 0.1;
-}
+.dex-entry img { opacity: 0.1; }
+.dex-entry h4 { color: lightgray; }
 
-.dex-entry h4 {
-    color: lightgray;
-}
+.caught img { opacity: 1; }
+.caught h4 { color: black; }
 
-.caught img {
-	opacity: 1;
-}
-
-.caught h4 {
-    color: black;
-}
-
-.trade:before {
-    content: url(/assets/icons/trade.svg);
-    height: 1.5em;
-    width: 1.5em;
-    position: absolute;
-    left: 1em;
-    z-index: 10;
-}
-
-
-.place:before {
-    content: url(/assets/icons/box.svg);
-    height: 1.5em;
-    width: 1.5em;
-    position: absolute;
-    right: 1em;
-    z-index: 10;
-}
-
-h4.usage-key {
-    color: black;
-    margin-top: 10px;
-}
+.trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 1em; z-index: 10; }
+.place:before { content: url(/assets/icons/box.svg); height: 1.5em; width: 1.5em; position: absolute; right: 1em; z-index: 10; }
