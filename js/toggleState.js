@@ -1,7 +1,7 @@
 function changeCaughtState (divID) {
     let toggleState = document.getElementById(divID).classList;
     
-    switch (toggleState.item(3)) {
+    switch (toggleState.item(2)) {
         case null:
             toggleState.add("trade");
             break;
@@ -18,7 +18,7 @@ function changeCaughtState (divID) {
             break;
     }  
 }
-
+/*
 function changeDexCaughtState (divID) {
     //document.getElementById("caught-national").innerHTML = "Success"; // This works so we know the function is called correctly
     let dexEntryToggles = divID.getElementsByClassName("dexEntry"); // This isn't working because the dex entries are a few levels down.  Iterate per box?
@@ -37,3 +37,4 @@ function changeCollapseState (buttonID, divID) {
         document.getElementById(divID).classList.remove("show");
     }
 }
+*/
