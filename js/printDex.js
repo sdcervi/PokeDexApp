@@ -42,16 +42,16 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 	// Generate the pokemon's card
 	let pokemonContent;
 	if (!altType && altType != 0) {
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt=""><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 	} else if (altType === 'alolan' || altType === 'galarian') {
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-${altType}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt=""><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-${altType}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 	} else if (altType === 'gender') {
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-male')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt=""><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
-		pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-female')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt=""><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-male')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-female')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 	} else {
 		const forms = dexData[dexID-1].alts[0].forms;
 		const formNames = dexData[dexID-1].alts[0]['form-names'];
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-alt-${forms[altType]}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-alt-${forms[altType]}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}${forms[altType]}.webp" alt=""><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${formNames[altType]}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-alt-${forms[altType]}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-alt-${forms[altType]}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}${forms[altType]}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${formNames[altType]}</h4></div></div></div>`;
 	}
 	
 	return pokemonContent;
@@ -61,7 +61,7 @@ function writeDex (dexType, dexColor) {
 	// Get the HTML div
 	const dexDivID = `${dexColor}-${dexType}-dex`;
 	const dexDiv = document.getElementById(dexDivID);
-	let dexDivContents = '';
+	let dexDivContents = `<div class="row row-cols-1 row-cols-lg-2 row-cols-xxl-3">`;
 	
 	// Generate the dex's contents
 	
@@ -71,7 +71,7 @@ function writeDex (dexType, dexColor) {
 		let printCounter = 0;
 		let boxStart = start.toString().padStart(3, '0');
 		let boxEnd = end.toString().padStart(3, '0');
-		dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="${dexColor}-${boxStart}-${boxEnd}">`;
+		dexDivContents += `<div class="col"><div class="card dex-box" id="${dexColor}-${boxStart}-${boxEnd}">`;
 		dexDivContents += `<div class="card-header" id="${dexColor}-${boxStart}-${boxEnd}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}"><h3>${boxStart}&ndash;${boxEnd}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${boxStart}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		
@@ -88,15 +88,15 @@ function writeDex (dexType, dexColor) {
 				boxStart = start.toString().padStart(3, '0');
 				boxEnd = end.toString().padStart(3, '0');
 				dexDivContents += `</div>`;
-				dexDivContents += `</div></div>`;
-				dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="${dexColor}-${boxStart}-${boxEnd}">`;
+				dexDivContents += `</div></div></div>`;
+				dexDivContents += `<div class="col"><div class="card dex-box" id="${dexColor}-${boxStart}-${boxEnd}">`;
 				dexDivContents += `<div class="card-header" id="${dexColor}-${boxStart}-${boxEnd}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}"><h3>${boxStart}&ndash;${boxEnd}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${boxStart}">`;
 				dexDivContents += `<div class="row row-cols-6">`;
 			}
 		}
 		
 		dexDivContents += `</div>`;
-		dexDivContents += `</div></div>`;
+		dexDivContents += `</div></div></div>`;
 	} else {
 		// Write regional alt forms{
 		let boxCounter = 1;
@@ -104,7 +104,7 @@ function writeDex (dexType, dexColor) {
 		for (region of regions) {
 			let printCounter = 0;
 			const regionName = region.charAt(0).toUpperCase() + region.slice(1);
-			dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
+			dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
 			dexDivContents += `<div class="card-header" id="regional-${dexColor}-${region}-${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}"><h3>${regionName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${region}-${boxCounter}">`;
 			dexDivContents += `<div class="row row-cols-6">`;
 			for (pokemon of dexData) {
@@ -115,8 +115,8 @@ function writeDex (dexType, dexColor) {
 					if ((printCounter % 30) == 0) {
 						boxCounter++;
 						dexDivContents += `</div>`;
-						dexDivContents += `</div></div>`;
-						dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
+						dexDivContents += `</div></div></div>`;
+						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header" id="regional-${dexColor}-${region}-${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}"><h3>${regionName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${region}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -124,13 +124,13 @@ function writeDex (dexType, dexColor) {
 				
 			}
 			dexDivContents += `</div>`;
-			dexDivContents += `</div></div>`;
+			dexDivContents += `</div></div></div>`;
 		}
 		
 		// Write gender alt forms
 		boxCounter = 1;
 		let printCounter = 0;
-		dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="gender${boxCounter}">`;
+		dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="gender${boxCounter}">`;
 		dexDivContents += `<div class="card-header" id="gender${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}"><h3>Gender-Specific Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-gender-${boxCounter}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		for (pokemon of dexData) {
@@ -141,8 +141,8 @@ function writeDex (dexType, dexColor) {
 				if ((printCounter % 30) == 0) {
 					boxCounter++;
 					dexDivContents += `</div>`;
-					dexDivContents += `</div></div>`;
-					dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="gender${boxCounter}">`;
+					dexDivContents += `</div></div></div>`;
+					dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="gender${boxCounter}">`;
 					dexDivContents += `<div class="card-header" id="gender${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}"><h3>Gender-Specific Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-gender-${boxCounter}">`;
 					dexDivContents += `<div class="row row-cols-6">`;
 				}
@@ -150,13 +150,13 @@ function writeDex (dexType, dexColor) {
 
 		}
 		dexDivContents += `</div>`;
-		dexDivContents += `</div></div>`;
+		dexDivContents += `</div></div></div>`;
 		
 		// Write other alt forms
 		boxCounter = 1;
 		printCounter = 0;
 		const speciesArray = ['201', '666', '869'];
-		dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="alts${boxCounter}">`;
+		dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="alts${boxCounter}">`;
 		dexDivContents += `<div class="card-header" id="alts${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}"><h3>Alt Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-alts-${boxCounter}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		for (pokemon of dexData) {
@@ -168,8 +168,8 @@ function writeDex (dexType, dexColor) {
 					if ((printCounter % 30) == 0) {
 						boxCounter++;
 						dexDivContents += `</div>`;
-						dexDivContents += `</div></div>`;
-						dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="alts${boxCounter}">`;
+						dexDivContents += `</div></div></div>`;
+						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="alts${boxCounter}">`;
 						dexDivContents += `<div class="card-header" id="alts${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}"><h3>Alt Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-alts-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -177,7 +177,7 @@ function writeDex (dexType, dexColor) {
 			}
 		}
 		dexDivContents += `</div>`;
-		dexDivContents += `</div></div>`;
+		dexDivContents += `</div></div></div>`;
 		
 		// Write species-specific alt forms that have their own boxes
 		for (species of speciesArray) {
@@ -186,7 +186,7 @@ function writeDex (dexType, dexColor) {
 			const dexID = parseFloat(species);
 			const pokemon = dexData[dexID-1];
 			const speciesName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
-			dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="-${dexColor}-${species}-${boxCounter}">`;
+			dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="-${dexColor}-${species}-${boxCounter}">`;
 			dexDivContents += `<div class="card-header" id="-${dexColor}-${species}-${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 			dexDivContents += `<div class="row row-cols-6">`;
 			if (pokemon.name != 'alcremie') {
@@ -196,8 +196,8 @@ function writeDex (dexType, dexColor) {
 					if ((printCounter % 30) == 0) {
 						boxCounter++;
 						dexDivContents += `</div>`;
-						dexDivContents += `</div></div>`;
-						dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
+						dexDivContents += `</div></div></div>`;
+						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header" id="${dexColor}-${species}-${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -211,13 +211,13 @@ function writeDex (dexType, dexColor) {
 				for (flavor of flavors) {
 					const flavorName = flavor.replace('-', ' ');
 					for (topping of toppings) {
-						dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${flavor}-${topping}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-${flavor}-${topping}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-${flavor}-${topping}.webp" alt=""><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${flavorName}<br>${topping}</h4></div></div></div>`;
+						dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${flavor}-${topping}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-${flavor}-${topping}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-${flavor}-${topping}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${flavorName}<br>${topping}</h4></div></div></div>`;
 						printCounter++;
 						if ((printCounter % 30) == 0) {
 							boxCounter++;
 							dexDivContents += `</div>`;
-							dexDivContents += `</div></div>`;
-							dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
+							dexDivContents += `</div></div></div>`;
+							dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 							dexDivContents += `<div class="card-header" id="${dexColor}-${species}-${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 							dexDivContents += `<div class="row row-cols-6">`;
 						}
@@ -229,22 +229,24 @@ function writeDex (dexType, dexColor) {
 				let species = dexData[dexID-1].name;
 				const toppings = pokemon.alts[0].toppings;
 				for (topping of toppings) {
-					dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${topping}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-${topping}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-vanilla-cream-${topping}.webp" alt=""><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${topping}</h4></div></div></div>`;
+					dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${topping}" onclick="changeCaughtState('${dexType}-${dexColor}-${pokemonID}-${topping}')"><div class="card-body"><img src="/assets/pokemon/${dexColor}/${imgSpecies}-vanilla-cream-${topping}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${topping}</h4></div></div></div>`;
 					printCounter++;
 					if ((printCounter % 30) == 0) {
 						dexDivContents += `</div>`;
-						dexDivContents += `</div></div>`;
-						dexDivContents += `<div class="card col-12 col-lg-6 dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
+						dexDivContents += `</div></div></div>`;
+						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header" id="${dexColor}-${species}-${boxCounter}"><button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
 				}
 			}
 			dexDivContents += `</div>`;
-			dexDivContents += `</div></div>`;
+			dexDivContents += `</div></div></div>`;
 		}
 		
 	}
+	
+	dexDivContents += `</div>`;
 	
 	dexDiv.innerHTML = dexDivContents;
 }
