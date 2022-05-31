@@ -5,17 +5,30 @@ main { margin-top: 55px; padding-top: 2em; }
 
 .btn-link.focus, .btn-link:focus, .btn-link:hover { text-decoration: none; box-shadow: none; }
 a:focus, a:hover { text-decoration: none; color: deepskyblue; }
+ul.navbar-nav li.active a.nav-link { color: white; opacity: 1; }
 
 h1 { margin-top: 80px; }
-h2.dex-heading { text-align: center; margin-bottom: 1em; }
+h2.dex-heading { text-align: center; }
 h3.show-hide { text-align: center; }
 h4.usage-key { color: black;  margin-top: 10px; }
+
+nav.expand-collapse .container { justify-content: center; margin-bottom: 1em; }
+nav.expand-collapse .navbar-nav { flex-direction: row; }
+nav.expand-collapse .nav-item { margin: 0 1em; }
+nav.expand-collapse .nav-item img { filter: invert(27%) sepia(96%) saturate(2456%) hue-rotate(208deg) brightness(99%) contrast(100%); }
+.nav.expand-collapse .nav-link:focus, nav.expand-collapse .nav-link:hover, nav.expand-collapse .nav-link:active { cursor: pointer; }
+.nav.expand-collapse .nav-link:focus img, nav.expand-collapse .nav-link:hover img, nav.expand-collapse .nav-link:active img { filter: invert(24%) sepia(84%) saturate(1707%) hue-rotate(207deg) brightness(97%) contrast(91%); cursor: pointer; }
 
 /* --------------------------------- DEX BOXES ---------------------------------- */
 
 .dex-box { padding: 0; margin: 0 auto 30px auto!important; max-width: 535px; }
 .dex-box .btn { padding: 0; margin: 0; }
+.dex-box .btn-link { text-decoration: none; }
 .dex-box h3 { margin: 0; }
+
+.dex-box .card-header img.collapse-arrow { float: right; color: #30a7d1; font-size: 1.25rem; margin-top: 0.3em; transition: transform 0.35s ease-in-out; filter: invert(27%) sepia(96%) saturate(2456%) hue-rotate(208deg) brightness(99%) contrast(100%); }
+.dex-box .card-header img.collapse-arrow.turned { transform: rotate(180deg); }
+.dex-box .card-header img.collapse-arrow:focus, .dex-box .card-header img.collapse-arrow:hover, .dex-box .card-header img.collapse-arrow:active { filter: invert(24%) sepia(84%) saturate(1707%) hue-rotate(207deg) brightness(97%) contrast(91%); cursor: pointer; }
 
 .dex-col { padding: 0; }
 .dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; }
@@ -70,32 +83,7 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
     h4.dex-entry-form { font-size: 0.6em; padding: 0; }
 }
 
-
-
-/* @page { size: auto; } */
-
-
-
-
-/* .container.info-page { max-width: 1200px; margin: 0 auto; } */
-
-/* @media only screen and (min-width: 1200px) {
-	.container, .container-lg, .container-md, .container-sm, .container-xl { max-width: 100%; }
-} */
-
-
-/* Dex boxes */
-
-
-/*span.box-caught { float: right; color: grey; } */
-
-/* Dex entries */
-
-
-/* */
-
-/* @media only print {
-    .dex-box { min-width: 500px; max-width: inherit; }
-} */
-
-/* Dex states */
+@media only screen and (min-width: 1550px) {
+	.row-cols-xxxl-3>* { flex: 0 0 auto; width: 33.3333333333%; }
+	.container { max-width: 1470px; }
+}

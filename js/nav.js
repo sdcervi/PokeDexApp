@@ -1,6 +1,6 @@
 // Set up primary nav contents
 const primaryNav = document.getElementById('primaryNav');
-let primaryNavContents = '<a class="navbar-brand" href="/">Living Pok&eacute;Dex Tracker<span class="d-none d-lg-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></a>';
+let primaryNavContents = '<div class="container"><a class="navbar-brand" href="/">Living Pok&eacute;Dex Tracker<span class="d-none d-lg-inline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span></a>';
 primaryNavContents += '<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>';
 primaryNavContents += '<div class="collapse navbar-collapse" id="navbarSupportedContent">';
 primaryNavContents += '<ul class="navbar-nav mr-auto">';
@@ -11,7 +11,7 @@ primaryNavContents += '<li class="nav-item" id="nav-pokedex"><a class="nav-link"
 //primaryNavContents += '<li class="nav-item" id="nav-progress"><a class="nav-link" href="/progress/">Progress &amp; To-dos</a></li>';
 //primaryNavContents += '<li class="nav-item" id="nav-feedback"><a class="nav-link" href="/feedback/">Feedback</a></li>';
 //primaryNavContents += '<li class="nav-item" id="nav-donate"><a class="nav-link" href="/donate/">Toss A Coin To Your Designer</a></li>';
-primaryNavContents += '</ul></div>';
+primaryNavContents += '</ul></div></div>';
 
 primaryNav.innerHTML = primaryNavContents;
 
