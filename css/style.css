@@ -12,8 +12,15 @@ h2.dex-heading { text-align: center; }
 h3.show-hide { text-align: center; }
 h4.usage-key { color: black;  margin-top: 10px; }
 
+nav#primaryNav .container-fluid { justify-content: center; }
+.navbar-brand { margin-right: 0; text-align: center; }
+nav button.navbar-toggler { padding: 0.25rem; position: fixed; left: 0.5em; top: 0.5em; }
+nav button.dropdown-toggle img { filter: invert(99%) sepia(37%) saturate(1517%) hue-rotate(176deg) brightness(123%) contrast(100%); }
+nav .dropdown { position: fixed; right: 0.5em; top: 0.5em; }
+nav .signin { position: fixed; right: 0.5em; top: 1em; }
+
 nav.expand-collapse .container { justify-content: center; margin-bottom: 1em; }
-nav.expand-collapse .navbar-nav { flex-direction: row; }
+nav.expand-collapse .navbar-nav { flex-direction: row; flex-wrap: wrap; justify-content: center; }
 nav.expand-collapse .nav-item { margin: 0 1em; }
 nav.expand-collapse .nav-item img { filter: invert(27%) sepia(96%) saturate(2456%) hue-rotate(208deg) brightness(99%) contrast(100%); }
 .nav.expand-collapse .nav-link:focus, nav.expand-collapse .nav-link:hover, nav.expand-collapse .nav-link:active { cursor: pointer; }
@@ -73,17 +80,37 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
     h4.dex-entry-form { font-size: 0.5em; padding: 0; }
 }
 
+@media only screen and (min-width: 576px) {
+	nav .dropdown, nav .signin { right: calc(((100vw - 540px) / 2) + 0.75rem); }
+	nav button.navbar-toggler { left: calc(((100vw - 540px) / 2) + 0.75rem); }
+}
+
+@media only screen and (min-width: 768px) {
+	nav .dropdown, nav .signin { right: calc(((100vw - 720px) / 2) + 0.75rem); }
+	nav button.navbar-toggler { left: calc(((100vw - 720px) / 2) + 0.75rem); }
+}
+
 @media only screen and (min-width: 992px) {
+	nav#primaryNav .container-fluid { max-width: 960px; }
+	nav .dropdown, nav .signin { position: static; }
+	nav .dropdown ul { right: auto!important; }
+	.navbar-brand { margin-right: 1rem; }
 	h4.dex-entry-name { font-size: 0.6em; padding: 0; }
     h4.dex-entry-form { font-size: 0.5em; padding: 0; }
 }
 
 @media only screen and (min-width: 1200px) {
+	nav#primaryNav .container-fluid { max-width: 1140px; }
 	h4.dex-entry-name { font-size: 0.7em; padding: 0; }
     h4.dex-entry-form { font-size: 0.6em; padding: 0; }
 }
 
+@media only screen and (min-width: 1400px) {
+	nav#primaryNav .container-fluid { max-width: 1320px; }
+}
+
 @media only screen and (min-width: 1550px) {
+	nav#primaryNav .container-fluid { max-width: 1470px; }
 	.row-cols-xxxl-3>* { flex: 0 0 auto; width: 33.3333333333%; }
 	.container { max-width: 1470px; }
 }

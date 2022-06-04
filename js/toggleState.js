@@ -6,6 +6,27 @@ if (document.addEventListener) {
     document.attachEvent("onclick", handleClick);
 }
 
+function changeCaughtState (divID) {
+    let toggleState = document.getElementById(divID).classList;
+
+    switch (toggleState.item(2)) {
+        case null:
+            toggleState.add("trade");
+            break;
+        case "trade":
+            toggleState.remove("trade");
+            toggleState.add("place");
+            break;
+        case "place":
+            toggleState.remove("place");
+            toggleState.add("caught");
+            break;
+        case "caught":
+            toggleState.remove("caught");
+            break;
+    }  
+}
+
 function dexCollapse (toggleID) {
 	const operation = toggleID.split("-")[2];
 	const subset = toggleID.split("-")[3];
