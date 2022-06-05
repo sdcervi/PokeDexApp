@@ -6,25 +6,70 @@ if (document.addEventListener) {
     document.attachEvent("onclick", handleClick);
 }
 
-function changeCaughtState (divID) {
-    let toggleState = document.getElementById(divID).classList;
+// Checks if all Pokemon in a card are caught
+function checkComplete (pokemonID, autoCollapse) {
+	const box = document.getElementById(pokemonID).parentNode.parentNode.parentNode.parentNode;
+	const listPokemon = box.children[1].firstChild.children;
+	let listComplete = [];
+	for (pokemon of listPokemon) {
+		listComplete.push(/caught/.test(pokemon.firstChild.className));
+	}
+	if (listComplete.every(value => value === true)) {
+		box.classList.add('completed');
+	} else {
+		box.classList.remove('completed');
+	}
+	
+	// If user has auto-collapse enabled
+	if (autoCollapse) {
+		collapseCompleted();
+	}
+} 
+
+function changeCaughtState (pokemon) {
+    let toggleState = document.getElementById(pokemon).classList;
+	let endState;
 
     switch (toggleState.item(2)) {
         case null:
             toggleState.add("trade");
+			endState = "trade";
+			checkComplete (pokemon);
             break;
         case "trade":
             toggleState.remove("trade");
             toggleState.add("place");
+			endState = "place";
+			checkComplete (pokemon);
             break;
         case "place":
             toggleState.remove("place");
             toggleState.add("caught");
+			endState = "caught";
+			checkComplete (pokemon);
             break;
         case "caught":
             toggleState.remove("caught");
+			endState = "";
+			checkComplete (pokemon);
             break;
-    }  
+    }
+	
+	const user = firebase.auth().currentUser;
+	if (user) {
+		const userData = db.collection('userData').doc(user.uid);
+		userData.set({
+			pokemon: {
+				[pokemon]: endState
+			}
+		}, { merge: true }).then(() => {
+			checkComplete (pokemon);
+		}).catch ((error) => {
+			console.error ('Error updating user data: ', error);
+		});
+	} else {
+		checkComplete (pokemon);
+	}
 }
 
 function dexCollapse (toggleID) {
@@ -58,7 +103,7 @@ function dexCollapse (toggleID) {
 			for (box of dex) {
 				const collapse = box.firstChild.children[1];
 				const cardID = document.getElementById(collapse.id);
-				if (collapse.classList.contains('show') && box.firstChild.classList.contains('complete')) {
+				if (collapse.classList.contains('show') && box.firstChild.classList.contains('completed')) {
 					const bsCollapse = new bootstrap.Collapse(cardID, {
 						show: false
 					});
@@ -72,44 +117,6 @@ function dexCollapse (toggleID) {
 		console.log ("Error in expand-collapse function");
 	}
 }
-
-// Checks if all Pokemon in a card are caught
-/*function checkComplete (listBox, listSet, autoCollapse) {
-	let listComplete = [];
-	for (listItem of listSet) {
-		listComplete.push(listItem.firstChild.checked);
-	}
-	if (listComplete.every(value => value === true)) {
-		listBox.classList.add('completed');
-	} else {
-		listBox.classList.remove('completed');
-	}
-	
-	// If user has auto-collapse enabled
-	if (autoCollapse) {
-		collapseCompleted();
-	}
-}*/ 
-	
-	/*const user = firebase.auth().currentUser;
-	if (user) {
-		const userData = db.collection('userData').doc(user.uid);
-		userData.set({
-			cards: {
-				[listBoxID]: {
-					[itemID]: item.checked
-				}
-			}
-		}, { merge: true }).then(() => {
-			const listSet = document.getElementById(`collapse${listBoxID}`).children[1].childNodes;
-			checkComplete (listBox, listSet);
-		}).catch ((error) => {
-			console.error ('Error updating user data: ', error);
-		});
-	} else {
-		const listSet = document.getElementById(`collapse${listBoxID}`).children[1].childNodes;
-		checkComplete (listBox, listSet);
-	}*/
 
 // Clear all data within a card
 /* function clearCard (cardID) {
@@ -151,45 +158,32 @@ function handleClick(event) {
 }
 
 // Gets the already-completed items from user data and checks those boxes
-/* function writeChecklist (checklist, autoCollapse) {
-	if (Object.keys(checklist).length) {
-		for (const listID in checklist) {
-			// Get the HTML element containing the list's card
-			const listBox = document.getElementById(listID);
-			
-			// Check boxes user has already completed
-			const list = checklist[listID];
-			for (const item in list) {
-				const itemCheckbox = document.getElementById(`${listID}-${item}`);
-				const itemStatus = list[item];
-				if (itemStatus) {
-					itemCheckbox.checked = itemStatus;
-				}
-			}
-			
-			// Get array of all checkboxes in the list, and mark as complete if everything is checked
-			const listSet = document.getElementById(`collapse${listID}`).children[1].childNodes;
-			checkComplete (listBox, listSet, autoCollapse);
+function writeUserDex (pokemonData, autoCollapse) {
+	if (Object.keys(pokemonData).length) {
+		for (const pokemon in pokemonData) {
+			const pokemonDiv = document.getElementById(pokemon);
+			pokemonDiv.classList.add(pokemonData[pokemon]);
+			checkComplete (pokemon, autoCollapse);
 		}
 	} else {
 		return;
 	}
-} */
+}
 
 // Fetch the database's profile data for the user and display it
-/*function getProfileData (user) {
+function getProfileData (user) {
 	// Fetch the user's data
 	const userData = db.collection('userData').doc(user.uid);
 	
 	// Check to see if user has checklist progress in the database
 	userData.get().then((doc) => {
 		const data = doc.data();
-		if (data.cards) {
-			writeChecklist (data.cards, data.autoCollapse);
+		if (data.pokemon) {
+			writeUserDex (data.pokemon, data.autoCollapse);
 		} else {
 			console.log ('Error getting user data: no data present');
 		}
 	}).catch((error) => {
 		console.log('Error getting user data: ', error);
 	});
-}*/
+}

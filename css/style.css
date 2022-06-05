@@ -15,9 +15,10 @@ h4.usage-key { color: black;  margin-top: 10px; }
 nav#primaryNav .container-fluid { justify-content: center; }
 .navbar-brand { margin-right: 0; text-align: center; }
 nav button.navbar-toggler { padding: 0.25rem; position: fixed; left: 0.5em; top: 0.5em; }
-nav button.dropdown-toggle img { filter: invert(99%) sepia(37%) saturate(1517%) hue-rotate(176deg) brightness(123%) contrast(100%); }
-nav .dropdown { position: fixed; right: 0.5em; top: 0.5em; }
-nav .signin { position: fixed; right: 0.5em; top: 1em; }
+nav button.dropdown-toggle img { filter: invert(99%) sepia(37%) saturate(1517%) hue-rotate(176deg) brightness(123%) contrast(100%); padding-right: 0.75em; }
+nav .dropdown-toggle::after { margin-left: 0.75em; }
+nav .dropdown { position: fixed; right: 0.5em; top: 0.5em; display: none; }
+nav .signin { position: fixed; right: 0.5em; top: 1em; display: none; }
 
 nav.expand-collapse .container { justify-content: center; margin-bottom: 1em; }
 nav.expand-collapse .navbar-nav { flex-direction: row; flex-wrap: wrap; justify-content: center; }
@@ -26,12 +27,15 @@ nav.expand-collapse .nav-item img { filter: invert(27%) sepia(96%) saturate(2456
 .nav.expand-collapse .nav-link:focus, nav.expand-collapse .nav-link:hover, nav.expand-collapse .nav-link:active { cursor: pointer; }
 .nav.expand-collapse .nav-link:focus img, nav.expand-collapse .nav-link:hover img, nav.expand-collapse .nav-link:active img { filter: invert(24%) sepia(84%) saturate(1707%) hue-rotate(207deg) brightness(97%) contrast(91%); cursor: pointer; }
 
+#sign-in-suggest { text-align: center; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid lightgray; display: none; }
+
 /* --------------------------------- DEX BOXES ---------------------------------- */
 
 .dex-box { padding: 0; margin: 0 auto 30px auto!important; max-width: 535px; }
 .dex-box .btn { padding: 0; margin: 0; }
 .dex-box .btn-link { text-decoration: none; }
 .dex-box h3 { margin: 0; }
+.dex-box.completed::before { content: url("../assets/icons/check-circle-fill.svg"); height: 1.5em; width: 1.5em; position: absolute; left: -0.5em; top: -0.5em; z-index: 10; }
 
 .dex-box .card-header img.collapse-arrow { float: right; color: #30a7d1; font-size: 1.25rem; margin-top: 0.3em; transition: transform 0.35s ease-in-out; filter: invert(27%) sepia(96%) saturate(2456%) hue-rotate(208deg) brightness(99%) contrast(100%); }
 .dex-box .card-header img.collapse-arrow.turned { transform: rotate(180deg); }

@@ -15,7 +15,9 @@ function getUserData (user) {
 				nat_normal_expand: true,
 				alt_normal_expand: true,
 				nat_shiny_expand: true,
-				alt_shiny_expand: true
+				alt_shiny_expand: true,
+				autoCollapse: false,
+				pokemon: {}
 			}).then(() => {
 				return;
 			}).catch((error) => {
@@ -42,6 +44,7 @@ function logout () {
 firebase.auth().onAuthStateChanged(function(user) {
 	if (user) {
 		document.getElementById('signin-button').remove();
+		document.getElementById('sign-in-suggest').remove();
 		document.getElementById('profileDropdown').style.display = 'block';
 		document.getElementById('profileUserNavbar').textContent = user.displayName;
 		getUserData(user);
@@ -52,7 +55,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 			document.getElementById('signout-button').remove();
 		}
 		if (document.getElementById('sign-in-suggest')) {
-			document.getElementById('sign-in-suggest').innerHTML = 'To save your changes, <a href="./signin.html">sign in or create an account</a>.';
+			document.getElementById('sign-in-suggest').innerHTML = 'To save your changes, <a href="/signin/">sign in or create an account</a>.';
+			document.getElementById('sign-in-suggest').style.display = 'block';
 		}
 		if (document.getElementById('please-sign-in')) {
 			document.getElementById('please-sign-in').innerHTML = 'Please <a href="./signin.html">sign in</a> to see this page.';
