@@ -56,6 +56,9 @@ firebase.auth().onAuthStateChanged(function(user) {
 		if (document.getElementById('sign-in-suggest')) {
 			document.getElementById('sign-in-suggest').innerHTML = 'To save your progress, <a href="/signin/">sign in or create an account</a>.';
 			document.getElementById('sign-in-suggest').style.display = 'block';
+			if (document.getElementById('usageKeyButton')) {
+				document.getElementById('usageKeyButton').style.top = '10em';
+			}
 		}
 		if (document.getElementById('please-sign-in')) {
 			document.getElementById('please-sign-in').innerHTML = 'Please <a href="./signin.html">sign in</a> to see this page.';

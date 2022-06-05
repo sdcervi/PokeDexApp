@@ -63,6 +63,8 @@
 		
 		<article id="sign-in-suggest"></article>
 		
+		<button type="button" class="btn btn-secondary btn-sm usage-key" id="usageKeyButton" data-bs-toggle="modal" data-bs-target="#usageKey">How to use</button>
+		
 		<article>
 		
 			<h2 class="dex-heading">National Dex</h2>
@@ -137,42 +139,60 @@
 		
 	</section>
 	
-	<!--<div class="card-body">
-		<div class="row">
-			<p class="col-12">Click on a pokemon sprite to toggle between these states.</p>
-			<div class="card col-2 dex-entry" id="usageKey-notCaught">
-				<div class="card-body">
-					<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
-					<h4 class="dex-entry-number">001</h4>
-					<h4 class="dex-entry-name">Bulbasaur</h4>
-					<h4 class="dex-entry-number usage-key">Not Caught</h4>
+	<!-- Modal -->
+	<div class="modal fade" id="usageKey" tabindex="-1" aria-labelledby="usageKeyLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="usageKeyLabel">How do I use this?</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-			</div>
-			<div class="card col-2 dex-entry trade" id="usageKey-trading">
-				<div class="card-body">
-					<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
-					<h4 class="dex-entry-number">001</h4>
-					<h4 class="dex-entry-name">Bulbasaur</h4>
-					<h4 class="dex-entry-number usage-key">Trading for</h4>
+				<div class="modal-body">
+					<div class="row">
+						<p class="col-12">Click on a pokemon sprite to toggle between these states.</p>
+						<div class="card col-2 dex-entry" id="usageKey-notCaught">
+							<div class="card-body">
+								<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
+								<h4 class="dex-entry-number">001</h4>
+								<h4 class="dex-entry-name">Bulbasaur</h4>
+								<h4 class="dex-entry-number usage-key">Not Caught</h4>
+							</div>
+						</div>
+						<div class="card col-2 dex-entry trade" id="usageKey-trading">
+							<div class="card-body">
+								<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
+								<h4 class="dex-entry-number">001</h4>
+								<h4 class="dex-entry-name">Bulbasaur</h4>
+								<h4 class="dex-entry-number usage-key">Trading for</h4>
+							</div>
+						</div>
+						<div class="card col-2 dex-entry place" id="usageKey-place">
+							<div class="card-body">
+								<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
+								<h4 class="dex-entry-number">001</h4>
+								<h4 class="dex-entry-name">Bulbasaur</h4>
+								<h4 class="dex-entry-number usage-key">Ready to place</h4>
+							</div>
+						</div>
+						<div class="card col-2 dex-entry caught" id="usageKey-caught">
+							<div class="card-body">
+								<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
+								<h4 class="dex-entry-number">001</h4>
+								<h4 class="dex-entry-name">Bulbasaur</h4>
+								<h4 class="dex-entry-number usage-key">Caught</h4>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="card col-2 dex-entry place" id="usageKey-place">
-				<div class="card-body">
-					<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
-					<h4 class="dex-entry-number">001</h4>
-					<h4 class="dex-entry-name">Bulbasaur</h4>
-					<h4 class="dex-entry-number usage-key">Ready to place</h4>
-				</div>
-			</div>
-			<div class="card col-2 dex-entry caught" id="usageKey-caught">
-				<div class="card-body">
-					<img src="https://img.pokemondb.net/sprites/home/normal/bulbasaur.png" alt="">
-					<h4 class="dex-entry-number">001</h4>
-					<h4 class="dex-entry-name">Bulbasaur</h4>
-					<h4 class="dex-entry-number usage-key">Caught</h4>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
 				</div>
 			</div>
 		</div>
+	</div>
+	
+	<!--<div class="card-body">
+		
 	</div> -->
 	
 </main>
@@ -182,6 +202,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
 <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="/js/nav.js" type="text/javascript"></script>
+<script src="/js/cookieBanner.js" type="text/javascript"></script>
 <script src="/js/dexDB.json" type="text/javascript"></script>
 <script src="/js/printDex.js" type="text/javascript"></script>
 <script src="/js/toggleState.js" type="text/javascript"></script>

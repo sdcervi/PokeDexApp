@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A visual checklist for Pokemon Home collectors">
+	<meta name="description" content="A visual checklist for Pokemon Home collectors, with all alt forms and variants">
 	<meta name="author" content="Stephanie Cervi">
 	<title>Living Pok&eacute;Dex Tracker</title>
 
@@ -17,7 +17,12 @@
 	<link rel="icon" href="/assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
 	<link rel="icon" href="/assets/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
 	<link rel="icon" href="/assets/favicons/favicon.ico">
+	
+	<!-- Meta details to launch in full-screen if added as a homescreen app -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="theme-color" content="#563d7c">
+	<!--link rel="manifest" href="./manifest.json"-->
 	
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166061118-1"></script>
@@ -29,18 +34,23 @@
 		gtag('config', 'UA-166061118-1');
 	</script>
 
-	<!-- Firebase integration -->
-	<script defer src="/__/firebase/9.6.10/firebase-app-compat.js"></script>
-	<!-- include only the Firebase features as you need -->
-	<script defer src="/__/firebase/9.6.10/firebase-auth-compat.js"></script>
-	<script defer src="/__/firebase/9.6.10/firebase-firestore-compat.js"></script>
-	<script defer src="/__/firebase/9.6.10/firebase-analytics-compat.js"></script>
-	<script defer src="/__/firebase/9.6.10/firebase-remote-config-compat.js"></script>
-	<script defer src="/__/firebase/9.6.10/firebase-performance-compat.js"></script>
+	<!-- FIREBASE -->
+	<!-- update the version number as needed --> 
+	<script defer src="/__/firebase/9.6.8/firebase-app-compat.js"></script> 
+	<!-- include only the Firebase features as you need --> 
+	<script defer src="/__/firebase/9.6.8/firebase-auth-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-database-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-firestore-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-functions-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-messaging-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-storage-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-analytics-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-remote-config-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-performance-compat.js"></script> 
 	<!-- 
-	initialize the SDK after all desired features are loaded, set useEmulator to false
-	to avoid connecting the SDK to running emulators.
-	-->
+		  initialize the SDK after all desired features are loaded, set useEmulator to false
+		  to avoid connecting the SDK to running emulators.
+		--> 
 	<script defer src="/__/firebase/init.js?useEmulator=true"></script>
 </head>
 
@@ -56,8 +66,12 @@
     
     <section class="jumbotron text-center">
 		<div class="container">
-			<h2>Homepage coming soon</h2>		
-			<p class="lead text-muted">Tailored toward Pok&eacute;mon Home users, this Dex tracker is designed to help you catalog your entire collection&mdash;regional forms, alt forms, and shinies included.</p>			
+			<h1>Living Pok&eacute;Dex Tracker</h1>		
+			<p class="lead text-muted">Tailored toward Pok&eacute;mon Home users, this Dex tracker is designed to help you catalog your entire collection&mdash;regional forms, alt forms, and shinies included.</p>
+			<p>Your progress syncs with the cloud automatically, and you can access your dex from any device.</p>
+			<p><a href="/pokedex/"><button class="btn btn-primary">Let&rsquo;s get started</button></a></p>
+			<img src="/assets/desktop.png" alt="Screenshot of computer version" class="screenshot">
+			<img src="/assets/mobile.png" alt="Screenshot of mobile device version" class="screenshot">
 		</div>
 	</section>
 	
@@ -65,9 +79,11 @@
 	
 <footer class="text-muted mt-auto" id="footer"></footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="/js/bootstrap.bundle.min.js"></script>
-<script src="/js/nav.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+<script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/nav.js" type="text/javascript"></script>
+<script src="/js/cookieBanner.js" type="text/javascript"></script>
+<script defer src="/js/auth.js" type="text/javascript"></script>
 	
 </body>
 </html>

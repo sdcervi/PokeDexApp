@@ -2,10 +2,19 @@
 
 main { margin-top: 55px; padding-top: 2em; }
 .clear { clear: both; }
+#cookie-banner { position: fixed; bottom: 0; left: .75rem; width: 100%; z-index: 999; border-radius: 0; display: none; padding: 0.5em; font-size: 0.9em; align-items: center; }
+.jumbotron { margin-top: 10vh; }
+.jumbotron p:last-of-type { margin-bottom: 2em; }
+
+img.screenshot { max-height: 400px; width: auto; max-width: 100%; display: inline-block; box-shadow: 0 0 10px lightgray; margin-bottom: 2em; }
+img.screenshot:first-of-type { margin-right: 2em; }
 
 .btn-link.focus, .btn-link:focus, .btn-link:hover { text-decoration: none; box-shadow: none; }
 a:focus, a:hover { text-decoration: none; color: deepskyblue; }
 ul.navbar-nav li.active a.nav-link { color: white; opacity: 1; }
+
+button.usage-key { position: absolute; right: 0.75em; top: 4.25rem; }
+h4.usage-key { color: black!important; }
 
 h2.dex-heading { text-align: center; }
 h3.show-hide { text-align: center; }
@@ -62,6 +71,7 @@ button.btn-edit { position: absolute; }
 
 .dex-col { padding: 0; }
 .dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; }
+.dex-entry:focus, .dex-entry:hover, .dex-entry:active { cursor: pointer; }
 .dex-entry .card-body { padding: 0; margin-bottom: 15px!important; }
 .dex-entry img { max-width: 100%; height: auto; padding-bottom: 5px; display: block; margin: 0 auto; opacity: 0.1; }
 .dex-entry h4 { color: lightgray; }
@@ -104,16 +114,17 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 }
 
 @media only screen and (min-width: 576px) {
-	nav .dropdown, nav .signin { right: calc(((100vw - 540px) / 2) + 0.75rem); }
+	nav .dropdown, nav .signin, button.usage-key { right: calc(((100vw - 540px) / 2) + 0.75rem); }
 	nav button.navbar-toggler { left: calc(((100vw - 540px) / 2) + 0.75rem); }
 }
 
 @media only screen and (min-width: 768px) {
-	nav .dropdown, nav .signin { right: calc(((100vw - 720px) / 2) + 0.75rem); }
+	nav .dropdown, nav .signin, button.usage-key { right: calc(((100vw - 720px) / 2) + 0.75rem); }
 	nav button.navbar-toggler { left: calc(((100vw - 720px) / 2) + 0.75rem); }
 }
 
 @media only screen and (min-width: 992px) {
+	button.usage-key { position: static; float: right; }
 	nav#primaryNav .container-fluid { max-width: 100%; }
 	.navbar-nav { font-size: 0.85em; }
 	nav .dropdown, nav .signin { position: static; }
@@ -143,4 +154,5 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 	nav#primaryNav .container-fluid { max-width: 1470px; }
 	.row-cols-xxxl-3>* { flex: 0 0 auto; width: 33.3333333333%; }
 	.container { max-width: 1470px; }
+	h4.dex-entry-name { font-size: 0.6em; padding: 0; }
 }

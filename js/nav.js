@@ -31,7 +31,7 @@ primaryNav.innerHTML = primaryNavContents;
 // Set up footer contents
 const footer = document.getElementById('footer');
 let footerContents = '<div class="container">';
-footerContents += '<p class="small text-center">Site design and layout by <a href="https://stephaniecervi.net" target="_blank">Stephanie Cervi</a>. Pok&eacute;mon images, names, forms, and other relevant information are the property of The Pok&eacute;mon Company.</p></div>';
+footerContents += '<p class="small text-center">Site design and layout by <a href="https://stephaniecervi.net" target="_blank">Stephanie Cervi</a>. <a href="/privacy-policy.html">Privacy Policy</a> - <a href="/terms-of-service.html">Terms of Service</a> - <a href="/feedback/">Contact us</a><br>Pok&eacute;mon images, names, forms, and other relevant information are the property of The Pok&eacute;mon Company.</p></div>';
 
 footer.innerHTML = footerContents;
 
