@@ -22,7 +22,7 @@ function checkComplete (pokemonID, autoCollapse) {
 	
 	// If user has auto-collapse enabled
 	if (autoCollapse) {
-		collapseCompleted();
+		autoCollapseComplete();
 	}
 } 
 
@@ -72,6 +72,20 @@ function changeCaughtState (pokemon) {
 	}
 }
 
+function autoCollapseComplete () {
+	const dex = document.getElementsByClassName('dex-box');
+	for (box of dex) {
+		const collapse = box.children[1];
+		const cardID = document.getElementById(collapse.id);
+		if (collapse.classList.contains('show') && box.classList.contains('completed')) {
+			const bsCollapse = new bootstrap.Collapse(cardID, {
+				show: false
+			});
+			collapse.parentNode.firstChild.firstChild.classList.add('turned');
+		}
+	}
+}
+
 function dexCollapse (toggleID) {
 	const operation = toggleID.split("-")[2];
 	const subset = toggleID.split("-")[3];
@@ -118,18 +132,6 @@ function dexCollapse (toggleID) {
 	}
 }
 
-// Clear all data within a card
-/* function clearCard (cardID) {
-	const card = document.getElementById(cardID);
-	const checklist = card.children[1].children;
-	for (listItem of checklist) {
-		if (listItem.firstChild.checked) {
-			listItem.firstChild.checked = false;
-			toggleChecked(listItem.firstChild.id);
-		}
-	}
-}*/
-
 // Event handler for user clicks
 function handleClick(event) {
     event = event || window.event;
@@ -163,7 +165,10 @@ function writeUserDex (pokemonData, autoCollapse) {
 		for (const pokemon in pokemonData) {
 			const pokemonDiv = document.getElementById(pokemon);
 			pokemonDiv.classList.add(pokemonData[pokemon]);
-			checkComplete (pokemon, autoCollapse);
+			checkComplete (pokemon);
+		}
+		if (autoCollapse) {
+			autoCollapseComplete();
 		}
 	} else {
 		return;

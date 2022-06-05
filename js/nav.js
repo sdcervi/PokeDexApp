@@ -8,15 +8,17 @@ primaryNavContents += '<div class="collapse navbar-collapse" id="navbarCollapse"
 primaryNavContents += '<ul class="navbar-nav mr-auto">';
 primaryNavContents += '<li class="nav-item" id="nav-home"><a class="nav-link" href="/">Home</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-pokedex"><a class="nav-link" href="/pokedex/">Pok&eacute;dex</a></li>';
-//primaryNavContents += '<li class="nav-item" id="nav-alts"><a class="nav-link" href="/alts/">Alt Forms Guide</a></li>';
-//primaryNavContents += '<li class="nav-item" id="nav-faq"><a class="nav-link" href="/faq/">FAQ</a></li>';
-//primaryNavContents += '<li class="nav-item" id="nav-progress"><a class="nav-link" href="/progress/">Progress &amp; To-dos</a></li>';
-//primaryNavContents += '<li class="nav-item" id="nav-feedback"><a class="nav-link" href="/feedback/">Feedback</a></li>';
-//primaryNavContents += '<li class="nav-item" id="nav-donate"><a class="nav-link" href="/donate/">Toss A Coin To Your Designer</a></li>';
+primaryNavContents += '<li class="nav-item" id="nav-about"><a class="nav-link" href="/about/">About</a></li>';
+primaryNavContents += '<li class="nav-item" id="nav-alts"><a class="nav-link" href="/alts/">Alt Forms Guide</a></li>';
+primaryNavContents += '<li class="nav-item" id="nav-faq"><a class="nav-link" href="/faq/">FAQ</a></li>';
+primaryNavContents += '<li class="nav-item" id="nav-progress"><a class="nav-link" href="/progress/">Progress &amp; To-dos</a></li>';
+primaryNavContents += '<li class="nav-item" id="nav-feedback"><a class="nav-link" href="/feedback/">Feedback</a></li>';
+primaryNavContents += '<li class="nav-item" id="nav-donate"><a class="nav-link" href="/donate/">Donate</a></li>';
 primaryNavContents += '</ul></div>';
+primaryNavContents += '<div class="data-loading" id="data-loading"><div class="spinner-border text-primary" role="status"></div> Loading</div>';
 primaryNavContents += '<div class="dropdown" id="profileDropdown"><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Toggle profile drop-down"><img src="/assets/icons/profile.svg"><span id="profileUserNavbar"></span></button>';
 primaryNavContents += '<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">';
-primaryNavContents += '<li><a class="dropdown-item" href="/profile/">Profile</a></li>';
+primaryNavContents += '<li><a class="dropdown-item" href="/profile/">Profile &amp; Settings</a></li>';
 primaryNavContents += '<li><hr class="dropdown-divider"></li>';
 primaryNavContents += '<li><a class="dropdown-item" onclick="logout()" href="#">Sign out</a></li>';
 primaryNavContents += '</ul></div>';
@@ -29,7 +31,7 @@ primaryNav.innerHTML = primaryNavContents;
 // Set up footer contents
 const footer = document.getElementById('footer');
 let footerContents = '<div class="container">';
-footerContents += '<p class="small text-center">Site design and layout by <a href="https://stephaniecervi.net" target="_blank">Stephanie Cervi</a>. Pok&eacute;mon images, names, forms, and other relevant information are the property of Nintendo.</p></div>';
+footerContents += '<p class="small text-center">Site design and layout by <a href="https://stephaniecervi.net" target="_blank">Stephanie Cervi</a>. Pok&eacute;mon images, names, forms, and other relevant information are the property of The Pok&eacute;mon Company.</p></div>';
 
 footer.innerHTML = footerContents;
 
