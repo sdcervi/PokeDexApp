@@ -1,5 +1,6 @@
 /* ----------------------------------- GLOBAL ----------------------------------- */
-
+body { background-color: white; color: black; }
+.dark-mode { background-color: black; color: white; }
 main { margin-top: 55px; padding-top: 2em; }
 .clear { clear: both; }
 #cookie-banner { position: fixed; bottom: 0; left: .75rem; width: 100%; z-index: 999; border-radius: 0; display: none; padding: 0.5em; font-size: 0.9em; align-items: center; }
@@ -14,11 +15,76 @@ a:focus, a:hover { text-decoration: none; color: deepskyblue; }
 ul.navbar-nav li.active a.nav-link { color: white; opacity: 1; }
 
 button.usage-key { position: absolute; right: 0.75em; top: 4.25rem; }
-h4.usage-key { color: black!important; }
 
 h2.dex-heading { text-align: center; }
 h3.show-hide { text-align: center; }
 h4.usage-key { color: black;  margin-top: 10px; }
+
+/* Dark mode light mode toggle from https://codepen.io/fydsa/pen/abwdpep*/
+:root {
+  --light: #d8dbe0;
+  --dark: #39393f;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 50px;
+  display: flex;
+  align-items: center;
+
+}
+
+label {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  background-color: var(--dark);
+  border-color: var(--light);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+input {
+  position: absolute;
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-color: var(--light);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+input:checked ~ .slider {
+  border-color: var(--light);
+  background-color: var(--light);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  box-shadow: inset 5px -2px 0px 0px var(--light);
+  background-color: var(--dark);
+  border-color: var(--light);
+  transition: 0.3s;
+}
+
+input:checked ~ .slider::before {
+  transform: translateX(25px);
+  background-color: var(--dark);
+  border-color: var(--light);
+  box-shadow: none;
+}
+/* */
+
 
 nav#primaryNav .container-fluid { justify-content: center; }
 .navbar-brand { margin-right: 0; text-align: center; }
