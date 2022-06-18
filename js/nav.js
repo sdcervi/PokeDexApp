@@ -15,6 +15,10 @@ primaryNavContents += '<li class="nav-item" id="nav-progress"><a class="nav-link
 primaryNavContents += '<li class="nav-item" id="nav-feedback"><a class="nav-link" href="/feedback/">Feedback</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-donate"><a class="nav-link" href="/donate/">Donate</a></li>';
 primaryNavContents += '</ul></div>';
+
+// Dark mode button
+primaryNavContents += '<div class = "toggle-switch mx-2"><label><input type = "checkbox" onclick="toggleDarkMode()"><span class = "slider">&nbsp;</span></label></div>';
+	
 primaryNavContents += '<div class="data-loading" id="data-loading"><div class="spinner-border text-primary" role="status"></div> Loading</div>';
 primaryNavContents += '<div class="dropdown" id="profileDropdown"><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Toggle profile drop-down"><img src="/assets/icons/profile.svg"><span id="profileUserNavbar"></span></button>';
 primaryNavContents += '<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">';
@@ -25,6 +29,7 @@ primaryNavContents += '</ul></div>';
 primaryNavContents += '<a href="/signin/" id="signin-button"><button class="btn btn-primary btn-sm signin" type="button">Sign in</button></a>';
 primaryNavContents += '</div>';
 primaryNavContents += '</div>';
+
 
 primaryNav.innerHTML = primaryNavContents;
 
@@ -47,4 +52,9 @@ let navID = `nav-${filename}`;
 const navElement = document.getElementById(navID);
 if (navElement) {
 	navElement.classList.add('active');
+}
+
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
