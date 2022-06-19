@@ -1,3 +1,8 @@
+const darkMode = localStorage.getItem('pokedex_darkMode');
+if (darkMode) {
+	document.body.classList.add("dark-mode");
+}
+
 // Set up primary nav contents
 const primaryNav = document.getElementById('primaryNav');
 
@@ -55,6 +60,11 @@ if (navElement) {
 }
 
 function toggleDarkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+	const element = document.body;
+	element.classList.toggle("dark-mode");
+	if (element.classList.contains("dark-mode")) {
+		localStorage.setItem('pokedex_darkMode', true);
+	} else {
+		localStorage.setItem('pokedex_darkMode', false);
+	}
 }
