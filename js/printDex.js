@@ -282,6 +282,122 @@ function writeDex (dexType, dexColor) {
 	dexDiv.innerHTML = dexDivContents;
 }
 
+
+function writeDexList (dexType, dexColor) {
+	// Get the HTML div
+	const dexDivID = `${dexColor}-${dexType}-dex`;
+	const dexDiv = document.getElementById(dexDivID);
+	let dexDivContents = `<table class="table table-striped table-hover" id="${dexColor}-dex">`;
+	let tableHead = '<thead><tr><th scope="col">National Dex #</th><th scope="col">Name</th><th scope="col">Sprite</th><th scope="col">Status</th></tr></thead>';
+	dexDivContents += tableHead;
+	dexDivContents += '<tbody>';
+	// Generate the dex's contents
+	
+	for (pokemon of dexData) {
+		const dexID = parseFloat(pokemon.id);
+		dexDivContents += writePokemonList (dexID, dexType, dexColor, null);
+		
+	}
+	
+	dexDivContents += `</tbody></table>`;
+	
+	dexDiv.innerHTML = dexDivContents;
+}
+
+function writePokemonList (dexID, dexType, dexColor, altType) {
+	// Get the Pokemon's information
+	const pokemonID = (dexID).toString().padStart(3, '0');
+	let imgSpecies = dexData[dexID-1].name;
+	let species = dexData[dexID-1].name;
+	
+	// Species name and image path corrections
+	if (species == "farfetchd"){
+		species = "farfetch'd";
+	}
+	if (species == "sirfetchd"){
+		species = "sirfetch'd";
+	}
+	if (species == "mr-mime"){
+		species = "mr. mime";
+	}
+	if (species == "mr-rime"){
+		species = "mr. rime";
+	}
+	if (species == "flabebe"){
+		species = "flab&eacuteb&eacute";
+	}
+	if (species == "nidoran-f"){
+		species = "nidoran &#9792";
+	}
+	if (species == "nidoran-m"){
+		species = "nidoran &#9794";
+	}
+	if (species == "alcremie"){
+		imgSpecies = "alcremie-vanilla-cream-strawberry";
+	}
+	if (species == "zacian"){
+		imgSpecies = "zacian-hero";
+	}
+	if (species == "zamazenta"){
+		imgSpecies = "zamazenta-hero";
+	}
+	if (species == "urshifu"){
+		imgSpecies = "urshifu";
+	}
+	
+	// Generate the pokemon's card
+	let pokemonContent;
+	let divId = '';
+	let pokemonSrc = '';
+	let pokeName = '';
+	if (!altType && altType != 0) {
+		divId = `${dexType}-${dexColor}-${pokemonID}`
+		pokemonSrc = `${imgSpecies}`
+		pokeName = `${species}`
+		totalPokemon++;
+	} else if (altType === 'alolan' || altType === 'galarian') {
+		divId = `${dexType}-${dexColor}-${pokemonID}-${altType}`
+		pokemonSrc = `${imgSpecies}-${altType}`
+		pokeName = `${species}`
+		totalPokemon++;
+	} else if (altType === 'gender') {
+		divId = `${dexType}-${dexColor}-${pokemonID}-male`
+		pokemonSrc = `${imgSpecies}-${altType}`
+		pokeName = `${species}`
+		totalPokemon++;
+	} else {
+		const forms = dexData[dexID-1].alts[0].forms;
+		const formNames = dexData[dexID-1].alts[0]['form-names'];
+		divId = `${dexType}-${dexColor}-${pokemonID}-alt${forms[altType]}`
+		pokemonSrc = `${imgSpecies}${forms[altType]}`
+		pokeName = `${formNames[altType]}`
+		totalPokemon++;
+	}
+	pokemonContent = `<tr><th class="dex-entry" scope='row'><h4 class="dex-entry-number caught">${pokemonID}</h4></th><td><h4 class="dex-entry-name">${pokeName}</h4></td><td><div class="dex-entry"><img loading="lazy" src="/assets/pokemon/${dexColor}/${pokemonSrc}.webp" class="img-fluid img-thumbnail" alt="${pokeName}" height=20></div></td><td>Not available</td></tr>`;
+	
+	return pokemonContent;
+}
+
+function toggleGridView () {
+	writeDex ('nat', 'normal');
+	writeDex ('alt', 'normal');
+	writeDex ('nat', 'shiny');
+	writeDex ('alt', 'shiny');
+
+	return None
+}
+
+function toggleListView () {
+	writeDexList ('nat', 'normal');
+	writeDexList ('alt', 'normal');
+	writeDexList ('nat', 'shiny');
+	writeDexList ('alt', 'shiny');
+
+	return None
+}
+
+
+
 writeDex ('nat', 'normal');
 writeDex ('alt', 'normal');
 writeDex ('nat', 'shiny');
