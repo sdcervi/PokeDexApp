@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="glyphicons-basic" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0EC6E5;}
+</style>
+<path id="drop-down" class="st0" d="M14,25h4v3h-4V25z M18,4h-4v3h4V4z M7,14H4v4h3V14z M24.5,4H22v3h2.5C24.8,7,25,7.2,25,7.5V10h3
+	V7.5C28,5.6,26.4,4,24.5,4z M25,18h3v-4h-3V18z M4,7.5V10h3V7.5C7,7.2,7.2,7,7.5,7H10V4H7.5C5.6,4,4,5.6,4,7.5z M25,24.5
+	c0,0.3-0.2,0.5-0.5,0.5H22v3h2.5c1.9,0,3.5-1.6,3.5-3.5V22h-3V24.5z M7,24.5V22H4v2.5C4,26.4,5.6,28,7.5,28H10v-3H7.5
+	C7.2,25,7,24.8,7,24.5z M20,15h-2v-4c0-0.6-0.4-1-1-1h-2c-0.6,0-1,0.4-1,1v4h-2c-0.6,0-1,0.4-1,1c0,0.2,0.1,0.4,0.2,0.6l4,5.7
+	c0.3,0.5,0.9,0.6,1.4,0.3c0.1-0.1,0.2-0.2,0.3-0.3l4-5.7c0.3-0.5,0.2-1.1-0.3-1.4C20.4,15.1,20.2,15,20,15z"/>
+</svg>

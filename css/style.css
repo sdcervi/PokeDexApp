@@ -112,6 +112,10 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 .dark-mode .card.dex-entry img { opacity: 0.2; }
 .dark-mode .card.dex-entry.caught img { opacity: 1; }
 
+.dark-mode .trade:before { content: url(/assets/icons/trade-dark.svg); }
+.dark-mode .place:before { content: url(/assets/icons/box-dark.svg);  }
+
+
 /* ------------------------------- MEDIA QUERIES -------------------------------- */
 
 @media only screen and (max-width: 495px) {
