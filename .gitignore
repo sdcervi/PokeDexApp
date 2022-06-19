@@ -12,3 +12,4 @@ SQL Backup 2020_1122 1652.sql
 firebase-debug.log
 firebase-debug.log
 *.log
+.firebase/hosting..cache
