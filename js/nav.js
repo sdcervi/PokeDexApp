@@ -1,8 +1,3 @@
-const darkMode = localStorage.getItem('pokedex_darkMode');
-if (darkMode) {
-	document.body.classList.add("dark-mode");
-}
-
 // Set up primary nav contents
 const primaryNav = document.getElementById('primaryNav');
 
@@ -22,7 +17,7 @@ primaryNavContents += '<li class="nav-item" id="nav-donate"><a class="nav-link" 
 primaryNavContents += '</ul></div>';
 
 // Dark mode button
-primaryNavContents += '<div class = "toggle-switch mx-2"><label><input type = "checkbox" onclick="toggleDarkMode()"><span class = "slider">&nbsp;</span></label></div>';
+primaryNavContents += '<div class="toggle-switch mx-2"><label><input type="checkbox" onclick="toggleDarkMode()" id="darkModeToggle"><span class="slider">&nbsp;</span></label></div>';
 	
 primaryNavContents += '<div class="data-loading" id="data-loading"><div class="spinner-border text-primary" role="status"></div> Loading</div>';
 primaryNavContents += '<div class="dropdown" id="profileDropdown"><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Toggle profile drop-down"><img src="/assets/icons/profile.svg"><span id="profileUserNavbar"></span></button>';
@@ -37,6 +32,12 @@ primaryNavContents += '</div>';
 
 
 primaryNav.innerHTML = primaryNavContents;
+
+const darkMode = localStorage.getItem('pokedex_darkMode');
+if (darkMode && darkMode != 'false') {
+	document.body.classList.add("dark-mode");
+	document.getElementById('darkModeToggle').checked = true;
+}
 
 // Set up footer contents
 const footer = document.getElementById('footer');
