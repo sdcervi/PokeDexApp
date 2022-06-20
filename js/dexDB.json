@@ -5405,7 +5405,7 @@ const dexData = [
 		"alolan": false,
 		"galarian": false,
 		"gender": false,
-		"alts": null
+		"alts": [{"forms": ["-natural", "-dandy", "-debutante", "-diamond", "-heart", "-kabuki", "-la-reine", "-matron", "-pharaoh", "-star"], "form-names": ["natural trim", "dandy trim", "debutante trim", "diamond trim", "heart trim", "kabuki trim", "la reine trim", "matron trim", "pharaoh trim", "star trim"]}]
 	},
 	{
 		"id": "677",
@@ -6829,7 +6829,7 @@ const dexData = [
 		"alolan": false,
 		"galarian": false,
 		"gender": false,
-		"alts": null
+		"alts": [{"forms": ["-phony", "-antique"], "form-names": ["phony", "antique"]}]
 	},
 	{
 		"id": "855",
@@ -6837,7 +6837,7 @@ const dexData = [
 		"alolan": false,
 		"galarian": false,
 		"gender": false,
-		"alts": null
+		"alts": [{"forms": ["-phony", "-antique"], "form-names": ["phony", "antique"]}]
 	},
 	{
 		"id": "856",
