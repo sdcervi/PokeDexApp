@@ -11,7 +11,6 @@ primaryNavContents += '<li class="nav-item" id="nav-pokedex"><a class="nav-link"
 primaryNavContents += '<li class="nav-item" id="nav-about"><a class="nav-link" href="/about/">About</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-alts"><a class="nav-link" href="/alts/">Alt Forms Guide</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-faq"><a class="nav-link" href="/faq/">FAQ</a></li>';
-primaryNavContents += '<li class="nav-item" id="nav-progress"><a class="nav-link" href="/progress/">Progress &amp; To-dos</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-feedback"><a class="nav-link" href="/feedback/">Feedback</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-donate"><a class="nav-link" href="/donate/">Donate</a></li>';
 primaryNavContents += '</ul></div>';
@@ -19,7 +18,7 @@ primaryNavContents += '</ul></div>';
 // Dark mode button
 primaryNavContents += '<div class="toggle-switch mx-2"><label><input type="checkbox" onclick="toggleDarkMode()" id="darkModeToggle"><span class="slider">&nbsp;</span></label></div>';
 	
-primaryNavContents += '<div class="data-loading" id="data-loading"><div class="spinner-border text-primary" role="status"></div> Loading</div>';
+primaryNavContents += '<div class="data-loading" id="data-loading"><div class="spinner-border text-primary" role="status"></div><span class="loading-text">&nbsp;Loading</span></div>';
 primaryNavContents += '<div class="dropdown" id="profileDropdown"><button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Toggle profile drop-down"><img src="/assets/icons/profile.svg"><span id="profileUserNavbar"></span></button>';
 primaryNavContents += '<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">';
 primaryNavContents += '<li><a class="dropdown-item" href="/profile/">Profile &amp; Settings</a></li>';
