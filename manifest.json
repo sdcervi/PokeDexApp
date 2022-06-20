@@ -1,0 +1,32 @@
+{
+    "name": "Living PokeDex Tracker",
+    "short_name": "PokeDex",
+	"description": "Tailored toward Pokémon Home users, this Dex tracker is designed to help you catalog your entire collection",
+	"id": "/assets/favicons/",
+    "icons": [
+        {
+            "src": "/assets/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+			"purpose":	"maskable"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "start_url": "/pokedex/index.html",
+	"scope": "/",
+    "display": "standalone",
+	"orientation": "natural",
+	"dir": "ltr",
+	"lang": "en-US"
+}
