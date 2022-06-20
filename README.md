@@ -3,6 +3,7 @@ Web application created with JavaScript and Firebase
 
 ## Table of Contents
 - [Summary](#summary)
+- [Development](#development)
 - [Technologies](#technologies)
 - [Features](#features)
 - [Project status](#project-status)
