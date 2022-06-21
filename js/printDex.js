@@ -80,7 +80,7 @@ function writeDex (dexType, dexColor) {
 		let boxEnd = end.toString().padStart(3, '0');
 		dexDivContents += `<div class="col"><div class="card dex-box" id="${dexColor}-${boxStart}-${boxEnd}">`;
 		dexDivContents += `<div class="card-header">`;
-		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 		dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}"><h3>${boxStart}&ndash;${boxEnd}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${boxStart}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		
@@ -100,7 +100,7 @@ function writeDex (dexType, dexColor) {
 				dexDivContents += `</div></div></div>`;
 				dexDivContents += `<div class="col"><div class="card dex-box" id="${dexColor}-${boxStart}-${boxEnd}">`;
 				dexDivContents += `<div class="card-header">`;
-				dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+				dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 				dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}"><h3>${boxStart}&ndash;${boxEnd}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${boxStart}">`;
 				dexDivContents += `<div class="row row-cols-6">`;
 			}
@@ -117,7 +117,7 @@ function writeDex (dexType, dexColor) {
 			const regionName = region.charAt(0).toUpperCase() + region.slice(1);
 			dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
 			dexDivContents += `<div class="card-header">`;
-			dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+			dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 			dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}"><h3>${regionName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${region}-${boxCounter}">`;
 			dexDivContents += `<div class="row row-cols-6">`;
 			for (pokemon of dexData) {
@@ -131,7 +131,7 @@ function writeDex (dexType, dexColor) {
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}"><h3>${regionName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${region}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -147,7 +147,7 @@ function writeDex (dexType, dexColor) {
 		let printCounter = 0;
 		dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-gender${boxCounter}">`;
 		dexDivContents += `<div class="card-header">`;
-		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 		dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}"><h3>Gender-Specific Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-gender-${boxCounter}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		for (pokemon of dexData) {
@@ -161,7 +161,7 @@ function writeDex (dexType, dexColor) {
 					dexDivContents += `</div></div></div>`;
 					dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-gender${boxCounter}">`;
 					dexDivContents += `<div class="card-header">`;
-					dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+					dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 					dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}"><h3>Gender-Specific Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-gender-${boxCounter}">`;
 					dexDivContents += `<div class="row row-cols-6">`;
 				}
@@ -177,7 +177,7 @@ function writeDex (dexType, dexColor) {
 		const speciesArray = ['201', '666', '869'];
 		dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-alts${boxCounter}">`;
 		dexDivContents += `<div class="card-header">`;
-		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 		dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}"><h3>Alt Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-alts-${boxCounter}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		for (pokemon of dexData) {
@@ -192,7 +192,7 @@ function writeDex (dexType, dexColor) {
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-alts${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}"><h3>Alt Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-alts-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -211,7 +211,10 @@ function writeDex (dexType, dexColor) {
 			const speciesName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
 			dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 			dexDivContents += `<div class="card-header">`;
-			dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+			dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+			if (pokemon.name === 'alcremie') {
+				dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie">Alt forms guide</a></div>`;
+			}
 			dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 			dexDivContents += `<div class="row row-cols-6">`;
 			if (pokemon.name != 'alcremie') {
@@ -224,7 +227,7 @@ function writeDex (dexType, dexColor) {
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -246,7 +249,10 @@ function writeDex (dexType, dexColor) {
 							dexDivContents += `</div></div></div>`;
 							dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 							dexDivContents += `<div class="card-header">`;
-							dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+							dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+							if (pokemon.name === 'alcremie') {
+								dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie">Alt forms guide</a></div>`;
+							}
 							dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 							dexDivContents += `<div class="row row-cols-6">`;
 						}
@@ -265,7 +271,7 @@ function writeDex (dexType, dexColor) {
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20"></i>`;
+						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
