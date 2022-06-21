@@ -5677,7 +5677,7 @@ const dexData = [
 		"alolan": false,
 		"galarian": false,
 		"gender": false,
-		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small", "average", "large", "super"]}]
+		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small<br>1&rsquo;0&ldquo; (0.3m)", "average<br>1&rsquo;4&ldquo; (0.4m)", "large<br>1&rsquo;8&ldquo; (0.5m)", "super<br>2&rsquo;7&ldquo; (0.8m)"]}]
 	},
 	{
 		"id": "711",
@@ -5685,7 +5685,7 @@ const dexData = [
 		"alolan": false,
 		"galarian": false,
 		"gender": false,
-		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small", "average", "large", "super"]}]
+		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small<br>2&rsquo;4&ldquo; (0.7m)", "average<br>2&rsquo;11&ldquo; (0.9m)", "large<br>3&rsquo;7&ldquo; (1.1m)", "super<br>5&rsquo;7&ldquo; (1.7m)"]}]
 	},
 	{
 		"id": "712",
