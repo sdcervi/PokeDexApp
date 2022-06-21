@@ -99,7 +99,7 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 
 /* --------------------------------- EVOLUTIONS --------------------------------- */
 
-table.evo-table { width: auto; }
+table.evo-table { width: auto; margin: 0 auto; }
 table.evo-table thead>tr>th { text-align: center; font-size: 0.8em; }
 table.evo-table tbody>tr>th { text-align: right; }
 table.evo-table thead>tr>th>span { font-weight: normal!important; }
@@ -117,6 +117,9 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 .dark-mode .trade:before { content: url(/assets/icons/trade-dark.svg); }
 .dark-mode .place:before { content: url(/assets/icons/box-dark.svg);  }
 
+.dark-mode img.screenshot { box-shadow: none; }
+.dark-mode table.evo-table { color: white; }
+.dark-mode .table-striped>tbody>tr:nth-of-type(odd)>* { --bs-table-accent-bg: rgba(255,255,255,0.3); }
 
 /* ------------------------------- MEDIA QUERIES -------------------------------- */
 
