@@ -95,6 +95,8 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 .trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 1em; z-index: 10; }
 .place:before { content: url(/assets/icons/box.svg); height: 1.5em; width: 1.5em; position: absolute; right: 1em; z-index: 10; }
 
+.box-alt-info { float: right; margin-right: 1em; margin-top: 0.5em; font-size: 0.8em; }
+
 /* --------------------------------- EVOLUTIONS --------------------------------- */
 
 table.evo-table { width: auto; }
@@ -159,6 +161,7 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 	nav#primaryNav .container-fluid { max-width: 100%; }
 	.navbar-nav { font-size: 0.85em; }
 	nav .dropdown, nav .signin, .data-loading { position: static; }
+	.dropdown-menu-end[data-bs-popper] { right: 0.75em!important; }
 	.toggle-switch { right: 10rem; }
 	nav .dropdown ul { right: auto!important; }
 	.navbar-brand { margin-right: 1rem; }
@@ -173,6 +176,7 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 @media only screen and (min-width: 1200px) {
 	nav#primaryNav .container-fluid { max-width: 1140px; }
 	.toggle-switch { right: calc(((100vw - 1200px) / 2) + 10rem); }
+	.dropdown-menu-end[data-bs-popper] { right: calc(((100vw - 1140px) / 2) + 0.75rem)!important; }
 	h4.dex-entry-name { font-size: 0.7em; padding: 0; }
     h4.dex-entry-form { font-size: 0.6em; padding: 0; }
 }
@@ -181,11 +185,13 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 	nav#primaryNav .container-fluid { max-width: 1320px; }
 	nav #profileUserNavbar { display: inline; }
 	nav button.dropdown-toggle img { padding-right: 0.75em; }
+	.dropdown-menu-end[data-bs-popper] { right: calc(((100vw - 1320px) / 2) + 0.75rem)!important; }
 }
 
 @media only screen and (min-width: 1550px) {
 	nav#primaryNav .container-fluid { max-width: 1470px; }
 	.row-cols-xxxl-3>* { flex: 0 0 auto; width: 33.3333333333%; }
 	.container { max-width: 1470px; }
+	.dropdown-menu-end[data-bs-popper] { right: calc(((100vw - 1470px) / 2) + 0.75rem)!important; }
 	h4.dex-entry-name { font-size: 0.6em; padding: 0; }
 }
