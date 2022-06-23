@@ -43,8 +43,13 @@ function getProfileData (user) {
 	detailsContent += `<div class="col-12 text-center"><button class="btn btn-sm btn-link" onclick="resetPassword()">Send password reset email</button></div></row>`;
 	details.innerHTML = detailsContent;
 	
-	document.getElementById('settings').innerHTML = `<h4>Settings</h4><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setCollapse"><label class="form-check-label" for="setCollapse">Auto-collapse completed checklist sections</label></div>`;
-	
+	settingsContent = `<h4>Settings</h4><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setCollapse"><label class="form-check-label" for="setCollapse">Auto-collapse completed checklist sections</label></div>`
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setNationalNormal" checked onclick="changeDexDisplay('pokedex_displayNatNormal', 'setNationalNormal')"><label class="form-check-label" for="setNationalNormal">Display Normal form National Dex</label></div>`
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setAltNormal" checked onclick="changeDexDisplay('pokedex_displayAltNormal', 'setAltNormal')"><label class="form-check-label" for="setAltNormal">Display Normal form Alt Dex</label></div>`;
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setNationalShiny" checked onclick="changeDexDisplay('pokedex_displayNatShiny', 'setNationalShiny')"><label class="form-check-label" for="setNationalShiny">Display Shiny form National Dex</label></div>`
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setAltShiny" checked onclick="changeDexDisplay('pokedex_displayAltShiny', 'setAltShiny')"><label class="form-check-label" for="setAltShiny">Display Shiny form Alt Dex</label></div>`;
+
+	document.getElementById('settings').innerHTML = settingsContent
 	// Display the user's statistics and settings
 	userData.onSnapshot((doc) => {
 		const stats = document.getElementById('user-stats');
@@ -141,6 +146,11 @@ function changeEmail () {
 		alert('Please enter a valid email address.');
 		return;
 	}
+}
+
+function changeDexDisplay (dexName, dexId) {
+	const checked_value = document.getElementById(dexId).checked
+	localStorage.setItem(dexName, checked_value)
 }
 
 function resetPassword () {

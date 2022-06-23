@@ -89,6 +89,8 @@ h4.dex-entry-number { text-align: center; font-weight: bold; font-size: 0.75em; 
 h4.dex-entry-name { text-align: center; font-size: 0.7em; text-transform: capitalize; margin-bottom: 0; }
 h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capitalize; margin-bottom: 0; }
 
+.dex-entry-list { text-align: left; height: auto; font-weight: bold; font-size: 1rem; text-transform: capitalize; }
+
 .caught img { opacity: 1; }
 .caught h4 { color: black; }
 

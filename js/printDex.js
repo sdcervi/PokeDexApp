@@ -379,34 +379,63 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 		pokeName = `${formNames[altType]}`
 		totalPokemon++;
 	}
-	pokemonContent = `<tr><th class="dex-entry" scope='row'><h4 class="dex-entry-number caught">${pokemonID}</h4></th><td><h4 class="dex-entry-name">${pokeName}</h4></td><td><div class="dex-entry"><img loading="lazy" src="/assets/pokemon/${dexColor}/${pokemonSrc}.webp" class="img-fluid img-thumbnail" alt="${pokeName}" height=20></div></td><td>Not available</td></tr>`;
+	pokemonContent = `<tr><th class="dex-entry-list" scope='row'>${pokemonID}</th><td class="dex-entry-list">${pokeName}</td><td><div class="dex-entry caught" height=><img loading="lazy" src="/assets/pokemon/${dexColor}/${pokemonSrc}.webp" class="img-fluid img-thumbnail" alt="${pokeName}" height=10></div></td><td class="dex-entry-list">Not available</td></tr>`;
 	
 	return pokemonContent;
 }
 
-function toggleGridView () {
-	writeDex ('nat', 'normal');
-	writeDex ('alt', 'normal');
-	writeDex ('nat', 'shiny');
-	writeDex ('alt', 'shiny');
 
-	return None
+const listView = localStorage.getItem('pokedex_listView');
+
+const natNormal = localStorage.getItem('pokedex_display_natNormal');
+const altNormal = localStorage.getItem('pokedex_display_altNormal');
+const natShiny = localStorage.getItem('pokedex_display_natShiny');
+const altShiny = localStorage.getItem('pokedex_display_altShiny');
+
+if (listView && listView != 'false') {
+	document.getElementById('listView').checked = true;
+	toggleListView()
+} else {
+	document.getElementById('gridView').checked = true;
+	toggleGridView()
+}
+
+
+function toggleGridView () {
+	if (natNormal && natNormal != 'false') {
+		writeDex ('nat', 'normal');
+	}
+	if (altNormal && altNormal != 'false') {
+		writeDex ('alt', 'normal');
+	}
+	if (natShiny && natShiny != 'false') {
+		writeDex ('nat', 'shiny');
+	}
+	if (altShiny && altShiny != 'false') {
+		writeDex ('alt', 'shiny');
+	}
+
+	localStorage.setItem('pokedex_listView', false)
+	console.log ('Writing grid view')
+	console.log (`${natNormal}, ${altNormal}, ${natShiny}, ${altShiny}`)
 }
 
 function toggleListView () {
-	writeDexList ('nat', 'normal');
-	writeDexList ('alt', 'normal');
-	writeDexList ('nat', 'shiny');
-	writeDexList ('alt', 'shiny');
+	if (natNormal && natNormal != 'false') {
+		writeDexList ('nat', 'normal');
+	}
+	if (altNormal && altNormal != 'false') {
+		writeDexList ('alt', 'normal');
+	}
+	if (natShiny && natShiny != 'false') {
+		writeDexList ('nat', 'shiny');
+	}
+	if (altShiny && altShiny != 'false') {
+		writeDexList ('alt', 'shiny');
+	}
 
-	return None
+	localStorage.setItem('pokedex_listView', true)
 }
 
-
-
-writeDex ('nat', 'normal');
-writeDex ('alt', 'normal');
-writeDex ('nat', 'shiny');
-writeDex ('alt', 'shiny');
 
 console.log (`Total Pokemon in living dex: ${totalPokemon}`);
