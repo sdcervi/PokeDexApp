@@ -15,7 +15,7 @@ ul.navbar-nav li.active a.nav-link { color: white; opacity: 1; }
 
 button.usage-key { position: absolute; right: 0.75em; top: 4.25rem; }
 
-h2.dex-heading { text-align: center; }
+h2.dex-heading { text-align: center; margin-top: 1rem; }
 h3.show-hide { text-align: center; }
 h4.usage-key { color: black;  margin-top: 10px; }
 

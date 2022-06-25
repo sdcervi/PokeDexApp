@@ -384,13 +384,12 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 	return pokemonContent;
 }
 
-
 const listView = localStorage.getItem('pokedex_listView');
 
-const natNormal = localStorage.getItem('pokedex_display_natNormal');
-const altNormal = localStorage.getItem('pokedex_display_altNormal');
-const natShiny = localStorage.getItem('pokedex_display_natShiny');
-const altShiny = localStorage.getItem('pokedex_display_altShiny');
+const natNormal = localStorage.getItem('pokedex_display_natNormal') || true;
+const altNormal = localStorage.getItem('pokedex_display_altNormal') || true;
+const natShiny = localStorage.getItem('pokedex_display_natShiny') || true;
+const altShiny = localStorage.getItem('pokedex_display_altShiny') || true;
 
 if (listView && listView != 'false') {
 	document.getElementById('listView').checked = true;
@@ -415,9 +414,9 @@ function toggleGridView () {
 		writeDex ('alt', 'shiny');
 	}
 
-	localStorage.setItem('pokedex_listView', false)
-	console.log ('Writing grid view')
-	console.log (`${natNormal}, ${altNormal}, ${natShiny}, ${altShiny}`)
+	localStorage.setItem('pokedex_listView', false);
+	console.log ('Writing grid view');
+	console.log (`${natNormal}, ${altNormal}, ${natShiny}, ${altShiny}`);
 }
 
 function toggleListView () {
@@ -434,7 +433,7 @@ function toggleListView () {
 		writeDexList ('alt', 'shiny');
 	}
 
-	localStorage.setItem('pokedex_listView', true)
+	localStorage.setItem('pokedex_listView', true);
 }
 
 
