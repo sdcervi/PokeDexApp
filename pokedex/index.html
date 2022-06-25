@@ -72,12 +72,15 @@
 		
 		<article id="sign-in-suggest"></article>
 		
-		<div class="btn-group btn-group-toggle mx-3" data-toggle="buttons">
-			<label class="btn btn-secondary btn-sm active">
-			<input type="radio" name="options" id="gridView" onclick="toggleGridView()" checked> Grid View
+		<div class="btn-group mx-3" role="group" data-toggle="buttons" aria-label="View toggle button group">
+			<input type="radio" class="btn-check" name="viewOptions" id="gridView" onclick="toggleGridView()" checked>
+			<label class="btn btn-secondary btn-sm" for="gridView">
+				<img class="svg-make-white" src="/assets/icons/grid.svg" alt="Grid view" width="25" height="25">
 			</label>
-			<label class="btn btn-secondary btn-sm">
-			<input type="radio" name="options" id="listView" onclick="toggleListView()"> List View
+						
+			<input type="radio" class="btn-check" name="viewOptions" id="listView" onclick="toggleListView()">
+			<label class="btn btn-secondary btn-sm" for="listView">
+				<img class="svg-make-white" src="/assets/icons/list.svg" alt="List view" width="25" height="25">
 			</label>
 		</div>
 		<button type="button" class="btn btn-secondary btn-sm usage-key" id="usageKeyButton" data-bs-toggle="modal" data-bs-target="#usageKey">How to use</button>

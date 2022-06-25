@@ -414,6 +414,9 @@ function toggleGridView () {
 		writeDex ('alt', 'shiny');
 	}
 
+	document.getElementById('listView').checked = false;
+	document.getElementById('gridView').checked = true;
+
 	localStorage.setItem('pokedex_listView', false);
 	console.log ('Writing grid view');
 	console.log (`${natNormal}, ${altNormal}, ${natShiny}, ${altShiny}`);
@@ -433,6 +436,8 @@ function toggleListView () {
 		writeDexList ('alt', 'shiny');
 	}
 
+	document.getElementById('listView').checked = true;
+	document.getElementById('gridView').checked = false;
 	localStorage.setItem('pokedex_listView', true);
 }
 

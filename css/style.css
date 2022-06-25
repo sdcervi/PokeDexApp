@@ -46,6 +46,8 @@ nav.expand-collapse .nav-item img { filter: invert(27%) sepia(96%) saturate(2456
 .nav.expand-collapse .nav-link:focus, nav.expand-collapse .nav-link:hover, nav.expand-collapse .nav-link:active { cursor: pointer; }
 .nav.expand-collapse .nav-link:focus img, nav.expand-collapse .nav-link:hover img, nav.expand-collapse .nav-link:active img { filter: invert(24%) sepia(84%) saturate(1707%) hue-rotate(207deg) brightness(97%) contrast(91%); cursor: pointer; }
 
+.svg-make-white { filter: invert(93%) sepia(7%) saturate(0%) hue-rotate(134deg) brightness(107%) contrast(106%); }
+
 .data-loading { display: flex; color: white; align-items: center; position: fixed; right: 0.5em; }
 .data-loading .spinner-border { width: 1.5rem; height: 1.5rem; margin-right: 0.5em; }
 
