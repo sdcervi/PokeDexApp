@@ -1,8 +1,9 @@
-
-firebase-debug.log
 firebase-debug.log
 *.log
 .firebase/hosting..cache
 Living Pokedex Feedback (Responses).gsheet
 Living Pokedex Feedback.gform
 SQL Backup 2020_1122 1652.sql
+*.cache
+_archive/*
+.DS_Store
