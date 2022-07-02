@@ -1,0 +1,7242 @@
+const dexData = [
+	{
+		"id": "1",
+		"name": "bulbasaur",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "2",
+		"name": "ivysaur",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "3",
+		"name": "venusaur",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "4",
+		"name": "charmander",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "5",
+		"name": "charmeleon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "6",
+		"name": "charizard",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "7",
+		"name": "squirtle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "8",
+		"name": "wartortle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "9",
+		"name": "blastoise",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "10",
+		"name": "caterpie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "11",
+		"name": "metapod",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "12",
+		"name": "butterfree",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "13",
+		"name": "weedle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "14",
+		"name": "kakuna",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "15",
+		"name": "beedrill",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "16",
+		"name": "pidgey",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "17",
+		"name": "pidgeotto",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "18",
+		"name": "pidgeot",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "19",
+		"name": "rattata",
+		"alolan": true,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "20",
+		"name": "raticate",
+		"alolan": true,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "21",
+		"name": "spearow",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "22",
+		"name": "fearow",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "23",
+		"name": "ekans",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "24",
+		"name": "arbok",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "25",
+		"name": "pikachu",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": [{"forms": ["-original-cap", "-hoenn-cap", "-sinnoh-cap", "-unova-cap", "-kalos-cap", "-alolan-cap", "-johto-cap", "-world-cap"], "form-names": ["original cap", "hoenn cap", "sinnoh cap", "unova cap", "kalos cap", "alolan cap", "partner cap", "world cap"]}]
+	},
+	{
+		"id": "26",
+		"name": "raichu",
+		"alolan": true,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "27",
+		"name": "sandshrew",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "28",
+		"name": "sandslash",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "29",
+		"name": "nidoran-f",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "30",
+		"name": "nidorina",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "31",
+		"name": "nidoqueen",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "32",
+		"name": "nidoran-m",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "33",
+		"name": "nidorino",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "34",
+		"name": "nidoking",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "35",
+		"name": "clefairy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "36",
+		"name": "clefable",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "37",
+		"name": "vulpix",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "38",
+		"name": "ninetales",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "39",
+		"name": "jigglypuff",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "40",
+		"name": "wigglytuff",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "41",
+		"name": "zubat",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "42",
+		"name": "golbat",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "43",
+		"name": "oddish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "44",
+		"name": "gloom",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "45",
+		"name": "vileplume",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "46",
+		"name": "paras",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "47",
+		"name": "parasect",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "48",
+		"name": "venonat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "49",
+		"name": "venomoth",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "50",
+		"name": "diglett",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "51",
+		"name": "dugtrio",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "52",
+		"name": "meowth",
+		"alolan": true,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "53",
+		"name": "persian",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "54",
+		"name": "psyduck",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "55",
+		"name": "golduck",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "56",
+		"name": "mankey",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "57",
+		"name": "primeape",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "58",
+		"name": "growlithe",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "59",
+		"name": "arcanine",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "60",
+		"name": "poliwag",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "61",
+		"name": "poliwhirl",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "62",
+		"name": "poliwrath",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "63",
+		"name": "abra",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "64",
+		"name": "kadabra",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "65",
+		"name": "alakazam",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "66",
+		"name": "machop",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "67",
+		"name": "machoke",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "68",
+		"name": "machamp",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "69",
+		"name": "bellsprout",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "70",
+		"name": "weepinbell",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "71",
+		"name": "victreebel",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "72",
+		"name": "tentacool",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "73",
+		"name": "tentacruel",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "74",
+		"name": "geodude",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "75",
+		"name": "graveler",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "76",
+		"name": "golem",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "77",
+		"name": "ponyta",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "78",
+		"name": "rapidash",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "79",
+		"name": "slowpoke",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "80",
+		"name": "slowbro",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "81",
+		"name": "magnemite",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "82",
+		"name": "magneton",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "83",
+		"name": "farfetchd",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "84",
+		"name": "doduo",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "85",
+		"name": "dodrio",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "86",
+		"name": "seel",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "87",
+		"name": "dewgong",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "88",
+		"name": "grimer",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "89",
+		"name": "muk",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "90",
+		"name": "shellder",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "91",
+		"name": "cloyster",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "92",
+		"name": "gastly",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "93",
+		"name": "haunter",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "94",
+		"name": "gengar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "95",
+		"name": "onix",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "96",
+		"name": "drowzee",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "97",
+		"name": "hypno",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "98",
+		"name": "krabby",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "99",
+		"name": "kingler",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "100",
+		"name": "voltorb",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "101",
+		"name": "electrode",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "102",
+		"name": "exeggcute",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "103",
+		"name": "exeggutor",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "104",
+		"name": "cubone",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "105",
+		"name": "marowak",
+		"alolan": true,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "106",
+		"name": "hitmonlee",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "107",
+		"name": "hitmonchan",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "108",
+		"name": "lickitung",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "109",
+		"name": "koffing",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "110",
+		"name": "weezing",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "111",
+		"name": "rhyhorn",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "112",
+		"name": "rhydon",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "113",
+		"name": "chansey",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "114",
+		"name": "tangela",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "115",
+		"name": "kangaskhan",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "116",
+		"name": "horsea",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "117",
+		"name": "seadra",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "118",
+		"name": "goldeen",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "119",
+		"name": "seaking",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "120",
+		"name": "staryu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "121",
+		"name": "starmie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "122",
+		"name": "mr-mime",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "123",
+		"name": "scyther",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "124",
+		"name": "jynx",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "125",
+		"name": "electabuzz",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "126",
+		"name": "magmar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "127",
+		"name": "pinsir",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "128",
+		"name": "tauros",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "129",
+		"name": "magikarp",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "130",
+		"name": "gyarados",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "131",
+		"name": "lapras",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "132",
+		"name": "ditto",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "133",
+		"name": "eevee",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "134",
+		"name": "vaporeon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "135",
+		"name": "jolteon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "136",
+		"name": "flareon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "137",
+		"name": "porygon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "138",
+		"name": "omanyte",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "139",
+		"name": "omastar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "140",
+		"name": "kabuto",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "141",
+		"name": "kabutops",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "142",
+		"name": "aerodactyl",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "143",
+		"name": "snorlax",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "144",
+		"name": "articuno",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "145",
+		"name": "zapdos",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "146",
+		"name": "moltres",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "147",
+		"name": "dratini",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "148",
+		"name": "dragonair",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "149",
+		"name": "dragonite",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "150",
+		"name": "mewtwo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "151",
+		"name": "mew",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "152",
+		"name": "chikorita",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "153",
+		"name": "bayleef",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "154",
+		"name": "meganium",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "155",
+		"name": "cyndaquil",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "156",
+		"name": "quilava",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "157",
+		"name": "typhlosion",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "158",
+		"name": "totodile",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "159",
+		"name": "croconaw",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "160",
+		"name": "feraligatr",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "161",
+		"name": "sentret",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "162",
+		"name": "furret",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "163",
+		"name": "hoothoot",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "164",
+		"name": "noctowl",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "165",
+		"name": "ledyba",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "166",
+		"name": "ledian",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "167",
+		"name": "spinarak",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "168",
+		"name": "ariados",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "169",
+		"name": "crobat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "170",
+		"name": "chinchou",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "171",
+		"name": "lanturn",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "172",
+		"name": "pichu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "173",
+		"name": "cleffa",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "174",
+		"name": "igglybuff",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "175",
+		"name": "togepi",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "176",
+		"name": "togetic",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "177",
+		"name": "natu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "178",
+		"name": "xatu",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "179",
+		"name": "mareep",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "180",
+		"name": "flaaffy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "181",
+		"name": "ampharos",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "182",
+		"name": "bellossom",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "183",
+		"name": "marill",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "184",
+		"name": "azumarill",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "185",
+		"name": "sudowoodo",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "186",
+		"name": "politoed",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "187",
+		"name": "hoppip",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "188",
+		"name": "skiploom",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "189",
+		"name": "jumpluff",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "190",
+		"name": "aipom",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "191",
+		"name": "sunkern",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "192",
+		"name": "sunflora",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "193",
+		"name": "yanma",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "194",
+		"name": "wooper",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "195",
+		"name": "quagsire",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "196",
+		"name": "espeon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "197",
+		"name": "umbreon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "198",
+		"name": "murkrow",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "199",
+		"name": "slowking",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "200",
+		"name": "misdreavus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "201",
+		"name": "unown",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{ "forms": ["-a", "-b", "-c", "-d", "-e", "-f", "-g", "-h", "-i", "-j", "-k", "-l", "-m", "-n", "-o", "-p", "-q", "-r", "-s", "-t", "-u", "-v", "-w", "-x", "-y", "-z", "-qm", "-em"], "form-names": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "?", "!"] }]
+	},
+	{
+		"id": "202",
+		"name": "wobbuffet",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "203",
+		"name": "girafarig",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "204",
+		"name": "pineco",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "205",
+		"name": "forretress",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "206",
+		"name": "dunsparce",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "207",
+		"name": "gligar",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "208",
+		"name": "steelix",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "209",
+		"name": "snubbull",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "210",
+		"name": "granbull",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "211",
+		"name": "qwilfish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "212",
+		"name": "scizor",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "213",
+		"name": "shuckle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "214",
+		"name": "heracross",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "215",
+		"name": "sneasel",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "216",
+		"name": "teddiursa",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "217",
+		"name": "ursaring",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "218",
+		"name": "slugma",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "219",
+		"name": "magcargo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "220",
+		"name": "swinub",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "221",
+		"name": "piloswine",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "222",
+		"name": "corsola",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "223",
+		"name": "remoraid",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "224",
+		"name": "octillery",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "225",
+		"name": "delibird",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "226",
+		"name": "mantine",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "227",
+		"name": "skarmory",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "228",
+		"name": "houndour",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "229",
+		"name": "houndoom",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "230",
+		"name": "kingdra",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "231",
+		"name": "phanpy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "232",
+		"name": "donphan",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "233",
+		"name": "porygon2",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "234",
+		"name": "stantler",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "235",
+		"name": "smeargle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "236",
+		"name": "tyrogue",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "237",
+		"name": "hitmontop",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "238",
+		"name": "smoochum",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "239",
+		"name": "elekid",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "240",
+		"name": "magby",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "241",
+		"name": "miltank",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "242",
+		"name": "blissey",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "243",
+		"name": "raikou",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "244",
+		"name": "entei",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "245",
+		"name": "suicune",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "246",
+		"name": "larvitar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "247",
+		"name": "pupitar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "248",
+		"name": "tyranitar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "249",
+		"name": "lugia",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "250",
+		"name": "ho-oh",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "251",
+		"name": "celebi",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "252",
+		"name": "treecko",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "253",
+		"name": "grovyle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "254",
+		"name": "sceptile",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "255",
+		"name": "torchic",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "256",
+		"name": "combusken",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "257",
+		"name": "blaziken",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "258",
+		"name": "mudkip",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "259",
+		"name": "marshtomp",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "260",
+		"name": "swampert",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "261",
+		"name": "poochyena",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "262",
+		"name": "mightyena",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "263",
+		"name": "zigzagoon",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "264",
+		"name": "linoone",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "265",
+		"name": "wurmple",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "266",
+		"name": "silcoon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "267",
+		"name": "beautifly",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "268",
+		"name": "cascoon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "269",
+		"name": "dustox",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "270",
+		"name": "lotad",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "271",
+		"name": "lombre",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "272",
+		"name": "ludicolo",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "273",
+		"name": "seedot",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "274",
+		"name": "nuzleaf",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "275",
+		"name": "shiftry",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "276",
+		"name": "taillow",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "277",
+		"name": "swellow",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "278",
+		"name": "wingull",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "279",
+		"name": "pelipper",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "280",
+		"name": "ralts",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "281",
+		"name": "kirlia",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "282",
+		"name": "gardevoir",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "283",
+		"name": "surskit",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "284",
+		"name": "masquerain",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "285",
+		"name": "shroomish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "286",
+		"name": "breloom",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "287",
+		"name": "slakoth",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "288",
+		"name": "vigoroth",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "289",
+		"name": "slaking",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "290",
+		"name": "nincada",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "291",
+		"name": "ninjask",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "292",
+		"name": "shedinja",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "293",
+		"name": "whismur",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "294",
+		"name": "loudred",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "295",
+		"name": "exploud",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "296",
+		"name": "makuhita",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "297",
+		"name": "hariyama",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "298",
+		"name": "azurill",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "299",
+		"name": "nosepass",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "300",
+		"name": "skitty",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "301",
+		"name": "delcatty",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "302",
+		"name": "sableye",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "303",
+		"name": "mawile",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "304",
+		"name": "aron",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "305",
+		"name": "lairon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "306",
+		"name": "aggron",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "307",
+		"name": "meditite",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "308",
+		"name": "medicham",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "309",
+		"name": "electrike",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "310",
+		"name": "manectric",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "311",
+		"name": "plusle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "312",
+		"name": "minun",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "313",
+		"name": "volbeat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "314",
+		"name": "illumise",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "315",
+		"name": "roselia",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "316",
+		"name": "gulpin",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "317",
+		"name": "swalot",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "318",
+		"name": "carvanha",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "319",
+		"name": "sharpedo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "320",
+		"name": "wailmer",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "321",
+		"name": "wailord",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "322",
+		"name": "numel",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "323",
+		"name": "camerupt",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "324",
+		"name": "torkoal",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "325",
+		"name": "spoink",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "326",
+		"name": "grumpig",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "327",
+		"name": "spinda",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "328",
+		"name": "trapinch",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "329",
+		"name": "vibrava",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "330",
+		"name": "flygon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "331",
+		"name": "cacnea",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "332",
+		"name": "cacturne",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "333",
+		"name": "swablu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "334",
+		"name": "altaria",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "335",
+		"name": "zangoose",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "336",
+		"name": "seviper",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "337",
+		"name": "lunatone",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "338",
+		"name": "solrock",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "339",
+		"name": "barboach",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "340",
+		"name": "whiscash",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "341",
+		"name": "corphish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "342",
+		"name": "crawdaunt",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "343",
+		"name": "baltoy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "344",
+		"name": "claydol",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "345",
+		"name": "lileep",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "346",
+		"name": "cradily",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "347",
+		"name": "anorith",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "348",
+		"name": "armaldo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "349",
+		"name": "feebas",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "350",
+		"name": "milotic",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "351",
+		"name": "castform",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "352",
+		"name": "kecleon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "353",
+		"name": "shuppet",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "354",
+		"name": "banette",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "355",
+		"name": "duskull",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "356",
+		"name": "dusclops",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "357",
+		"name": "tropius",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "358",
+		"name": "chimecho",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "359",
+		"name": "absol",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "360",
+		"name": "wynaut",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "361",
+		"name": "snorunt",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "362",
+		"name": "glalie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "363",
+		"name": "spheal",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "364",
+		"name": "sealeo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "365",
+		"name": "walrein",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "366",
+		"name": "clamperl",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "367",
+		"name": "huntail",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "368",
+		"name": "gorebyss",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "369",
+		"name": "relicanth",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "370",
+		"name": "luvdisc",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "371",
+		"name": "bagon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "372",
+		"name": "shelgon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "373",
+		"name": "salamence",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "374",
+		"name": "beldum",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "375",
+		"name": "metang",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "376",
+		"name": "metagross",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "377",
+		"name": "regirock",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "378",
+		"name": "regice",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "379",
+		"name": "registeel",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "380",
+		"name": "latias",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "381",
+		"name": "latios",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "382",
+		"name": "kyogre",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "383",
+		"name": "groudon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "384",
+		"name": "rayquaza",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "385",
+		"name": "jirachi",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "386",
+		"name": "deoxys",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-normal", "-attack", "-defense", "-speed"], "form-names": ["normal", "attack", "defense", "speed"]}]
+	},
+	{
+		"id": "387",
+		"name": "turtwig",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "388",
+		"name": "grotle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "389",
+		"name": "torterra",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "390",
+		"name": "chimchar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "391",
+		"name": "monferno",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "392",
+		"name": "infernape",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "393",
+		"name": "piplup",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "394",
+		"name": "prinplup",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "395",
+		"name": "empoleon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "396",
+		"name": "starly",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "397",
+		"name": "staravia",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "398",
+		"name": "staraptor",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "399",
+		"name": "bidoof",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "400",
+		"name": "bibarel",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "401",
+		"name": "kricketot",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "402",
+		"name": "kricketune",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "403",
+		"name": "shinx",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "404",
+		"name": "luxio",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "405",
+		"name": "luxray",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "406",
+		"name": "budew",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "407",
+		"name": "roserade",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "408",
+		"name": "cranidos",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "409",
+		"name": "rampardos",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "410",
+		"name": "shieldon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "411",
+		"name": "bastiodon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "412",
+		"name": "burmy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-plant", "-sandy", "-trash"], "form-names": ["plant cloak", "sandy cloak", "trash cloak"]}]
+	},
+	{
+		"id": "413",
+		"name": "wormadam",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-plant", "-sandy", "-trash"], "form-names": ["plant cloak", "sandy cloak", "trash cloak"]}]
+	},
+	{
+		"id": "414",
+		"name": "mothim",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "415",
+		"name": "combee",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "416",
+		"name": "vespiquen",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "417",
+		"name": "pachirisu",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "418",
+		"name": "buizel",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "419",
+		"name": "floatzel",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "420",
+		"name": "cherubi",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "421",
+		"name": "cherrim",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "422",
+		"name": "shellos",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-west", "-east"], "form-names": ["west sea", "east sea"]}]
+	},
+	{
+		"id": "423",
+		"name": "gastrodon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-west", "-east"], "form-names": ["west sea", "east sea"]}]
+	},
+	{
+		"id": "424",
+		"name": "ambipom",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "425",
+		"name": "drifloon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "426",
+		"name": "drifblim",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "427",
+		"name": "buneary",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "428",
+		"name": "lopunny",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "429",
+		"name": "mismagius",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "430",
+		"name": "honchkrow",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "431",
+		"name": "glameow",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "432",
+		"name": "purugly",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "433",
+		"name": "chingling",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "434",
+		"name": "stunky",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "435",
+		"name": "skuntank",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "436",
+		"name": "bronzor",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "437",
+		"name": "bronzong",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "438",
+		"name": "bonsly",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "439",
+		"name": "mime-jr",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "440",
+		"name": "happiny",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "441",
+		"name": "chatot",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "442",
+		"name": "spiritomb",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "443",
+		"name": "gible",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "444",
+		"name": "gabite",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "445",
+		"name": "garchomp",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "446",
+		"name": "munchlax",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "447",
+		"name": "riolu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "448",
+		"name": "lucario",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "449",
+		"name": "hippopotas",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "450",
+		"name": "hippowdon",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "451",
+		"name": "skorupi",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "452",
+		"name": "drapion",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "453",
+		"name": "croagunk",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "454",
+		"name": "toxicroak",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "455",
+		"name": "carnivine",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "456",
+		"name": "finneon",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "457",
+		"name": "lumineon",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "458",
+		"name": "mantyke",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "459",
+		"name": "snover",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "460",
+		"name": "abomasnow",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "461",
+		"name": "weavile",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "462",
+		"name": "magnezone",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "463",
+		"name": "lickilicky",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "464",
+		"name": "rhyperior",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "465",
+		"name": "tangrowth",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "466",
+		"name": "electivire",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "467",
+		"name": "magmortar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "468",
+		"name": "togekiss",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "469",
+		"name": "yanmega",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "470",
+		"name": "leafeon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "471",
+		"name": "glaceon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "472",
+		"name": "gliscor",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "473",
+		"name": "mamoswine",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "474",
+		"name": "porygon-z",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "475",
+		"name": "gallade",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "476",
+		"name": "probopass",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "477",
+		"name": "dusknoir",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "478",
+		"name": "froslass",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "479",
+		"name": "rotom",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["", "-fan", "-frost", "-heat", "-mow", "-wash"], "form-names": ["normal", "fan", "frost", "heat", "mow", "wash"]}]
+	},
+	{
+		"id": "480",
+		"name": "uxie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "481",
+		"name": "mesprit",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "482",
+		"name": "azelf",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "483",
+		"name": "dialga",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "484",
+		"name": "palkia",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "485",
+		"name": "heatran",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "486",
+		"name": "regigigas",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "487",
+		"name": "giratina",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "488",
+		"name": "cresselia",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "489",
+		"name": "phione",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "490",
+		"name": "manaphy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "491",
+		"name": "darkrai",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "492",
+		"name": "shaymin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-land", "-sky"], "form-names": ["land", "sky"]}]
+	},
+	{
+		"id": "493",
+		"name": "arceus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "494",
+		"name": "victini",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "495",
+		"name": "snivy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "496",
+		"name": "servine",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "497",
+		"name": "serperior",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "498",
+		"name": "tepig",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "499",
+		"name": "pignite",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "500",
+		"name": "emboar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "501",
+		"name": "oshawott",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "502",
+		"name": "dewott",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "503",
+		"name": "samurott",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "504",
+		"name": "patrat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "505",
+		"name": "watchog",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "506",
+		"name": "lillipup",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "507",
+		"name": "herdier",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "508",
+		"name": "stoutland",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "509",
+		"name": "purrloin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "510",
+		"name": "liepard",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "511",
+		"name": "pansage",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "512",
+		"name": "simisage",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "513",
+		"name": "pansear",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "514",
+		"name": "simisear",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "515",
+		"name": "panpour",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "516",
+		"name": "simipour",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "517",
+		"name": "munna",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "518",
+		"name": "musharna",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "519",
+		"name": "pidove",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "520",
+		"name": "tranquill",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "521",
+		"name": "unfezant",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "522",
+		"name": "blitzle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "523",
+		"name": "zebstrika",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "524",
+		"name": "roggenrola",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "525",
+		"name": "boldore",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "526",
+		"name": "gigalith",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "527",
+		"name": "woobat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "528",
+		"name": "swoobat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "529",
+		"name": "drilbur",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "530",
+		"name": "excadrill",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "531",
+		"name": "audino",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "532",
+		"name": "timburr",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "533",
+		"name": "gurdurr",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "534",
+		"name": "conkeldurr",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "535",
+		"name": "tympole",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "536",
+		"name": "palpitoad",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "537",
+		"name": "seismitoad",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "538",
+		"name": "throh",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "539",
+		"name": "sawk",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "540",
+		"name": "sewaddle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "541",
+		"name": "swadloon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "542",
+		"name": "leavanny",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "543",
+		"name": "venipede",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "544",
+		"name": "whirlipede",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "545",
+		"name": "scolipede",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "546",
+		"name": "cottonee",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "547",
+		"name": "whimsicott",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "548",
+		"name": "petilil",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "549",
+		"name": "lilligant",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "550",
+		"name": "basculin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-red-striped", "-blue-striped"], "form-names": ["red striped", "blue striped"]}]
+	},
+	{
+		"id": "551",
+		"name": "sandile",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "552",
+		"name": "krokorok",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "553",
+		"name": "krookodile",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "554",
+		"name": "darumaka",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "555",
+		"name": "darmanitan",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "556",
+		"name": "maractus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "557",
+		"name": "dwebble",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "558",
+		"name": "crustle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "559",
+		"name": "scraggy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "560",
+		"name": "scrafty",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "561",
+		"name": "sigilyph",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "562",
+		"name": "yamask",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "563",
+		"name": "cofagrigus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "564",
+		"name": "tirtouga",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "565",
+		"name": "carracosta",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "566",
+		"name": "archen",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "567",
+		"name": "archeops",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "568",
+		"name": "trubbish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "569",
+		"name": "garbodor",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "570",
+		"name": "zorua",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "571",
+		"name": "zoroark",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "572",
+		"name": "minccino",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "573",
+		"name": "cinccino",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "574",
+		"name": "gothita",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "575",
+		"name": "gothorita",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "576",
+		"name": "gothitelle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "577",
+		"name": "solosis",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "578",
+		"name": "duosion",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "579",
+		"name": "reuniclus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "580",
+		"name": "ducklett",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "581",
+		"name": "swanna",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "582",
+		"name": "vanillite",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "583",
+		"name": "vanillish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "584",
+		"name": "vanilluxe",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "585",
+		"name": "deerling",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-spring", "-summer", "-autumn", "-winter"], "form-names": ["spring", "summer", "autumn", "winter"]}]
+	},
+	{
+		"id": "586",
+		"name": "sawsbuck",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-spring", "-summer", "-autumn", "-winter"], "form-names": ["spring", "summer", "autumn", "winter"]}]
+	},
+	{
+		"id": "587",
+		"name": "emolga",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "588",
+		"name": "karrablast",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "589",
+		"name": "escavalier",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "590",
+		"name": "foongus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "591",
+		"name": "amoonguss",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "592",
+		"name": "frillish",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "593",
+		"name": "jellicent",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "594",
+		"name": "alomomola",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "595",
+		"name": "joltik",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "596",
+		"name": "galvantula",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "597",
+		"name": "ferroseed",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "598",
+		"name": "ferrothorn",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "599",
+		"name": "klink",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "600",
+		"name": "klang",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "601",
+		"name": "klinklang",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "602",
+		"name": "tynamo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "603",
+		"name": "eelektrik",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "604",
+		"name": "eelektross",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "605",
+		"name": "elgyem",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "606",
+		"name": "beheeyem",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "607",
+		"name": "litwick",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "608",
+		"name": "lampent",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "609",
+		"name": "chandelure",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "610",
+		"name": "axew",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "611",
+		"name": "fraxure",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "612",
+		"name": "haxorus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "613",
+		"name": "cubchoo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "614",
+		"name": "beartic",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "615",
+		"name": "cryogonal",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "616",
+		"name": "shelmet",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "617",
+		"name": "accelgor",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "618",
+		"name": "stunfisk",
+		"alolan": false,
+		"galarian": true,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "619",
+		"name": "mienfoo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "620",
+		"name": "mienshao",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "621",
+		"name": "druddigon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "622",
+		"name": "golett",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "623",
+		"name": "golurk",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "624",
+		"name": "pawniard",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "625",
+		"name": "bisharp",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "626",
+		"name": "bouffalant",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "627",
+		"name": "rufflet",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "628",
+		"name": "braviary",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "629",
+		"name": "vullaby",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "630",
+		"name": "mandibuzz",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "631",
+		"name": "heatmor",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "632",
+		"name": "durant",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "633",
+		"name": "deino",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "634",
+		"name": "zweilous",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "635",
+		"name": "hydreigon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "636",
+		"name": "larvesta",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "637",
+		"name": "volcarona",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "638",
+		"name": "cobalion",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "639",
+		"name": "terrakion",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "640",
+		"name": "virizion",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "641",
+		"name": "tornadus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
+	},
+	{
+		"id": "642",
+		"name": "thundurus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
+	},
+	{
+		"id": "643",
+		"name": "reshiram",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "644",
+		"name": "zekrom",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "645",
+		"name": "landorus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
+	},
+	{
+		"id": "646",
+		"name": "kyurem",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["", "-black", "-white"], "form-names": ["normal", "black", "white"]}]
+	},
+	{
+		"id": "647",
+		"name": "keldeo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-ordinary", "-resolute"], "form-names": ["ordinary", "resolute"]}]
+	},
+	{
+		"id": "648",
+		"name": "meloetta",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-aria", "-pirouette"], "form-names": ["aria", "pirouette"]}]
+	},
+	{
+		"id": "649",
+		"name": "genesect",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "650",
+		"name": "chespin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "651",
+		"name": "quilladin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "652",
+		"name": "chesnaught",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "653",
+		"name": "fennekin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "654",
+		"name": "braixen",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "655",
+		"name": "delphox",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "656",
+		"name": "froakie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "657",
+		"name": "frogadier",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "658",
+		"name": "greninja",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["", "-ash"], "form-names": ["normal", "ash"]}]
+	},
+	{
+		"id": "659",
+		"name": "bunnelby",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "660",
+		"name": "diggersby",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "661",
+		"name": "fletchling",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "662",
+		"name": "fletchinder",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "663",
+		"name": "talonflame",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "664",
+		"name": "scatterbug",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "665",
+		"name": "spewpa",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "666",
+		"name": "vivillon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{ "forms": ["-meadow", "-archipelago", "-continental", "-elegant", "-fancy", "-garden", "-high-plains", "-icy-snow", "-jungle", "-marine", "-modern", "-monsoon", "-ocean", "-poke-ball", "-polar", "-river", "-sandstorm", "-savanna", "-sun", "-tundra"], "form-names": ["meadow", "archipelago", "continental", "elegant", "fancy", "garden", "high plains", "icy snow", "jungle", "marine", "modern", "monsoon", "ocean", "pok&eacuteball", "polar", "river", "sandstorm", "savanna", "sun", "tundra"] }]
+	},
+	{
+		"id": "667",
+		"name": "litleo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "668",
+		"name": "pyroar",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "669",
+		"name": "flabebe",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
+	},
+	{
+		"id": "670",
+		"name": "floette",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
+	},
+	{
+		"id": "671",
+		"name": "florges",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
+	},
+	{
+		"id": "672",
+		"name": "skiddo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "673",
+		"name": "gogoat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "674",
+		"name": "pancham",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "675",
+		"name": "pangoro",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "676",
+		"name": "furfrou",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-natural", "-dandy", "-debutante", "-diamond", "-heart", "-kabuki", "-la-reine", "-matron", "-pharaoh", "-star"], "form-names": ["natural trim", "dandy trim", "debutante trim", "diamond trim", "heart trim", "kabuki trim", "la reine trim", "matron trim", "pharaoh trim", "star trim"]}]
+	},
+	{
+		"id": "677",
+		"name": "espurr",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "678",
+		"name": "meowstic",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "679",
+		"name": "honedge",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "680",
+		"name": "doublade",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "681",
+		"name": "aegislash",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "682",
+		"name": "spritzee",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "683",
+		"name": "aromatisse",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "684",
+		"name": "swirlix",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "685",
+		"name": "slurpuff",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "686",
+		"name": "inkay",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "687",
+		"name": "malamar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "688",
+		"name": "binacle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "689",
+		"name": "barbaracle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "690",
+		"name": "skrelp",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "691",
+		"name": "dragalge",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "692",
+		"name": "clauncher",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "693",
+		"name": "clawitzer",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "694",
+		"name": "helioptile",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "695",
+		"name": "heliolisk",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "696",
+		"name": "tyrunt",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "697",
+		"name": "tyrantrum",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "698",
+		"name": "amaura",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "699",
+		"name": "aurorus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "700",
+		"name": "sylveon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "701",
+		"name": "hawlucha",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "702",
+		"name": "dedenne",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "703",
+		"name": "carbink",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "704",
+		"name": "goomy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "705",
+		"name": "sliggoo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "706",
+		"name": "goodra",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "707",
+		"name": "klefki",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "708",
+		"name": "phantump",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "709",
+		"name": "trevenant",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "710",
+		"name": "pumpkaboo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small<br>1&rsquo;0&ldquo; (0.3m)", "average<br>1&rsquo;4&ldquo; (0.4m)", "large<br>1&rsquo;8&ldquo; (0.5m)", "super<br>2&rsquo;7&ldquo; (0.8m)"]}]
+	},
+	{
+		"id": "711",
+		"name": "gourgeist",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small<br>2&rsquo;4&ldquo; (0.7m)", "average<br>2&rsquo;11&ldquo; (0.9m)", "large<br>3&rsquo;7&ldquo; (1.1m)", "super<br>5&rsquo;7&ldquo; (1.7m)"]}]
+	},
+	{
+		"id": "712",
+		"name": "bergmite",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "713",
+		"name": "avalugg",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "714",
+		"name": "noibat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "715",
+		"name": "noivern",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "716",
+		"name": "xerneas",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "717",
+		"name": "yveltal",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "718",
+		"name": "zygarde",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-10", "-50"], "form-names": ["10%", "50%"]}]
+	},
+	{
+		"id": "719",
+		"name": "diancie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "720",
+		"name": "hoopa",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-confined", "-unbound"], "form-names": ["confined", "unbound"]}]
+	},
+	{
+		"id": "721",
+		"name": "volcanion",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "722",
+		"name": "rowlet",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "723",
+		"name": "dartrix",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "724",
+		"name": "decidueye",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "725",
+		"name": "litten",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "726",
+		"name": "torracat",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "727",
+		"name": "incineroar",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "728",
+		"name": "popplio",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "729",
+		"name": "brionne",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "730",
+		"name": "primarina",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "731",
+		"name": "pikipek",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "732",
+		"name": "trumbeak",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "733",
+		"name": "toucannon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "734",
+		"name": "yungoos",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "735",
+		"name": "gumshoos",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "736",
+		"name": "grubbin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "737",
+		"name": "charjabug",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "738",
+		"name": "vikavolt",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "739",
+		"name": "crabrawler",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "740",
+		"name": "crabominable",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "741",
+		"name": "oricorio",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-baile", "-pau", "-pom-pom", "-sensu"], "form-names": ["baile", "pau", "pom pom", "sensu"]}]
+	},
+	{
+		"id": "742",
+		"name": "cutiefly",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "743",
+		"name": "ribombee",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "744",
+		"name": "rockruff",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "745",
+		"name": "lycanroc",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-midday", "-dusk", "-midnight"], "form-names": ["midday", "dusk", "midnight"]}]
+	},
+	{
+		"id": "746",
+		"name": "wishiwashi",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "747",
+		"name": "mareanie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "748",
+		"name": "toxapex",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "749",
+		"name": "mudbray",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "750",
+		"name": "mudsdale",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "751",
+		"name": "dewpider",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "752",
+		"name": "araquanid",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "753",
+		"name": "fomantis",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "754",
+		"name": "lurantis",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "755",
+		"name": "morelull",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "756",
+		"name": "shiinotic",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "757",
+		"name": "salandit",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "758",
+		"name": "salazzle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "759",
+		"name": "stufful",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "760",
+		"name": "bewear",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "761",
+		"name": "bounsweet",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "762",
+		"name": "steenee",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "763",
+		"name": "tsareena",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "764",
+		"name": "comfey",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "765",
+		"name": "oranguru",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "766",
+		"name": "passimian",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "767",
+		"name": "wimpod",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "768",
+		"name": "golisopod",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "769",
+		"name": "sandygast",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "770",
+		"name": "palossand",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "771",
+		"name": "pyukumuku",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "772",
+		"name": "type-null",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "773",
+		"name": "silvally",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "774",
+		"name": "minior",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-red-core", "-orange-core", "-yellow-core", "-green-core", "-blue-core", "-indigo-core", "-violet-core"], "form-names": ["red core", "orange core", "yellow core", "green core", "blue core", "indigo core", "violet core"]}]
+	},
+	{
+		"id": "775",
+		"name": "komala",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "776",
+		"name": "turtonator",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "777",
+		"name": "togedemaru",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "778",
+		"name": "mimikyu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "779",
+		"name": "bruxish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "780",
+		"name": "drampa",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "781",
+		"name": "dhelmise",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "782",
+		"name": "jangmo-o",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "783",
+		"name": "hakamo-o",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "784",
+		"name": "kommo-o",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "785",
+		"name": "tapu-koko",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "786",
+		"name": "tapu-lele",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "787",
+		"name": "tapu-bulu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "788",
+		"name": "tapu-fini",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "789",
+		"name": "cosmog",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "790",
+		"name": "cosmoem",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "791",
+		"name": "solgaleo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "792",
+		"name": "lunala",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "793",
+		"name": "nihilego",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "794",
+		"name": "buzzwole",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "795",
+		"name": "pheromosa",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "796",
+		"name": "xurkitree",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "797",
+		"name": "celesteela",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "798",
+		"name": "kartana",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "799",
+		"name": "guzzlord",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "800",
+		"name": "necrozma",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["", "-dawn-wings", "-dusk-mane"], "form-names": ["normal", "dawn wings", "dusk mane"]}]
+	},
+	{
+		"id": "801",
+		"name": "magearna",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["", "-original"], "form-names": ["normal", "original color"]}]
+	},
+	{
+		"id": "802",
+		"name": "marshadow",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "803",
+		"name": "poipole",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "804",
+		"name": "naganadel",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "805",
+		"name": "stakataka",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "806",
+		"name": "blacephalon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "807",
+		"name": "zeraora",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "808",
+		"name": "meltan",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "809",
+		"name": "melmetal",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "810",
+		"name": "grookey",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "811",
+		"name": "thwackey",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "812",
+		"name": "rillaboom",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "813",
+		"name": "scorbunny",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "814",
+		"name": "raboot",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "815",
+		"name": "cinderace",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "816",
+		"name": "sobble",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "817",
+		"name": "drizzile",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "818",
+		"name": "inteleon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "819",
+		"name": "skwovet",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "820",
+		"name": "greedent",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "821",
+		"name": "rookidee",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "822",
+		"name": "corvisquire",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "823",
+		"name": "corviknight",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "824",
+		"name": "blipbug",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "825",
+		"name": "dottler",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "826",
+		"name": "orbeetle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "827",
+		"name": "nickit",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "828",
+		"name": "thievul",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "829",
+		"name": "gossifleur",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "830",
+		"name": "eldegoss",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "831",
+		"name": "wooloo",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "832",
+		"name": "dubwool",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "833",
+		"name": "chewtle",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "834",
+		"name": "drednaw",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "835",
+		"name": "yamper",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "836",
+		"name": "boltund",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "837",
+		"name": "rolycoly",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "838",
+		"name": "carkol",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "839",
+		"name": "coalossal",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "840",
+		"name": "applin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "841",
+		"name": "flapple",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "842",
+		"name": "appletun",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "843",
+		"name": "silicobra",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "844",
+		"name": "sandaconda",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "845",
+		"name": "cramorant",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "846",
+		"name": "arrokuda",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "847",
+		"name": "barraskewda",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "848",
+		"name": "toxel",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "849",
+		"name": "toxtricity",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-amped", "-low-key"], "form-names": ["amped", "low key"]}]
+	},
+	{
+		"id": "850",
+		"name": "sizzlipede",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "851",
+		"name": "centiskorch",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "852",
+		"name": "clobbopus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "853",
+		"name": "grapploct",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "854",
+		"name": "sinistea",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-phony", "-antique"], "form-names": ["phony", "antique"]}]
+	},
+	{
+		"id": "855",
+		"name": "polteageist",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-phony", "-antique"], "form-names": ["phony", "antique"]}]
+	},
+	{
+		"id": "856",
+		"name": "hatenna",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "857",
+		"name": "hattrem",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "858",
+		"name": "hatterene",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "859",
+		"name": "impidimp",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "860",
+		"name": "morgrem",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "861",
+		"name": "grimmsnarl",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "862",
+		"name": "obstagoon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "863",
+		"name": "perrserker",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "864",
+		"name": "cursola",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "865",
+		"name": "sirfetchd",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "866",
+		"name": "mr-rime",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "867",
+		"name": "runerigus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "868",
+		"name": "milcery",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "869",
+		"name": "alcremie",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"flavors": ["vanilla-cream", "caramel-swirl", "lemon-cream", "matcha-cream", "mint-cream", "rainbow-swirl", "ruby-cream", "ruby-swirl", "salted-cream"], "toppings": ["berry", "clover", "flower", "love", "ribbon", "star", "strawberry"]}]
+	},
+	{
+		"id": "870",
+		"name": "falinks",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "871",
+		"name": "pincurchin",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "872",
+		"name": "snom",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "873",
+		"name": "frosmoth",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "874",
+		"name": "stonjourner",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "875",
+		"name": "eiscue",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "876",
+		"name": "indeedee",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "877",
+		"name": "morpeko",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "878",
+		"name": "cufant",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "879",
+		"name": "copperajah",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "880",
+		"name": "dracozolt",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "881",
+		"name": "arctozolt",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "882",
+		"name": "dracovish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "883",
+		"name": "arctovish",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "884",
+		"name": "duraludon",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "885",
+		"name": "dreepy",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "886",
+		"name": "drakloak",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "887",
+		"name": "dragapult",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "888",
+		"name": "zacian",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "889",
+		"name": "zamazenta",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "890",
+		"name": "eternatus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "891",
+		"name": "kubfu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "892",
+		"name": "urshifu",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-rapid-strike", "-single-strike"], "form-names": ["rapid strike", "single strike"]}]
+	},
+	{
+		"id": "893",
+		"name": "zarude",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["", "-dada"], "form-names": ["normal", "dada"]}]
+	},
+	{
+		"id": "894",
+		"name": "regieleki",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "895",
+		"name": "regidrago",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "896",
+		"name": "glastrier",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "897",
+		"name": "spectrier",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "898",
+		"name": "calyrex",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["", "-ice-rider", "-shadow-rider"], "form-names": ["normal", "ice rider", "shadow rider"]}]
+	},
+	{
+		"id": "899",
+		"name": "wyrdeer",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "900",
+		"name": "kleavor",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "901",
+		"name": "ursaluna",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "902",
+		"name": "basculegion",
+		"alolan": false,
+		"galarian": false,
+		"gender": true,
+		"alts": null
+	},
+	{
+		"id": "903",
+		"name": "sneasler",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "904",
+		"name": "overqwil",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": null
+	},
+	{
+		"id": "905",
+		"name": "enamorus",
+		"alolan": false,
+		"galarian": false,
+		"gender": false,
+		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
+	}
+]

@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="h-100">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="A visual checklist for Pokemon Home collectors, with all alt forms and variants">
+	<meta name="author" content="Stephanie Cervi">
+	<title>Sign In || Living Pok&eacute;Dex Tracker</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	
+	<style>button.signin{display:none!important;}</style>
+	
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="/assets/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="/assets/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="icon" href="/assets/favicons/favicon.ico">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="application-name" content="PokeDex" />
+	<meta name="apple-mobile-web-app-title" content="PokeDex" />
+	<meta name="msapplication-starturl" content="/pokedex/index.html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Meta details to launch in full-screen if added as a homescreen app -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#563d7c">
+	<!--link rel="manifest" href="./manifest.json"-->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166061118-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-166061118-1');
+	</script>
+
+	<!-- FIREBASE -->
+	<!-- update the version number as needed --> 
+	<script defer src="/__/firebase/9.6.8/firebase-app-compat.js"></script> 
+	<!-- include only the Firebase features as you need --> 
+	<script defer src="/__/firebase/9.6.8/firebase-auth-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-database-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-firestore-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-functions-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-messaging-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-storage-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-analytics-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-remote-config-compat.js"></script> 
+	<script defer src="/__/firebase/9.6.8/firebase-performance-compat.js"></script> 
+	<!-- 
+		  initialize the SDK after all desired features are loaded, set useEmulator to false
+		  to avoid connecting the SDK to running emulators.
+		--> 
+	<script defer src="/__/firebase/init.js?useEmulator=true"></script>
+	
+	<!-- Login UI from Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+</head>
+
+<body class="d-flex flex-column h-100">
+	 
+<header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="primaryNav"></nav>
+    
+</header>
+
+<main class="flex-shrink-0" role="main">
+	
+	<div class="container">
+
+		<p class="text-center">Please select a sign in method:</p>
+
+		<section class="container" id="login-container">
+			<div id="firebaseui-auth-container"></div>
+			<div id="loader">Loading...</div>
+		</section>
+
+	</div>
+	
+</main>
+	
+<footer class="text-muted mt-auto" id="footer"></footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+<script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/nav.js" type="text/javascript"></script>
+<script src="/js/cookieBanner.js" type="text/javascript"></script>
+<script defer src="/js/login.js" type="text/javascript"></script>
+<script defer src="/js/auth.js" type="text/javascript"></script>
+	
+</body>
+</html>
