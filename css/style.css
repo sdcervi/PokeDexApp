@@ -56,11 +56,12 @@ nav.expand-collapse .nav-item img { filter: invert(27%) sepia(96%) saturate(2456
 #user-details h4, #user-stats h4, #settings h4 { text-align: center; }
 #user-details .row:first-of-type, #user-stats .row:first-of-type { margin-top: 1em; }
 #user-details .col-6:first-of-type, #user-stats .col-6:first-of-type { text-align: right; border-right: 1px solid lightgray; }
+#user-stats .progress { margin-top: 0.5em; }
 img.provider-icon { width: 30px; height: auto; }
 button.btn-edit { position: absolute; }
 .btn-edit img { color: #30a7d1; position: relative; top: -0.25em; width: 1em; height: auto; filter: invert(27%) sepia(96%) saturate(2456%) hue-rotate(208deg) brightness(99%) contrast(100%); }
 
-#deleteDiv { text-align: center; margin-bottom: 3em; }
+#deleteDiv { text-align: center; margin: 3em 0; }
 #deleteDiv hr { margin: 2em 0; }
 #deleteDiv .btn { vertical-align: top; }
 

@@ -74,7 +74,8 @@ function getProfileData (user) {
 		statsContent += `<div class="row"><div class="col-6"><strong>Pok&eacute;mon being traded</strong></p></div><div class="col-6"><p>${trade}</p></div></div>`;
 		statsContent += `<div class="row"><div class="col-6"><strong>Pok&eacute;mon ready to place</strong></p></div><div class="col-6"><p>${place}</p></div></div>`;
 		statsContent += `<div class="row"><div class="col-6"><strong>Pok&eacute;mon caught</strong></p></div><div class="col-6"><p>${caught}</p></div></div>`;
-		statsContent += `<div class="row"><div class="col-6"><strong>Living Dex progress</strong></p></div><div class="col-6"><p>${Math.floor((caught / totalPokemon) * 100)}%</p></div></div>`;
+		//statsContent += `<div class="row"><div class="col-6"><strong>Living Dex progress</strong></p></div><div class="col-6"><p>${Math.floor((caught / totalPokemon) * 100)}%</p></div></div>`;
+		statsContent += `<div class="row"><div class="col-6"><strong>Living Dex progress</strong></p></div><div class="col-6"><div class="progress"><div class="progress-bar" role="progressbar" style="width: ${Math.floor((caught / totalPokemon) * 100)}%;" aria-valuenow="${Math.floor((caught / totalPokemon) * 100)}" aria-valuemin="0" aria-valuemax="100">${Math.floor((caught / totalPokemon) * 100)}%</div></div></div></div>`;
 		stats.innerHTML = statsContent;
     });
 	
