@@ -379,7 +379,7 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 		pokeName = `${formNames[altType]}`
 		totalPokemon++;
 	}
-	pokemonContent = `<tr><th class="dex-entry-list" scope='row'>${pokemonID}</th><td class="dex-entry-list">${pokeName}</td><td><div class="dex-entry caught" height=><img loading="lazy" src="/assets/pokemon/${dexColor}/${pokemonSrc}.webp" class="img-fluid img-thumbnail" alt="${pokeName}" height=10></div></td><td class="dex-entry-list">Not available</td></tr>`;
+	pokemonContent = `<tr class="dex-entry-list"><th class="dex-entry-number" scope='row'>${pokemonID}</th><td class="dex-entry-name">${pokeName}</td><td class="dex-entry-img"><div class="card dex-entry" id="${divId}"><img loading="lazy" src="/assets/pokemon/${dexColor}/${pokemonSrc}.webp" alt="${pokeName}" height=8></div></td><td class="dex-entry-status">Not available</td></tr>`;
 	
 	return pokemonContent;
 }
