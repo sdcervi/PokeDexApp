@@ -4,6 +4,7 @@ const dexData = [
 		"name": "bulbasaur",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -12,6 +13,7 @@ const dexData = [
 		"name": "ivysaur",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -20,6 +22,7 @@ const dexData = [
 		"name": "venusaur",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -28,6 +31,7 @@ const dexData = [
 		"name": "charmander",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -36,6 +40,7 @@ const dexData = [
 		"name": "charmeleon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -44,6 +49,7 @@ const dexData = [
 		"name": "charizard",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -52,6 +58,7 @@ const dexData = [
 		"name": "squirtle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -60,6 +67,7 @@ const dexData = [
 		"name": "wartortle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -68,6 +76,7 @@ const dexData = [
 		"name": "blastoise",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -76,6 +85,7 @@ const dexData = [
 		"name": "caterpie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -84,6 +94,7 @@ const dexData = [
 		"name": "metapod",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -92,6 +103,7 @@ const dexData = [
 		"name": "butterfree",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -100,6 +112,7 @@ const dexData = [
 		"name": "weedle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -108,6 +121,7 @@ const dexData = [
 		"name": "kakuna",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -116,6 +130,7 @@ const dexData = [
 		"name": "beedrill",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -124,6 +139,7 @@ const dexData = [
 		"name": "pidgey",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -132,6 +148,7 @@ const dexData = [
 		"name": "pidgeotto",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -140,6 +157,7 @@ const dexData = [
 		"name": "pidgeot",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -148,6 +166,7 @@ const dexData = [
 		"name": "rattata",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -156,6 +175,7 @@ const dexData = [
 		"name": "raticate",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -164,6 +184,7 @@ const dexData = [
 		"name": "spearow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -172,6 +193,7 @@ const dexData = [
 		"name": "fearow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -180,6 +202,7 @@ const dexData = [
 		"name": "ekans",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -188,6 +211,7 @@ const dexData = [
 		"name": "arbok",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -196,6 +220,7 @@ const dexData = [
 		"name": "pikachu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": [{"forms": ["-original-cap", "-hoenn-cap", "-sinnoh-cap", "-unova-cap", "-kalos-cap", "-alolan-cap", "-johto-cap", "-world-cap"], "form-names": ["original cap", "hoenn cap", "sinnoh cap", "unova cap", "kalos cap", "alolan cap", "partner cap", "world cap"]}]
 	},
@@ -204,6 +229,7 @@ const dexData = [
 		"name": "raichu",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -212,6 +238,7 @@ const dexData = [
 		"name": "sandshrew",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -220,6 +247,7 @@ const dexData = [
 		"name": "sandslash",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -228,6 +256,7 @@ const dexData = [
 		"name": "nidoran-f",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -236,6 +265,7 @@ const dexData = [
 		"name": "nidorina",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -244,6 +274,7 @@ const dexData = [
 		"name": "nidoqueen",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -252,6 +283,7 @@ const dexData = [
 		"name": "nidoran-m",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -260,6 +292,7 @@ const dexData = [
 		"name": "nidorino",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -268,6 +301,7 @@ const dexData = [
 		"name": "nidoking",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -276,6 +310,7 @@ const dexData = [
 		"name": "clefairy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -284,6 +319,7 @@ const dexData = [
 		"name": "clefable",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -292,6 +328,7 @@ const dexData = [
 		"name": "vulpix",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -300,6 +337,7 @@ const dexData = [
 		"name": "ninetales",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -308,6 +346,7 @@ const dexData = [
 		"name": "jigglypuff",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -316,6 +355,7 @@ const dexData = [
 		"name": "wigglytuff",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -324,6 +364,7 @@ const dexData = [
 		"name": "zubat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -332,6 +373,7 @@ const dexData = [
 		"name": "golbat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -340,6 +382,7 @@ const dexData = [
 		"name": "oddish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -348,6 +391,7 @@ const dexData = [
 		"name": "gloom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -356,6 +400,7 @@ const dexData = [
 		"name": "vileplume",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -364,6 +409,7 @@ const dexData = [
 		"name": "paras",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -372,6 +418,7 @@ const dexData = [
 		"name": "parasect",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -380,6 +427,7 @@ const dexData = [
 		"name": "venonat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -388,6 +436,7 @@ const dexData = [
 		"name": "venomoth",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -396,6 +445,7 @@ const dexData = [
 		"name": "diglett",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -404,6 +454,7 @@ const dexData = [
 		"name": "dugtrio",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -412,6 +463,7 @@ const dexData = [
 		"name": "meowth",
 		"alolan": true,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -420,6 +472,7 @@ const dexData = [
 		"name": "persian",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -428,6 +481,7 @@ const dexData = [
 		"name": "psyduck",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -436,6 +490,7 @@ const dexData = [
 		"name": "golduck",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -444,6 +499,7 @@ const dexData = [
 		"name": "mankey",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -452,6 +508,7 @@ const dexData = [
 		"name": "primeape",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -460,6 +517,7 @@ const dexData = [
 		"name": "growlithe",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -468,6 +526,7 @@ const dexData = [
 		"name": "arcanine",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -476,6 +535,7 @@ const dexData = [
 		"name": "poliwag",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -484,6 +544,7 @@ const dexData = [
 		"name": "poliwhirl",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -492,6 +553,7 @@ const dexData = [
 		"name": "poliwrath",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -500,6 +562,7 @@ const dexData = [
 		"name": "abra",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -508,6 +571,7 @@ const dexData = [
 		"name": "kadabra",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -516,6 +580,7 @@ const dexData = [
 		"name": "alakazam",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -524,6 +589,7 @@ const dexData = [
 		"name": "machop",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -532,6 +598,7 @@ const dexData = [
 		"name": "machoke",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -540,6 +607,7 @@ const dexData = [
 		"name": "machamp",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -548,6 +616,7 @@ const dexData = [
 		"name": "bellsprout",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -556,6 +625,7 @@ const dexData = [
 		"name": "weepinbell",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -564,6 +634,7 @@ const dexData = [
 		"name": "victreebel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -572,6 +643,7 @@ const dexData = [
 		"name": "tentacool",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -580,6 +652,7 @@ const dexData = [
 		"name": "tentacruel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -588,6 +661,7 @@ const dexData = [
 		"name": "geodude",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -596,6 +670,7 @@ const dexData = [
 		"name": "graveler",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -604,6 +679,7 @@ const dexData = [
 		"name": "golem",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -612,6 +688,7 @@ const dexData = [
 		"name": "ponyta",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -620,6 +697,7 @@ const dexData = [
 		"name": "rapidash",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -628,6 +706,7 @@ const dexData = [
 		"name": "slowpoke",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -636,6 +715,7 @@ const dexData = [
 		"name": "slowbro",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -644,6 +724,7 @@ const dexData = [
 		"name": "magnemite",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -652,6 +733,7 @@ const dexData = [
 		"name": "magneton",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -660,6 +742,7 @@ const dexData = [
 		"name": "farfetchd",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -668,6 +751,7 @@ const dexData = [
 		"name": "doduo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -676,6 +760,7 @@ const dexData = [
 		"name": "dodrio",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -684,6 +769,7 @@ const dexData = [
 		"name": "seel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -692,6 +778,7 @@ const dexData = [
 		"name": "dewgong",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -700,6 +787,7 @@ const dexData = [
 		"name": "grimer",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -708,6 +796,7 @@ const dexData = [
 		"name": "muk",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -716,6 +805,7 @@ const dexData = [
 		"name": "shellder",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -724,6 +814,7 @@ const dexData = [
 		"name": "cloyster",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -732,6 +823,7 @@ const dexData = [
 		"name": "gastly",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -740,6 +832,7 @@ const dexData = [
 		"name": "haunter",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -748,6 +841,7 @@ const dexData = [
 		"name": "gengar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -756,6 +850,7 @@ const dexData = [
 		"name": "onix",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -764,6 +859,7 @@ const dexData = [
 		"name": "drowzee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -772,6 +868,7 @@ const dexData = [
 		"name": "hypno",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -780,6 +877,7 @@ const dexData = [
 		"name": "krabby",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -788,6 +886,7 @@ const dexData = [
 		"name": "kingler",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -796,6 +895,7 @@ const dexData = [
 		"name": "voltorb",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -804,6 +904,7 @@ const dexData = [
 		"name": "electrode",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -812,6 +913,7 @@ const dexData = [
 		"name": "exeggcute",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -820,6 +922,7 @@ const dexData = [
 		"name": "exeggutor",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -828,6 +931,7 @@ const dexData = [
 		"name": "cubone",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -836,6 +940,7 @@ const dexData = [
 		"name": "marowak",
 		"alolan": true,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -844,6 +949,7 @@ const dexData = [
 		"name": "hitmonlee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -852,6 +958,7 @@ const dexData = [
 		"name": "hitmonchan",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -860,6 +967,7 @@ const dexData = [
 		"name": "lickitung",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -868,6 +976,7 @@ const dexData = [
 		"name": "koffing",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -876,6 +985,7 @@ const dexData = [
 		"name": "weezing",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -884,6 +994,7 @@ const dexData = [
 		"name": "rhyhorn",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -892,6 +1003,7 @@ const dexData = [
 		"name": "rhydon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -900,6 +1012,7 @@ const dexData = [
 		"name": "chansey",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -908,6 +1021,7 @@ const dexData = [
 		"name": "tangela",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -916,6 +1030,7 @@ const dexData = [
 		"name": "kangaskhan",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -924,6 +1039,7 @@ const dexData = [
 		"name": "horsea",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -932,6 +1048,7 @@ const dexData = [
 		"name": "seadra",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -940,6 +1057,7 @@ const dexData = [
 		"name": "goldeen",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -948,6 +1066,7 @@ const dexData = [
 		"name": "seaking",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -956,6 +1075,7 @@ const dexData = [
 		"name": "staryu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -964,6 +1084,7 @@ const dexData = [
 		"name": "starmie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -972,6 +1093,7 @@ const dexData = [
 		"name": "mr-mime",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -980,6 +1102,7 @@ const dexData = [
 		"name": "scyther",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -988,6 +1111,7 @@ const dexData = [
 		"name": "jynx",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -996,6 +1120,7 @@ const dexData = [
 		"name": "electabuzz",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1004,6 +1129,7 @@ const dexData = [
 		"name": "magmar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1012,6 +1138,7 @@ const dexData = [
 		"name": "pinsir",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1020,6 +1147,7 @@ const dexData = [
 		"name": "tauros",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1028,6 +1156,7 @@ const dexData = [
 		"name": "magikarp",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1036,6 +1165,7 @@ const dexData = [
 		"name": "gyarados",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1044,6 +1174,7 @@ const dexData = [
 		"name": "lapras",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1052,6 +1183,7 @@ const dexData = [
 		"name": "ditto",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1060,6 +1192,7 @@ const dexData = [
 		"name": "eevee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1068,6 +1201,7 @@ const dexData = [
 		"name": "vaporeon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1076,6 +1210,7 @@ const dexData = [
 		"name": "jolteon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1084,6 +1219,7 @@ const dexData = [
 		"name": "flareon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1092,6 +1228,7 @@ const dexData = [
 		"name": "porygon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1100,6 +1237,7 @@ const dexData = [
 		"name": "omanyte",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1108,6 +1246,7 @@ const dexData = [
 		"name": "omastar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1116,6 +1255,7 @@ const dexData = [
 		"name": "kabuto",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1124,6 +1264,7 @@ const dexData = [
 		"name": "kabutops",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1132,6 +1273,7 @@ const dexData = [
 		"name": "aerodactyl",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1140,6 +1282,7 @@ const dexData = [
 		"name": "snorlax",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1148,6 +1291,7 @@ const dexData = [
 		"name": "articuno",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1156,6 +1300,7 @@ const dexData = [
 		"name": "zapdos",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1164,6 +1309,7 @@ const dexData = [
 		"name": "moltres",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1172,6 +1318,7 @@ const dexData = [
 		"name": "dratini",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1180,6 +1327,7 @@ const dexData = [
 		"name": "dragonair",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1188,6 +1336,7 @@ const dexData = [
 		"name": "dragonite",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1196,6 +1345,7 @@ const dexData = [
 		"name": "mewtwo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1204,6 +1354,7 @@ const dexData = [
 		"name": "mew",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1212,6 +1363,7 @@ const dexData = [
 		"name": "chikorita",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1220,6 +1372,7 @@ const dexData = [
 		"name": "bayleef",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1228,6 +1381,7 @@ const dexData = [
 		"name": "meganium",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1236,6 +1390,7 @@ const dexData = [
 		"name": "cyndaquil",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1244,6 +1399,7 @@ const dexData = [
 		"name": "quilava",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1252,6 +1408,7 @@ const dexData = [
 		"name": "typhlosion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -1260,6 +1417,7 @@ const dexData = [
 		"name": "totodile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1268,6 +1426,7 @@ const dexData = [
 		"name": "croconaw",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1276,6 +1435,7 @@ const dexData = [
 		"name": "feraligatr",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1284,6 +1444,7 @@ const dexData = [
 		"name": "sentret",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1292,6 +1453,7 @@ const dexData = [
 		"name": "furret",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1300,6 +1462,7 @@ const dexData = [
 		"name": "hoothoot",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1308,6 +1471,7 @@ const dexData = [
 		"name": "noctowl",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1316,6 +1480,7 @@ const dexData = [
 		"name": "ledyba",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1324,6 +1489,7 @@ const dexData = [
 		"name": "ledian",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1332,6 +1498,7 @@ const dexData = [
 		"name": "spinarak",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1340,6 +1507,7 @@ const dexData = [
 		"name": "ariados",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1348,6 +1516,7 @@ const dexData = [
 		"name": "crobat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1356,6 +1525,7 @@ const dexData = [
 		"name": "chinchou",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1364,6 +1534,7 @@ const dexData = [
 		"name": "lanturn",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1372,6 +1543,7 @@ const dexData = [
 		"name": "pichu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1380,6 +1552,7 @@ const dexData = [
 		"name": "cleffa",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1388,6 +1561,7 @@ const dexData = [
 		"name": "igglybuff",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1396,6 +1570,7 @@ const dexData = [
 		"name": "togepi",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1404,6 +1579,7 @@ const dexData = [
 		"name": "togetic",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1412,6 +1588,7 @@ const dexData = [
 		"name": "natu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1420,6 +1597,7 @@ const dexData = [
 		"name": "xatu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1428,6 +1606,7 @@ const dexData = [
 		"name": "mareep",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1436,6 +1615,7 @@ const dexData = [
 		"name": "flaaffy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1444,6 +1624,7 @@ const dexData = [
 		"name": "ampharos",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1452,6 +1633,7 @@ const dexData = [
 		"name": "bellossom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1460,6 +1642,7 @@ const dexData = [
 		"name": "marill",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1468,6 +1651,7 @@ const dexData = [
 		"name": "azumarill",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1476,6 +1660,7 @@ const dexData = [
 		"name": "sudowoodo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1484,6 +1669,7 @@ const dexData = [
 		"name": "politoed",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1492,6 +1678,7 @@ const dexData = [
 		"name": "hoppip",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1500,6 +1687,7 @@ const dexData = [
 		"name": "skiploom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1508,6 +1696,7 @@ const dexData = [
 		"name": "jumpluff",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1516,6 +1705,7 @@ const dexData = [
 		"name": "aipom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1524,6 +1714,7 @@ const dexData = [
 		"name": "sunkern",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1532,6 +1723,7 @@ const dexData = [
 		"name": "sunflora",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1540,6 +1732,7 @@ const dexData = [
 		"name": "yanma",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1548,6 +1741,7 @@ const dexData = [
 		"name": "wooper",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1556,6 +1750,7 @@ const dexData = [
 		"name": "quagsire",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1564,6 +1759,7 @@ const dexData = [
 		"name": "espeon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1572,6 +1768,7 @@ const dexData = [
 		"name": "umbreon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1580,6 +1777,7 @@ const dexData = [
 		"name": "murkrow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1588,6 +1786,7 @@ const dexData = [
 		"name": "slowking",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1596,6 +1795,7 @@ const dexData = [
 		"name": "misdreavus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1604,6 +1804,7 @@ const dexData = [
 		"name": "unown",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{ "forms": ["-a", "-b", "-c", "-d", "-e", "-f", "-g", "-h", "-i", "-j", "-k", "-l", "-m", "-n", "-o", "-p", "-q", "-r", "-s", "-t", "-u", "-v", "-w", "-x", "-y", "-z", "-qm", "-em"], "form-names": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "?", "!"] }]
 	},
@@ -1612,6 +1813,7 @@ const dexData = [
 		"name": "wobbuffet",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1620,6 +1822,7 @@ const dexData = [
 		"name": "girafarig",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1628,6 +1831,7 @@ const dexData = [
 		"name": "pineco",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1636,6 +1840,7 @@ const dexData = [
 		"name": "forretress",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1644,6 +1849,7 @@ const dexData = [
 		"name": "dunsparce",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1652,6 +1858,7 @@ const dexData = [
 		"name": "gligar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1660,6 +1867,7 @@ const dexData = [
 		"name": "steelix",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1668,6 +1876,7 @@ const dexData = [
 		"name": "snubbull",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1676,6 +1885,7 @@ const dexData = [
 		"name": "granbull",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1684,6 +1894,7 @@ const dexData = [
 		"name": "qwilfish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -1692,6 +1903,7 @@ const dexData = [
 		"name": "scizor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1700,6 +1912,7 @@ const dexData = [
 		"name": "shuckle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1708,6 +1921,7 @@ const dexData = [
 		"name": "heracross",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1716,6 +1930,7 @@ const dexData = [
 		"name": "sneasel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": true,
 		"alts": null
 	},
@@ -1724,6 +1939,7 @@ const dexData = [
 		"name": "teddiursa",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1732,6 +1948,7 @@ const dexData = [
 		"name": "ursaring",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1740,6 +1957,7 @@ const dexData = [
 		"name": "slugma",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1748,6 +1966,7 @@ const dexData = [
 		"name": "magcargo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1756,6 +1975,7 @@ const dexData = [
 		"name": "swinub",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1764,6 +1984,7 @@ const dexData = [
 		"name": "piloswine",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1772,6 +1993,7 @@ const dexData = [
 		"name": "corsola",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1780,6 +2002,7 @@ const dexData = [
 		"name": "remoraid",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1788,6 +2011,7 @@ const dexData = [
 		"name": "octillery",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1796,6 +2020,7 @@ const dexData = [
 		"name": "delibird",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1804,6 +2029,7 @@ const dexData = [
 		"name": "mantine",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1812,6 +2038,7 @@ const dexData = [
 		"name": "skarmory",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1820,6 +2047,7 @@ const dexData = [
 		"name": "houndour",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1828,6 +2056,7 @@ const dexData = [
 		"name": "houndoom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1836,6 +2065,7 @@ const dexData = [
 		"name": "kingdra",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1844,6 +2074,7 @@ const dexData = [
 		"name": "phanpy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1852,6 +2083,7 @@ const dexData = [
 		"name": "donphan",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -1860,6 +2092,7 @@ const dexData = [
 		"name": "porygon2",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1868,6 +2101,7 @@ const dexData = [
 		"name": "stantler",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1876,6 +2110,7 @@ const dexData = [
 		"name": "smeargle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1884,6 +2119,7 @@ const dexData = [
 		"name": "tyrogue",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1892,6 +2128,7 @@ const dexData = [
 		"name": "hitmontop",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1900,6 +2137,7 @@ const dexData = [
 		"name": "smoochum",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1908,6 +2146,7 @@ const dexData = [
 		"name": "elekid",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1916,6 +2155,7 @@ const dexData = [
 		"name": "magby",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1924,6 +2164,7 @@ const dexData = [
 		"name": "miltank",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1932,6 +2173,7 @@ const dexData = [
 		"name": "blissey",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1940,6 +2182,7 @@ const dexData = [
 		"name": "raikou",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1948,6 +2191,7 @@ const dexData = [
 		"name": "entei",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1956,6 +2200,7 @@ const dexData = [
 		"name": "suicune",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1964,6 +2209,7 @@ const dexData = [
 		"name": "larvitar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1972,6 +2218,7 @@ const dexData = [
 		"name": "pupitar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1980,6 +2227,7 @@ const dexData = [
 		"name": "tyranitar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1988,6 +2236,7 @@ const dexData = [
 		"name": "lugia",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -1996,6 +2245,7 @@ const dexData = [
 		"name": "ho-oh",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2004,6 +2254,7 @@ const dexData = [
 		"name": "celebi",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2012,6 +2263,7 @@ const dexData = [
 		"name": "treecko",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2020,6 +2272,7 @@ const dexData = [
 		"name": "grovyle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2028,6 +2281,7 @@ const dexData = [
 		"name": "sceptile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2036,6 +2290,7 @@ const dexData = [
 		"name": "torchic",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2044,6 +2299,7 @@ const dexData = [
 		"name": "combusken",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2052,6 +2308,7 @@ const dexData = [
 		"name": "blaziken",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2060,6 +2317,7 @@ const dexData = [
 		"name": "mudkip",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2068,6 +2326,7 @@ const dexData = [
 		"name": "marshtomp",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2076,6 +2335,7 @@ const dexData = [
 		"name": "swampert",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2084,6 +2344,7 @@ const dexData = [
 		"name": "poochyena",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2092,6 +2353,7 @@ const dexData = [
 		"name": "mightyena",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2100,6 +2362,7 @@ const dexData = [
 		"name": "zigzagoon",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2108,6 +2371,7 @@ const dexData = [
 		"name": "linoone",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2116,6 +2380,7 @@ const dexData = [
 		"name": "wurmple",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2124,6 +2389,7 @@ const dexData = [
 		"name": "silcoon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2132,6 +2398,7 @@ const dexData = [
 		"name": "beautifly",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2140,6 +2407,7 @@ const dexData = [
 		"name": "cascoon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2148,6 +2416,7 @@ const dexData = [
 		"name": "dustox",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2156,6 +2425,7 @@ const dexData = [
 		"name": "lotad",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2164,6 +2434,7 @@ const dexData = [
 		"name": "lombre",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2172,6 +2443,7 @@ const dexData = [
 		"name": "ludicolo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2180,6 +2452,7 @@ const dexData = [
 		"name": "seedot",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2188,6 +2461,7 @@ const dexData = [
 		"name": "nuzleaf",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2196,6 +2470,7 @@ const dexData = [
 		"name": "shiftry",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2204,6 +2479,7 @@ const dexData = [
 		"name": "taillow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2212,6 +2488,7 @@ const dexData = [
 		"name": "swellow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2220,6 +2497,7 @@ const dexData = [
 		"name": "wingull",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2228,6 +2506,7 @@ const dexData = [
 		"name": "pelipper",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2236,6 +2515,7 @@ const dexData = [
 		"name": "ralts",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2244,6 +2524,7 @@ const dexData = [
 		"name": "kirlia",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2252,6 +2533,7 @@ const dexData = [
 		"name": "gardevoir",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2260,6 +2542,7 @@ const dexData = [
 		"name": "surskit",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2268,6 +2551,7 @@ const dexData = [
 		"name": "masquerain",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2276,6 +2560,7 @@ const dexData = [
 		"name": "shroomish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2284,6 +2569,7 @@ const dexData = [
 		"name": "breloom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2292,6 +2578,7 @@ const dexData = [
 		"name": "slakoth",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2300,6 +2587,7 @@ const dexData = [
 		"name": "vigoroth",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2308,6 +2596,7 @@ const dexData = [
 		"name": "slaking",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2316,6 +2605,7 @@ const dexData = [
 		"name": "nincada",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2324,6 +2614,7 @@ const dexData = [
 		"name": "ninjask",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2332,6 +2623,7 @@ const dexData = [
 		"name": "shedinja",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2340,6 +2632,7 @@ const dexData = [
 		"name": "whismur",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2348,6 +2641,7 @@ const dexData = [
 		"name": "loudred",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2356,6 +2650,7 @@ const dexData = [
 		"name": "exploud",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2364,6 +2659,7 @@ const dexData = [
 		"name": "makuhita",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2372,6 +2668,7 @@ const dexData = [
 		"name": "hariyama",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2380,6 +2677,7 @@ const dexData = [
 		"name": "azurill",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2388,6 +2686,7 @@ const dexData = [
 		"name": "nosepass",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2396,6 +2695,7 @@ const dexData = [
 		"name": "skitty",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2404,6 +2704,7 @@ const dexData = [
 		"name": "delcatty",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2412,6 +2713,7 @@ const dexData = [
 		"name": "sableye",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2420,6 +2722,7 @@ const dexData = [
 		"name": "mawile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2428,6 +2731,7 @@ const dexData = [
 		"name": "aron",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2436,6 +2740,7 @@ const dexData = [
 		"name": "lairon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2444,6 +2749,7 @@ const dexData = [
 		"name": "aggron",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2452,6 +2758,7 @@ const dexData = [
 		"name": "meditite",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2460,6 +2767,7 @@ const dexData = [
 		"name": "medicham",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2468,6 +2776,7 @@ const dexData = [
 		"name": "electrike",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2476,6 +2785,7 @@ const dexData = [
 		"name": "manectric",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2484,6 +2794,7 @@ const dexData = [
 		"name": "plusle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2492,6 +2803,7 @@ const dexData = [
 		"name": "minun",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2500,6 +2812,7 @@ const dexData = [
 		"name": "volbeat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2508,6 +2821,7 @@ const dexData = [
 		"name": "illumise",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2516,6 +2830,7 @@ const dexData = [
 		"name": "roselia",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2524,6 +2839,7 @@ const dexData = [
 		"name": "gulpin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2532,6 +2848,7 @@ const dexData = [
 		"name": "swalot",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2540,6 +2857,7 @@ const dexData = [
 		"name": "carvanha",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2548,6 +2866,7 @@ const dexData = [
 		"name": "sharpedo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2556,6 +2875,7 @@ const dexData = [
 		"name": "wailmer",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2564,6 +2884,7 @@ const dexData = [
 		"name": "wailord",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2572,6 +2893,7 @@ const dexData = [
 		"name": "numel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2580,6 +2902,7 @@ const dexData = [
 		"name": "camerupt",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2588,6 +2911,7 @@ const dexData = [
 		"name": "torkoal",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2596,6 +2920,7 @@ const dexData = [
 		"name": "spoink",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2604,6 +2929,7 @@ const dexData = [
 		"name": "grumpig",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2612,6 +2938,7 @@ const dexData = [
 		"name": "spinda",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2620,6 +2947,7 @@ const dexData = [
 		"name": "trapinch",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2628,6 +2956,7 @@ const dexData = [
 		"name": "vibrava",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2636,6 +2965,7 @@ const dexData = [
 		"name": "flygon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2644,6 +2974,7 @@ const dexData = [
 		"name": "cacnea",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2652,6 +2983,7 @@ const dexData = [
 		"name": "cacturne",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2660,6 +2992,7 @@ const dexData = [
 		"name": "swablu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2668,6 +3001,7 @@ const dexData = [
 		"name": "altaria",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2676,6 +3010,7 @@ const dexData = [
 		"name": "zangoose",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2684,6 +3019,7 @@ const dexData = [
 		"name": "seviper",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2692,6 +3028,7 @@ const dexData = [
 		"name": "lunatone",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2700,6 +3037,7 @@ const dexData = [
 		"name": "solrock",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2708,6 +3046,7 @@ const dexData = [
 		"name": "barboach",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2716,6 +3055,7 @@ const dexData = [
 		"name": "whiscash",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2724,6 +3064,7 @@ const dexData = [
 		"name": "corphish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2732,6 +3073,7 @@ const dexData = [
 		"name": "crawdaunt",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2740,6 +3082,7 @@ const dexData = [
 		"name": "baltoy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2748,6 +3091,7 @@ const dexData = [
 		"name": "claydol",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2756,6 +3100,7 @@ const dexData = [
 		"name": "lileep",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2764,6 +3109,7 @@ const dexData = [
 		"name": "cradily",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2772,6 +3118,7 @@ const dexData = [
 		"name": "anorith",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2780,6 +3127,7 @@ const dexData = [
 		"name": "armaldo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2788,6 +3136,7 @@ const dexData = [
 		"name": "feebas",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2796,6 +3145,7 @@ const dexData = [
 		"name": "milotic",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2804,6 +3154,7 @@ const dexData = [
 		"name": "castform",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2812,6 +3163,7 @@ const dexData = [
 		"name": "kecleon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2820,6 +3172,7 @@ const dexData = [
 		"name": "shuppet",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2828,6 +3181,7 @@ const dexData = [
 		"name": "banette",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2836,6 +3190,7 @@ const dexData = [
 		"name": "duskull",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2844,6 +3199,7 @@ const dexData = [
 		"name": "dusclops",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2852,6 +3208,7 @@ const dexData = [
 		"name": "tropius",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2860,6 +3217,7 @@ const dexData = [
 		"name": "chimecho",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2868,6 +3226,7 @@ const dexData = [
 		"name": "absol",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2876,6 +3235,7 @@ const dexData = [
 		"name": "wynaut",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2884,6 +3244,7 @@ const dexData = [
 		"name": "snorunt",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2892,6 +3253,7 @@ const dexData = [
 		"name": "glalie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2900,6 +3262,7 @@ const dexData = [
 		"name": "spheal",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2908,6 +3271,7 @@ const dexData = [
 		"name": "sealeo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2916,6 +3280,7 @@ const dexData = [
 		"name": "walrein",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2924,6 +3289,7 @@ const dexData = [
 		"name": "clamperl",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2932,6 +3298,7 @@ const dexData = [
 		"name": "huntail",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2940,6 +3307,7 @@ const dexData = [
 		"name": "gorebyss",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2948,6 +3316,7 @@ const dexData = [
 		"name": "relicanth",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -2956,6 +3325,7 @@ const dexData = [
 		"name": "luvdisc",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2964,6 +3334,7 @@ const dexData = [
 		"name": "bagon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2972,6 +3343,7 @@ const dexData = [
 		"name": "shelgon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2980,6 +3352,7 @@ const dexData = [
 		"name": "salamence",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2988,6 +3361,7 @@ const dexData = [
 		"name": "beldum",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -2996,6 +3370,7 @@ const dexData = [
 		"name": "metang",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3004,6 +3379,7 @@ const dexData = [
 		"name": "metagross",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3012,6 +3388,7 @@ const dexData = [
 		"name": "regirock",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3020,6 +3397,7 @@ const dexData = [
 		"name": "regice",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3028,6 +3406,7 @@ const dexData = [
 		"name": "registeel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3036,6 +3415,7 @@ const dexData = [
 		"name": "latias",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3044,6 +3424,7 @@ const dexData = [
 		"name": "latios",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3052,6 +3433,7 @@ const dexData = [
 		"name": "kyogre",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3060,6 +3442,7 @@ const dexData = [
 		"name": "groudon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3068,6 +3451,7 @@ const dexData = [
 		"name": "rayquaza",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3076,6 +3460,7 @@ const dexData = [
 		"name": "jirachi",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3084,6 +3469,7 @@ const dexData = [
 		"name": "deoxys",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-normal", "-attack", "-defense", "-speed"], "form-names": ["normal", "attack", "defense", "speed"]}]
 	},
@@ -3092,6 +3478,7 @@ const dexData = [
 		"name": "turtwig",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3100,6 +3487,7 @@ const dexData = [
 		"name": "grotle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3108,6 +3496,7 @@ const dexData = [
 		"name": "torterra",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3116,6 +3505,7 @@ const dexData = [
 		"name": "chimchar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3124,6 +3514,7 @@ const dexData = [
 		"name": "monferno",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3132,6 +3523,7 @@ const dexData = [
 		"name": "infernape",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3140,6 +3532,7 @@ const dexData = [
 		"name": "piplup",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3148,6 +3541,7 @@ const dexData = [
 		"name": "prinplup",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3156,6 +3550,7 @@ const dexData = [
 		"name": "empoleon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3164,6 +3559,7 @@ const dexData = [
 		"name": "starly",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3172,6 +3568,7 @@ const dexData = [
 		"name": "staravia",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3180,6 +3577,7 @@ const dexData = [
 		"name": "staraptor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3188,6 +3586,7 @@ const dexData = [
 		"name": "bidoof",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3196,6 +3595,7 @@ const dexData = [
 		"name": "bibarel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3204,6 +3604,7 @@ const dexData = [
 		"name": "kricketot",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3212,6 +3613,7 @@ const dexData = [
 		"name": "kricketune",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3220,6 +3622,7 @@ const dexData = [
 		"name": "shinx",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3228,6 +3631,7 @@ const dexData = [
 		"name": "luxio",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3236,6 +3640,7 @@ const dexData = [
 		"name": "luxray",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3244,6 +3649,7 @@ const dexData = [
 		"name": "budew",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3252,6 +3658,7 @@ const dexData = [
 		"name": "roserade",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3260,6 +3667,7 @@ const dexData = [
 		"name": "cranidos",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3268,6 +3676,7 @@ const dexData = [
 		"name": "rampardos",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3276,6 +3685,7 @@ const dexData = [
 		"name": "shieldon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3284,6 +3694,7 @@ const dexData = [
 		"name": "bastiodon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3292,6 +3703,7 @@ const dexData = [
 		"name": "burmy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-plant", "-sandy", "-trash"], "form-names": ["plant cloak", "sandy cloak", "trash cloak"]}]
 	},
@@ -3300,6 +3712,7 @@ const dexData = [
 		"name": "wormadam",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-plant", "-sandy", "-trash"], "form-names": ["plant cloak", "sandy cloak", "trash cloak"]}]
 	},
@@ -3308,6 +3721,7 @@ const dexData = [
 		"name": "mothim",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3316,6 +3730,7 @@ const dexData = [
 		"name": "combee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3324,6 +3739,7 @@ const dexData = [
 		"name": "vespiquen",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3332,6 +3748,7 @@ const dexData = [
 		"name": "pachirisu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3340,6 +3757,7 @@ const dexData = [
 		"name": "buizel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3348,6 +3766,7 @@ const dexData = [
 		"name": "floatzel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3356,6 +3775,7 @@ const dexData = [
 		"name": "cherubi",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3364,6 +3784,7 @@ const dexData = [
 		"name": "cherrim",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3372,6 +3793,7 @@ const dexData = [
 		"name": "shellos",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-west", "-east"], "form-names": ["west sea", "east sea"]}]
 	},
@@ -3380,6 +3802,7 @@ const dexData = [
 		"name": "gastrodon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-west", "-east"], "form-names": ["west sea", "east sea"]}]
 	},
@@ -3388,6 +3811,7 @@ const dexData = [
 		"name": "ambipom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3396,6 +3820,7 @@ const dexData = [
 		"name": "drifloon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3404,6 +3829,7 @@ const dexData = [
 		"name": "drifblim",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3412,6 +3838,7 @@ const dexData = [
 		"name": "buneary",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3420,6 +3847,7 @@ const dexData = [
 		"name": "lopunny",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3428,6 +3856,7 @@ const dexData = [
 		"name": "mismagius",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3436,6 +3865,7 @@ const dexData = [
 		"name": "honchkrow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3444,6 +3874,7 @@ const dexData = [
 		"name": "glameow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3452,6 +3883,7 @@ const dexData = [
 		"name": "purugly",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3460,6 +3892,7 @@ const dexData = [
 		"name": "chingling",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3468,6 +3901,7 @@ const dexData = [
 		"name": "stunky",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3476,6 +3910,7 @@ const dexData = [
 		"name": "skuntank",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3484,6 +3919,7 @@ const dexData = [
 		"name": "bronzor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3492,6 +3928,7 @@ const dexData = [
 		"name": "bronzong",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3500,6 +3937,7 @@ const dexData = [
 		"name": "bonsly",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3508,6 +3946,7 @@ const dexData = [
 		"name": "mime-jr",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3516,6 +3955,7 @@ const dexData = [
 		"name": "happiny",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3524,6 +3964,7 @@ const dexData = [
 		"name": "chatot",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3532,6 +3973,7 @@ const dexData = [
 		"name": "spiritomb",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3540,6 +3982,7 @@ const dexData = [
 		"name": "gible",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3548,6 +3991,7 @@ const dexData = [
 		"name": "gabite",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3556,6 +4000,7 @@ const dexData = [
 		"name": "garchomp",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3564,6 +4009,7 @@ const dexData = [
 		"name": "munchlax",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3572,6 +4018,7 @@ const dexData = [
 		"name": "riolu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3580,6 +4027,7 @@ const dexData = [
 		"name": "lucario",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3588,6 +4036,7 @@ const dexData = [
 		"name": "hippopotas",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3596,6 +4045,7 @@ const dexData = [
 		"name": "hippowdon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3604,6 +4054,7 @@ const dexData = [
 		"name": "skorupi",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3612,6 +4063,7 @@ const dexData = [
 		"name": "drapion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3620,6 +4072,7 @@ const dexData = [
 		"name": "croagunk",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3628,6 +4081,7 @@ const dexData = [
 		"name": "toxicroak",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3636,6 +4090,7 @@ const dexData = [
 		"name": "carnivine",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3644,6 +4099,7 @@ const dexData = [
 		"name": "finneon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3652,6 +4108,7 @@ const dexData = [
 		"name": "lumineon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3660,6 +4117,7 @@ const dexData = [
 		"name": "mantyke",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3668,6 +4126,7 @@ const dexData = [
 		"name": "snover",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3676,6 +4135,7 @@ const dexData = [
 		"name": "abomasnow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3684,6 +4144,7 @@ const dexData = [
 		"name": "weavile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3692,6 +4153,7 @@ const dexData = [
 		"name": "magnezone",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3700,6 +4162,7 @@ const dexData = [
 		"name": "lickilicky",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3708,6 +4171,7 @@ const dexData = [
 		"name": "rhyperior",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3716,6 +4180,7 @@ const dexData = [
 		"name": "tangrowth",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3724,6 +4189,7 @@ const dexData = [
 		"name": "electivire",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3732,6 +4198,7 @@ const dexData = [
 		"name": "magmortar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3740,6 +4207,7 @@ const dexData = [
 		"name": "togekiss",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3748,6 +4216,7 @@ const dexData = [
 		"name": "yanmega",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3756,6 +4225,7 @@ const dexData = [
 		"name": "leafeon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3764,6 +4234,7 @@ const dexData = [
 		"name": "glaceon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3772,6 +4243,7 @@ const dexData = [
 		"name": "gliscor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3780,6 +4252,7 @@ const dexData = [
 		"name": "mamoswine",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -3788,6 +4261,7 @@ const dexData = [
 		"name": "porygon-z",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3796,6 +4270,7 @@ const dexData = [
 		"name": "gallade",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3804,6 +4279,7 @@ const dexData = [
 		"name": "probopass",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3812,6 +4288,7 @@ const dexData = [
 		"name": "dusknoir",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3820,6 +4297,7 @@ const dexData = [
 		"name": "froslass",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3828,6 +4306,7 @@ const dexData = [
 		"name": "rotom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["", "-fan", "-frost", "-heat", "-mow", "-wash"], "form-names": ["normal", "fan", "frost", "heat", "mow", "wash"]}]
 	},
@@ -3836,6 +4315,7 @@ const dexData = [
 		"name": "uxie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3844,6 +4324,7 @@ const dexData = [
 		"name": "mesprit",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3852,6 +4333,7 @@ const dexData = [
 		"name": "azelf",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3860,6 +4342,7 @@ const dexData = [
 		"name": "dialga",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3868,6 +4351,7 @@ const dexData = [
 		"name": "palkia",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3876,6 +4360,7 @@ const dexData = [
 		"name": "heatran",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3884,6 +4369,7 @@ const dexData = [
 		"name": "regigigas",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3892,6 +4378,7 @@ const dexData = [
 		"name": "giratina",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3900,6 +4387,7 @@ const dexData = [
 		"name": "cresselia",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3908,6 +4396,7 @@ const dexData = [
 		"name": "phione",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3916,6 +4405,7 @@ const dexData = [
 		"name": "manaphy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3924,6 +4414,7 @@ const dexData = [
 		"name": "darkrai",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3932,6 +4423,7 @@ const dexData = [
 		"name": "shaymin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-land", "-sky"], "form-names": ["land", "sky"]}]
 	},
@@ -3940,6 +4432,7 @@ const dexData = [
 		"name": "arceus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3948,6 +4441,7 @@ const dexData = [
 		"name": "victini",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3956,6 +4450,7 @@ const dexData = [
 		"name": "snivy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3964,6 +4459,7 @@ const dexData = [
 		"name": "servine",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3972,6 +4468,7 @@ const dexData = [
 		"name": "serperior",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3980,6 +4477,7 @@ const dexData = [
 		"name": "tepig",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3988,6 +4486,7 @@ const dexData = [
 		"name": "pignite",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -3996,6 +4495,7 @@ const dexData = [
 		"name": "emboar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4004,6 +4504,7 @@ const dexData = [
 		"name": "oshawott",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4012,6 +4513,7 @@ const dexData = [
 		"name": "dewott",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4020,6 +4522,7 @@ const dexData = [
 		"name": "samurott",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -4028,6 +4531,7 @@ const dexData = [
 		"name": "patrat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4036,6 +4540,7 @@ const dexData = [
 		"name": "watchog",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4044,6 +4549,7 @@ const dexData = [
 		"name": "lillipup",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4052,6 +4558,7 @@ const dexData = [
 		"name": "herdier",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4060,6 +4567,7 @@ const dexData = [
 		"name": "stoutland",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4068,6 +4576,7 @@ const dexData = [
 		"name": "purrloin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4076,6 +4585,7 @@ const dexData = [
 		"name": "liepard",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4084,6 +4594,7 @@ const dexData = [
 		"name": "pansage",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4092,6 +4603,7 @@ const dexData = [
 		"name": "simisage",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4100,6 +4612,7 @@ const dexData = [
 		"name": "pansear",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4108,6 +4621,7 @@ const dexData = [
 		"name": "simisear",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4116,6 +4630,7 @@ const dexData = [
 		"name": "panpour",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4124,6 +4639,7 @@ const dexData = [
 		"name": "simipour",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4132,6 +4648,7 @@ const dexData = [
 		"name": "munna",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4140,6 +4657,7 @@ const dexData = [
 		"name": "musharna",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4148,6 +4666,7 @@ const dexData = [
 		"name": "pidove",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4156,6 +4675,7 @@ const dexData = [
 		"name": "tranquill",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4164,6 +4684,7 @@ const dexData = [
 		"name": "unfezant",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -4172,6 +4693,7 @@ const dexData = [
 		"name": "blitzle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4180,6 +4702,7 @@ const dexData = [
 		"name": "zebstrika",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4188,6 +4711,7 @@ const dexData = [
 		"name": "roggenrola",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4196,6 +4720,7 @@ const dexData = [
 		"name": "boldore",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4204,6 +4729,7 @@ const dexData = [
 		"name": "gigalith",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4212,6 +4738,7 @@ const dexData = [
 		"name": "woobat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4220,6 +4747,7 @@ const dexData = [
 		"name": "swoobat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4228,6 +4756,7 @@ const dexData = [
 		"name": "drilbur",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4236,6 +4765,7 @@ const dexData = [
 		"name": "excadrill",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4244,6 +4774,7 @@ const dexData = [
 		"name": "audino",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4252,6 +4783,7 @@ const dexData = [
 		"name": "timburr",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4260,6 +4792,7 @@ const dexData = [
 		"name": "gurdurr",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4268,6 +4801,7 @@ const dexData = [
 		"name": "conkeldurr",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4276,6 +4810,7 @@ const dexData = [
 		"name": "tympole",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4284,6 +4819,7 @@ const dexData = [
 		"name": "palpitoad",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4292,6 +4828,7 @@ const dexData = [
 		"name": "seismitoad",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4300,6 +4837,7 @@ const dexData = [
 		"name": "throh",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4308,6 +4846,7 @@ const dexData = [
 		"name": "sawk",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4316,6 +4855,7 @@ const dexData = [
 		"name": "sewaddle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4324,6 +4864,7 @@ const dexData = [
 		"name": "swadloon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4332,6 +4873,7 @@ const dexData = [
 		"name": "leavanny",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4340,6 +4882,7 @@ const dexData = [
 		"name": "venipede",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4348,6 +4891,7 @@ const dexData = [
 		"name": "whirlipede",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4356,6 +4900,7 @@ const dexData = [
 		"name": "scolipede",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4364,6 +4909,7 @@ const dexData = [
 		"name": "cottonee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4372,6 +4918,7 @@ const dexData = [
 		"name": "whimsicott",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4380,6 +4927,7 @@ const dexData = [
 		"name": "petilil",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4388,6 +4936,7 @@ const dexData = [
 		"name": "lilligant",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -4396,14 +4945,16 @@ const dexData = [
 		"name": "basculin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
-		"alts": [{"forms": ["-red-striped", "-blue-striped"], "form-names": ["red striped", "blue striped"]}]
+		"alts": [{"forms": ["-red-striped", "-blue-striped", "-white-striped"], "form-names": ["red striped", "blue striped", "white striped"]}]
 	},
 	{
 		"id": "551",
 		"name": "sandile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4412,6 +4963,7 @@ const dexData = [
 		"name": "krokorok",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4420,6 +4972,7 @@ const dexData = [
 		"name": "krookodile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4428,6 +4981,7 @@ const dexData = [
 		"name": "darumaka",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4436,6 +4990,7 @@ const dexData = [
 		"name": "darmanitan",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4444,6 +4999,7 @@ const dexData = [
 		"name": "maractus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4452,6 +5008,7 @@ const dexData = [
 		"name": "dwebble",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4460,6 +5017,7 @@ const dexData = [
 		"name": "crustle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4468,6 +5026,7 @@ const dexData = [
 		"name": "scraggy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4476,6 +5035,7 @@ const dexData = [
 		"name": "scrafty",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4484,6 +5044,7 @@ const dexData = [
 		"name": "sigilyph",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4492,6 +5053,7 @@ const dexData = [
 		"name": "yamask",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4500,6 +5062,7 @@ const dexData = [
 		"name": "cofagrigus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4508,6 +5071,7 @@ const dexData = [
 		"name": "tirtouga",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4516,6 +5080,7 @@ const dexData = [
 		"name": "carracosta",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4524,6 +5089,7 @@ const dexData = [
 		"name": "archen",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4532,6 +5098,7 @@ const dexData = [
 		"name": "archeops",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4540,6 +5107,7 @@ const dexData = [
 		"name": "trubbish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4548,6 +5116,7 @@ const dexData = [
 		"name": "garbodor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4556,6 +5125,7 @@ const dexData = [
 		"name": "zorua",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -4564,6 +5134,7 @@ const dexData = [
 		"name": "zoroark",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -4572,6 +5143,7 @@ const dexData = [
 		"name": "minccino",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4580,6 +5152,7 @@ const dexData = [
 		"name": "cinccino",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4588,6 +5161,7 @@ const dexData = [
 		"name": "gothita",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4596,6 +5170,7 @@ const dexData = [
 		"name": "gothorita",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4604,6 +5179,7 @@ const dexData = [
 		"name": "gothitelle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4612,6 +5188,7 @@ const dexData = [
 		"name": "solosis",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4620,6 +5197,7 @@ const dexData = [
 		"name": "duosion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4628,6 +5206,7 @@ const dexData = [
 		"name": "reuniclus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4636,6 +5215,7 @@ const dexData = [
 		"name": "ducklett",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4644,6 +5224,7 @@ const dexData = [
 		"name": "swanna",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4652,6 +5233,7 @@ const dexData = [
 		"name": "vanillite",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4660,6 +5242,7 @@ const dexData = [
 		"name": "vanillish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4668,6 +5251,7 @@ const dexData = [
 		"name": "vanilluxe",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4676,6 +5260,7 @@ const dexData = [
 		"name": "deerling",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-spring", "-summer", "-autumn", "-winter"], "form-names": ["spring", "summer", "autumn", "winter"]}]
 	},
@@ -4684,6 +5269,7 @@ const dexData = [
 		"name": "sawsbuck",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-spring", "-summer", "-autumn", "-winter"], "form-names": ["spring", "summer", "autumn", "winter"]}]
 	},
@@ -4692,6 +5278,7 @@ const dexData = [
 		"name": "emolga",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4700,6 +5287,7 @@ const dexData = [
 		"name": "karrablast",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4708,6 +5296,7 @@ const dexData = [
 		"name": "escavalier",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4716,6 +5305,7 @@ const dexData = [
 		"name": "foongus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4724,6 +5314,7 @@ const dexData = [
 		"name": "amoonguss",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4732,6 +5323,7 @@ const dexData = [
 		"name": "frillish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -4740,6 +5332,7 @@ const dexData = [
 		"name": "jellicent",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -4748,6 +5341,7 @@ const dexData = [
 		"name": "alomomola",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4756,6 +5350,7 @@ const dexData = [
 		"name": "joltik",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4764,6 +5359,7 @@ const dexData = [
 		"name": "galvantula",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4772,6 +5368,7 @@ const dexData = [
 		"name": "ferroseed",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4780,6 +5377,7 @@ const dexData = [
 		"name": "ferrothorn",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4788,6 +5386,7 @@ const dexData = [
 		"name": "klink",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4796,6 +5395,7 @@ const dexData = [
 		"name": "klang",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4804,6 +5404,7 @@ const dexData = [
 		"name": "klinklang",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4812,6 +5413,7 @@ const dexData = [
 		"name": "tynamo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4820,6 +5422,7 @@ const dexData = [
 		"name": "eelektrik",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4828,6 +5431,7 @@ const dexData = [
 		"name": "eelektross",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4836,6 +5440,7 @@ const dexData = [
 		"name": "elgyem",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4844,6 +5449,7 @@ const dexData = [
 		"name": "beheeyem",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4852,6 +5458,7 @@ const dexData = [
 		"name": "litwick",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4860,6 +5467,7 @@ const dexData = [
 		"name": "lampent",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4868,6 +5476,7 @@ const dexData = [
 		"name": "chandelure",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4876,6 +5485,7 @@ const dexData = [
 		"name": "axew",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4884,6 +5494,7 @@ const dexData = [
 		"name": "fraxure",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4892,6 +5503,7 @@ const dexData = [
 		"name": "haxorus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4900,6 +5512,7 @@ const dexData = [
 		"name": "cubchoo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4908,6 +5521,7 @@ const dexData = [
 		"name": "beartic",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4916,6 +5530,7 @@ const dexData = [
 		"name": "cryogonal",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4924,6 +5539,7 @@ const dexData = [
 		"name": "shelmet",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4932,6 +5548,7 @@ const dexData = [
 		"name": "accelgor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4940,6 +5557,7 @@ const dexData = [
 		"name": "stunfisk",
 		"alolan": false,
 		"galarian": true,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4948,6 +5566,7 @@ const dexData = [
 		"name": "mienfoo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4956,6 +5575,7 @@ const dexData = [
 		"name": "mienshao",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4964,6 +5584,7 @@ const dexData = [
 		"name": "druddigon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4972,6 +5593,7 @@ const dexData = [
 		"name": "golett",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4980,6 +5602,7 @@ const dexData = [
 		"name": "golurk",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4988,6 +5611,7 @@ const dexData = [
 		"name": "pawniard",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -4996,6 +5620,7 @@ const dexData = [
 		"name": "bisharp",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5004,6 +5629,7 @@ const dexData = [
 		"name": "bouffalant",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5012,6 +5638,7 @@ const dexData = [
 		"name": "rufflet",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5020,6 +5647,7 @@ const dexData = [
 		"name": "braviary",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -5028,6 +5656,7 @@ const dexData = [
 		"name": "vullaby",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5036,6 +5665,7 @@ const dexData = [
 		"name": "mandibuzz",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5044,6 +5674,7 @@ const dexData = [
 		"name": "heatmor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5052,6 +5683,7 @@ const dexData = [
 		"name": "durant",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5060,6 +5692,7 @@ const dexData = [
 		"name": "deino",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5068,6 +5701,7 @@ const dexData = [
 		"name": "zweilous",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5076,6 +5710,7 @@ const dexData = [
 		"name": "hydreigon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5084,6 +5719,7 @@ const dexData = [
 		"name": "larvesta",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5092,6 +5728,7 @@ const dexData = [
 		"name": "volcarona",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5100,6 +5737,7 @@ const dexData = [
 		"name": "cobalion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5108,6 +5746,7 @@ const dexData = [
 		"name": "terrakion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5116,6 +5755,7 @@ const dexData = [
 		"name": "virizion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5124,6 +5764,7 @@ const dexData = [
 		"name": "tornadus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
 	},
@@ -5132,6 +5773,7 @@ const dexData = [
 		"name": "thundurus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
 	},
@@ -5140,6 +5782,7 @@ const dexData = [
 		"name": "reshiram",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5148,6 +5791,7 @@ const dexData = [
 		"name": "zekrom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5156,6 +5800,7 @@ const dexData = [
 		"name": "landorus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
 	},
@@ -5164,6 +5809,7 @@ const dexData = [
 		"name": "kyurem",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["", "-black", "-white"], "form-names": ["normal", "black", "white"]}]
 	},
@@ -5172,6 +5818,7 @@ const dexData = [
 		"name": "keldeo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-ordinary", "-resolute"], "form-names": ["ordinary", "resolute"]}]
 	},
@@ -5180,6 +5827,7 @@ const dexData = [
 		"name": "meloetta",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-aria", "-pirouette"], "form-names": ["aria", "pirouette"]}]
 	},
@@ -5188,6 +5836,7 @@ const dexData = [
 		"name": "genesect",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5196,6 +5845,7 @@ const dexData = [
 		"name": "chespin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5204,6 +5854,7 @@ const dexData = [
 		"name": "quilladin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5212,6 +5863,7 @@ const dexData = [
 		"name": "chesnaught",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5220,6 +5872,7 @@ const dexData = [
 		"name": "fennekin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5228,6 +5881,7 @@ const dexData = [
 		"name": "braixen",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5236,6 +5890,7 @@ const dexData = [
 		"name": "delphox",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5244,6 +5899,7 @@ const dexData = [
 		"name": "froakie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5252,6 +5908,7 @@ const dexData = [
 		"name": "frogadier",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5260,6 +5917,7 @@ const dexData = [
 		"name": "greninja",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["", "-ash"], "form-names": ["normal", "ash"]}]
 	},
@@ -5268,6 +5926,7 @@ const dexData = [
 		"name": "bunnelby",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5276,6 +5935,7 @@ const dexData = [
 		"name": "diggersby",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5284,6 +5944,7 @@ const dexData = [
 		"name": "fletchling",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5292,6 +5953,7 @@ const dexData = [
 		"name": "fletchinder",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5300,6 +5962,7 @@ const dexData = [
 		"name": "talonflame",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5308,6 +5971,7 @@ const dexData = [
 		"name": "scatterbug",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5316,6 +5980,7 @@ const dexData = [
 		"name": "spewpa",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5324,6 +5989,7 @@ const dexData = [
 		"name": "vivillon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{ "forms": ["-meadow", "-archipelago", "-continental", "-elegant", "-fancy", "-garden", "-high-plains", "-icy-snow", "-jungle", "-marine", "-modern", "-monsoon", "-ocean", "-poke-ball", "-polar", "-river", "-sandstorm", "-savanna", "-sun", "-tundra"], "form-names": ["meadow", "archipelago", "continental", "elegant", "fancy", "garden", "high plains", "icy snow", "jungle", "marine", "modern", "monsoon", "ocean", "pok&eacuteball", "polar", "river", "sandstorm", "savanna", "sun", "tundra"] }]
 	},
@@ -5332,6 +5998,7 @@ const dexData = [
 		"name": "litleo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5340,6 +6007,7 @@ const dexData = [
 		"name": "pyroar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -5348,6 +6016,7 @@ const dexData = [
 		"name": "flabebe",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
 	},
@@ -5356,6 +6025,7 @@ const dexData = [
 		"name": "floette",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
 	},
@@ -5364,6 +6034,7 @@ const dexData = [
 		"name": "florges",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
 	},
@@ -5372,6 +6043,7 @@ const dexData = [
 		"name": "skiddo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5380,6 +6052,7 @@ const dexData = [
 		"name": "gogoat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5388,6 +6061,7 @@ const dexData = [
 		"name": "pancham",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5396,6 +6070,7 @@ const dexData = [
 		"name": "pangoro",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5404,6 +6079,7 @@ const dexData = [
 		"name": "furfrou",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-natural", "-dandy", "-debutante", "-diamond", "-heart", "-kabuki", "-la-reine", "-matron", "-pharaoh", "-star"], "form-names": ["natural trim", "dandy trim", "debutante trim", "diamond trim", "heart trim", "kabuki trim", "la reine trim", "matron trim", "pharaoh trim", "star trim"]}]
 	},
@@ -5412,6 +6088,7 @@ const dexData = [
 		"name": "espurr",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5420,6 +6097,7 @@ const dexData = [
 		"name": "meowstic",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -5428,6 +6106,7 @@ const dexData = [
 		"name": "honedge",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5436,6 +6115,7 @@ const dexData = [
 		"name": "doublade",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5444,6 +6124,7 @@ const dexData = [
 		"name": "aegislash",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5452,6 +6133,7 @@ const dexData = [
 		"name": "spritzee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5460,6 +6142,7 @@ const dexData = [
 		"name": "aromatisse",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5468,6 +6151,7 @@ const dexData = [
 		"name": "swirlix",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5476,6 +6160,7 @@ const dexData = [
 		"name": "slurpuff",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5484,6 +6169,7 @@ const dexData = [
 		"name": "inkay",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5492,6 +6178,7 @@ const dexData = [
 		"name": "malamar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5500,6 +6187,7 @@ const dexData = [
 		"name": "binacle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5508,6 +6196,7 @@ const dexData = [
 		"name": "barbaracle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5516,6 +6205,7 @@ const dexData = [
 		"name": "skrelp",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5524,6 +6214,7 @@ const dexData = [
 		"name": "dragalge",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5532,6 +6223,7 @@ const dexData = [
 		"name": "clauncher",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5540,6 +6232,7 @@ const dexData = [
 		"name": "clawitzer",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5548,6 +6241,7 @@ const dexData = [
 		"name": "helioptile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5556,6 +6250,7 @@ const dexData = [
 		"name": "heliolisk",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5564,6 +6259,7 @@ const dexData = [
 		"name": "tyrunt",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5572,6 +6268,7 @@ const dexData = [
 		"name": "tyrantrum",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5580,6 +6277,7 @@ const dexData = [
 		"name": "amaura",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5588,6 +6286,7 @@ const dexData = [
 		"name": "aurorus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5596,6 +6295,7 @@ const dexData = [
 		"name": "sylveon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5604,6 +6304,7 @@ const dexData = [
 		"name": "hawlucha",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5612,6 +6313,7 @@ const dexData = [
 		"name": "dedenne",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5620,6 +6322,7 @@ const dexData = [
 		"name": "carbink",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5628,6 +6331,7 @@ const dexData = [
 		"name": "goomy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5636,6 +6340,7 @@ const dexData = [
 		"name": "sliggoo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -5644,6 +6349,7 @@ const dexData = [
 		"name": "goodra",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -5652,6 +6358,7 @@ const dexData = [
 		"name": "klefki",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5660,6 +6367,7 @@ const dexData = [
 		"name": "phantump",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5668,6 +6376,7 @@ const dexData = [
 		"name": "trevenant",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5676,6 +6385,7 @@ const dexData = [
 		"name": "pumpkaboo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small<br>1&rsquo;0&ldquo; (0.3m)", "average<br>1&rsquo;4&ldquo; (0.4m)", "large<br>1&rsquo;8&ldquo; (0.5m)", "super<br>2&rsquo;7&ldquo; (0.8m)"]}]
 	},
@@ -5684,6 +6394,7 @@ const dexData = [
 		"name": "gourgeist",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-small", "-average", "-large", "-super"], "form-names": ["small<br>2&rsquo;4&ldquo; (0.7m)", "average<br>2&rsquo;11&ldquo; (0.9m)", "large<br>3&rsquo;7&ldquo; (1.1m)", "super<br>5&rsquo;7&ldquo; (1.7m)"]}]
 	},
@@ -5692,6 +6403,7 @@ const dexData = [
 		"name": "bergmite",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5700,6 +6412,7 @@ const dexData = [
 		"name": "avalugg",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -5708,6 +6421,7 @@ const dexData = [
 		"name": "noibat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5716,6 +6430,7 @@ const dexData = [
 		"name": "noivern",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5724,6 +6439,7 @@ const dexData = [
 		"name": "xerneas",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5732,6 +6448,7 @@ const dexData = [
 		"name": "yveltal",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5740,6 +6457,7 @@ const dexData = [
 		"name": "zygarde",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-10", "-50"], "form-names": ["10%", "50%"]}]
 	},
@@ -5748,6 +6466,7 @@ const dexData = [
 		"name": "diancie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5756,6 +6475,7 @@ const dexData = [
 		"name": "hoopa",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-confined", "-unbound"], "form-names": ["confined", "unbound"]}]
 	},
@@ -5764,6 +6484,7 @@ const dexData = [
 		"name": "volcanion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5772,6 +6493,7 @@ const dexData = [
 		"name": "rowlet",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5780,6 +6502,7 @@ const dexData = [
 		"name": "dartrix",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5788,6 +6511,7 @@ const dexData = [
 		"name": "decidueye",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": true,
 		"gender": false,
 		"alts": null
 	},
@@ -5796,6 +6520,7 @@ const dexData = [
 		"name": "litten",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5804,6 +6529,7 @@ const dexData = [
 		"name": "torracat",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5812,6 +6538,7 @@ const dexData = [
 		"name": "incineroar",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5820,6 +6547,7 @@ const dexData = [
 		"name": "popplio",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5828,6 +6556,7 @@ const dexData = [
 		"name": "brionne",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5836,6 +6565,7 @@ const dexData = [
 		"name": "primarina",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5844,6 +6574,7 @@ const dexData = [
 		"name": "pikipek",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5852,6 +6583,7 @@ const dexData = [
 		"name": "trumbeak",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5860,6 +6592,7 @@ const dexData = [
 		"name": "toucannon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5868,6 +6601,7 @@ const dexData = [
 		"name": "yungoos",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5876,6 +6610,7 @@ const dexData = [
 		"name": "gumshoos",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5884,6 +6619,7 @@ const dexData = [
 		"name": "grubbin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5892,6 +6628,7 @@ const dexData = [
 		"name": "charjabug",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5900,6 +6637,7 @@ const dexData = [
 		"name": "vikavolt",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5908,6 +6646,7 @@ const dexData = [
 		"name": "crabrawler",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5916,6 +6655,7 @@ const dexData = [
 		"name": "crabominable",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5924,6 +6664,7 @@ const dexData = [
 		"name": "oricorio",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-baile", "-pau", "-pom-pom", "-sensu"], "form-names": ["baile", "pau", "pom pom", "sensu"]}]
 	},
@@ -5932,6 +6673,7 @@ const dexData = [
 		"name": "cutiefly",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5940,6 +6682,7 @@ const dexData = [
 		"name": "ribombee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5948,6 +6691,7 @@ const dexData = [
 		"name": "rockruff",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5956,6 +6700,7 @@ const dexData = [
 		"name": "lycanroc",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-midday", "-dusk", "-midnight"], "form-names": ["midday", "dusk", "midnight"]}]
 	},
@@ -5964,6 +6709,7 @@ const dexData = [
 		"name": "wishiwashi",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5972,6 +6718,7 @@ const dexData = [
 		"name": "mareanie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5980,6 +6727,7 @@ const dexData = [
 		"name": "toxapex",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5988,6 +6736,7 @@ const dexData = [
 		"name": "mudbray",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -5996,6 +6745,7 @@ const dexData = [
 		"name": "mudsdale",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6004,6 +6754,7 @@ const dexData = [
 		"name": "dewpider",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6012,6 +6763,7 @@ const dexData = [
 		"name": "araquanid",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6020,6 +6772,7 @@ const dexData = [
 		"name": "fomantis",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6028,6 +6781,7 @@ const dexData = [
 		"name": "lurantis",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6036,6 +6790,7 @@ const dexData = [
 		"name": "morelull",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6044,6 +6799,7 @@ const dexData = [
 		"name": "shiinotic",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6052,6 +6808,7 @@ const dexData = [
 		"name": "salandit",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6060,6 +6817,7 @@ const dexData = [
 		"name": "salazzle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6068,6 +6826,7 @@ const dexData = [
 		"name": "stufful",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6076,6 +6835,7 @@ const dexData = [
 		"name": "bewear",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6084,6 +6844,7 @@ const dexData = [
 		"name": "bounsweet",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6092,6 +6853,7 @@ const dexData = [
 		"name": "steenee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6100,6 +6862,7 @@ const dexData = [
 		"name": "tsareena",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6108,6 +6871,7 @@ const dexData = [
 		"name": "comfey",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6116,6 +6880,7 @@ const dexData = [
 		"name": "oranguru",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6124,6 +6889,7 @@ const dexData = [
 		"name": "passimian",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6132,6 +6898,7 @@ const dexData = [
 		"name": "wimpod",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6140,6 +6907,7 @@ const dexData = [
 		"name": "golisopod",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6148,6 +6916,7 @@ const dexData = [
 		"name": "sandygast",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6156,6 +6925,7 @@ const dexData = [
 		"name": "palossand",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6164,6 +6934,7 @@ const dexData = [
 		"name": "pyukumuku",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6172,6 +6943,7 @@ const dexData = [
 		"name": "type-null",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6180,6 +6952,7 @@ const dexData = [
 		"name": "silvally",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6188,6 +6961,7 @@ const dexData = [
 		"name": "minior",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-red-core", "-orange-core", "-yellow-core", "-green-core", "-blue-core", "-indigo-core", "-violet-core"], "form-names": ["red core", "orange core", "yellow core", "green core", "blue core", "indigo core", "violet core"]}]
 	},
@@ -6196,6 +6970,7 @@ const dexData = [
 		"name": "komala",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6204,6 +6979,7 @@ const dexData = [
 		"name": "turtonator",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6212,6 +6988,7 @@ const dexData = [
 		"name": "togedemaru",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6220,6 +6997,7 @@ const dexData = [
 		"name": "mimikyu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6228,6 +7006,7 @@ const dexData = [
 		"name": "bruxish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6236,6 +7015,7 @@ const dexData = [
 		"name": "drampa",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6244,6 +7024,7 @@ const dexData = [
 		"name": "dhelmise",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6252,6 +7033,7 @@ const dexData = [
 		"name": "jangmo-o",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6260,6 +7042,7 @@ const dexData = [
 		"name": "hakamo-o",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6268,6 +7051,7 @@ const dexData = [
 		"name": "kommo-o",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6276,6 +7060,7 @@ const dexData = [
 		"name": "tapu-koko",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6284,6 +7069,7 @@ const dexData = [
 		"name": "tapu-lele",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6292,6 +7078,7 @@ const dexData = [
 		"name": "tapu-bulu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6300,6 +7087,7 @@ const dexData = [
 		"name": "tapu-fini",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6308,6 +7096,7 @@ const dexData = [
 		"name": "cosmog",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6316,6 +7105,7 @@ const dexData = [
 		"name": "cosmoem",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6324,6 +7114,7 @@ const dexData = [
 		"name": "solgaleo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6332,6 +7123,7 @@ const dexData = [
 		"name": "lunala",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6340,6 +7132,7 @@ const dexData = [
 		"name": "nihilego",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6348,6 +7141,7 @@ const dexData = [
 		"name": "buzzwole",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6356,6 +7150,7 @@ const dexData = [
 		"name": "pheromosa",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6364,6 +7159,7 @@ const dexData = [
 		"name": "xurkitree",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6372,6 +7168,7 @@ const dexData = [
 		"name": "celesteela",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6380,6 +7177,7 @@ const dexData = [
 		"name": "kartana",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6388,6 +7186,7 @@ const dexData = [
 		"name": "guzzlord",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6396,6 +7195,7 @@ const dexData = [
 		"name": "necrozma",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["", "-dawn-wings", "-dusk-mane"], "form-names": ["normal", "dawn wings", "dusk mane"]}]
 	},
@@ -6404,6 +7204,7 @@ const dexData = [
 		"name": "magearna",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["", "-original"], "form-names": ["normal", "original color"]}]
 	},
@@ -6412,6 +7213,7 @@ const dexData = [
 		"name": "marshadow",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6420,6 +7222,7 @@ const dexData = [
 		"name": "poipole",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6428,6 +7231,7 @@ const dexData = [
 		"name": "naganadel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6436,6 +7240,7 @@ const dexData = [
 		"name": "stakataka",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6444,6 +7249,7 @@ const dexData = [
 		"name": "blacephalon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6452,6 +7258,7 @@ const dexData = [
 		"name": "zeraora",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6460,6 +7267,7 @@ const dexData = [
 		"name": "meltan",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6468,6 +7276,7 @@ const dexData = [
 		"name": "melmetal",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6476,6 +7285,7 @@ const dexData = [
 		"name": "grookey",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6484,6 +7294,7 @@ const dexData = [
 		"name": "thwackey",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6492,6 +7303,7 @@ const dexData = [
 		"name": "rillaboom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6500,6 +7312,7 @@ const dexData = [
 		"name": "scorbunny",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6508,6 +7321,7 @@ const dexData = [
 		"name": "raboot",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6516,6 +7330,7 @@ const dexData = [
 		"name": "cinderace",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6524,6 +7339,7 @@ const dexData = [
 		"name": "sobble",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6532,6 +7348,7 @@ const dexData = [
 		"name": "drizzile",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6540,6 +7357,7 @@ const dexData = [
 		"name": "inteleon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6548,6 +7366,7 @@ const dexData = [
 		"name": "skwovet",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6556,6 +7375,7 @@ const dexData = [
 		"name": "greedent",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6564,6 +7384,7 @@ const dexData = [
 		"name": "rookidee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6572,6 +7393,7 @@ const dexData = [
 		"name": "corvisquire",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6580,6 +7402,7 @@ const dexData = [
 		"name": "corviknight",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6588,6 +7411,7 @@ const dexData = [
 		"name": "blipbug",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6596,6 +7420,7 @@ const dexData = [
 		"name": "dottler",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6604,6 +7429,7 @@ const dexData = [
 		"name": "orbeetle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6612,6 +7438,7 @@ const dexData = [
 		"name": "nickit",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6620,6 +7447,7 @@ const dexData = [
 		"name": "thievul",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6628,6 +7456,7 @@ const dexData = [
 		"name": "gossifleur",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6636,6 +7465,7 @@ const dexData = [
 		"name": "eldegoss",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6644,6 +7474,7 @@ const dexData = [
 		"name": "wooloo",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6652,6 +7483,7 @@ const dexData = [
 		"name": "dubwool",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6660,6 +7492,7 @@ const dexData = [
 		"name": "chewtle",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6668,6 +7501,7 @@ const dexData = [
 		"name": "drednaw",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6676,6 +7510,7 @@ const dexData = [
 		"name": "yamper",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6684,6 +7519,7 @@ const dexData = [
 		"name": "boltund",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6692,6 +7528,7 @@ const dexData = [
 		"name": "rolycoly",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6700,6 +7537,7 @@ const dexData = [
 		"name": "carkol",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6708,6 +7546,7 @@ const dexData = [
 		"name": "coalossal",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6716,6 +7555,7 @@ const dexData = [
 		"name": "applin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6724,6 +7564,7 @@ const dexData = [
 		"name": "flapple",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6732,6 +7573,7 @@ const dexData = [
 		"name": "appletun",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6740,6 +7582,7 @@ const dexData = [
 		"name": "silicobra",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6748,6 +7591,7 @@ const dexData = [
 		"name": "sandaconda",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6756,6 +7600,7 @@ const dexData = [
 		"name": "cramorant",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6764,6 +7609,7 @@ const dexData = [
 		"name": "arrokuda",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6772,6 +7618,7 @@ const dexData = [
 		"name": "barraskewda",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6780,6 +7627,7 @@ const dexData = [
 		"name": "toxel",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6788,6 +7636,7 @@ const dexData = [
 		"name": "toxtricity",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-amped", "-low-key"], "form-names": ["amped", "low key"]}]
 	},
@@ -6796,6 +7645,7 @@ const dexData = [
 		"name": "sizzlipede",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6804,6 +7654,7 @@ const dexData = [
 		"name": "centiskorch",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6812,6 +7663,7 @@ const dexData = [
 		"name": "clobbopus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6820,6 +7672,7 @@ const dexData = [
 		"name": "grapploct",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6828,6 +7681,7 @@ const dexData = [
 		"name": "sinistea",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-phony", "-antique"], "form-names": ["phony", "antique"]}]
 	},
@@ -6836,6 +7690,7 @@ const dexData = [
 		"name": "polteageist",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-phony", "-antique"], "form-names": ["phony", "antique"]}]
 	},
@@ -6844,6 +7699,7 @@ const dexData = [
 		"name": "hatenna",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6852,6 +7708,7 @@ const dexData = [
 		"name": "hattrem",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6860,6 +7717,7 @@ const dexData = [
 		"name": "hatterene",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6868,6 +7726,7 @@ const dexData = [
 		"name": "impidimp",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6876,6 +7735,7 @@ const dexData = [
 		"name": "morgrem",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6884,6 +7744,7 @@ const dexData = [
 		"name": "grimmsnarl",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6892,6 +7753,7 @@ const dexData = [
 		"name": "obstagoon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6900,6 +7762,7 @@ const dexData = [
 		"name": "perrserker",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6908,6 +7771,7 @@ const dexData = [
 		"name": "cursola",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6916,6 +7780,7 @@ const dexData = [
 		"name": "sirfetchd",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6924,6 +7789,7 @@ const dexData = [
 		"name": "mr-rime",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6932,6 +7798,7 @@ const dexData = [
 		"name": "runerigus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6940,6 +7807,7 @@ const dexData = [
 		"name": "milcery",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6948,6 +7816,7 @@ const dexData = [
 		"name": "alcremie",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"flavors": ["vanilla-cream", "caramel-swirl", "lemon-cream", "matcha-cream", "mint-cream", "rainbow-swirl", "ruby-cream", "ruby-swirl", "salted-cream"], "toppings": ["berry", "clover", "flower", "love", "ribbon", "star", "strawberry"]}]
 	},
@@ -6956,6 +7825,7 @@ const dexData = [
 		"name": "falinks",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6964,6 +7834,7 @@ const dexData = [
 		"name": "pincurchin",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6972,6 +7843,7 @@ const dexData = [
 		"name": "snom",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6980,6 +7852,7 @@ const dexData = [
 		"name": "frosmoth",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6988,6 +7861,7 @@ const dexData = [
 		"name": "stonjourner",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -6996,6 +7870,7 @@ const dexData = [
 		"name": "eiscue",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7004,6 +7879,7 @@ const dexData = [
 		"name": "indeedee",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -7012,6 +7888,7 @@ const dexData = [
 		"name": "morpeko",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7020,6 +7897,7 @@ const dexData = [
 		"name": "cufant",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7028,6 +7906,7 @@ const dexData = [
 		"name": "copperajah",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7036,6 +7915,7 @@ const dexData = [
 		"name": "dracozolt",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7044,6 +7924,7 @@ const dexData = [
 		"name": "arctozolt",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7052,6 +7933,7 @@ const dexData = [
 		"name": "dracovish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7060,6 +7942,7 @@ const dexData = [
 		"name": "arctovish",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7068,6 +7951,7 @@ const dexData = [
 		"name": "duraludon",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7076,6 +7960,7 @@ const dexData = [
 		"name": "dreepy",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7084,6 +7969,7 @@ const dexData = [
 		"name": "drakloak",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7092,6 +7978,7 @@ const dexData = [
 		"name": "dragapult",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7100,6 +7987,7 @@ const dexData = [
 		"name": "zacian",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7108,6 +7996,7 @@ const dexData = [
 		"name": "zamazenta",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7116,6 +8005,7 @@ const dexData = [
 		"name": "eternatus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7124,6 +8014,7 @@ const dexData = [
 		"name": "kubfu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7132,6 +8023,7 @@ const dexData = [
 		"name": "urshifu",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-rapid-strike", "-single-strike"], "form-names": ["rapid strike", "single strike"]}]
 	},
@@ -7140,6 +8032,7 @@ const dexData = [
 		"name": "zarude",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["", "-dada"], "form-names": ["normal", "dada"]}]
 	},
@@ -7148,6 +8041,7 @@ const dexData = [
 		"name": "regieleki",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7156,6 +8050,7 @@ const dexData = [
 		"name": "regidrago",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7164,6 +8059,7 @@ const dexData = [
 		"name": "glastrier",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7172,6 +8068,7 @@ const dexData = [
 		"name": "spectrier",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7180,6 +8077,7 @@ const dexData = [
 		"name": "calyrex",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["", "-ice-rider", "-shadow-rider"], "form-names": ["normal", "ice rider", "shadow rider"]}]
 	},
@@ -7188,6 +8086,7 @@ const dexData = [
 		"name": "wyrdeer",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7196,6 +8095,7 @@ const dexData = [
 		"name": "kleavor",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7204,6 +8104,7 @@ const dexData = [
 		"name": "ursaluna",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7212,6 +8113,7 @@ const dexData = [
 		"name": "basculegion",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": true,
 		"alts": null
 	},
@@ -7220,6 +8122,7 @@ const dexData = [
 		"name": "sneasler",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7228,6 +8131,7 @@ const dexData = [
 		"name": "overqwil",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": null
 	},
@@ -7236,6 +8140,7 @@ const dexData = [
 		"name": "enamorus",
 		"alolan": false,
 		"galarian": false,
+		"hisuian": false,
 		"gender": false,
 		"alts": [{"forms": ["-incarnate", "-therian"], "form-names": ["incarnate", "therian"]}]
 	}
