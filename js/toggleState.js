@@ -127,6 +127,18 @@ function dexCollapse (toggleID) {
 		} else {
 			console.log ("Error in collapse function.");
 		}
+	} else if (operation === 'showhide') {
+		const showHide = document.getElementById(toggleID);
+		const dexDiv = document.getElementById(toggleID).parentNode.parentNode.parentNode.parentNode.children[2];
+		if (showHide.firstChild.innerHTML.includes('show')) {
+			dexDiv.style.display = 'block';
+			showHide.firstChild.innerHTML = `<img src="../assets/icons/hide.svg" alt="">&nbsp;Hide&nbsp;`;
+		} else if (showHide.firstChild.innerHTML.includes('hide')) {
+			dexDiv.style.display = 'none';
+			showHide.firstChild.innerHTML = `<img src="../assets/icons/show.svg" alt="">&nbsp;Show&nbsp;`;
+		} else {
+			console.log ("Error in show/hide function");
+		}
 	} else {
 		console.log ("Error in expand-collapse function");
 	}
@@ -177,6 +189,28 @@ function writeUserDex (pokemonData, autoCollapse) {
 	}
 }
 
+function setDexState (nationalNormal, altNormal, nationalShiny, altShiny) {
+	const dexes = [
+		{	state: 	nationalNormal,
+			id:		'normal-nat-dex' },
+		{	state: 	altNormal,
+			id:		'normal-alt-dex' },
+		{	state: 	nationalShiny,
+			id:		'shiny-nat-dex' },
+		{	state: 	altShiny,
+			id:		'shiny-alt-dex' }
+	];
+	for (dexIndex in dexes) {
+		const dex = dexes[dexIndex];
+		if (dex.state === false) {
+			const dexDiv = document.getElementById(dex.id);
+			const showHide = document.getElementById(dex.id.replace('dex', 'showhide'));
+			dexDiv.style.display = 'none';
+			showHide.firstChild.innerHTML = `<img src="../assets/icons/show.svg" alt="">&nbsp;Show&nbsp;`;
+		}
+	}
+}
+
 // Fetch the database's profile data for the user and display it
 function getProfileData (user) {
 	// Fetch the user's data
@@ -187,6 +221,15 @@ function getProfileData (user) {
 		const data = doc.data();
 		if (data.pokemon) {
 			writeUserDex (data.pokemon, data.autoCollapse);
+		} else {
+			console.log ('Error getting user data: no data present');
+		}
+		if (data.dexDisplay) {
+			const nationalNormal = data.dexDisplay.setNationalNormal;
+			const altNormal = data.dexDisplay.setAltNormal;
+			const nationalShiny = data.dexDisplay.setNationalShiny;
+			const altShiny = data.dexDisplay.setAltShiny;
+			setDexState (nationalNormal, altNormal, nationalShiny, altShiny);
 		} else {
 			console.log ('Error getting user data: no data present');
 		}

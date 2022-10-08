@@ -16,7 +16,6 @@ function changeCollapse () {
 
 function changeDexDisplay () {
 	const dexID = event.target.id;
-	console.log (`${dexID}: ${document.getElementById(dexID).checked}`);
 	const user = firebase.auth().currentUser;
 	if (user) {
 		const userData = db.collection('userData').doc(user.uid);
@@ -111,7 +110,6 @@ function getProfileData (user) {
 		}
 		document.getElementById('setCollapse').addEventListener("click", changeCollapse, false);
 		
-		console.log (data.dexDisplay.setNationalNormal);
 		if (data.dexDisplay.setNationalNormal != undefined) {
 			document.getElementById('setNationalNormal').checked = data.dexDisplay.setNationalNormal;
 		} else {
@@ -119,7 +117,6 @@ function getProfileData (user) {
 		}
 		document.getElementById('setNationalNormal').addEventListener("click", changeDexDisplay, false);
 		
-		console.log (data.dexDisplay.setAltNormal);
 		if (data.dexDisplay.setAltNormal != undefined) {
 			document.getElementById('setAltNormal').checked = data.dexDisplay.setAltNormal;
 		} else {
@@ -127,7 +124,6 @@ function getProfileData (user) {
 		}
 		document.getElementById('setAltNormal').addEventListener("click", changeDexDisplay, false);
 		
-		console.log (data.dexDisplay.setNationalShiny);
 		if (data.dexDisplay.setNationalShiny != undefined) {
 			document.getElementById('setNationalShiny').checked = data.dexDisplay.setAltNormal;
 		} else {
@@ -135,7 +131,6 @@ function getProfileData (user) {
 		}
 		document.getElementById('setNationalShiny').addEventListener("click", changeDexDisplay, false);
 		
-		console.log (data.dexDisplay.setAltShiny);
 		if (data.dexDisplay.setAltShiny != undefined) {
 			document.getElementById('setAltShiny').checked = data.dexDisplay.setAltShiny;
 		} else {
@@ -197,11 +192,6 @@ function changeEmail () {
 		alert('Please enter a valid email address.');
 		return;
 	}
-}
-
-function changeDexDisplay (dexName, dexId) {
-	const checked_value = document.getElementById(dexId).checked
-	localStorage.setItem(dexName, checked_value)
 }
 
 function resetPassword () {

@@ -213,7 +213,7 @@ function writeDex (dexType, dexColor) {
 			dexDivContents += `<div class="card-header">`;
 			dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 			if (pokemon.name === 'alcremie') {
-				dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie">Alt forms guide</a></div>`;
+				dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie" target="_blank">Alt forms guide</a></div>`;
 			}
 			dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 			dexDivContents += `<div class="row row-cols-6">`;
@@ -251,7 +251,7 @@ function writeDex (dexType, dexColor) {
 							dexDivContents += `<div class="card-header">`;
 							dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 							if (pokemon.name === 'alcremie') {
-								dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie">Alt forms guide</a></div>`;
+								dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie" target="_blank">Alt forms guide</a></div>`;
 							}
 							dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 							dexDivContents += `<div class="row row-cols-6">`;
@@ -384,12 +384,8 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 	return pokemonContent;
 }
 
+/*
 const listView = localStorage.getItem('pokedex_listView');
-
-const natNormal = localStorage.getItem('pokedex_display_natNormal') || true;
-const altNormal = localStorage.getItem('pokedex_display_altNormal') || true;
-const natShiny = localStorage.getItem('pokedex_display_natShiny') || true;
-const altShiny = localStorage.getItem('pokedex_display_altShiny') || true;
 
 if (listView && listView != 'false') {
 	document.getElementById('listView').checked = true;
@@ -440,6 +436,11 @@ function toggleListView () {
 	document.getElementById('gridView').checked = false;
 	localStorage.setItem('pokedex_listView', true);
 }
+*/
 
+writeDex ('nat', 'normal');
+writeDex ('alt', 'normal');
+writeDex ('nat', 'shiny');
+writeDex ('alt', 'shiny');
 
 console.log (`Total Pokemon in living dex: ${totalPokemon}`);
