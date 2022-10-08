@@ -14,6 +14,24 @@ function changeCollapse () {
 	}
 }
 
+function changeDexDisplay () {
+	const dexID = event.target.id;
+	console.log (`${dexID}: ${document.getElementById(dexID).checked}`);
+	const user = firebase.auth().currentUser;
+	if (user) {
+		const userData = db.collection('userData').doc(user.uid);
+		userData.set({
+			dexDisplay: {
+				[dexID]: document.getElementById(dexID).checked
+			}
+		}, { merge: true }).catch ((error) => {
+			console.error ('Error updating dex preferences: ', error);
+		});
+	} else {
+		console.log ('Error updating dex preferences.');
+	}
+}
+
 // Fetch the database's profile data for the user and display it
 function getProfileData (user) {
 	// Fetch the user's data
@@ -85,12 +103,45 @@ function getProfileData (user) {
 	
 	userData.get().then((doc) => {
 		const data = doc.data();
+		
 		if (data.autoCollapse) {
 			document.getElementById('setCollapse').checked = data.autoCollapse;
 		} else {
 			document.getElementById('setCollapse').checked = false;
 		}
 		document.getElementById('setCollapse').addEventListener("click", changeCollapse, false);
+		
+		console.log (data.dexDisplay.setNationalNormal);
+		if (data.dexDisplay.setNationalNormal != undefined) {
+			document.getElementById('setNationalNormal').checked = data.dexDisplay.setNationalNormal;
+		} else {
+			document.getElementById('setNationalNormal').checked = true;
+		}
+		document.getElementById('setNationalNormal').addEventListener("click", changeDexDisplay, false);
+		
+		console.log (data.dexDisplay.setAltNormal);
+		if (data.dexDisplay.setAltNormal != undefined) {
+			document.getElementById('setAltNormal').checked = data.dexDisplay.setAltNormal;
+		} else {
+			document.getElementById('setAltNormal').checked = true;
+		}
+		document.getElementById('setAltNormal').addEventListener("click", changeDexDisplay, false);
+		
+		console.log (data.dexDisplay.setNationalShiny);
+		if (data.dexDisplay.setNationalShiny != undefined) {
+			document.getElementById('setNationalShiny').checked = data.dexDisplay.setAltNormal;
+		} else {
+			document.getElementById('setNationalShiny').checked = true;
+		}
+		document.getElementById('setNationalShiny').addEventListener("click", changeDexDisplay, false);
+		
+		console.log (data.dexDisplay.setAltShiny);
+		if (data.dexDisplay.setAltShiny != undefined) {
+			document.getElementById('setAltShiny').checked = data.dexDisplay.setAltShiny;
+		} else {
+			document.getElementById('setAltShiny').checked = true;
+		}
+		document.getElementById('setAltShiny').addEventListener("click", changeDexDisplay, false);
 	}).catch((error) => {
 		console.log('Error getting user settings: ', error);
 	});
@@ -146,11 +197,6 @@ function changeEmail () {
 		alert('Please enter a valid email address.');
 		return;
 	}
-}
-
-function changeDexDisplay (dexName, dexId) {
-	const checked_value = document.getElementById(dexId).checked
-	localStorage.setItem(dexName, checked_value)
 }
 
 function resetPassword () {
