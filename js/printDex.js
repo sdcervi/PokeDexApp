@@ -384,7 +384,62 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 	return pokemonContent;
 }
 
+const listView = localStorage.getItem('pokedex_listView');
+
+const natNormal = localStorage.getItem('pokedex_display_natNormal') || true;
+const altNormal = localStorage.getItem('pokedex_display_altNormal') || true;
+const natShiny = localStorage.getItem('pokedex_display_natShiny') || true;
+const altShiny = localStorage.getItem('pokedex_display_altShiny') || true;
+
+if (listView && listView != 'false') {
+	document.getElementById('listView').checked = true;
+	toggleListView()
+} else {
+	document.getElementById('gridView').checked = true;
+	toggleGridView()
+}
 
 
-// Logs the total number of pokemon, alt forms included, as a sort of hack way to know how to calculate % stats for pokemon caught
+function toggleGridView () {
+	if (natNormal && natNormal != 'false') {
+		writeDex ('nat', 'normal');
+	}
+	if (altNormal && altNormal != 'false') {
+		writeDex ('alt', 'normal');
+	}
+	if (natShiny && natShiny != 'false') {
+		writeDex ('nat', 'shiny');
+	}
+	if (altShiny && altShiny != 'false') {
+		writeDex ('alt', 'shiny');
+	}
+
+	document.getElementById('listView').checked = false;
+	document.getElementById('gridView').checked = true;
+
+	localStorage.setItem('pokedex_listView', false);
+	console.log ('Writing grid view');
+	console.log (`${natNormal}, ${altNormal}, ${natShiny}, ${altShiny}`);
+}
+
+function toggleListView () {
+	if (natNormal && natNormal != 'false') {
+		writeDexList ('nat', 'normal');
+	}
+	if (altNormal && altNormal != 'false') {
+		writeDexList ('alt', 'normal');
+	}
+	if (natShiny && natShiny != 'false') {
+		writeDexList ('nat', 'shiny');
+	}
+	if (altShiny && altShiny != 'false') {
+		writeDexList ('alt', 'shiny');
+	}
+
+	document.getElementById('listView').checked = true;
+	document.getElementById('gridView').checked = false;
+	localStorage.setItem('pokedex_listView', true);
+}
+
+
 console.log (`Total Pokemon in living dex: ${totalPokemon}`);
