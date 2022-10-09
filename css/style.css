@@ -14,6 +14,7 @@ a:focus, a:hover { text-decoration: none; color: deepskyblue; }
 ul.navbar-nav li.active a.nav-link { color: white; opacity: 1; }
 
 button.usage-key { position: absolute; right: 0.75em; top: 4.25rem; }
+.viewToggleSet { position: absolute; left: 0.75em; top: 4.25rem; }
 
 h2.dex-heading { text-align: center; margin-top: 1rem; }
 h3.show-hide { text-align: center; }
@@ -92,17 +93,22 @@ h4.dex-entry-number { text-align: center; font-weight: bold; font-size: 0.75em; 
 h4.dex-entry-name { text-align: center; font-size: 0.7em; text-transform: capitalize; margin-bottom: 0; }
 h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capitalize; margin-bottom: 0; }
 
-.dex-entry-list { text-align: left; height: auto; font-weight: bold; font-size: 1rem; text-transform: capitalize; }
-.dex-entry-list th.dex-entry-number { width: 15%; }
-.dex-entry-list td.dex-entry-name { width: 20%; }
-.dex-entry-list td.dex-entry-img { width: 40%; }
-.dex-entry-list td.dex-entry-status { width: 35%; }
+.list-view-div { margin-top: 2.5em; }
+.dex-entry-list { text-align: left; font-size: 1rem; }
+.dex-entry-list th.dex-entry-number { width: 15%; font-weight: bold; vertical-align: middle; }
+.dex-entry-list td.dex-entry-name { width: 20%; text-transform: capitalize; vertical-align: middle; }
+.dex-entry-list td.dex-entry-img { white-space: nowrap; }
+.dex-entry-list td.dex-entry-img div { display: inline-block; position: relative; }
+.dex-entry-list td.dex-entry-img img { width: 3em; height: auto; opacity: 0.1; }
+.dex-entry-list td.dex-entry-status { width: 35%; vertical-align: middle; }
 
-.caught img { opacity: 1; }
+.caught img, .dex-entry-list td.dex-entry-img div.caught img { opacity: 1; }
 .caught h4 { color: black; }
 
-.trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 1em; z-index: 10; }
-.place:before { content: url(/assets/icons/box.svg); height: 1.5em; width: 1.5em; position: absolute; right: 1em; z-index: 10; }
+.dex-entry.trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 0.5em; z-index: 10; }
+.dex-entry-list td.dex-entry-img div.trade:before { content: url(/assets/icons/trade.svg); height: 1.25em; width: 1.25em; position: absolute; left: 0.25em; z-index: 10; }
+.dex-entry.place:before { content: url(/assets/icons/box.svg); height: 1.5em; width: 1.5em; position: absolute; right: 0.5em; z-index: 10; }
+.dex-entry-list td.dex-entry-img div.place:before { content: url(/assets/icons/box.svg); height: 1.25em; width: 1.25em; position: absolute; right: 0.25em; z-index: 10; }
 
 .box-alt-info { float: right; margin-right: 1em; margin-top: 0.5em; font-size: 0.8em; }
 
@@ -158,18 +164,21 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 
 @media only screen and (min-width: 576px) {
 	nav .dropdown, nav .signin, button.usage-key, .data-loading { right: calc(((100vw - 540px) / 2) + 0.75rem); }
+	.viewToggleSet { left: calc(((100vw - 540px) / 2) + 0.75rem); }
 	.toggle-switch { right: calc(((100vw - 540px) / 2) + 5.25rem); }
 	nav button.navbar-toggler { left: calc(((100vw - 540px) / 2) + 0.75rem); }
 }
 
 @media only screen and (min-width: 768px) {
 	nav .dropdown, nav .signin, button.usage-key, .data-loading { right: calc(((100vw - 720px) / 2) + 0.75rem); }
+	.viewToggleSet { left: calc(((100vw - 720px) / 2) + 0.75rem); }
 	.toggle-switch { right: calc(((100vw - 720px) / 2) + 5.25rem); }
 	nav button.navbar-toggler { left: calc(((100vw - 720px) / 2) + 0.75rem); }
 }
 
 @media only screen and (min-width: 992px) {
 	button.usage-key { position: static; float: right; }
+	.viewToggleSet { position: static; float: left; margin-bottom: 1em; }
 	nav#primaryNav .container-fluid { max-width: 100%; }
 	.navbar-nav { font-size: 0.85em; }
 	nav .dropdown, nav .signin, .data-loading { position: static; }

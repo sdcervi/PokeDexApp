@@ -288,28 +288,36 @@ function writeDex (dexType, dexColor) {
 	dexDiv.innerHTML = dexDivContents;
 }
 
-function writeDexList (dexType, dexColor) {
+function writeListView () {
 	// Get the HTML div
-	const dexDivID = `${dexColor}-${dexType}-dex`;
+	const dexDivID = `normal-nat-dex`;
 	const dexDiv = document.getElementById(dexDivID);
-	let dexDivContents = `<table class="table table-striped table-hover" id="${dexColor}-dex">`;
-	let tableHead = '<thead><tr><th scope="col">National Dex #</th><th scope="col">Name</th><th scope="col">Sprite</th><th scope="col">Status</th></tr></thead>';
-	dexDivContents += tableHead;
-	dexDivContents += '<tbody>';
-	// Generate the dex's contents
+	dexDiv.classList.add('list-view-div', 'table-responsive');
 	
+	// Remove the other three dexes and the first dex header from the page since we won't need them
+	dexDiv.parentNode.firstChild.nextElementSibling.remove();
+	dexDiv.parentNode.firstChild.nextElementSibling.remove();
+	const dexDivsToRemove = ['normal-alt-dex', 'shiny-nat-dex', 'shiny-alt-dex'];
+	for (let counter = 0; counter < dexDivsToRemove.length; counter++) {
+		document.getElementById(dexDivsToRemove[counter]).parentNode.remove();
+	}
+	
+	// Build the table header
+	let dexDivContents = `<p class="text-center small">Looking for alt forms and shinies? Those are visible by swiping to either side to scroll.</p>`;
+	dexDivContents += `<table class="table table-striped table-hover list-view-table"`;
+	dexDivContents += `<thead><tr><th scope="col">#</th><th scope="col">Name</th><th>Primary</th><th>&male; form</th><th>&female; form</th><th>Alolan</th><th>Galarian</th><th>Hisuian</th><th>Other Alts</th></tr></thead><tbody>`;
+	
+	// Generate the dex's contents
 	for (pokemon of dexData) {
 		const dexID = parseFloat(pokemon.id);
-		dexDivContents += writePokemonList (dexID, dexType, dexColor, null);
-		
+		dexDivContents += writePokemonList (dexID);
 	}
 	
 	dexDivContents += `</tbody></table>`;
-	
 	dexDiv.innerHTML = dexDivContents;
 }
 
-function writePokemonList (dexID, dexType, dexColor, altType) {
+function writePokemonList (dexID) {
 	// Get the Pokemon's information
 	const pokemonID = (dexID).toString().padStart(3, '0');
 	let imgSpecies = dexData[dexID-1].name;
@@ -352,10 +360,7 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 	
 	// Generate the pokemon's card
 	let pokemonContent;
-	let divId = '';
-	let pokemonSrc = '';
-	let pokeName = '';
-	if (!altType && altType != 0) {
+	/*if (!altType && altType != 0) {
 		divId = `${dexType}-${dexColor}-${pokemonID}`
 		pokemonSrc = `${imgSpecies}`
 		pokeName = `${species}`
@@ -377,8 +382,27 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 		pokemonSrc = `${imgSpecies}${forms[altType]}`
 		pokeName = `${formNames[altType]}`
 		totalPokemon++;
+	}*/
+	pokemonContent = `<tr class="dex-entry-list"><th class="dex-entry-number" scope='row'>${pokemonID}</th><td class="dex-entry-name">${species}</td>`;
+	pokemonContent += `<td class="dex-entry-img"><div id="nat-normal-${pokemonID}"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="nat-shiny-${pokemonID}"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
+	
+	// Add gender-specific forms if they exist
+	if (dexData[dexID-1].gender) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td><td></td>`
 	}
-	pokemonContent = `<tr class="dex-entry-list"><th class="dex-entry-number" scope='row'>${pokemonID}</th><td class="dex-entry-name">${pokeName}</td><td class="dex-entry-img"><div class="card dex-entry" id="${divId}"><img loading="lazy" src="/assets/pokemon/${dexColor}/${pokemonSrc}.webp" alt="${pokeName}" height=8></div></td><td class="dex-entry-status">Not available</td></tr>`;
+	
+	// Add Alolan forms if they exist
+	
+	// Add Galarian forms if they exist
+	
+	// Add Hisuian forms if they exist
+	
+	// Add other alt forms if they exist
+	
+	pokemonContent += `</tr>`;
 	
 	return pokemonContent;
 }
@@ -411,13 +435,6 @@ function toggleGridView () {
 		localStorage.setItem('pokedex_listView', 'false');
 		location.reload();
 	}
-}
-
-function writeListView () {
-	writeDexList ('nat', 'normal');
-	writeDexList ('alt', 'normal');
-	writeDexList ('nat', 'shiny');
-	writeDexList ('alt', 'shiny');
 }
 
 function toggleListView () {

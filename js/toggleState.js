@@ -162,6 +162,9 @@ function handleClick(event) {
 		} else if (element.nodeName === "DIV" && /dex-entry/.test(element.className)) {
 			changeCaughtState(element.id);
 			break;
+		} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className)) {
+			changeCaughtState(element.id);
+			break;
 		} else if (element.nodeName === "LI" && /nav-item/.test(element.className)) {
 			dexCollapse(element.id);
 			break;
@@ -174,15 +177,26 @@ function handleClick(event) {
 // Gets the already-completed items from user data and checks those boxes
 function writeUserDex (pokemonData, autoCollapse) {
 	if (Object.keys(pokemonData).length) {
-		for (const pokemon in pokemonData) {
-			const pokemonDiv = document.getElementById(pokemon);
-			if (pokemonData[pokemon]) {
-				pokemonDiv.classList.add(pokemonData[pokemon]);
+		if (listView == 'false')
+		{
+			for (const pokemon in pokemonData) {
+				const pokemonDiv = document.getElementById(pokemon);
+				console.log (pokemon, pokemonDiv, pokemonData[pokemon]);
+				if (pokemonData[pokemon]) {
+					pokemonDiv.classList.add(pokemonData[pokemon]);
+				}
+				checkComplete (pokemon);
 			}
-			checkComplete (pokemon);
-		}
-		if (autoCollapse) {
-			autoCollapseComplete();
+			if (autoCollapse) {
+				autoCollapseComplete();
+			}
+		} else {
+			for (const pokemon in pokemonData) {
+				if (document.getElementById(pokemon)) {
+					const pokemonDiv = document.getElementById(pokemon);
+					pokemonDiv.classList.add(pokemonData[pokemon]);
+				}
+			}
 		}
 	} else {
 		return;
