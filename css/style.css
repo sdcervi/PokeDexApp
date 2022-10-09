@@ -28,7 +28,8 @@ h4.usage-key { color: black;  margin-top: 10px; }
 .toggle-switch input:checked ~ .slider { border-color: var(--light); background-color: var(--light); }
 .toggle-switch .slider::before { content: ""; position: absolute; top: 3px; left: 4px; width: 19px; height: 19px; border-radius: 50%; box-shadow: inset 5px -2px 0px 0px var(--light); background-color: var(--dark); border-color: var(--light); transition: 0.3s; }
 .toggle-switch input:checked ~ .slider::before { transform: translateX(25px); background-color: var(--dark); border-color: var(--light); box-shadow: none; }
-/* */
+
+.view-toggle+.btn-secondary { background-color: #a1a1a1; border-color: #a1a1a1; }
 
 nav#primaryNav .container-fluid { justify-content: center; }
 .navbar-brand { margin-right: 0; text-align: center; }

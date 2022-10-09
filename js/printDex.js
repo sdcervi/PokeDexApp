@@ -288,7 +288,6 @@ function writeDex (dexType, dexColor) {
 	dexDiv.innerHTML = dexDivContents;
 }
 
-
 function writeDexList (dexType, dexColor) {
 	// Get the HTML div
 	const dexDivID = `${dexColor}-${dexType}-dex`;
@@ -384,63 +383,54 @@ function writePokemonList (dexID, dexType, dexColor, altType) {
 	return pokemonContent;
 }
 
-/*
 const listView = localStorage.getItem('pokedex_listView');
 
 if (listView && listView != 'false') {
 	document.getElementById('listView').checked = true;
-	toggleListView()
+	writeListView();
 } else {
 	document.getElementById('gridView').checked = true;
-	toggleGridView()
+	writeGridView();
 }
 
+function writeGridView () {
+	writeDex ('nat', 'normal');
+	writeDex ('alt', 'normal');
+	writeDex ('nat', 'shiny');
+	writeDex ('alt', 'shiny');
+}
 
 function toggleGridView () {
-	if (natNormal && natNormal != 'false') {
-		writeDex ('nat', 'normal');
-	}
-	if (altNormal && altNormal != 'false') {
-		writeDex ('alt', 'normal');
-	}
-	if (natShiny && natShiny != 'false') {
-		writeDex ('nat', 'shiny');
-	}
-	if (altShiny && altShiny != 'false') {
-		writeDex ('alt', 'shiny');
-	}
+	// Ideally this function would rewrite in place but I can't figure out how to do that and call writeUserDex in toggleState.js again
+	if (listView == 'false') {
+		return; // If already in Grid View, do nothing
+	} else {
+		document.getElementById('listView').checked = false;
+		document.getElementById('gridView').checked = true;
 
-	document.getElementById('listView').checked = false;
-	document.getElementById('gridView').checked = true;
+		localStorage.setItem('pokedex_listView', 'false');
+		location.reload();
+	}
+}
 
-	localStorage.setItem('pokedex_listView', false);
-	console.log ('Writing grid view');
-	console.log (`${natNormal}, ${altNormal}, ${natShiny}, ${altShiny}`);
+function writeListView () {
+	writeDexList ('nat', 'normal');
+	writeDexList ('alt', 'normal');
+	writeDexList ('nat', 'shiny');
+	writeDexList ('alt', 'shiny');
 }
 
 function toggleListView () {
-	if (natNormal && natNormal != 'false') {
-		writeDexList ('nat', 'normal');
-	}
-	if (altNormal && altNormal != 'false') {
-		writeDexList ('alt', 'normal');
-	}
-	if (natShiny && natShiny != 'false') {
-		writeDexList ('nat', 'shiny');
-	}
-	if (altShiny && altShiny != 'false') {
-		writeDexList ('alt', 'shiny');
-	}
+	// Ideally this function would rewrite in place but I can't figure out how to do that and call writeUserDex in toggleState.js again
+	if (listView == 'true') {
+		return; // If already in List View, do nothing
+	} else {
+		document.getElementById('gridView').checked = false;
+		document.getElementById('listView').checked = true;
 
-	document.getElementById('listView').checked = true;
-	document.getElementById('gridView').checked = false;
-	localStorage.setItem('pokedex_listView', true);
+		localStorage.setItem('pokedex_listView', 'true');
+		location.reload();
+	}
 }
-*/
-
-writeDex ('nat', 'normal');
-writeDex ('alt', 'normal');
-writeDex ('nat', 'shiny');
-writeDex ('alt', 'shiny');
 
 console.log (`Total Pokemon in living dex: ${totalPokemon}`);
