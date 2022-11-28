@@ -186,7 +186,7 @@ function writeDex (dexType, dexColor) {
 				for (let counter = 0; counter < pokemon.alts[0].forms.length; counter++) {
 					dexDivContents += writePokemon (dexID, dexType, dexColor, counter);
 					printCounter++;
-					if ((printCounter % 30) == 0) {
+					if (((printCounter % 30) == 0) && dexData[dexID]) {
 						boxCounter++;
 						dexDivContents += `</div>`;
 						dexDivContents += `</div></div></div>`;
