@@ -424,7 +424,6 @@ function writePokemonList (dexID) {
 		for (let counter = 0; counter < forms.length; counter++) {
 			pokemonContent += `<div id="alt-normal-${pokemonID}-${forms[counter]}"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}${forms[counter]}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-${forms[counter]}"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}${forms[counter]}.webp" alt=""></div>`;
 			rowCounter += 2;
-			console.log (rowCounter);
 			if ((rowCounter %6) == 0) {
 				pokemonContent += `<br>`;
 				rowcounter = 0;

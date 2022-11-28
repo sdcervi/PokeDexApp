@@ -99,7 +99,7 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 .dex-entry-list td.dex-entry-name { width: 20%; text-transform: capitalize; vertical-align: middle; }
 .dex-entry-list td.dex-entry-img { white-space: nowrap; }
 .dex-entry-list td.dex-entry-img div { display: inline-block; position: relative; }
-.dex-entry-list td.dex-entry-img img { width: 3em; height: auto; opacity: 0.1; }
+.dex-entry-list td.dex-entry-img img { width: 3em; height: auto; opacity: 0.2; }
 .dex-entry-list td.dex-entry-status { width: 35%; vertical-align: middle; }
 
 .caught img, .dex-entry-list td.dex-entry-img div.caught img { opacity: 1; }

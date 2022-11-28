@@ -26,35 +26,59 @@ function checkComplete (pokemonID, autoCollapse) {
 	}
 } 
 
-function changeCaughtState (pokemon) {
-    let toggleState = document.getElementById(pokemon).classList;
+function changeCaughtState (pokemon, view) {
+	let toggleState = document.getElementById(pokemon).classList;
+	console.log (toggleState);
 	let endState;
 
-    switch (toggleState.item(2)) {
-        case null:
-            toggleState.add("trade");
-			endState = "trade";
-			checkComplete (pokemon);
-            break;
-        case "trade":
-            toggleState.remove("trade");
-            toggleState.add("place");
-			endState = "place";
-			checkComplete (pokemon);
-            break;
-        case "place":
-            toggleState.remove("place");
-            toggleState.add("caught");
-			endState = "caught";
-			checkComplete (pokemon);
-            break;
-        case "caught":
-            toggleState.remove("caught");
-			endState = "";
-			checkComplete (pokemon);
-            break;
-    }
-	
+	if (view === 'grid') {
+		switch (toggleState.item(2)) {
+			case null:
+				toggleState.add("trade");
+				endState = "trade";
+				checkComplete (pokemon);
+				break;
+			case "trade":
+				toggleState.remove("trade");
+				toggleState.add("place");
+				endState = "place";
+				checkComplete (pokemon);
+				break;
+			case "place":
+				toggleState.remove("place");
+				toggleState.add("caught");
+				endState = "caught";
+				checkComplete (pokemon);
+				break;
+			case "caught":
+				toggleState.remove("caught");
+				endState = "";
+				checkComplete (pokemon);
+				break;
+		}
+	} else if (view === 'list') {
+		switch (toggleState.item(0)) {
+			case null:
+				toggleState.add("trade");
+				endState = "trade";
+				break;
+			case "trade":
+				toggleState.remove("trade");
+				toggleState.add("place");
+				endState = "place";
+				break;
+			case "place":
+				toggleState.remove("place");
+				toggleState.add("caught");
+				endState = "caught";
+				break;
+			case "caught":
+				toggleState.remove("caught");
+				endState = "";
+				break;
+		}
+	}
+
 	const user = firebase.auth().currentUser;
 	if (user) {
 		const userData = db.collection('userData').doc(user.uid);
@@ -63,12 +87,16 @@ function changeCaughtState (pokemon) {
 				[pokemon]: endState
 			}
 		}, { merge: true }).then(() => {
-			checkComplete (pokemon);
+			if (view === 'grid') {
+				checkComplete (pokemon);
+			}
 		}).catch ((error) => {
 			console.error ('Error updating user data: ', error);
 		});
 	} else {
-		checkComplete (pokemon);
+		if (view === 'grid') {
+			checkComplete (pokemon);
+		}
 	}
 }
 
@@ -160,7 +188,10 @@ function handleClick(event) {
 			element.parentNode.parentNode.firstChild.classList.toggle('turned');
 			break;
 		} else if (element.nodeName === "DIV" && /dex-entry/.test(element.className)) {
-			changeCaughtState(element.id);
+			changeCaughtState(element.id, 'grid');
+			break;
+		} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className)) {
+			changeCaughtState(element.parentNode.id, 'list');
 			break;
 		} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className)) {
 			changeCaughtState(element.id);
@@ -181,7 +212,6 @@ function writeUserDex (pokemonData, autoCollapse) {
 		{
 			for (const pokemon in pokemonData) {
 				const pokemonDiv = document.getElementById(pokemon);
-				console.log (pokemon, pokemonDiv, pokemonData[pokemon]);
 				if (pokemonData[pokemon]) {
 					pokemonDiv.classList.add(pokemonData[pokemon]);
 				}
