@@ -395,12 +395,45 @@ function writePokemonList (dexID) {
 	}
 	
 	// Add Alolan forms if they exist
+	if (dexData[dexID-1].alolan) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-alolan"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-alolan.webp" alt=""></div><div id="alt-shiny-${pokemonID}-alolan"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-alolan.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
 	
 	// Add Galarian forms if they exist
+	if (dexData[dexID-1].galarian) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-galarian"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-galarian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-galarian"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-galarian.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
 	
 	// Add Hisuian forms if they exist
+	if (dexData[dexID-1].hisuian) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-hisuian"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
 	
 	// Add other alt forms if they exist
+	if (dexData[dexID-1].alts && dexData[dexID-1].name != "alcremie") {
+		const forms = dexData[dexID-1].alts[0].forms;
+		const formNames = dexData[dexID-1].alts[0]['form-names'];
+		pokemonContent += `<td class="dex-entry-img">`;
+		let rowCounter = 0;
+		for (let counter = 0; counter < forms.length; counter++) {
+			pokemonContent += `<div id="alt-normal-${pokemonID}-${forms[counter]}"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}${forms[counter]}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-${forms[counter]}"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}${forms[counter]}.webp" alt=""></div>`;
+			rowCounter += 2;
+			console.log (rowCounter);
+			if ((rowCounter %6) == 0) {
+				pokemonContent += `<br>`;
+				rowcounter = 0;
+			}
+		}
+		pokemonContent += `</td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
 	
 	pokemonContent += `</tr>`;
 	
