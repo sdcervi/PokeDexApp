@@ -79,12 +79,21 @@
 		
 		<p>This dex tracker is and always will be free to use.  I&rsquo;ll never run ads.  You hate &rsquo;em, I hate &rsquo;em.  That being said, I did spend a lot of time on this, and hosting a website isn&rsquo;t free.</p>
 		
+		<p>Current operating expenses:</p>
+		
 		<ul>
-			<li>Domain name: $12.00 USD per year</li>
-			<li>Hosting service: $1.00 USD per month</li>
+			<li>Domain name: $<span id="domain"></span> USD per year</li>
+			<li>Hosting service: $<span id="hosting"></span> USD per month</li>
 		</ul>
 		
-		<p>If everyone using this app donated $1 per year, it would completely cover my website service expenses as well as the time I spend on development.</p>
+		<p>Total annual cost:</p>
+		
+		<ul>
+			<li>$<span id="totalMonthly"></span> USD per month</li>
+			<li>$<span id="totalAnnual"></span> USD per year</li>
+		</ul>
+		
+		<p>If everyone using this website donated $<span id="perUser"></span> per year, it would completely cover my website service expenses as well as the time I spend on development.</p>
         
         <p>Donations are by no means required, but they are appreciated.  Thank you for your support!</p>
 		
@@ -170,6 +179,24 @@
     'floating-chat.donateButton.background-color': '#00b9fe',
     'floating-chat.donateButton.text-color': '#fff'
   });
+</script>
+	
+<script>
+	const annualDomain = 12;
+	const monthlyFirebase = 3;
+	const numUsers = 1438;
+	
+	document.getElementById('domain').innerHTML = annualDomain.toFixed(2);
+	document.getElementById('hosting').innerHTML = monthlyFirebase.toFixed(2);
+	
+	const annualCost = annualDomain + (monthlyFirebase * 12);
+	const monthlyCost = annualCost / 12;
+	const perUserCost = annualDomain / numUsers;
+	
+	document.getElementById('totalMonthly').innerHTML = monthlyCost.toFixed(2);
+	document.getElementById('totalAnnual').innerHTML = annualCost.toFixed(2);
+	document.getElementById('perUser').innerHTML = perUserCost.toFixed(2);
+	
 </script>
 	
 </body>
