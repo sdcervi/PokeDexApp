@@ -134,7 +134,11 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 
 .dark-mode img.screenshot { box-shadow: none; }
 .dark-mode table.evo-table { color: white; }
-.dark-mode .table-striped>tbody>tr:nth-of-type(odd)>* { --bs-table-accent-bg: rgba(255,255,255,0.3); }
+.dark-mode .table-striped>tbody>tr:nth-of-type(odd)>* { --bs-table-accent-bg: rgba(255,255,255,0.3); color: white; }
+.dark-mode .table-hover>tbody>tr:hover>* { color: white; }
+
+.dark-mode .list-view-table { color: white; }
+.dark-mode .list-view-table { color: white; }
 
 /* ------------------------------- MEDIA QUERIES -------------------------------- */
 
