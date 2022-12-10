@@ -5181,7 +5181,7 @@ const dexData = [
 		"alolan": false,
 		"galarian": false,
 		"gender": false,
-		"alts": [{"forms": ["-aria", "-pirouette"], "form-names": ["aria", "pirouette"]}]
+		"alts": null
 	},
 	{
 		"id": "649",
