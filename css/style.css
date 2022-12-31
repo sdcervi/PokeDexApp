@@ -41,6 +41,7 @@ nav .dropdown { position: fixed; right: 0.5em; top: 0.5em; display: none; }
 nav .signin { position: fixed; right: 0.5em; top: 1em; display: none; }
 nav #profileUserNavbar { display: none; }
 
+nav.expand-collapse { clear: both; }
 nav.expand-collapse .container { justify-content: center; margin-bottom: 1em; }
 nav.expand-collapse .navbar-nav { flex-direction: row; flex-wrap: wrap; justify-content: center; }
 nav.expand-collapse .nav-item { margin: 0 1em; }
