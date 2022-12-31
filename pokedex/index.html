@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="A visual checklist for Pokemon Home collectors, with all alt forms and variants">
 	<meta name="author" content="Stephanie Cervi">
-	<title>Living Pok&eacute;Dex Tracker</title>
+	<title>Pok&eacute;Dex</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -72,6 +72,17 @@
 		
 		<article id="sign-in-suggest"></article>
 		
+		<div class="btn-group mx-3 viewToggleSet" role="group" data-bs-toggle="listGridButtons" aria-label="List View and Grid View toggle buttons">
+			<input type="radio" class="btn-check view-toggle" name="viewOptions" id="gridView" onclick="toggleGridView()" checked>
+			<label class="btn btn-secondary btn-sm" for="gridView">
+				<img class="svg-make-white" src="/assets/icons/grid.svg" alt="Grid view" width="25" height="25">
+			</label>
+						
+			<input type="radio" class="btn-check view-toggle" name="viewOptions" id="listView" onclick="toggleListView()">
+			<label class="btn btn-secondary btn-sm" for="listView">
+				<img class="svg-make-white" src="/assets/icons/list.svg" alt="List view" width="25" height="25">
+			</label>
+		</div>
 		<button type="button" class="btn btn-secondary btn-sm usage-key" id="usageKeyButton" data-bs-toggle="modal" data-bs-target="#usageKey">How to use</button>
 		
 		<article>
@@ -84,6 +95,7 @@
 						<li class="nav-item" id="normal-nat-expand-all"><a class="nav-link"><img src="../assets/icons/expand.svg" alt="">&nbsp;Expand&nbsp;all</a></li>
 						<li class="nav-item" id="normal-nat-collapse-all"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;all</a></li>
 						<li class="nav-item" id="normal-nat-collapse-complete"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;completed</a></li>
+						<li class="nav-item" id="normal-nat-showhide"><a class="nav-link"><img src="../assets/icons/hide.svg" alt="">&nbsp;Hide&nbsp;</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -102,6 +114,7 @@
 						<li class="nav-item" id="normal-alt-expand-all"><a class="nav-link"><img src="../assets/icons/expand.svg" alt="">&nbsp;Expand&nbsp;all</a></li>
 						<li class="nav-item" id="normal-alt-collapse-all"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;all</a></li>
 						<li class="nav-item" id="normal-alt-collapse-complete"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;completed</a></li>
+						<li class="nav-item" id="normal-alt-showhide"><a class="nav-link"><img src="../assets/icons/hide.svg" alt="">&nbsp;Hide&nbsp;</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -120,6 +133,7 @@
 						<li class="nav-item" id="shiny-nat-expand-all"><a class="nav-link"><img src="../assets/icons/expand.svg" alt="">&nbsp;Expand&nbsp;all</a></li>
 						<li class="nav-item" id="shiny-nat-collapse-all"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;all</a></li>
 						<li class="nav-item" id="shiny-nat-collapse-complete"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;completed</a></li>
+						<li class="nav-item" id="shiny-nat-showhide"><a class="nav-link"><img src="../assets/icons/hide.svg" alt="">&nbsp;Hide&nbsp;</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -138,6 +152,7 @@
 						<li class="nav-item" id="shiny-alt-expand-all"><a class="nav-link"><img src="../assets/icons/expand.svg" alt="">&nbsp;Expand&nbsp;all</a></li>
 						<li class="nav-item" id="shiny-alt-collapse-all"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;all</a></li>
 						<li class="nav-item" id="shiny-alt-collapse-complete"><a class="nav-link"><img src="../assets/icons/collapse.svg" alt="">&nbsp;Collapse&nbsp;completed</a></li>
+						<li class="nav-item" id="shiny-alt-showhide"><a class="nav-link"><img src="../assets/icons/hide.svg" alt="">&nbsp;Hide&nbsp;</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -191,6 +206,7 @@
 								<h4 class="dex-entry-number usage-key">Caught</h4>
 							</div>
 						</div>
+						<p>To <strong>show or hide</strong> completed boxes or a specific dex by default, change your <a href="../profile/">Settings</a>.</p>
 					</div>
 				</div>
 				<div class="modal-footer">

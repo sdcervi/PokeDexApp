@@ -14,6 +14,23 @@ function changeCollapse () {
 	}
 }
 
+function changeDexDisplay () {
+	const dexID = event.target.id;
+	const user = firebase.auth().currentUser;
+	if (user) {
+		const userData = db.collection('userData').doc(user.uid);
+		userData.set({
+			dexDisplay: {
+				[dexID]: document.getElementById(dexID).checked
+			}
+		}, { merge: true }).catch ((error) => {
+			console.error ('Error updating dex preferences: ', error);
+		});
+	} else {
+		console.log ('Error updating dex preferences.');
+	}
+}
+
 // Fetch the database's profile data for the user and display it
 function getProfileData (user) {
 	// Fetch the user's data
@@ -43,8 +60,13 @@ function getProfileData (user) {
 	detailsContent += `<div class="col-12 text-center"><button class="btn btn-sm btn-link" onclick="resetPassword()">Send password reset email</button></div></row>`;
 	details.innerHTML = detailsContent;
 	
-	document.getElementById('settings').innerHTML = `<h4>Settings</h4><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setCollapse"><label class="form-check-label" for="setCollapse">Auto-collapse completed checklist sections</label></div>`;
-	
+	settingsContent = `<h4>Settings</h4><div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setCollapse"><label class="form-check-label" for="setCollapse">Auto-collapse completed checklist sections</label></div>`
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setNationalNormal" checked onclick="changeDexDisplay('pokedex_displayNatNormal', 'setNationalNormal')"><label class="form-check-label" for="setNationalNormal">Display Normal form National Dex</label></div>`
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setAltNormal" checked onclick="changeDexDisplay('pokedex_displayAltNormal', 'setAltNormal')"><label class="form-check-label" for="setAltNormal">Display Normal form Alt Dex</label></div>`;
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setNationalShiny" checked onclick="changeDexDisplay('pokedex_displayNatShiny', 'setNationalShiny')"><label class="form-check-label" for="setNationalShiny">Display Shiny form National Dex</label></div>`
+	settingsContent += `<div class="form-check"><input class="form-check-input" type="checkbox" value="" id="setAltShiny" checked onclick="changeDexDisplay('pokedex_displayAltShiny', 'setAltShiny')"><label class="form-check-label" for="setAltShiny">Display Shiny form Alt Dex</label></div>`;
+
+	document.getElementById('settings').innerHTML = settingsContent
 	// Display the user's statistics and settings
 	userData.onSnapshot((doc) => {
 		const stats = document.getElementById('user-stats');
@@ -79,14 +101,43 @@ function getProfileData (user) {
 		stats.innerHTML = statsContent;
     });
 	
-	userData.get().then((doc) => {
+ 	userData.get().then((doc) => {
 		const data = doc.data();
+		
 		if (data.autoCollapse) {
 			document.getElementById('setCollapse').checked = data.autoCollapse;
 		} else {
 			document.getElementById('setCollapse').checked = false;
 		}
 		document.getElementById('setCollapse').addEventListener("click", changeCollapse, false);
+		
+		if (data.dexDisplay.setNationalNormal != undefined) {
+			document.getElementById('setNationalNormal').checked = data.dexDisplay.setNationalNormal;
+		} else {
+			document.getElementById('setNationalNormal').checked = true;
+		}
+		document.getElementById('setNationalNormal').addEventListener("click", changeDexDisplay, false);
+		
+		if (data.dexDisplay.setAltNormal != undefined) {
+			document.getElementById('setAltNormal').checked = data.dexDisplay.setAltNormal;
+		} else {
+			document.getElementById('setAltNormal').checked = true;
+		}
+		document.getElementById('setAltNormal').addEventListener("click", changeDexDisplay, false);
+		
+		if (data.dexDisplay.setNationalShiny != undefined) {
+			document.getElementById('setNationalShiny').checked = data.dexDisplay.setAltNormal;
+		} else {
+			document.getElementById('setNationalShiny').checked = true;
+		}
+		document.getElementById('setNationalShiny').addEventListener("click", changeDexDisplay, false);
+		
+		if (data.dexDisplay.setAltShiny != undefined) {
+			document.getElementById('setAltShiny').checked = data.dexDisplay.setAltShiny;
+		} else {
+			document.getElementById('setAltShiny').checked = true;
+		}
+		document.getElementById('setAltShiny').addEventListener("click", changeDexDisplay, false);
 	}).catch((error) => {
 		console.log('Error getting user settings: ', error);
 	});

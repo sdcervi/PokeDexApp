@@ -3156,7 +3156,7 @@ const dexData = [
 		"galarian": false,
 		"hisuian": false,
 		"gender": false,
-		"alts": null
+		"alts": [{ "forms": ["-rainy", "-snowy", "-sunny"], "form-names": ["rainy", "snowy", "sunny"] }]
 	},
 	{
 		"id": "352",
@@ -5811,7 +5811,7 @@ const dexData = [
 		"galarian": false,
 		"hisuian": false,
 		"gender": false,
-		"alts": [{"forms": ["", "-black", "-white"], "form-names": ["normal", "black", "white"]}]
+		"alts": null
 	},
 	{
 		"id": "647",
@@ -5829,7 +5829,7 @@ const dexData = [
 		"galarian": false,
 		"hisuian": false,
 		"gender": false,
-		"alts": [{"forms": ["-aria", "-pirouette"], "form-names": ["aria", "pirouette"]}]
+		"alts": null
 	},
 	{
 		"id": "649",
@@ -7197,7 +7197,7 @@ const dexData = [
 		"galarian": false,
 		"hisuian": false,
 		"gender": false,
-		"alts": [{"forms": ["", "-dawn-wings", "-dusk-mane"], "form-names": ["normal", "dawn wings", "dusk mane"]}]
+		"alts": null
 	},
 	{
 		"id": "801",
@@ -8079,7 +8079,7 @@ const dexData = [
 		"galarian": false,
 		"hisuian": false,
 		"gender": false,
-		"alts": [{"forms": ["", "-ice-rider", "-shadow-rider"], "form-names": ["normal", "ice rider", "shadow rider"]}]
+		"alts": null
 	},
 	{
 		"id": "899",
