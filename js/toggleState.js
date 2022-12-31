@@ -212,10 +212,10 @@ function writeUserDex (pokemonData, autoCollapse) {
 		{
 			for (const pokemon in pokemonData) {
 				const pokemonDiv = document.getElementById(pokemon);
-				if (pokemonData[pokemon]) {
+				if (pokemonData[pokemon] && pokemonDiv) {
 					pokemonDiv.classList.add(pokemonData[pokemon]);
+					checkComplete (pokemon);
 				}
-				checkComplete (pokemon);
 			}
 			if (autoCollapse) {
 				autoCollapseComplete();
