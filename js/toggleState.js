@@ -26,35 +26,59 @@ function checkComplete (pokemonID, autoCollapse) {
 	}
 } 
 
-function changeCaughtState (pokemon) {
-    let toggleState = document.getElementById(pokemon).classList;
+function changeCaughtState (pokemon, view) {
+	let toggleState = document.getElementById(pokemon).classList;
+	console.log (toggleState);
 	let endState;
 
-    switch (toggleState.item(2)) {
-        case null:
-            toggleState.add("trade");
-			endState = "trade";
-			checkComplete (pokemon);
-            break;
-        case "trade":
-            toggleState.remove("trade");
-            toggleState.add("place");
-			endState = "place";
-			checkComplete (pokemon);
-            break;
-        case "place":
-            toggleState.remove("place");
-            toggleState.add("caught");
-			endState = "caught";
-			checkComplete (pokemon);
-            break;
-        case "caught":
-            toggleState.remove("caught");
-			endState = "";
-			checkComplete (pokemon);
-            break;
-    }
-	
+	if (view === 'grid') {
+		switch (toggleState.item(2)) {
+			case null:
+				toggleState.add("trade");
+				endState = "trade";
+				checkComplete (pokemon);
+				break;
+			case "trade":
+				toggleState.remove("trade");
+				toggleState.add("place");
+				endState = "place";
+				checkComplete (pokemon);
+				break;
+			case "place":
+				toggleState.remove("place");
+				toggleState.add("caught");
+				endState = "caught";
+				checkComplete (pokemon);
+				break;
+			case "caught":
+				toggleState.remove("caught");
+				endState = "";
+				checkComplete (pokemon);
+				break;
+		}
+	} else if (view === 'list') {
+		switch (toggleState.item(0)) {
+			case null:
+				toggleState.add("trade");
+				endState = "trade";
+				break;
+			case "trade":
+				toggleState.remove("trade");
+				toggleState.add("place");
+				endState = "place";
+				break;
+			case "place":
+				toggleState.remove("place");
+				toggleState.add("caught");
+				endState = "caught";
+				break;
+			case "caught":
+				toggleState.remove("caught");
+				endState = "";
+				break;
+		}
+	}
+
 	const user = firebase.auth().currentUser;
 	if (user) {
 		const userData = db.collection('userData').doc(user.uid);
@@ -63,12 +87,16 @@ function changeCaughtState (pokemon) {
 				[pokemon]: endState
 			}
 		}, { merge: true }).then(() => {
-			checkComplete (pokemon);
+			if (view === 'grid') {
+				checkComplete (pokemon);
+			}
 		}).catch ((error) => {
 			console.error ('Error updating user data: ', error);
 		});
 	} else {
-		checkComplete (pokemon);
+		if (view === 'grid') {
+			checkComplete (pokemon);
+		}
 	}
 }
 
@@ -127,6 +155,18 @@ function dexCollapse (toggleID) {
 		} else {
 			console.log ("Error in collapse function.");
 		}
+	} else if (operation === 'showhide') {
+		const showHide = document.getElementById(toggleID);
+		const dexDiv = document.getElementById(toggleID).parentNode.parentNode.parentNode.parentNode.children[2];
+		if (showHide.firstChild.innerHTML.includes('show')) {
+			dexDiv.style.display = 'block';
+			showHide.firstChild.innerHTML = `<img src="../assets/icons/hide.svg" alt="">&nbsp;Hide&nbsp;`;
+		} else if (showHide.firstChild.innerHTML.includes('hide')) {
+			dexDiv.style.display = 'none';
+			showHide.firstChild.innerHTML = `<img src="../assets/icons/show.svg" alt="">&nbsp;Show&nbsp;`;
+		} else {
+			console.log ("Error in show/hide function");
+		}
 	} else {
 		console.log ("Error in expand-collapse function");
 	}
@@ -148,6 +188,12 @@ function handleClick(event) {
 			element.parentNode.parentNode.firstChild.classList.toggle('turned');
 			break;
 		} else if (element.nodeName === "DIV" && /dex-entry/.test(element.className)) {
+			changeCaughtState(element.id, 'grid');
+			break;
+		} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className)) {
+			changeCaughtState(element.parentNode.id, 'list');
+			break;
+		} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className)) {
 			changeCaughtState(element.id);
 			break;
 		} else if (element.nodeName === "LI" && /nav-item/.test(element.className)) {
@@ -162,18 +208,50 @@ function handleClick(event) {
 // Gets the already-completed items from user data and checks those boxes
 function writeUserDex (pokemonData, autoCollapse) {
 	if (Object.keys(pokemonData).length) {
-		for (const pokemon in pokemonData) {
-			const pokemonDiv = document.getElementById(pokemon);
-			if (pokemonData[pokemon]) {
-				pokemonDiv.classList.add(pokemonData[pokemon]);
+		if (listView == 'false')
+		{
+			for (const pokemon in pokemonData) {
+				const pokemonDiv = document.getElementById(pokemon);
+				if (pokemonData[pokemon]) {
+					pokemonDiv.classList.add(pokemonData[pokemon]);
+				}
+				checkComplete (pokemon);
 			}
-			checkComplete (pokemon);
-		}
-		if (autoCollapse) {
-			autoCollapseComplete();
+			if (autoCollapse) {
+				autoCollapseComplete();
+			}
+		} else {
+			for (const pokemon in pokemonData) {
+				if (document.getElementById(pokemon)) {
+					const pokemonDiv = document.getElementById(pokemon);
+					pokemonDiv.classList.add(pokemonData[pokemon]);
+				}
+			}
 		}
 	} else {
 		return;
+	}
+}
+
+function setDexState (nationalNormal, altNormal, nationalShiny, altShiny) {
+	const dexes = [
+		{	state: 	nationalNormal,
+			id:		'normal-nat-dex' },
+		{	state: 	altNormal,
+			id:		'normal-alt-dex' },
+		{	state: 	nationalShiny,
+			id:		'shiny-nat-dex' },
+		{	state: 	altShiny,
+			id:		'shiny-alt-dex' }
+	];
+	for (dexIndex in dexes) {
+		const dex = dexes[dexIndex];
+		if (dex.state === false) {
+			const dexDiv = document.getElementById(dex.id);
+			const showHide = document.getElementById(dex.id.replace('dex', 'showhide'));
+			dexDiv.style.display = 'none';
+			showHide.firstChild.innerHTML = `<img src="../assets/icons/show.svg" alt="">&nbsp;Show&nbsp;`;
+		}
 	}
 }
 
@@ -187,6 +265,15 @@ function getProfileData (user) {
 		const data = doc.data();
 		if (data.pokemon) {
 			writeUserDex (data.pokemon, data.autoCollapse);
+		} else {
+			console.log ('Error getting user data: no data present');
+		}
+		if (data.dexDisplay) {
+			const nationalNormal = data.dexDisplay.setNationalNormal;
+			const altNormal = data.dexDisplay.setAltNormal;
+			const nationalShiny = data.dexDisplay.setNationalShiny;
+			const altShiny = data.dexDisplay.setAltShiny;
+			setDexState (nationalNormal, altNormal, nationalShiny, altShiny);
 		} else {
 			console.log ('Error getting user data: no data present');
 		}
