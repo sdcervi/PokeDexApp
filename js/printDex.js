@@ -46,7 +46,7 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 	if (!altType && altType != 0) {
 		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
-	} else if (altType === 'alolan' || altType === 'galarian') {
+	} else if (altType === 'alolan' || altType === 'galarian' || altType === 'hisuian') {
 		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
 	} else if (altType === 'gender') {
@@ -111,7 +111,7 @@ function writeDex (dexType, dexColor) {
 	} else {
 		// Write regional alt forms{
 		let boxCounter = 1;
-		const regions = ['alolan', 'galarian'];
+		const regions = ['alolan', 'galarian', 'hisuian'];
 		for (region of regions) {
 			let printCounter = 0;
 			const regionName = region.charAt(0).toUpperCase() + region.slice(1);

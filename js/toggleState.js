@@ -208,10 +208,9 @@ function handleClick(event) {
 // Gets the already-completed items from user data and checks those boxes
 function writeUserDex (pokemonData, autoCollapse) {
 	if (Object.keys(pokemonData).length) {
-		if (listView == 'false')
+		if (listView == 'false' || listView == null)
 		{
 			for (const pokemon in pokemonData) {
-				console.log (pokemon, pokemonData[pokemon]);
 				const pokemonDiv = document.getElementById(pokemon);
 				if (pokemonData[pokemon] && pokemonDiv) {
 					pokemonDiv.classList.add(pokemonData[pokemon]);
@@ -223,7 +222,6 @@ function writeUserDex (pokemonData, autoCollapse) {
 			}
 		} else {
 			for (const pokemon in pokemonData) {
-				console.log (pokemon, pokemonData[pokemon]);
 				if (document.getElementById(pokemon)) {
 					const pokemonDiv = document.getElementById(pokemon);
 					pokemonDiv.classList.add(pokemonData[pokemon]);
