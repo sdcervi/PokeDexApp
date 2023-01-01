@@ -211,6 +211,7 @@ function writeUserDex (pokemonData, autoCollapse) {
 		if (listView == 'false')
 		{
 			for (const pokemon in pokemonData) {
+				console.log (pokemon, pokemonData[pokemon]);
 				const pokemonDiv = document.getElementById(pokemon);
 				if (pokemonData[pokemon] && pokemonDiv) {
 					pokemonDiv.classList.add(pokemonData[pokemon]);
@@ -222,6 +223,7 @@ function writeUserDex (pokemonData, autoCollapse) {
 			}
 		} else {
 			for (const pokemon in pokemonData) {
+				console.log (pokemon, pokemonData[pokemon]);
 				if (document.getElementById(pokemon)) {
 					const pokemonDiv = document.getElementById(pokemon);
 					pokemonDiv.classList.add(pokemonData[pokemon]);
