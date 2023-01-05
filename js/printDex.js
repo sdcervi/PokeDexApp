@@ -304,7 +304,7 @@ function writeListView () {
 	
 	// Build the table header
 	let dexDivContents = `<p class="text-center small">Looking for alt forms and shinies? Those are visible by swiping to either side to scroll.</p>`;
-	dexDivContents += `<table class="table table-striped table-hover list-view-table"`;
+	dexDivContents += `<table class="table table-striped table-hover list-view-table" data-bs-height="50%">`;
 	dexDivContents += `<thead><tr><th scope="col">#</th><th scope="col">Name</th><th>Primary</th><th>&male; form</th><th>&female; form</th><th>Alolan</th><th>Galarian</th><th>Hisuian</th><th>Other Alts</th></tr></thead><tbody>`;
 	
 	// Generate the dex's contents

@@ -95,6 +95,8 @@ h4.dex-entry-name { text-align: center; font-size: 0.7em; text-transform: capita
 h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capitalize; margin-bottom: 0; }
 
 .list-view-div { margin-top: 2.5em; }
+.list-view-table { display: block; max-height: 70vh; overflow-y: scroll; border-collapse: separate; border-spacing: 0; }
+.list-view-table thead { position: sticky; top: 0; z-index: 10; background-color: white; border-bottom: 4px solid black; }
 .dex-entry-list { text-align: left; font-size: 1rem; }
 .dex-entry-list th.dex-entry-number { width: 15%; font-weight: bold; vertical-align: middle; }
 .dex-entry-list td.dex-entry-name { width: 20%; text-transform: capitalize; vertical-align: middle; }
