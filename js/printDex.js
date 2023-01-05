@@ -50,9 +50,9 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
 	} else if (altType === 'gender') {
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
 		totalPokemon++;
-		pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
 		totalPokemon++;
 	} else {
 		const forms = dexData[dexID-1].alts[0].forms;
