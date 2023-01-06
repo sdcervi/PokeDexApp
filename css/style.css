@@ -108,10 +108,10 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 .caught img, .dex-entry-list td.dex-entry-img div.caught img { opacity: 1; }
 .caught h4 { color: black; }
 
-.dex-entry.trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 0.5em; z-index: 10; }
-.dex-entry-list td.dex-entry-img div.trade:before { content: url(/assets/icons/trade.svg); height: 1.25em; width: 1.25em; position: absolute; left: 0.25em; z-index: 10; }
-.dex-entry.place:before { content: url(/assets/icons/box.svg); height: 1.5em; width: 1.5em; position: absolute; right: 0.5em; z-index: 10; }
-.dex-entry-list td.dex-entry-img div.place:before { content: url(/assets/icons/box.svg); height: 1.25em; width: 1.25em; position: absolute; right: 0.25em; z-index: 10; }
+.dex-entry.trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 0.5em; z-index: 5; }
+.dex-entry-list td.dex-entry-img div.trade:before { content: url(/assets/icons/trade.svg); height: 1.25em; width: 1.25em; position: absolute; left: 0.25em; z-index: 5; }
+.dex-entry.place:before { content: url(/assets/icons/box.svg); height: 1.5em; width: 1.5em; position: absolute; right: 0.5em; z-index: 5; }
+.dex-entry-list td.dex-entry-img div.place:before { content: url(/assets/icons/box.svg); height: 1.25em; width: 1.25em; position: absolute; right: 0.25em; z-index: 5; }
 
 .box-alt-info { float: right; margin-right: 1em; margin-top: 0.5em; font-size: 0.8em; }
 
