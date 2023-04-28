@@ -84,6 +84,7 @@
 		<ul>
 			<li>Domain name: $<span id="domain"></span> USD per year</li>
 			<li>Hosting service: $<span id="hosting"></span> USD per month</li>
+			<li>Email service: $<span id="email"></span> USD per month</li>
 		</ul>
 		
 		<p>Total annual cost:</p>
@@ -184,18 +185,20 @@
 <script>
 	const annualDomain = 12;
 	const monthlyFirebase = 3;
-	const numUsers = 1438;
+	const monthlyMailchimp = 69;
+	const numUsers = 2831;
 	
 	document.getElementById('domain').innerHTML = annualDomain.toFixed(2);
 	document.getElementById('hosting').innerHTML = monthlyFirebase.toFixed(2);
+	document.getElementById('email').innerHTML = monthlyMailchimp.toFixed(2);
 	
-	const annualCost = annualDomain + (monthlyFirebase * 12);
+	const annualCost = annualDomain + (monthlyFirebase * 12) + (monthlyMailchimp * 12);
 	const monthlyCost = annualCost / 12;
-	const perUserCost = annualDomain / numUsers;
+	const perUserCost = annualCost / numUsers;
 	
 	document.getElementById('totalMonthly').innerHTML = monthlyCost.toFixed(2);
 	document.getElementById('totalAnnual').innerHTML = annualCost.toFixed(2);
-	document.getElementById('perUser').innerHTML = perUserCost.toFixed(2);
+	document.getElementById('perUser').innerHTML = Math.max(perUserCost.toFixed(2), 0.01);
 	
 </script>
 	
