@@ -64,6 +64,7 @@ nav.expand-collapse .nav-item img { filter: invert(27%) sepia(96%) saturate(2456
 img.provider-icon { width: 30px; height: auto; }
 button.btn-edit { position: absolute; }
 .btn-edit img { color: #30a7d1; position: relative; top: -0.25em; width: 1em; height: auto; filter: invert(27%) sepia(96%) saturate(2456%) hue-rotate(208deg) brightness(99%) contrast(100%); }
+.progress { margin-top: 0.3rem; }
 
 #deleteDiv { text-align: center; margin-bottom: 3em; }
 #deleteDiv hr { margin: 2em 0; }

@@ -101,10 +101,21 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
 	} else if (altType === 'gender') {
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
-		totalPokemon++;
-		pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
-		totalPokemon++;
+		if (pokemonID == 215) { // For Sneasel's Hisuian gender differences
+			pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
+			totalPokemon++;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
+			totalPokemon++;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-hisuian-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-hisuian.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species} Hisuian&nbsp;&male;</h4></div></div></div>`;
+			totalPokemon++;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-hisuian-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-hisuian-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species} Hisuian&nbsp;&female;</h4></div></div></div>`;
+			totalPokemon++;
+		} else {
+			pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
+			totalPokemon++;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
+			totalPokemon++;
+		}
 	} else {
 		const forms = dexData[dexID-1].alts[0].forms;
 		const formNames = dexData[dexID-1].alts[0]['form-names'];
@@ -205,7 +216,11 @@ function writeDex (dexType, dexColor) {
 			if (pokemon.gender) {
 				const dexID = parseFloat(pokemon.id);
 				dexDivContents += writePokemon (dexID, dexType, dexColor, 'gender');
-				printCounter += 2;
+				if (dexID == 215) { // For Sneasel's Hisuian gender differences
+					printCounter += 4;
+				} else {
+					printCounter += 2;
+				}
 				if ((printCounter % 30) == 0) {
 					boxCounter++;
 					dexDivContents += `</div>`;
@@ -490,8 +505,13 @@ function writePokemonList (dexID) {
 	
 	// Add gender-specific forms if they exist
 	if (dexData[dexID-1].gender) {
-		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
-		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div></td>`;
+		if (pokemonID == 215) { // For Sneasel's Hisuian gender forms
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div><br><div id="alt-normal-${pokemonID}-hisuian-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian.webp" alt=""></div></td>`;
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div><br><div id="alt-normal-${pokemonID}-hisuian-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian-f.webp" alt=""></div></td>`;
+		} else {
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div></td>`;
+		}
 	} else {
 		pokemonContent += `<td></td><td></td>`
 	}
