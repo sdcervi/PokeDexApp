@@ -16,6 +16,9 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 	if (species == "mr-mime"){
 		species = "mr. mime";
 	}
+	if (species == "mime-jr"){
+		species = "mime jr.";
+	}
 	if (species == "mr-rime"){
 		species = "mr. rime";
 	}
@@ -40,13 +43,61 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 	if (species == "urshifu"){
 		imgSpecies = "urshifu";
 	}
+	if (species == "great-tusk"){
+		species = "great tusk";
+	}
+	if (species == "scream-tail"){
+		species = "scream tail";
+	}
+	if (species == "brute-bonnet"){
+		species = "brute bonnet";
+	}
+	if (species == "flutter-mane"){
+		species = "flutter mane";
+	}
+	if (species == "slither-wing"){
+		species = "slither wing";
+	}
+	if (species == "sandy-shocks"){
+		species = "sandy shocks";
+	}
+	if (species == "iron-treads"){
+		species = "iron treads";
+	}
+	if (species == "iron-bundle"){
+		species = "iron bundle";
+	}
+	if (species == "iron-hands"){
+		species = "iron hands";
+	}
+	if (species == "iron-jugulis"){
+		species = "iron jugulis";
+	}
+	if (species == "iron-moth"){
+		species = "iron moth";
+	}
+	if (species == "iron-thorns"){
+		species = "iron thorns";
+	}
+	if (species == "roaring-moon"){
+		species = "roaring moon";
+	}
+	if (species == "iron-valiant"){
+		species = "iron valiant";
+	}
+	if (species == "walking-wake"){
+		species = "walking wake";
+	}
+	if (species == "iron-leaves"){
+		species = "iron leaves";
+	}
 	
 	// Generate the pokemon's card
 	let pokemonContent;
 	if (!altType && altType != 0) {
 		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
-	} else if (altType === 'alolan' || altType === 'galarian' || altType === 'hisuian') {
+	} else if (altType === 'alolan' || altType === 'galarian' || altType === 'hisuian' || altType === 'paldean') {
 		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
 	} else if (altType === 'gender') {
@@ -111,7 +162,7 @@ function writeDex (dexType, dexColor) {
 	} else {
 		// Write regional alt forms{
 		let boxCounter = 1;
-		const regions = ['alolan', 'galarian', 'hisuian'];
+		const regions = ['alolan', 'galarian', 'hisuian', 'paldean'];
 		for (region of regions) {
 			let printCounter = 0;
 			const regionName = region.charAt(0).toUpperCase() + region.slice(1);
@@ -305,7 +356,7 @@ function writeListView () {
 	// Build the table header
 	let dexDivContents = `<p class="text-center small">Looking for alt forms and shinies? Those are visible by swiping to either side to scroll.</p>`;
 	dexDivContents += `<table class="table table-striped table-hover list-view-table" data-bs-height="50%">`;
-	dexDivContents += `<thead><tr><th scope="col">#</th><th scope="col">Name</th><th>Primary</th><th>&male; form</th><th>&female; form</th><th>Alolan</th><th>Galarian</th><th>Hisuian</th><th>Other Alts</th></tr></thead><tbody>`;
+	dexDivContents += `<thead><tr><th scope="col">#</th><th scope="col">Name</th><th>Primary</th><th>&male; form</th><th>&female; form</th><th>Alolan</th><th>Galarian</th><th>Hisuian</th><th>Paldean</th><th>Other Alts</th></tr></thead><tbody>`;
 	
 	// Generate the dex's contents
 	for (pokemon of dexData) {
@@ -333,6 +384,9 @@ function writePokemonList (dexID) {
 	if (species == "mr-mime"){
 		species = "mr. mime";
 	}
+	if (species == "mime-jr"){
+		species = "mime jr.";
+	}
 	if (species == "mr-rime"){
 		species = "mr. rime";
 	}
@@ -356,6 +410,54 @@ function writePokemonList (dexID) {
 	}
 	if (species == "urshifu"){
 		imgSpecies = "urshifu";
+	}
+	if (species == "great-tusk"){
+		species = "great tusk";
+	}
+	if (species == "scream-tail"){
+		species = "scream tail";
+	}
+	if (species == "brute-bonnet"){
+		species = "brute bonnet";
+	}
+	if (species == "flutter-mane"){
+		species = "flutter mane";
+	}
+	if (species == "slither-wing"){
+		species = "slither wing";
+	}
+	if (species == "sandy-shocks"){
+		species = "sandy shocks";
+	}
+	if (species == "iron-treads"){
+		species = "iron treads";
+	}
+	if (species == "iron-bundle"){
+		species = "iron bundle";
+	}
+	if (species == "iron-hands"){
+		species = "iron hands";
+	}
+	if (species == "iron-jugulis"){
+		species = "iron jugulis";
+	}
+	if (species == "iron-moth"){
+		species = "iron moth";
+	}
+	if (species == "iron-thorns"){
+		species = "iron thorns";
+	}
+	if (species == "roaring-moon"){
+		species = "roaring moon";
+	}
+	if (species == "iron-valiant"){
+		species = "iron valiant";
+	}
+	if (species == "walking-wake"){
+		species = "walking wake";
+	}
+	if (species == "iron-leaves"){
+		species = "iron leaves";
 	}
 	
 	// Generate the pokemon's card
@@ -415,6 +517,13 @@ function writePokemonList (dexID) {
 		pokemonContent += `<td></td>`
 	}
 	
+	// Add Paldean forms if they exist
+	if (dexData[dexID-1].paldean) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-paldean.webp" alt=""></div><div id="alt-shiny-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-paldean.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
+	
 	// Add other alt forms if they exist
 	if (dexData[dexID-1].alts && dexData[dexID-1].name != "alcremie") {
 		const forms = dexData[dexID-1].alts[0].forms;
@@ -422,7 +531,7 @@ function writePokemonList (dexID) {
 		pokemonContent += `<td class="dex-entry-img">`;
 		let rowCounter = 0;
 		for (let counter = 0; counter < forms.length; counter++) {
-			pokemonContent += `<div id="alt-normal-${pokemonID}-${forms[counter]}"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}${forms[counter]}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-${forms[counter]}"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}${forms[counter]}.webp" alt=""></div>`;
+			pokemonContent += `<div id="alt-normal-${pokemonID}-alt${forms[counter]}"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}${forms[counter]}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-alt${forms[counter]}"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}${forms[counter]}.webp" alt=""></div>`;
 			rowCounter += 2;
 			if ((rowCounter %6) == 0) {
 				pokemonContent += `<br>`;
