@@ -2,8 +2,10 @@
 // Thanks to event delegation, this bubbles up with the unique element each time
 if (document.addEventListener) {
     document.addEventListener("click", handleClick, false);
+    document.addEventListener("contextmenu", handleRightClick, false);
 } else if (document.attachEvent) {
     document.attachEvent("onclick", handleClick);
+    document.attachEvent("contextmenu", handleRightClick, false);
 }
 
 // Checks if all Pokemon in a card are caught
@@ -24,60 +26,114 @@ function checkComplete (pokemonID, autoCollapse) {
 	if (autoCollapse) {
 		autoCollapseComplete();
 	}
-} 
+}
 
-function changeCaughtState (pokemon, view) {
+function toggleCaughtState (pokemon, view) {
 	let toggleState = document.getElementById(pokemon).classList;
 	let endState;
-
+	
 	if (view === 'grid') {
-		switch (toggleState.item(2)) {
-			case null:
-				toggleState.add("trade");
-				endState = "trade";
-				checkComplete (pokemon);
-				break;
-			case "trade":
-				toggleState.remove("trade");
-				toggleState.add("place");
-				endState = "place";
-				checkComplete (pokemon);
-				break;
-			case "place":
-				toggleState.remove("place");
-				toggleState.add("caught");
-				endState = "caught";
-				checkComplete (pokemon);
-				break;
-			case "caught":
-				toggleState.remove("caught");
-				endState = "";
-				checkComplete (pokemon);
-				break;
+		if (toggleState.item(2) != 'caught') {
+			toggleState.remove("trade");
+			toggleState.remove("place");
+			toggleState.remove("lv100");
+			toggleState.add("caught");
+			endState = "caught";
+			checkComplete (pokemon);
+		} else {
+			toggleState.remove("trade");
+			toggleState.remove("place");
+			toggleState.remove("caught");
+			toggleState.remove("lv100");
+			endState = "";
+			checkComplete (pokemon);
 		}
 	} else if (view === 'list') {
-		switch (toggleState.item(0)) {
-			case null:
-				toggleState.add("trade");
-				endState = "trade";
-				break;
-			case "trade":
-				toggleState.remove("trade");
-				toggleState.add("place");
-				endState = "place";
-				break;
-			case "place":
-				toggleState.remove("place");
-				toggleState.add("caught");
-				endState = "caught";
-				break;
-			case "caught":
-				toggleState.remove("caught");
-				endState = "";
-				break;
+		if (toggleState.item(0) != 'caught') {
+			toggleState.remove("trade");
+			toggleState.remove("place");
+			toggleState.remove("lv100");
+			toggleState.add("caught");
+			endState = "caught";
+			checkComplete (pokemon);
+		} else {
+			toggleState.remove("trade");
+			toggleState.remove("place");
+			toggleState.remove("caught");
+			toggleState.remove("lv100");
+			endState = "";
+			checkComplete (pokemon);
 		}
 	}
 
+	const user = firebase.auth().currentUser;
+	if (user) {
+		const userData = db.collection('userData').doc(user.uid);
+		userData.set({
+			pokemon: {
+				[pokemon]: endState
+			}
+		}, { merge: true }).then(() => {
+			if (view === 'grid') {
+				checkComplete (pokemon);
+			}
+		}).catch ((error) => {
+			console.error ('Error updating user data: ', error);
+		});
+	} else {
+		if (view === 'grid') {
+			checkComplete (pokemon);
+		}
+	}
+}
+
+function setStateModalOpen (pokemon, view) {
+	const sourcePokemon = document.getElementById(pokemon);
+	let sourceImage;
+	let sourceNumber;
+	let sourceName;
+	
+	if (view === 'grid') {
+		sourceImage = sourcePokemon.firstChild.childNodes[0].src;
+		sourceNumber = sourcePokemon.firstChild.childNodes[1].innerHTML;
+		sourceName = sourcePokemon.firstChild.childNodes[2].innerHTML;
+	} else if (view === 'list') {
+		sourceImage = sourcePokemon.firstChild.src;
+		sourceNumber = sourcePokemon.parentNode.parentNode.childNodes[0].innerHTML;
+		sourceName = sourcePokemon.parentNode.parentNode.childNodes[1].innerHTML;
+	}
+	
+	document.getElementById('setStateTradeImage').src = sourceImage;
+	document.getElementById('setStateTradeNumber').innerHTML = sourceNumber;
+	document.getElementById('setStateTradeName').innerHTML = sourceName;
+	document.getElementById('setStatePlaceImage').src = sourceImage;
+	document.getElementById('setStatePlaceNumber').innerHTML = sourceNumber;
+	document.getElementById('setStatePlaceName').innerHTML = sourceName;
+	document.getElementById('setStateLv100Image').src = sourceImage;
+	document.getElementById('setStateLv100Number').innerHTML = sourceNumber;
+	document.getElementById('setStateLv100Name').innerHTML = sourceName;
+	
+	document.getElementById('setStateMenu').setAttribute('pokemonid', pokemon);
+	document.getElementById('setStateMenu').setAttribute('viewtype', view);
+	
+	let setStateModal = new bootstrap.Modal(document.getElementById('setStateMenu'), {});
+	setStateModal.show();
+	
+	return false;
+}
+
+function setState (state) {
+	const endState = state.substring(state.length - 5).toLowerCase();
+	const pokemon = document.getElementById('setStateMenu').getAttribute('pokemonid');
+	const view = document.getElementById('setStateMenu').getAttribute('viewtype');
+	
+	const pokemonState = document.getElementById(pokemon).classList;
+	pokemonState.remove("trade");
+	pokemonState.remove("place");
+	pokemonState.remove("caught");
+	pokemonState.remove("lv100");
+	pokemonState.add(endState)
+	
 	const user = firebase.auth().currentUser;
 	if (user) {
 		const userData = db.collection('userData').doc(user.uid);
@@ -187,21 +243,53 @@ function handleClick(event) {
 			element.parentNode.parentNode.firstChild.classList.toggle('turned');
 			break;
 		} else if (element.nodeName === "DIV" && /dex-entry/.test(element.className)) {
-			changeCaughtState(element.id, 'grid');
+			toggleCaughtState(element.id, 'grid');
 			break;
 		} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className)) {
-			changeCaughtState(element.parentNode.id, 'list');
+			toggleCaughtState(element.parentNode.id, 'list');
 			break;
 		} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className)) {
-			changeCaughtState(element.id);
+			toggleCaughtState(element.id);
 			break;
 		} else if (element.nodeName === "LI" && /nav-item/.test(element.className)) {
 			dexCollapse(element.id);
+			break;
+		} else if (element.nodeName === "IMG" && /setState/.test(element.id)) {
+			setState(element.parentNode.parentNode.id);
 			break;
 		}
 		
         element = element.parentNode;
     }
+}
+
+// Event handler for user clicks
+function handleRightClick(event) {
+    event = event || window.event;
+    event.target = event.target || event.srcElement;
+
+    let element = event.target;
+
+    // Climb up the document tree from the target of the event
+    while (element) {
+		if (element.nodeName === "DIV" && /dex-entry/.test(element.className) && !(/setState/.test(element.id))) {
+			event.preventDefault(); // Prevents normal right-click menu from showing up
+			setStateModalOpen(element.id, 'grid');
+			break;
+		} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className) && !(/setState/.test(element.parentNode.parentNode.id))) {
+			event.preventDefault(); // Prevents normal right-click menu from showing up
+			setStateModalOpen(element.parentNode.id, 'list');
+			break;
+		} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className) && !(/setState/.test(element.id))) {
+			event.preventDefault(); // Prevents normal right-click menu from showing up
+			setStateModalOpen(element.id);
+			break;
+		}
+		
+        element = element.parentNode;
+    }
+	
+	return false;
 }
 
 // Gets the already-completed items from user data and checks those boxes

@@ -173,7 +173,7 @@
 				</div>
 				<div class="modal-body">
 					<div class="row">
-						<p class="col-12">Click on a pokemon sprite to toggle between these states.</p>
+						<p class="col-12">Click on a pokemon sprite to toggle between <strong>Not caught</strong> and <strong>Caught</strong>.</p>
 						<div class="card col-2 dex-entry" id="usageKey-notCaught">
 							<div class="card-body">
 								<img src="/assets/pokemon/normal/bulbasaur.webp" alt="">
@@ -182,6 +182,15 @@
 								<h4 class="dex-entry-number usage-key">Not Caught</h4>
 							</div>
 						</div>
+						<div class="card col-2 dex-entry caught" id="usageKey-caught">
+							<div class="card-body">
+								<img src="/assets/pokemon/normal/bulbasaur.webp" alt="">
+								<h4 class="dex-entry-number">001</h4>
+								<h4 class="dex-entry-name">Bulbasaur</h4>
+								<h4 class="dex-entry-number usage-key">Caught</h4>
+							</div>
+						</div>
+						<p class="col-12">Right-click (or long-press on a phone) on a pokemon sprite to open a menu to set any of these other states:</p>
 						<div class="card col-2 dex-entry trade" id="usageKey-trading">
 							<div class="card-body">
 								<img src="/assets/pokemon/normal/bulbasaur.webp" alt="">
@@ -198,12 +207,12 @@
 								<h4 class="dex-entry-number usage-key">Ready to place</h4>
 							</div>
 						</div>
-						<div class="card col-2 dex-entry caught" id="usageKey-caught">
+						<div class="card col-2 dex-entry lv100" id="usageKey-lv100">
 							<div class="card-body">
 								<img src="/assets/pokemon/normal/bulbasaur.webp" alt="">
 								<h4 class="dex-entry-number">001</h4>
 								<h4 class="dex-entry-name">Bulbasaur</h4>
-								<h4 class="dex-entry-number usage-key">Caught</h4>
+								<h4 class="dex-entry-number usage-key">Level 100</h4>
 							</div>
 						</div>
 						<p>To <strong>show or hide</strong> completed boxes or a specific dex by default, change your <a href="../profile/">Settings</a>.</p>
@@ -211,6 +220,46 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="setStateMenu" tabindex="-1" aria-labelledby="setStateMenuLabel" aria-hidden="true" pokemonid="">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="setStateMenuLabel">Set Pok&eacute;mon State</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="card col-2 dex-entry trade" id="setStateTrade" data-bs-dismiss="modal">
+							<div class="card-body">
+								<img src="" alt="" id="setStateTradeImage">
+								<h4 class="dex-entry-number" id="setStateTradeNumber"></h4>
+								<h4 class="dex-entry-name" id="setStateTradeName"></h4>
+								<h4 class="dex-entry-number usage-key">Trading for</h4>
+							</div>
+						</div>
+						<div class="card col-2 dex-entry place" id="setStatePlace" data-bs-dismiss="modal">
+							<div class="card-body">
+								<img src="" alt="" id="setStatePlaceImage">
+								<h4 class="dex-entry-number" id="setStatePlaceNumber"></h4>
+								<h4 class="dex-entry-name" id="setStatePlaceName"></h4>
+								<h4 class="dex-entry-number usage-key">Ready to place</h4>
+							</div>
+						</div>
+						<div class="card col-2 dex-entry lv100" id="setStateLv100" data-bs-dismiss="modal">
+							<div class="card-body">
+								<img src="" alt="" id="setStateLv100Image">
+								<h4 class="dex-entry-number" id="setStateLv100Number"></h4>
+								<h4 class="dex-entry-name" id="setStateLv100Name"></h4>
+								<h4 class="dex-entry-number usage-key">Level 100</h4>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
