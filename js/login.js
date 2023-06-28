@@ -1,12 +1,3 @@
-// Configure OAuth according to new requirements as of Jun 18 2023
-/* firebaseConfig = {
-  apiKey: "AIzaSyAO5f-6vwfwVNoC1PupRAk_Uv4nwdc0TZg",
-  authDomain: "https://pokedexapp.net/",
-  databaseURL: "https://living-pokedex-tracker-5c0b4.firebaseio.com",
-  projectId: "living-pokedex-tracker-5c0b4",
-  appId: "1:1028261796611:web:7071759fd2c674b06c6736"
-}; */
-
 // Initialize the FirebaseUI Widget using Firebase.
 const ui = new firebaseui.auth.AuthUI(firebase.auth());
 

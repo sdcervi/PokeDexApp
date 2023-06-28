@@ -8,3 +8,4 @@ SQL Backup 2020_1122 1652.sql
 _archive/*
 .DS_Store
 *.cache
+.firebase/hosting..cache
