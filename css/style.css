@@ -18,7 +18,7 @@ button.usage-key { position: absolute; right: 0.75em; top: 4.25rem; }
 
 h2.dex-heading { text-align: center; margin-top: 1rem; }
 h3.show-hide { text-align: center; }
-h4.usage-key { color: black;  margin-top: 10px; }
+h4.usage-key { color: black!important;  margin-top: 10px; }
 
 /* Dark mode light mode toggle from https://codepen.io/fydsa/pen/abwdpep*/
 :root { --light: #d8dbe0; --dark: #39393f; }
@@ -86,7 +86,7 @@ button.btn-edit { position: absolute; }
 .dex-box .card-header img.collapse-arrow:focus, .dex-box .card-header img.collapse-arrow:hover, .dex-box .card-header img.collapse-arrow:active { filter: invert(24%) sepia(84%) saturate(1707%) hue-rotate(207deg) brightness(97%) contrast(91%); cursor: pointer; }
 
 .dex-col { padding: 0; }
-.dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; }
+.dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; -webkit-touch-callout: none!important; -webkit-touch-callout: none !important; -webkit-user-select: none !important; }
 .dex-entry:focus, .dex-entry:hover, .dex-entry:active { cursor: pointer; }
 .dex-entry .card-body { padding: 0; margin-bottom: 15px!important; }
 .dex-entry img { max-width: 100%; height: auto; padding-bottom: 5px; display: block; margin: 0 auto; opacity: 0.1; }
@@ -98,7 +98,7 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 .list-view-div { margin-top: 2.5em; }
 .list-view-table { display: block; max-height: 70vh; overflow-y: scroll; border-collapse: separate; border-spacing: 0; }
 .list-view-table thead { position: sticky; top: 0; z-index: 10; background-color: white; border-bottom: 4px solid black; }
-.dex-entry-list { text-align: left; font-size: 1rem; }
+.dex-entry-list { text-align: left; font-size: 1rem; -webkit-touch-callout: none !important; -webkit-user-select: none !important; }
 .dex-entry-list th.dex-entry-number { width: 15%; font-weight: bold; vertical-align: middle; }
 .dex-entry-list td.dex-entry-name { width: 20%; text-transform: capitalize; vertical-align: middle; }
 .dex-entry-list td.dex-entry-img { white-space: nowrap; }
@@ -106,13 +106,16 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 .dex-entry-list td.dex-entry-img img { width: 3em; height: auto; opacity: 0.2; }
 .dex-entry-list td.dex-entry-status { width: 35%; vertical-align: middle; }
 
-.caught img, .dex-entry-list td.dex-entry-img div.caught img { opacity: 1; }
-.caught h4 { color: black; }
+.caught img, .dex-entry-list td.dex-entry-img div.caught img, .lv100 img, .dex-entry-list td.dex-entry-img div.lv100 img { opacity: 1; }
+.caught h4, .lv100 h4 { color: black; }
 
 .dex-entry.trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 0.5em; z-index: 5; }
 .dex-entry-list td.dex-entry-img div.trade:before { content: url(/assets/icons/trade.svg); height: 1.25em; width: 1.25em; position: absolute; left: 0.25em; z-index: 5; }
 .dex-entry.place:before { content: url(/assets/icons/box.svg); height: 1.5em; width: 1.5em; position: absolute; right: 0.5em; z-index: 5; }
 .dex-entry-list td.dex-entry-img div.place:before { content: url(/assets/icons/box.svg); height: 1.25em; width: 1.25em; position: absolute; right: 0.25em; z-index: 5; }
+
+.dex-entry.lv100:before { content: url(/assets/icons/lv100.svg); height: 1.5em; width: 1.5em; position: absolute; right: 0.5em; z-index: 5; top: 10vw; }
+.dex-entry-list td.dex-entry-img div.lv100:before { content: url(/assets/icons/lv100.svg); height: 1.25em; width: 1.25em; position: absolute; right: 0.25em; top: 2em; z-index: 5; }
 
 .box-alt-info { float: right; margin-right: 1em; margin-top: 0.5em; font-size: 0.8em; }
 
@@ -175,6 +178,7 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 	.viewToggleSet { left: calc(((100vw - 540px) / 2) + 0.75rem); }
 	.toggle-switch { right: calc(((100vw - 540px) / 2) + 5.25rem); }
 	nav button.navbar-toggler { left: calc(((100vw - 540px) / 2) + 0.75rem); }
+	.dex-entry.lv100:before { top: 3.5em; }
 }
 
 @media only screen and (min-width: 768px) {
