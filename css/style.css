@@ -19,6 +19,7 @@ button.usage-key { position: absolute; right: 0.75em; top: 4.25rem; }
 h2.dex-heading { text-align: center; margin-top: 1rem; }
 h3.show-hide { text-align: center; }
 h4.usage-key { color: black!important;  margin-top: 10px; }
+#setStateMenu .row { justify-content: center; }
 
 /* Dark mode light mode toggle from https://codepen.io/fydsa/pen/abwdpep*/
 :root { --light: #d8dbe0; --dark: #39393f; }
@@ -85,8 +86,10 @@ button.btn-edit { position: absolute; }
 .dex-box .card-header img.collapse-arrow.turned { transform: rotate(180deg); }
 .dex-box .card-header img.collapse-arrow:focus, .dex-box .card-header img.collapse-arrow:hover, .dex-box .card-header img.collapse-arrow:active { filter: invert(24%) sepia(84%) saturate(1707%) hue-rotate(207deg) brightness(97%) contrast(91%); cursor: pointer; }
 
+#shiny-nat-dex .dex-box .card-header::after, #shiny-alt-dex .dex-box .card-header::after { content: url("../assets/icons/shiny.svg"); height: auto; width: 2em; position: absolute; right: -0.75em; top: -0.75em; z-index: 10; }
+
 .dex-col { padding: 0; }
-.dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; -webkit-touch-callout: none!important; -webkit-touch-callout: none !important; -webkit-user-select: none !important; }
+.dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; -webkit-touch-callout: none!important; -webkit-user-select: none !important; }
 .dex-entry:focus, .dex-entry:hover, .dex-entry:active { cursor: pointer; }
 .dex-entry .card-body { padding: 0; margin-bottom: 15px!important; }
 .dex-entry img { max-width: 100%; height: auto; padding-bottom: 5px; display: block; margin: 0 auto; opacity: 0.1; }
@@ -178,7 +181,7 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 	.viewToggleSet { left: calc(((100vw - 540px) / 2) + 0.75rem); }
 	.toggle-switch { right: calc(((100vw - 540px) / 2) + 5.25rem); }
 	nav button.navbar-toggler { left: calc(((100vw - 540px) / 2) + 0.75rem); }
-	.dex-entry.lv100:before { top: 3.5em; }
+	.dex-entry.lv100:before { top: 3em; }
 }
 
 @media only screen and (min-width: 768px) {

@@ -14,7 +14,7 @@ function checkComplete (pokemonID, autoCollapse) {
 	const listPokemon = box.children[1].firstChild.children;
 	let listComplete = [];
 	for (pokemon of listPokemon) {
-		listComplete.push(/caught/.test(pokemon.firstChild.className));
+		listComplete.push(/caught/.test(pokemon.firstChild.className) || /lv100/.test(pokemon.firstChild.className));
 	}
 	if (listComplete.every(value => value === true)) {
 		box.classList.add('completed');
@@ -33,36 +33,61 @@ function toggleCaughtState (pokemon, view) {
 	let endState;
 	
 	if (view === 'grid') {
-		if (toggleState.item(2) != 'caught') {
-			toggleState.remove("trade");
-			toggleState.remove("place");
-			toggleState.remove("lv100");
-			toggleState.add("caught");
-			endState = "caught";
-			checkComplete (pokemon);
-		} else {
-			toggleState.remove("trade");
-			toggleState.remove("place");
-			toggleState.remove("caught");
-			toggleState.remove("lv100");
-			endState = "";
-			checkComplete (pokemon);
+		switch (toggleState.item(2)) {
+			case null:
+				toggleState.add("caught");
+				endState = "caught";
+				checkComplete (pokemon);
+				break;
+			case "trade":
+				toggleState.remove("trade");
+				toggleState.add("caught");
+				endState = "caught";
+				checkComplete (pokemon);
+				break;
+			case "place":
+				toggleState.remove("place");
+				toggleState.add("caught");
+				endState = "caught";
+				checkComplete (pokemon);
+				break;
+			case "lv100":
+				toggleState.remove("lv100");
+				toggleState.remove("caught");
+				endState = "";
+				checkComplete (pokemon);
+				break;
+			case "caught":
+				toggleState.remove("caught");
+				endState = "";
+				checkComplete (pokemon);
+				break;
 		}
 	} else if (view === 'list') {
-		if (toggleState.item(0) != 'caught') {
-			toggleState.remove("trade");
-			toggleState.remove("place");
-			toggleState.remove("lv100");
-			toggleState.add("caught");
-			endState = "caught";
-			checkComplete (pokemon);
-		} else {
-			toggleState.remove("trade");
-			toggleState.remove("place");
-			toggleState.remove("caught");
-			toggleState.remove("lv100");
-			endState = "";
-			checkComplete (pokemon);
+		switch (toggleState.item(0)) {
+			case null:
+				toggleState.add("caught");
+				endState = "caught";
+				break;
+			case "trade":
+				toggleState.remove("trade");
+				toggleState.add("caught");
+				endState = "caught";
+				break;
+			case "place":
+				toggleState.remove("place");
+				toggleState.add("caught");
+				endState = "caught";
+				break;
+			case "lv100":
+				toggleState.remove("lv100");
+				toggleState.remove("caught");
+				endState = "";
+				break;
+			case "caught":
+				toggleState.remove("caught");
+				endState = "";
+				break;
 		}
 	}
 
@@ -127,12 +152,22 @@ function setState (state) {
 	const pokemon = document.getElementById('setStateMenu').getAttribute('pokemonid');
 	const view = document.getElementById('setStateMenu').getAttribute('viewtype');
 	
-	const pokemonState = document.getElementById(pokemon).classList;
-	pokemonState.remove("trade");
-	pokemonState.remove("place");
-	pokemonState.remove("caught");
-	pokemonState.remove("lv100");
-	pokemonState.add(endState)
+	const pokemonDiv = document.getElementById(pokemon);
+	
+	// If the user clicks on the same new state as current state
+	if (pokemonDiv.classList.contains("trade") && endState === "trade") {
+		pokemonDiv.classList.remove("trade");
+	} else if (pokemonDiv.classList.contains("place") && endState === "place") {
+		pokemonDiv.classList.remove("place");
+	} else if (pokemonDiv.classList.contains("lv100") && endState === "lv100") {
+		pokemonDiv.classList.remove("lv100");
+	} else {
+		pokemonDiv.classList.remove("trade");
+		pokemonDiv.classList.remove("place");
+		pokemonDiv.classList.remove("lv100");
+		pokemonDiv.classList.remove("caught");
+		pokemonDiv.classList.add(endState);
+	}
 	
 	const user = firebase.auth().currentUser;
 	if (user) {
@@ -153,6 +188,9 @@ function setState (state) {
 			checkComplete (pokemon);
 		}
 	}
+	
+	// Close modal now that we're done with it
+	document.getElementById('setStateMenuClose').click();
 }
 
 function autoCollapseComplete () {
@@ -228,7 +266,8 @@ function dexCollapse (toggleID) {
 }
 
 // Event handler for user clicks
-function handleClick(event) {
+function handleClick (event) {
+	console.log ('click');
     event = event || window.event;
     event.target = event.target || event.srcElement;
 
@@ -242,11 +281,14 @@ function handleClick(event) {
 		} else if (element.nodeName === "H3" && /card-header/.test(element.parentNode.parentNode.className)) {
 			element.parentNode.parentNode.firstChild.classList.toggle('turned');
 			break;
-		} else if (element.nodeName === "DIV" && /dex-entry/.test(element.className)) {
+		} else if (element.nodeName === "DIV" && /dex-entry/.test(element.className) && !(/setState/.test(element.id))) {
 			toggleCaughtState(element.id, 'grid');
 			break;
 		} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className)) {
 			toggleCaughtState(element.parentNode.id, 'list');
+			break;
+		} else if (element.nodeName === "DIV" && /dex-entry-img/.test(element.parentNode.className)) {
+			toggleCaughtState(element.id, 'list');
 			break;
 		} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className)) {
 			toggleCaughtState(element.id);
@@ -257,6 +299,9 @@ function handleClick(event) {
 		} else if (element.nodeName === "IMG" && /setState/.test(element.id)) {
 			setState(element.parentNode.parentNode.id);
 			break;
+		} else if (element.nodeName === "DIV" && /setState/.test(element.id) && !(/setStateMenu/.test(element.id))) {
+			setState(element.id);
+			break;
 		}
 		
         element = element.parentNode;
@@ -264,7 +309,8 @@ function handleClick(event) {
 }
 
 // Event handler for user clicks
-function handleRightClick(event) {
+function handleRightClick (event) {
+	console.log ('right click');
     event = event || window.event;
     event.target = event.target || event.srcElement;
 
