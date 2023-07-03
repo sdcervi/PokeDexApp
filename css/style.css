@@ -1,10 +1,14 @@
 /* ----------------------------------- GLOBAL ----------------------------------- */
+/* ----------------------------------- GLOBAL ----------------------------------- */
 body { background-color: white; color: black; }
 main { margin-top: 55px; padding-top: 2em; }
 .clear { clear: both; }
 #cookie-banner { position: fixed; bottom: 0; left: .75rem; width: 100%; z-index: 999; border-radius: 0; display: none; padding: 0.5em; font-size: 0.9em; align-items: center; }
 .jumbotron { margin-top: 10vh; }
 .jumbotron p:last-of-type { margin-bottom: 2em; }
+
+.shout-out { background-color: #eeeeee; padding: 1.5em; }
+.shout-out h2 { border-bottom: 1px solid lightgray; }
 
 img.screenshot { max-height: 400px; width: auto; max-width: 100%; display: inline-block; box-shadow: 0 0 10px lightgray; margin-bottom: 2em; }
 img.screenshot:first-of-type { margin-right: 2em; }
@@ -88,8 +92,8 @@ button.btn-edit { position: absolute; }
 
 #shiny-nat-dex .dex-box .card-header::after, #shiny-alt-dex .dex-box .card-header::after { content: url("../assets/icons/shiny.svg"); height: auto; width: 2em; position: absolute; right: -0.75em; top: -0.75em; z-index: 10; }
 
-.dex-col { padding: 0; }
-.dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; -webkit-touch-callout: none!important; -webkit-user-select: none !important; }
+.dex-col { padding: 0; -webkit-touch-callout: none!important; -webkit-user-select: none !important; }
+.dex-entry { padding: 0 0.25rem; border: none; margin-right: 0!important; margin-left: 0!important; }
 .dex-entry:focus, .dex-entry:hover, .dex-entry:active { cursor: pointer; }
 .dex-entry .card-body { padding: 0; margin-bottom: 15px!important; }
 .dex-entry img { max-width: 100%; height: auto; padding-bottom: 5px; display: block; margin: 0 auto; opacity: 0.1; }

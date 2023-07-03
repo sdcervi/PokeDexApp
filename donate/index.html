@@ -75,40 +75,56 @@
 	
 	<section class="container">
 		
-		<h1>Support this website</h1>
+		<div class="row">
 		
-		<p>This dex tracker is and always will be free to use.  I&rsquo;ll never run ads.  You hate &rsquo;em, I hate &rsquo;em.  That being said, I did spend a lot of time on this, and hosting a website isn&rsquo;t free.</p>
-		
-		<p>Current operating expenses:</p>
-		
-		<ul>
-			<li>Domain name: $<span id="domain"></span> USD per year</li>
-			<li>Hosting service: $<span id="hosting"></span> USD per month</li>
-			<li>Email service: $<span id="email"></span> USD per month</li>
-		</ul>
-		
-		<p>Total annual cost:</p>
-		
-		<ul>
-			<li>$<span id="totalMonthly"></span> USD per month</li>
-			<li>$<span id="totalAnnual"></span> USD per year</li>
-		</ul>
-		
-		<p>If everyone using this website donated $<span id="perUser"></span> per year, it would completely cover my website service expenses as well as the time I spend on development.</p>
-        
-        <p>Donations are by no means required, but they are appreciated.  Thank you for your support!</p>
-		
-		<h2>Membership perks</h2>
-		
-		<p>Becoming a supporting member of this site via <a href="https://ko-fi.com/pokedexapp/tiers">Ko-fi</a> or <a href="https://www.patreon.com/pokedexapp">Patreon</a> gives you these perks:</p>
-		
-		<ul>
-			<li>Exclusive access to the Living Pok&eacute;Dex Tracker Discord server, where you can chat directly with me and the other developers</li>
-			<li>Exclusive access to polls to vote on future features of the site</li>
-			<li>A shout-out on this page as a thank you for your support</li>
-		</ul>
-		
-		<p>Currently, there are three tiers ranging from $1/month to $5/month.</p>
+			<div class="col col-12 col-lg-8 col-xl-9">
+
+				<h1>Support this website</h1>
+
+				<p>This dex tracker is and always will be free to use.  I&rsquo;ll never run ads.  You hate &rsquo;em, I hate &rsquo;em.  That being said, I did spend a lot of time on this, and hosting a website isn&rsquo;t free.</p>
+
+				<p>Current operating expenses:</p>
+
+				<ul>
+					<li>Domain name: $<span id="domain"></span> USD per year</li>
+					<li>Hosting service: $<span id="hosting"></span> USD per month</li>
+					<li>Email service: $<span id="email"></span> USD per month</li>
+				</ul>
+
+				<p>Total annual cost:</p>
+
+				<ul>
+					<li>$<span id="totalMonthly"></span> USD per month</li>
+					<li>$<span id="totalAnnual"></span> USD per year</li>
+				</ul>
+
+				<p>If everyone using this website donated $<span id="perUser"></span> per year, it would completely cover my website service expenses as well as the time I spend on development.</p>
+
+				<p>Donations are by no means required, but they are appreciated.  Thank you for your support!</p>
+
+				<h2>Membership perks</h2>
+
+				<p>Becoming a supporting member of this site via <a href="https://ko-fi.com/pokedexapp/tiers">Ko-fi</a> or <a href="https://www.patreon.com/pokedexapp">Patreon</a> gives you these perks:</p>
+
+				<ul>
+					<li>Exclusive access to the Living Pok&eacute;Dex Tracker Discord server, where you can chat directly with me and the other developers</li>
+					<li>Exclusive access to polls to vote on future features of the site</li>
+					<li>A shout-out on this page as a thank you for your support</li>
+				</ul>
+
+				<p>Currently, there are three tiers ranging from $1/month to $5/month.</p>
+
+			</div>
+
+			<div class="col col-12 col-lg-4 col-xl-3 shout-out">
+
+				<h2 class="h4">Supporting members</h2>
+
+				<p>Ereven</p>
+
+			</div>
+			
+		</div>
 		
 		<hr>
 		
@@ -186,7 +202,7 @@
 	const annualDomain = 12;
 	const monthlyFirebase = 3;
 	const monthlyMailchimp = 69;
-	const numUsers = 2831;
+	const numUsers = 3496;
 	
 	document.getElementById('domain').innerHTML = annualDomain.toFixed(2);
 	document.getElementById('hosting').innerHTML = monthlyFirebase.toFixed(2);
