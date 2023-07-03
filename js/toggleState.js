@@ -3,6 +3,7 @@
 if (document.addEventListener) {
     document.addEventListener("click", handleClick, false);
     document.addEventListener("contextmenu", handleRightClick, false);
+    document.addEventListener("long-press", handleLongPress, false);
 } else if (document.attachEvent) {
     document.attachEvent("onclick", handleClick);
     document.attachEvent("contextmenu", handleRightClick, false);
@@ -267,7 +268,6 @@ function dexCollapse (toggleID) {
 
 // Event handler for user clicks
 function handleClick (event) {
-	console.log ('click');
     event = event || window.event;
     event.target = event.target || event.srcElement;
 
@@ -310,7 +310,6 @@ function handleClick (event) {
 
 // Event handler for user clicks
 function handleRightClick (event) {
-	console.log ('right click');
     event = event || window.event;
     event.target = event.target || event.srcElement;
 
@@ -336,6 +335,11 @@ function handleRightClick (event) {
     }
 	
 	return false;
+}
+
+function handleLongPress (event) {
+	event.preventDefault();
+	handleRightClick (event);
 }
 
 // Gets the already-completed items from user data and checks those boxes
