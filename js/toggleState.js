@@ -4,10 +4,8 @@ if (document.addEventListener) {
     document.addEventListener("click", handleClick, false);
     document.addEventListener("contextmenu", handleRightClick, false);
     document.addEventListener("long-press", handleLongPress, false);
-} else if (document.attachEvent) {
-    document.attachEvent("onclick", handleClick);
-    document.attachEvent("contextmenu", handleRightClick, false);
 }
+let supportsContextMenu = false;
 
 // Checks if all Pokemon in a card are caught
 function checkComplete (pokemonID, autoCollapse) {
@@ -310,13 +308,15 @@ function handleClick (event) {
 
 // Event handler for user clicks
 function handleRightClick (event) {
+	supportsContextMenu = true;
+	
     event = event || window.event;
     event.target = event.target || event.srcElement;
 
     let element = event.target;
-
-    // Climb up the document tree from the target of the event
-    while (element) {
+	
+	// Climb up the document tree from the target of the event
+	while (element) {
 		if (element.nodeName === "DIV" && /dex-entry/.test(element.className) && !(/setState/.test(element.id))) {
 			event.preventDefault(); // Prevents normal right-click menu from showing up
 			setStateModalOpen(element.id, 'grid');
@@ -330,16 +330,44 @@ function handleRightClick (event) {
 			setStateModalOpen(element.id);
 			break;
 		}
-		
-        element = element.parentNode;
-    }
+
+		element = element.parentNode;
+	}
 	
 	return false;
 }
 
 function handleLongPress (event) {
 	event.preventDefault();
-	handleRightClick (event);
+	
+	if (!supportsContextMenu) {
+		event = event || window.event;
+		event.target = event.target || event.srcElement;
+
+		let element = event.target;
+
+		// Climb up the document tree from the target of the event
+		while (element) {
+			if (element.nodeName === "DIV" && /dex-entry/.test(element.className) && !(/setState/.test(element.id))) {
+				event.preventDefault(); // Prevents normal right-click menu from showing up
+				setStateModalOpen(element.id, 'grid');
+				break;
+			} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className) && !(/setState/.test(element.parentNode.parentNode.id))) {
+				event.preventDefault(); // Prevents normal right-click menu from showing up
+				setStateModalOpen(element.parentNode.id, 'list');
+				break;
+			} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className) && !(/setState/.test(element.id))) {
+				event.preventDefault(); // Prevents normal right-click menu from showing up
+				setStateModalOpen(element.id);
+				break;
+			}
+
+			element = element.parentNode;
+		}
+		
+	}
+	
+	return false;
 }
 
 // Gets the already-completed items from user data and checks those boxes
