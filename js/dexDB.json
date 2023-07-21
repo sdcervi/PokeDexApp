@@ -8925,7 +8925,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": null
+		"alts": [{"forms": ["-own-tempo"], "form-names": ["own tempo"]}]
 	},
 	{
 		"id": "745",
