@@ -200,9 +200,9 @@
 	
 <script>
 	const annualDomain = 12;
-	const monthlyFirebase = 3;
+	const monthlyFirebase = 3.5;
 	const monthlyMailchimp = 69;
-	const numUsers = 3496;
+	const numUsers = 4335;
 	
 	document.getElementById('domain').innerHTML = annualDomain.toFixed(2);
 	document.getElementById('hosting').innerHTML = monthlyFirebase.toFixed(2);
@@ -214,7 +214,7 @@
 	
 	document.getElementById('totalMonthly').innerHTML = monthlyCost.toFixed(2);
 	document.getElementById('totalAnnual').innerHTML = annualCost.toFixed(2);
-	document.getElementById('perUser').innerHTML = Math.max(perUserCost.toFixed(2), 0.01);
+	document.getElementById('perUser').innerHTML = perUserCost.toFixed(2);
 	
 </script>
 	
