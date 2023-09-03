@@ -26,9 +26,14 @@ Living PokeDex Tracker was built using the Bootstrap 5.1 framework, Firebase, HT
 I designed it to be used primarily on mobile devices, for a 375px-wide viewport and larger.  Everything was then scaled up and rearranged for larger screens as needed.
 
 ### Features
-- Set Pokemon status of not caught, trading for, ready to put in place, or caught
+- Set Pokemon status of not caught, trading for, ready to put in place, caught, or Lv100
 - Dark mode/light mode toggle
 - View progress toward Living Dex completion on your profile page
+- Toggle between Grid View and List View
+- Collapse and expand dexes
+- Collapse and expand boxes
+- Set whether completed boxes are collapsed by default
+- Set whether specific dexes are collapsed by default
 
 ### Project status
 Living PokeDex Tracker is being actively maintained.  Bugs are logged and fixed as discovered.
