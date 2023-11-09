@@ -12,6 +12,7 @@ primaryNavContents += '<li class="nav-item" id="nav-about"><a class="nav-link" h
 primaryNavContents += '<li class="nav-item" id="nav-alts"><a class="nav-link" href="/alts/">Alt Forms Guide</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-faq"><a class="nav-link" href="/faq/">FAQ</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-feedback"><a class="nav-link" href="/feedback/">Feedback</a></li>';
+primaryNavContents += '<li class="nav-item" id="nav-news"><a class="nav-link" href="/news/">News</a></li>';
 primaryNavContents += '<li class="nav-item" id="nav-donate"><a class="nav-link" href="/donate/">Donate</a></li>';
 primaryNavContents += '</ul></div>';
 
