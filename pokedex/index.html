@@ -186,15 +186,52 @@
 	
 	<!-- Modal -->
 	<div class="modal fade" id="usageKey" tabindex="-1" aria-labelledby="usageKeyLabel" aria-hidden="true">
-		<div class="modal-dialog">
+		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="usageKeyLabel">How do I use this?</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
-				<div class="modal-body">
-					<div class="row">
-						<p class="col-12">Click on a pokemon sprite to toggle between <strong>Not caught</strong> and <strong>Caught</strong>.</p>
+				<div class="modal-body m-3">
+					<h4>Toggle between List and Grid view</h4>
+					<p>You can either use the default grid view, where Pokémon are arranged in boxes just like in Pokémon Home, or the list view where each Pokémon and all its variants are on the same row of a list. Use the buttons in the upper left to switch between views.</p>
+					<div>
+						<div class="btn-group mx-3 viewToggleSet" role="group">
+							<input type="radio" class="btn-check view-toggle" name="" id="" checked>
+							<label class="btn btn-secondary btn-sm" for="">
+								<img class="svg-make-white" src="/assets/icons/grid.svg" alt="" width="25" height="25">
+							</label>
+
+							<input type="radio" class="btn-check view-toggle" name="" id="">
+							<label class="btn btn-secondary btn-sm" for="">
+								<img class="svg-make-white" src="/assets/icons/list.svg" alt="" width="25" height="25">
+							</label>
+						</div>
+						<p>Grid view active</p>
+					</div>
+					
+					<div class="clearfix"></div>
+					
+					<div>
+						<div class="btn-group mx-3 viewToggleSet" role="group">
+							<input type="radio" class="btn-check view-toggle" name="" id="">
+							<label class="btn btn-secondary btn-sm" for="">
+								<img class="svg-make-white" src="/assets/icons/grid.svg" alt="" width="25" height="25">
+							</label>
+
+							<input type="radio" class="btn-check view-toggle" name="" id="" checked>
+							<label class="btn btn-secondary btn-sm" for="">
+								<img class="svg-make-white" src="/assets/icons/list.svg" alt="" width="25" height="25">
+							</label>
+						</div>
+						<p>List view active</p>
+					</div>
+					
+					<div class="clearfix mb-5"></div>
+					
+					<h4>Toggle between pokemon states</h4>
+					<p class="col-12">Click on a pokemon sprite to toggle between <strong>Not caught</strong> and <strong>Caught</strong>.</p>
+					<div class="row col-12 col-lg-8">
 						<div class="card col-2 dex-entry" id="usageKey-notCaught">
 							<div class="card-body">
 								<img src="/assets/pokemon/normal/bulbasaur.webp" alt="">
@@ -211,7 +248,9 @@
 								<h4 class="dex-entry-number usage-key">Caught</h4>
 							</div>
 						</div>
-						<p class="col-12">Right-click (or long-press on a phone) on a pokemon sprite to open a menu to set any of these other states:</p>
+					</div>
+					<p class="col-12">Right-click (or long-press on a phone) on a pokemon sprite to open a menu to set any of these other states:</p>
+					<div class="row col-12 col-lg-8">
 						<div class="card col-2 dex-entry trade" id="usageKey-trading">
 							<div class="card-body">
 								<img src="/assets/pokemon/normal/bulbasaur.webp" alt="">
@@ -236,8 +275,18 @@
 								<h4 class="dex-entry-number usage-key">Level 100</h4>
 							</div>
 						</div>
-						<p>To <strong>show or hide</strong> completed boxes or a specific dex by default, change your <a href="../profile/">Settings</a>.</p>
 					</div>
+					<p class="mb-5">To <strong>show or hide</strong> completed boxes or a specific dex by default, change your <a href="../profile/">Settings</a>.</p>
+					
+					<h4>Alt forms checklist</h4>
+					<p class="mb-5">Each dex type (normal or shiny) also has an alt/variants section. For Alcremie&rsquo;s alt forms (and others, coming soon), you can use the <a href="../alts/">Alt Forms Guide</a> page to help you track which alt forms you need and how to get the remaining forms. Please note that this does not retain progress like the PokéDex page does.</p>
+					
+					<h4>Questions? Comments? Feedback?</h4>
+					<p class="mb-5"><a href="../faq/">Check out the FAQs page first</a>, then if you have something you can either <a href="../feedback/">send me an email using this form</a>, or email me directly at <a href="mailto:livingpokedextracker@gmail.com">livingpokedextracker@gmail.com</a>.</p>
+					
+					<h4>Support continuing development</h4>
+					<p>I develop this site in my spare time as a hobby, and happily make it available to the world because of our shared love of Pokémon. If you&rsquo;d like to help support my work and the future of this dex tool, you can <a href="../donate/">donate here</a> or become a supporting member on <a href="https://ko-fi.com/pokedexapp">Ko-fi</a> or <a href="https://www.patreon.com/pokedexapp">Patreon</a>.</p>
+					<p>Supporting members get to vote on which feature I develop next! <a href="../news/">Keep an eye on the Substack</a> for posts letting you know when the next poll comes out.</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Okay</button>
@@ -282,7 +331,7 @@
 							</div>
 						</div>
 					</div>
-					<p class="small" id="bugnote">Due to a bug I'm still trying to fix, you may need to tap twice to select a new state.</p>
+					<p class="small" id="bugnote">Due to a bug I&rsquo;m still trying to fix, you may need to tap twice to select a new state.</p>
 				</div>
 			</div>
 		</div>
