@@ -10809,7 +10809,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": null
+		"alts": [{"forms": ["-normal", "-bloodmoon"], "form-names": ["normal", "bloodmoon"]}]
 	},
 	{
 		"id": "902",
@@ -12118,6 +12118,89 @@ const dexData = [
 		"mega": false,
 		"gigantamax": false,
 		"alts": null
+	},
+	{
+		"id": "1011",
+		"name": "dipplin",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": null
+	},
+	{
+		"id": "1012",
+		"name": "poltchageist",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": [{"forms": ["-counterfeit-form", "-artisan-form"], "form-names": ["counterfeit form", "artisan form"]}]
+	},
+	{
+		"id": "1013",
+		"name": "sinistcha",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": [{"forms": ["-unremarkable-form", "-masterpiece-form"], "form-names": ["unremarkable form", "masterpiece form"]}]
+	},
+	{
+		"id": "1014",
+		"name": "okidogi",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": null
+	},
+	{
+		"id": "1015",
+		"name": "munkidori",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": null
+	},
+	{
+		"id": "1016",
+		"name": "fezandipiti",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": null
+	},
+	{
+		"id": "1017",
+		"name": "ogerpon",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": null
 	}
-
 ]
