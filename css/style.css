@@ -25,6 +25,7 @@ h3.show-hide { text-align: center; }
 h4.usage-key { color: black!important;  margin-top: 10px; }
 #setStateMenu .row { justify-content: center; }
 #bugnote { display: none; }
+#bugnote { display: none; }
 
 /* Dark mode light mode toggle from https://codepen.io/fydsa/pen/abwdpep*/
 :root { --light: #d8dbe0; --dark: #39393f; }
@@ -154,6 +155,9 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 
 .dark-mode .list-view-table { color: white; }
 .dark-mode .list-view-table { color: white; }
+
+.dark-mode .modal-content { background-color: var(--dark); }
+.dark-mode .shout-out { background-color: #2e2e2e; }
 
 /* ------------------------------- MEDIA QUERIES -------------------------------- */
 
