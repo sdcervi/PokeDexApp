@@ -91,6 +91,18 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 	if (species == "iron-leaves"){
 		species = "iron leaves";
 	}
+	if (species == "gouging-fire"){
+		species = "gouging fire";
+	}
+	if (species == "raging-bolt"){
+		species = "raging bolt";
+	}
+	if (species == "iron-boulder"){
+		species = "iron boulder";
+	}
+	if (species == "iron-crown"){
+		species = "iron crown";
+	}
 	
 	// Generate the pokemon's card
 	let pokemonContent;
