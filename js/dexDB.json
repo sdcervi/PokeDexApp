@@ -297,7 +297,7 @@ const dexData = [
 		"gender": true,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-original-cap", "-hoenn-cap", "-sinnoh-cap", "-unova-cap", "-kalos-cap", "-alolan-cap", "-johto-cap", "-world-cap"], "form-names": ["original cap", "hoenn cap", "sinnoh cap", "unova cap", "kalos cap", "alolan cap", "partner cap", "world cap"]}]
+		"alts": [{"forms": ["", "-original-cap", "-hoenn-cap", "-sinnoh-cap", "-unova-cap", "-kalos-cap", "-alolan-cap", "-johto-cap", "-world-cap"], "form-names": ["normal", "original cap", "hoenn cap", "sinnoh cap", "unova cap", "kalos cap", "alolan cap", "partner cap", "world cap"]}]
 	},
 	{
 		"id": "26",
@@ -2409,7 +2409,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{ "forms": ["-a", "-b", "-c", "-d", "-e", "-f", "-g", "-h", "-i", "-j", "-k", "-l", "-m", "-n", "-o", "-p", "-q", "-r", "-s", "-t", "-u", "-v", "-w", "-x", "-y", "-z", "-qm", "-em"], "form-names": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "?", "!"] }]
+		"alts": [{ "forms": ["-a", "-b", "-c", "-d", "-e", "-f", "-g", "-h", "-i", "-j", "-k", "-l", "-m", "-n", "-o", "-p", "-q", "-r", "-s", "-t", "-u", "-v", "-w", "-x", "-y", "-z", "-em", "-qm"], "form-names": ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "!", "?"] }]
 	},
 	{
 		"id": "202",
@@ -5745,7 +5745,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["", "-fan", "-frost", "-heat", "-mow", "-wash"], "form-names": ["normal", "fan", "frost", "heat", "mow", "wash"]}]
+		"alts": [{"forms": ["", "-heat", "-wash", "-frost", "-fan", "-mow"], "form-names": ["normal", "heat", "wash", "frost", "fan", "mow"]}]
 	},
 	{
 		"id": "480",
@@ -7965,7 +7965,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts":  [{"forms": ["-icy-snow", "-all-others"], "form-names": ["icy snow", "all others"]}]
+		"alts": false
 	},
 	{
 		"id": "665",
@@ -8025,7 +8025,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
+		"alts": [{"forms": ["-red", "-yellow", "-orange", "-blue", "-white"], "form-names": ["red", "yellow", "orange", "blue", "white"]}]
 	},
 	{
 		"id": "670",
@@ -8037,7 +8037,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
+		"alts": [{"forms": ["-red", "-yellow", "-orange", "-blue", "-white"], "form-names": ["red", "yellow", "orange", "blue", "white"]}]
 	},
 	{
 		"id": "671",
@@ -8049,7 +8049,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-red", "-orange", "-yellow", "-blue", "-white"], "form-names": ["red", "orange", "yellow", "blue", "white"]}]
+		"alts": [{"forms": ["-red", "-yellow", "-orange", "-blue", "-white"], "form-names": ["red", "yellow", "orange", "blue", "white"]}]
 	},
 	{
 		"id": "672",
@@ -8109,7 +8109,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-natural", "-dandy", "-debutante", "-diamond", "-heart", "-kabuki", "-la-reine", "-matron", "-pharaoh", "-star"], "form-names": ["natural trim", "dandy trim", "debutante trim", "diamond trim", "heart trim", "kabuki trim", "la reine trim", "matron trim", "pharaoh trim", "star trim"]}]
+		"alts": [{"forms": ["-natural", "-heart", "-star", "-diamond", "-debutante", "-matron", "-dandy", "-la-reine", "-kabuki", "-pharaoh"], "form-names": ["natural trim", "heart trim", "star trim", "diamond trim", "debutante trim", "matron trim", "dandy trim", "la reine trim", "kabuki trim", "pharaoh trim"]}]
 	},
 	{
 		"id": "677",
@@ -8889,7 +8889,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-baile", "-pau", "-pom-pom", "-sensu"], "form-names": ["baile", "pau", "pom pom", "sensu"]}]
+		"alts": [{"forms": ["-baile", "-pom-pom", "-pau", "-sensu"], "form-names": ["baile", "pom pom", "pau", "sensu"]}]
 	},
 	{
 		"id": "742",
@@ -8925,7 +8925,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-own-tempo"], "form-names": ["own tempo"]}]
+		"alts": [{"forms": ["", "-own-tempo"], "form-names": ["normal", "own tempo"]}]
 	},
 	{
 		"id": "745",
@@ -11169,7 +11169,7 @@ const dexData = [
 		"gender": false,
 		"mega": false,
 		"gigantamax": false,
-		"alts": [{"forms": ["-blue-plumage", "-green-plumage", "-white-plumage", "-yellow-plumage"], "form-names": ["blue plumage", "green plumage", "white plumage", "yellow plumage"]}]
+		"alts": [{"forms": ["-green-plumage", "-blue-plumage", "-yellow-plumage", "-white-plumage"], "form-names": ["green plumage", "blue plumage", "yellow plumage", "white plumage"]}]
 	},
 	{
 		"id": "932",
