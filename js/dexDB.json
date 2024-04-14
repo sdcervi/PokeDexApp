@@ -12286,5 +12286,17 @@ const dexData = [
 		"mega": false,
 		"gigantamax": false,
 		"alts": null
+	},
+	{
+		"id": "1025",
+		"name": "pecharunt",
+		"alolan": false,
+		"galarian": false,
+		"hisuian": false,
+		"paldean": false,
+		"gender": false,
+		"mega": false,
+		"gigantamax": false,
+		"alts": null
 	}
 ]
