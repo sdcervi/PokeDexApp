@@ -1,4 +1,4 @@
-const totalPokemon = 2908;	
+const totalPokemon = 2950;	
 
 function changeCollapse () {
 	const user = firebase.auth().currentUser;
