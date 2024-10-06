@@ -36,4 +36,4 @@ I designed it to be used primarily on mobile devices, for a 375px-wide viewport 
 - Set whether specific dexes are collapsed by default
 
 ### Project status
-Living PokeDex Tracker is being actively maintained.  Bugs are logged and fixed as discovered.
+Living PokeDex Tracker is being actively maintained.  Bugs are logged and fixed as discovered. Go to the [Changemap](https://changemap.co/stephanie-cervi-design/pokedex/) to view current status, make new feature requests, or upvote existing requests.
