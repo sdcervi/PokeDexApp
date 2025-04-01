@@ -338,8 +338,6 @@ function handleRightClick (event) {
 }
 
 function handleLongPress (event) {
-	event.preventDefault();
-	
 	if (!supportsContextMenu) {
 		event = event || window.event;
 		event.target = event.target || event.srcElement;
@@ -349,17 +347,14 @@ function handleLongPress (event) {
 		// Climb up the document tree from the target of the event
 		while (element) {
 			if (element.nodeName === "DIV" && /dex-entry/.test(element.className) && !(/setState/.test(element.id))) {
-				event.preventDefault(); // Prevents normal right-click menu from showing up
 				document.getElementById('bugnote').style.display = 'block';
 				setStateModalOpen(element.id, 'grid');
 				break;
 			} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className) && !(/setState/.test(element.parentNode.parentNode.id))) {
-				event.preventDefault(); // Prevents normal right-click menu from showing up
 				document.getElementById('bugnote').style.display = 'block';
 				setStateModalOpen(element.parentNode.id, 'list');
 				break;
 			} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className) && !(/setState/.test(element.id))) {
-				event.preventDefault(); // Prevents normal right-click menu from showing up
 				document.getElementById('bugnote').style.display = 'block';
 				setStateModalOpen(element.id);
 				break;
