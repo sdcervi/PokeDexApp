@@ -556,6 +556,13 @@ function writePokemonList (dexID) {
 		pokemonContent += `<td></td>`
 	}
 	
+	// Add Paldean forms if they exist
+	if (dexData[dexID-1].paldean) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-paldean.webp" alt=""></div><div id="alt-shiny-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-paldean.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
+	
 	// Add other alt forms if they exist
 	if (dexData[dexID-1].alts && dexData[dexID-1].name != "alcremie") {
 		const forms = dexData[dexID-1].alts[0].forms;
