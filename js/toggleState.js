@@ -140,18 +140,17 @@ function setStateModalOpen (pokemon, view) {
 	document.getElementById('setStateMenu').setAttribute('pokemonid', pokemon);
 	document.getElementById('setStateMenu').setAttribute('viewtype', view);
 
-	console.log(sourceName)
+	// TODO: Refactor into own function
 	let modifiedName = sourceName.replace(
 		/(\w*) (\w*)/,
 		(capture1, capture2, capture3) => { capture2 = capture2[0].toUpperCase() + capture2.substring(1); capture3 = capture3[0].toUpperCase() + capture3.substring(1); return capture2 + "_" + capture3; }
 	);
-	
+
 	let idx = modifiedName.indexOf("-");
 	if(idx != -1)
 	{
 		modifiedName = modifiedName.substring(0, idx) + "-" + modifiedName[idx + 1].toUpperCase() + modifiedName.substring(idx + 2);
 	}
-	console.log(modifiedName)
 
 	idx = sourceName.indexOf("&nbsp;♂")
 	if(idx != -1 && !modifiedName.includes("rattata"))
@@ -164,9 +163,10 @@ function setStateModalOpen (pokemon, view) {
 	let pdbName = modifiedName;
 	if(sourceName == "type-null")
 		bulbaName = "Type:_Null"
-	//let modifiedName = sourceName.replace(' ', '_');
+
 	document.getElementById('bulba-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/${bulbaName}_(Pok%C3%A9mon)">See on Bulbapedia</a>`;
 	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">See on PokemonDB</a>`;
+	
 	let setStateModal = new bootstrap.Modal(document.getElementById('setStateMenu'), {});
 	setStateModal.show();
 	
