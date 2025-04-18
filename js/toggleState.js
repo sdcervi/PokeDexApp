@@ -140,8 +140,17 @@ function setStateModalOpen (pokemon, view) {
 	document.getElementById('setStateMenu').setAttribute('pokemonid', pokemon);
 	document.getElementById('setStateMenu').setAttribute('viewtype', view);
 
-	// TODO: Refactor into own function
-	let modifiedName = sourceName.replace(
+	setDatabaseLinks(sourceName, sourceNumber);
+	
+	let setStateModal = new bootstrap.Modal(document.getElementById('setStateMenu'), {});
+	setStateModal.show();
+	
+	return false;
+}
+
+function setDatabaseLinks(pokemonName, pokemonNumber)
+{
+	let modifiedName = pokemonName.replace(
 		/(\w*) (\w*)/,
 		(capture1, capture2, capture3) => { capture2 = capture2[0].toUpperCase() + capture2.substring(1); capture3 = capture3[0].toUpperCase() + capture3.substring(1); return capture2 + "_" + capture3; }
 	);
@@ -152,25 +161,57 @@ function setStateModalOpen (pokemon, view) {
 		modifiedName = modifiedName.substring(0, idx) + "-" + modifiedName[idx + 1].toUpperCase() + modifiedName.substring(idx + 2);
 	}
 
-	idx = sourceName.indexOf("&nbsp;♂")
+	idx = pokemonName.indexOf("&nbsp;♂")
 	if(idx != -1 && !modifiedName.includes("rattata"))
 		modifiedName = modifiedName.substring(0, idx);
-	idx = sourceName.indexOf("&nbsp;♀")
+	idx = pokemonName.indexOf("&nbsp;♀")
 	if(idx != -1 && !modifiedName.includes("rattata"))
 		modifiedName = modifiedName.substring(0, idx);
 
 	let bulbaName = modifiedName;
 	let pdbName = modifiedName;
-	if(sourceName == "type-null")
-		bulbaName = "Type:_Null"
+	if(pokemonName == "type-null")
+		bulbaName = "Type:_Null" // Bulbapedia has odd formatting for Type: Null
 
 	document.getElementById('bulba-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/${bulbaName}_(Pok%C3%A9mon)">See on Bulbapedia</a>`;
 	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">See on PokemonDB</a>`;
-	
-	let setStateModal = new bootstrap.Modal(document.getElementById('setStateMenu'), {});
-	setStateModal.show();
-	
-	return false;
+
+	if(pokemonNumber <= 151)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex/${pokemonNumber}.shtml">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 251)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-gs/${pokemonNumber}.shtml">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 386)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-rs/${pokemonNumber}.shtml">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 493)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-dp/${pokemonNumber}.shtml">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 649)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-bw/${pokemonNumber}.shtml">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 721)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-xy/${pokemonNumber}.shtml">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 809)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-sm/${pokemonNumber}.shtml">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 905)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-swsh/${pokemonName}/">See on Serebii</a>`;
+	}
+	else if(pokemonNumber <= 1025)
+	{
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-sv/${pokemonName}/">See on Serebii</a>`;
+	}
 }
 
 function setState (state) {
