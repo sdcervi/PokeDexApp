@@ -152,7 +152,13 @@ function setDatabaseLinks(pokemonName, pokemonNumber)
 {
 	let modifiedName = pokemonName.replace(
 		/(\w*) (\w*)/,
-		(capture1, capture2, capture3) => { capture2 = capture2[0].toUpperCase() + capture2.substring(1); capture3 = capture3[0].toUpperCase() + capture3.substring(1); return capture2 + "_" + capture3; }
+		(capture1, capture2, capture3) => { 
+			if(capture3[0] == null)
+			{
+				return capture2;
+			}
+			capture2 = capture2[0].toUpperCase() + capture2.substring(1); capture3 = capture3[0].toUpperCase() + capture3.substring(1); return capture2 + "_" + capture3;
+		}
 	);
 
 	let idx = modifiedName.indexOf("-");
@@ -162,55 +168,62 @@ function setDatabaseLinks(pokemonName, pokemonNumber)
 	}
 
 	idx = pokemonName.indexOf("&nbsp;♂")
-	if(idx != -1 && !modifiedName.includes("rattata"))
+	if(idx != -1 && !modifiedName.includes("nidoran"))
 		modifiedName = modifiedName.substring(0, idx);
 	idx = pokemonName.indexOf("&nbsp;♀")
-	if(idx != -1 && !modifiedName.includes("rattata"))
+	if(idx != -1 && !modifiedName.includes("nidoran"))
 		modifiedName = modifiedName.substring(0, idx);
 
 	let bulbaName = modifiedName;
 	let pdbName = modifiedName;
+	let serebiiName = pokemonName;
+	console.log(modifiedName)
+	console.log(serebiiName)
+	pdbName = pdbName.replace("_", "-");
+	pdbName = pdbName.replace("♂", "-m");
+	pdbName = pdbName.replace("♀", "-f");
 	if(pokemonName == "type-null")
 		bulbaName = "Type:_Null" // Bulbapedia has odd formatting for Type: Null
-
-	document.getElementById('bulba-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/${bulbaName}_(Pok%C3%A9mon)">See on Bulbapedia</a>`;
-	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">See on PokemonDB</a>`;
+	serebiiName = serebiiName.replace(" ", "");
+	console.log(serebiiName)
+	document.getElementById('bulba-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/${bulbaName}_(Pok%C3%A9mon)">Bulbapedia</a>`;
+	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">PokemonDB</a>`;
 
 	if(pokemonNumber <= 151)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex/${pokemonNumber}.shtml">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex/${pokemonNumber}.shtml">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 251)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-gs/${pokemonNumber}.shtml">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-gs/${pokemonNumber}.shtml">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 386)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-rs/${pokemonNumber}.shtml">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-rs/${pokemonNumber}.shtml">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 493)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-dp/${pokemonNumber}.shtml">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-dp/${pokemonNumber}.shtml">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 649)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-bw/${pokemonNumber}.shtml">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-bw/${pokemonNumber}.shtml">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 721)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-xy/${pokemonNumber}.shtml">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-xy/${pokemonNumber}.shtml">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 809)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-sm/${pokemonNumber}.shtml">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-sm/${pokemonNumber}.shtml">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 905)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-swsh/${pokemonName}/">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-swsh/${serebiiName}/">Serebii</a>`;
 	}
 	else if(pokemonNumber <= 1025)
 	{
-		document.getElementById('serebii-link').innerHTML = `<a target="_blank" rel="noopener noreferrer" href="https://serebii.net/pokedex-sv/${pokemonName}/">See on Serebii</a>`;
+		document.getElementById('serebii-link').innerHTML = `<a target="_blank" style="width:100%;" class="btn btn-primary" rel="noopener noreferrer" href="https://serebii.net/pokedex-sv/${serebiiName}/">Serebii</a>`;
 	}
 }
 
