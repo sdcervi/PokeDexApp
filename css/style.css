@@ -23,7 +23,12 @@ button.usage-key { position: absolute; right: 0.75em; top: 4.25rem; }
 h2.dex-heading { text-align: center; margin-top: 1rem; }
 h3.show-hide { text-align: center; }
 h4.usage-key { color: black!important;  margin-top: 10px; }
+
 #setStateMenu .row { justify-content: center; }
+#setStateMenu .modal-footer { justify-content: center !important; background-color: #dee2e6; display: block !important; }
+#setStateMenu .db-buttons { display: flex; flex-direction: row; justify-content: center; }
+#setStateMenu .db-buttons div { width: 100%; margin: 1em 0.5em 0.5em 0.5em; }
+#setStateMenu .db-buttons a { width: 100%; }
 
 /* Dark mode light mode toggle from https://codepen.io/fydsa/pen/abwdpep*/
 :root { --light: #d8dbe0; --dark: #39393f; }
