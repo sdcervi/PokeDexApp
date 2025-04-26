@@ -107,31 +107,31 @@ function writePokemon (dexID, dexType, dexColor, altType) {
 	// Generate the pokemon's card
 	let pokemonContent;
 	if (!altType && altType != 0) {
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
 	} else if (altType === 'alolan' || altType === 'galarian' || altType === 'hisuian' || altType === 'paldean') {
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${altType}"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${altType}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4></div></div></div>`;
 		totalPokemon++;
 	} else if (altType === 'gender') {
 		if (pokemonID == 215) { // For Sneasel's Hisuian gender differences
-			pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
+			pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
 			totalPokemon++;
-			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
 			totalPokemon++;
-			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-hisuian-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-hisuian.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species} Hisuian&nbsp;&male;</h4></div></div></div>`;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-hisuian-male"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-hisuian.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species} Hisuian&nbsp;&male;</h4></div></div></div>`;
 			totalPokemon++;
-			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-hisuian-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-hisuian-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species} Hisuian&nbsp;&female;</h4></div></div></div>`;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-hisuian-female"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-hisuian-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species} Hisuian&nbsp;&female;</h4></div></div></div>`;
 			totalPokemon++;
 		} else {
-			pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
+			pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-male"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&male;</h4></div></div></div>`;
 			totalPokemon++;
-			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
+			pokemonContent += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-female"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-f.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}&nbsp;&female;</h4></div></div></div>`;
 			totalPokemon++;
 		}
 	} else {
 		const forms = dexData[dexID-1].alts[0].forms;
 		const formNames = dexData[dexID-1].alts[0]['form-names'];
-		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-alt${forms[altType]}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}${forms[altType]}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${formNames[altType]}</h4></div></div></div>`;
+		pokemonContent = `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-alt${forms[altType]}"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}${forms[altType]}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${formNames[altType]}</h4></div></div></div>`;
 		totalPokemon++;
 	}
 	
@@ -154,7 +154,7 @@ function writeDex (dexType, dexColor) {
 		let boxEnd = end.toString().padStart(3, '0');
 		dexDivContents += `<div class="col"><div class="card dex-box" id="${dexColor}-${boxStart}-${boxEnd}">`;
 		dexDivContents += `<div class="card-header">`;
-		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+		dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 		dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}"><h3>${boxStart}&ndash;${boxEnd}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${boxStart}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		
@@ -174,7 +174,7 @@ function writeDex (dexType, dexColor) {
 				dexDivContents += `</div></div></div>`;
 				dexDivContents += `<div class="col"><div class="card dex-box" id="${dexColor}-${boxStart}-${boxEnd}">`;
 				dexDivContents += `<div class="card-header">`;
-				dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+				dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 				dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${boxStart}" aria-expanded="true" aria-controls="collapse-${dexColor}-${boxStart}"><h3>${boxStart}&ndash;${boxEnd}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${boxStart}">`;
 				dexDivContents += `<div class="row row-cols-6">`;
 			}
@@ -191,7 +191,7 @@ function writeDex (dexType, dexColor) {
 			const regionName = region.charAt(0).toUpperCase() + region.slice(1);
 			dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
 			dexDivContents += `<div class="card-header">`;
-			dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+			dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 			dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}"><h3>${regionName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${region}-${boxCounter}">`;
 			dexDivContents += `<div class="row row-cols-6">`;
 			for (pokemon of dexData) {
@@ -205,7 +205,7 @@ function writeDex (dexType, dexColor) {
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="regional-${dexColor}-${region}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+						dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${region}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${region}-${boxCounter}"><h3>${regionName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${region}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -221,7 +221,7 @@ function writeDex (dexType, dexColor) {
 		let printCounter = 0;
 		dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-gender${boxCounter}">`;
 		dexDivContents += `<div class="card-header">`;
-		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+		dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 		dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}"><h3>Gender-Specific Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-gender-${boxCounter}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		for (pokemon of dexData) {
@@ -239,7 +239,7 @@ function writeDex (dexType, dexColor) {
 					dexDivContents += `</div></div></div>`;
 					dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-gender${boxCounter}">`;
 					dexDivContents += `<div class="card-header">`;
-					dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+					dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 					dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-gender-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-gender-${boxCounter}"><h3>Gender-Specific Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-gender-${boxCounter}">`;
 					dexDivContents += `<div class="row row-cols-6">`;
 				}
@@ -255,7 +255,7 @@ function writeDex (dexType, dexColor) {
 		const speciesArray = ['201', '666', '869'];
 		dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-alts${boxCounter}">`;
 		dexDivContents += `<div class="card-header">`;
-		dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+		dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 		dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}"><h3>Alt Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-alts-${boxCounter}">`;
 		dexDivContents += `<div class="row row-cols-6">`;
 		for (pokemon of dexData) {
@@ -270,7 +270,7 @@ function writeDex (dexType, dexColor) {
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-alts${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+						dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-alts-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-alts-${boxCounter}"><h3>Alt Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-alts-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -289,7 +289,7 @@ function writeDex (dexType, dexColor) {
 			const speciesName = pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1);
 			dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 			dexDivContents += `<div class="card-header">`;
-			dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+			dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 			if (pokemon.name === 'alcremie') {
 				dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie" target="_blank">Alt forms guide</a></div>`;
 			}
@@ -305,7 +305,7 @@ function writeDex (dexType, dexColor) {
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+						dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -319,7 +319,7 @@ function writeDex (dexType, dexColor) {
 				for (flavor of flavors) {
 					const flavorName = flavor.replace('-', ' ');
 					for (topping of toppings) {
-						dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${flavor}-${topping}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${flavor}-${topping}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${flavorName}<br>${topping}</h4></div></div></div>`;
+						dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${flavor}-${topping}"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-${flavor}-${topping}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${flavorName}<br>${topping}</h4></div></div></div>`;
 						printCounter++;
 						if ((printCounter % 30) == 0) {
 							boxCounter++;
@@ -327,7 +327,7 @@ function writeDex (dexType, dexColor) {
 							dexDivContents += `</div></div></div>`;
 							dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 							dexDivContents += `<div class="card-header">`;
-							dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+							dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 							if (pokemon.name === 'alcremie') {
 								dexDivContents += `<div class="box-alt-info"><a href="/alts/index.html#milcery-alcremie" target="_blank">Alt forms guide</a></div>`;
 							}
@@ -342,14 +342,14 @@ function writeDex (dexType, dexColor) {
 				let species = dexData[dexID-1].name;
 				const toppings = pokemon.alts[0].toppings;
 				for (topping of toppings) {
-					dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${topping}"><div class="card-body"><img loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-vanilla-cream-${topping}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${topping}</h4></div></div></div>`;
+					dexDivContents += `<div class="col dex-col"><div class="card dex-entry" id="${dexType}-${dexColor}-${pokemonID}-${topping}"><div class="card-body"><img draggable="false" loading="lazy" src="/assets/pokemon/${dexColor}/${imgSpecies}-vanilla-cream-${topping}.webp" alt="" height="84" width="79"><h4 class="dex-entry-number">${pokemonID}</h4><h4 class="dex-entry-name">${species}</h4><h4 class="dex-entry-form">${topping}</h4></div></div></div>`;
 					printCounter++;
 					if ((printCounter % 30) == 0) {
 						dexDivContents += `</div>`;
 						dexDivContents += `</div></div></div>`;
 						dexDivContents += `<div class="col"><div class="card dex-box" aria-labelledby="${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="card-header">`;
-						dexDivContents += `<img loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
+						dexDivContents += `<img draggable="false" loading="lazy" src="/assets/icons/chevron-up.svg" class="collapse-arrow" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}" aria-label="Collapse this Pokemon box" role="button" tabindex="0" alt="Collapse this Pokemon box" title="Collapse this Pokemon box" width="20" height="20">`;
 						dexDivContents += `<button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${dexColor}-${species}-${boxCounter}" aria-expanded="true" aria-controls="collapse-${dexColor}-${species}-${boxCounter}"><h3>${speciesName} Forms ${boxCounter}</h3></button></div><div class="card-body collapse show" id="collapse-${dexColor}-${species}-${boxCounter}">`;
 						dexDivContents += `<div class="row row-cols-6">`;
 					}
@@ -513,16 +513,16 @@ function writePokemonList (dexID) {
 		totalPokemon++;
 	}*/
 	pokemonContent = `<tr class="dex-entry-list"><th class="dex-entry-number" scope='row'>${pokemonID}</th><td class="dex-entry-name">${species}</td>`;
-	pokemonContent += `<td class="dex-entry-img"><div id="nat-normal-${pokemonID}"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="nat-shiny-${pokemonID}"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
+	pokemonContent += `<td class="dex-entry-img"><div id="nat-normal-${pokemonID}"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="nat-shiny-${pokemonID}"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
 	
 	// Add gender-specific forms if they exist
 	if (dexData[dexID-1].gender) {
 		if (pokemonID == 215) { // For Sneasel's Hisuian gender forms
-			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div><br><div id="alt-normal-${pokemonID}-hisuian-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian.webp" alt=""></div></td>`;
-			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div><br><div id="alt-normal-${pokemonID}-hisuian-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian-f.webp" alt=""></div></td>`;
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div><br><div id="alt-normal-${pokemonID}-hisuian-male"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian-male"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian.webp" alt=""></div></td>`;
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div><br><div id="alt-normal-${pokemonID}-hisuian-female"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian-female"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian-f.webp" alt=""></div></td>`;
 		} else {
-			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
-			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div></td>`;
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-male"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-male"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}.webp" alt=""></div></td>`;
+			pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-female"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-f.webp" alt=""></div><div id="alt-shiny-${pokemonID}-female"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-f.webp" alt=""></div></td>`;
 		}
 	} else {
 		pokemonContent += `<td></td><td></td>`
@@ -530,21 +530,35 @@ function writePokemonList (dexID) {
 	
 	// Add Alolan forms if they exist
 	if (dexData[dexID-1].alolan) {
-		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-alolan"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-alolan.webp" alt=""></div><div id="alt-shiny-${pokemonID}-alolan"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-alolan.webp" alt=""></div></td>`;
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-alolan"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-alolan.webp" alt=""></div><div id="alt-shiny-${pokemonID}-alolan"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-alolan.webp" alt=""></div></td>`;
 	} else {
 		pokemonContent += `<td></td>`
 	}
 	
 	// Add Galarian forms if they exist
 	if (dexData[dexID-1].galarian) {
-		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-galarian"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-galarian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-galarian"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-galarian.webp" alt=""></div></td>`;
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-galarian"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-galarian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-galarian"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-galarian.webp" alt=""></div></td>`;
 	} else {
 		pokemonContent += `<td></td>`
 	}
 	
 	// Add Hisuian forms if they exist
 	if (dexData[dexID-1].hisuian) {
-		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-hisuian"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian.webp" alt=""></div></td>`;
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-hisuian"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-hisuian.webp" alt=""></div><div id="alt-shiny-${pokemonID}-hisuian"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-hisuian.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
+	
+	// Add Paldean forms if they exist
+	if (dexData[dexID-1].paldean) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-paldean"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-paldean.webp" alt=""></div><div id="alt-shiny-${pokemonID}-paldean"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-paldean.webp" alt=""></div></td>`;
+	} else {
+		pokemonContent += `<td></td>`
+	}
+	
+	// Add Paldean forms if they exist
+	if (dexData[dexID-1].paldean) {
+		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-paldean.webp" alt=""></div><div id="alt-shiny-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-paldean.webp" alt=""></div></td>`;
 	} else {
 		pokemonContent += `<td></td>`
 	}
@@ -563,7 +577,7 @@ function writePokemonList (dexID) {
 		pokemonContent += `<td class="dex-entry-img">`;
 		let rowCounter = 0;
 		for (let counter = 0; counter < forms.length; counter++) {
-			pokemonContent += `<div id="alt-normal-${pokemonID}-alt${forms[counter]}"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}${forms[counter]}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-alt${forms[counter]}"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}${forms[counter]}.webp" alt=""></div>`;
+			pokemonContent += `<div id="alt-normal-${pokemonID}-alt${forms[counter]}"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}${forms[counter]}.webp" alt=""></div><div id="alt-shiny-${pokemonID}-alt${forms[counter]}"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}${forms[counter]}.webp" alt=""></div>`;
 			rowCounter += 2;
 			if ((rowCounter %6) == 0) {
 				pokemonContent += `<br>`;
