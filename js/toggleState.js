@@ -177,15 +177,16 @@ function setDatabaseLinks(pokemonName, pokemonNumber)
 	let bulbaName = modifiedName;
 	let pdbName = modifiedName;
 	let serebiiName = pokemonName;
-	console.log(modifiedName)
-	console.log(serebiiName)
 	pdbName = pdbName.replace("_", "-");
 	pdbName = pdbName.replace("♂", "-m");
 	pdbName = pdbName.replace("♀", "-f");
+	pdbName = pdbName.replace("'", "");
 	if(pokemonName == "type-null")
 		bulbaName = "Type:_Null" // Bulbapedia has odd formatting for Type: Null
+	// Jangmo-o line has the second "o" lower-case on Bulbapedia
+	bulbaName = bulbaName.replace("o-O", "o-o");
+	bulbaName = bulbaName.replace("Tapu-", "Tapu_"); // Specific hyphen replacement for the Tapu's but the Gen 9 hyphenated pokemon don't switch to underscore
 	serebiiName = serebiiName.replace(" ", "");
-	console.log(serebiiName)
 	document.getElementById('bulba-link').innerHTML = `<a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/${bulbaName}_(Pok%C3%A9mon)">Bulbapedia</a>`;
 	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" class="btn btn-primary" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">PokemonDB</a>`;
 
