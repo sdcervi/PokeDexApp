@@ -136,14 +136,98 @@ function setStateModalOpen (pokemon, view) {
 	document.getElementById('setStateLv100Image').src = sourceImage;
 	document.getElementById('setStateLv100Number').innerHTML = sourceNumber;
 	document.getElementById('setStateLv100Name').innerHTML = sourceName;
-	
+
 	document.getElementById('setStateMenu').setAttribute('pokemonid', pokemon);
 	document.getElementById('setStateMenu').setAttribute('viewtype', view);
+
+	setDatabaseLinks(sourceName, sourceNumber);
 	
 	let setStateModal = new bootstrap.Modal(document.getElementById('setStateMenu'), {});
 	setStateModal.show();
 	
 	return false;
+}
+
+function setDatabaseLinks(pokemonName, pokemonNumber)
+{
+	let modifiedName = pokemonName.replace(
+		/(\w*) (\w*)/,
+		(capture1, capture2, capture3) => { 
+			if(capture3[0] == null)
+			{
+				return capture2;
+			}
+			capture2 = capture2[0].toUpperCase() + capture2.substring(1); capture3 = capture3[0].toUpperCase() + capture3.substring(1); return capture2 + "_" + capture3;
+		}
+	);
+
+	let idx = modifiedName.indexOf("-");
+	if(idx != -1)
+	{
+		modifiedName = modifiedName.substring(0, idx) + "-" + modifiedName[idx + 1].toUpperCase() + modifiedName.substring(idx + 2);
+	}
+
+	idx = pokemonName.indexOf("&nbsp;♂")
+	if(idx != -1 && !modifiedName.includes("nidoran"))
+		modifiedName = modifiedName.substring(0, idx);
+	idx = pokemonName.indexOf("&nbsp;♀")
+	if(idx != -1 && !modifiedName.includes("nidoran"))
+		modifiedName = modifiedName.substring(0, idx);
+
+	let bulbaName = modifiedName;
+	let pdbName = modifiedName;
+	let serebiiName = pokemonName;
+	pdbName = pdbName.replace("_", "-");
+	pdbName = pdbName.replace("♂", "-m");
+	pdbName = pdbName.replace("♀", "-f");
+	pdbName = pdbName.replace("'", "");
+	if(pokemonName == "type-null")
+		bulbaName = "Type:_Null" // Bulbapedia has odd formatting for Type: Null
+	// Jangmo-o line has the second "o" lower-case on Bulbapedia
+	bulbaName = bulbaName.replace("o-O", "o-o");
+	bulbaName = bulbaName.replace("Tapu-", "Tapu_"); // Specific hyphen replacement for the Tapu's but the Gen 9 hyphenated pokemon don't switch to underscore
+	serebiiName = serebiiName.replace(" ", "");
+	document.getElementById('bulba-link').innerHTML = `<a target="_blank" class="btn btn-secondary" rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/${bulbaName}_(Pok%C3%A9mon)">Bulbapedia</a>`;
+	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" class="btn btn-secondary" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">Pok&eacute;monDB</a>`;
+
+	let serebiiContent = `<a target="_blank" class="btn btn-secondary" rel="noopener noreferrer" href="https://serebii.net/pokedex`;
+	if(pokemonNumber <= 151)
+	{
+		serebiiContent += `/${pokemonNumber}.shtml">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 251)
+	{
+		serebiiContent += `-gs/${pokemonNumber}.shtml">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 386)
+	{
+		serebiiContent += `-rs/${pokemonNumber}.shtml">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 493)
+	{
+		serebiiContent += `-dp/${pokemonNumber}.shtml">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 649)
+	{
+		serebiiContent += `-bw/${pokemonNumber}.shtml">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 721)
+	{
+		serebiiContent += `-xy/${pokemonNumber}.shtml">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 809)
+	{
+		serebiiContent += `-sm/${pokemonNumber}.shtml">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 905)
+	{
+		serebiiContent += `-swsh/${serebiiName}/">Serebii</a>`;
+	}
+	else if(pokemonNumber <= 1025)
+	{
+		serebiiContent += `-sv/${serebiiName}/">Serebii</a>`;
+	}
+	document.getElementById('serebii-link').innerHTML = serebiiContent;
 }
 
 function setState (state) {
