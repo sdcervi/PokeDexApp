@@ -188,7 +188,7 @@ function setDatabaseLinks(pokemonName, pokemonNumber)
 	bulbaName = bulbaName.replace("Tapu-", "Tapu_"); // Specific hyphen replacement for the Tapu's but the Gen 9 hyphenated pokemon don't switch to underscore
 	serebiiName = serebiiName.replace(" ", "");
 	document.getElementById('bulba-link').innerHTML = `<a target="_blank" class="btn btn-secondary" rel="noopener noreferrer" href="https://bulbapedia.bulbagarden.net/wiki/${bulbaName}_(Pok%C3%A9mon)">Bulbapedia</a>`;
-	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" class="btn btn-secondary" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">PokemonDB</a>`;
+	document.getElementById('pokemondb-link').innerHTML = `<a target="_blank" class="btn btn-secondary" rel="noopener noreferrer" href="https://pokemondb.net/pokedex/${pdbName}">Pok&eacute;monDB</a>`;
 
 	let serebiiContent = `<a target="_blank" class="btn btn-secondary" rel="noopener noreferrer" href="https://serebii.net/pokedex`;
 	if(pokemonNumber <= 151)
