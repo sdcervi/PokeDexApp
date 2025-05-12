@@ -552,8 +552,6 @@ function writePokemonList (dexID) {
 	// Add Paldean forms if they exist
 	if (dexData[dexID-1].paldean) {
 		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-paldean"><img draggable="false" loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-paldean.webp" alt=""></div><div id="alt-shiny-${pokemonID}-paldean"><img draggable="false" loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-paldean.webp" alt=""></div></td>`;
-<<<<<<< HEAD
-=======
 	} else {
 		pokemonContent += `<td></td>`
 	}
@@ -561,7 +559,6 @@ function writePokemonList (dexID) {
 	// Add Paldean forms if they exist
 	if (dexData[dexID-1].paldean) {
 		pokemonContent += `<td class="dex-entry-img"><div id="alt-normal-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/normal/${imgSpecies}-paldean.webp" alt=""></div><div id="alt-shiny-${pokemonID}-paldean"><img loading="lazy" src="/assets/pokemon/shiny/${imgSpecies}-paldean.webp" alt=""></div></td>`;
->>>>>>> main
 	} else {
 		pokemonContent += `<td></td>`
 	}
