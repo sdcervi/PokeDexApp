@@ -56,6 +56,12 @@ function toggleCaughtState (pokemon, view) {
 				endState = "";
 				checkComplete (pokemon);
 				break;
+			case "go":
+				toggleState.remove("go");
+				toggleState.remove("caught");
+				endState = "";
+				checkComplete (pokemon);
+				break;
 			case "caught":
 				toggleState.remove("caught");
 				endState = "";
@@ -80,6 +86,11 @@ function toggleCaughtState (pokemon, view) {
 				break;
 			case "lv100":
 				toggleState.remove("lv100");
+				toggleState.remove("caught");
+				endState = "";
+				break;
+			case "go":
+				toggleState.remove("go");
 				toggleState.remove("caught");
 				endState = "";
 				break;
@@ -136,6 +147,9 @@ function setStateModalOpen (pokemon, view) {
 	document.getElementById('setStateLv100Image').src = sourceImage;
 	document.getElementById('setStateLv100Number').innerHTML = sourceNumber;
 	document.getElementById('setStateLv100Name').innerHTML = sourceName;
+	document.getElementById('setStateGoImage').src = sourceImage;
+	document.getElementById('setStateGoNumber').innerHTML = sourceNumber;
+	document.getElementById('setStateGoName').innerHTML = sourceName;
 	
 	document.getElementById('setStateMenu').setAttribute('pokemonid', pokemon);
 	document.getElementById('setStateMenu').setAttribute('viewtype', view);
@@ -160,13 +174,17 @@ function setState (state) {
 		pokemonDiv.classList.remove("place");
 	} else if (pokemonDiv.classList.contains("lv100") && endState === "lv100") {
 		pokemonDiv.classList.remove("lv100");
+	} else if (pokemonDiv.classList.contains("go") && endState === "go") {
+		pokemonDiv.classList.remove("go");
 	} else {
 		pokemonDiv.classList.remove("trade");
 		pokemonDiv.classList.remove("place");
 		pokemonDiv.classList.remove("lv100");
+		pokemonDiv.classList.remove("go");
 		pokemonDiv.classList.remove("caught");
 		pokemonDiv.classList.add(endState);
 	}
+	console.log(pokemonDiv.classList)
 	
 	const user = firebase.auth().currentUser;
 	if (user) {
@@ -338,8 +356,6 @@ function handleRightClick (event) {
 }
 
 function handleLongPress (event) {
-	event.preventDefault();
-	
 	if (!supportsContextMenu) {
 		event = event || window.event;
 		event.target = event.target || event.srcElement;
@@ -349,15 +365,15 @@ function handleLongPress (event) {
 		// Climb up the document tree from the target of the event
 		while (element) {
 			if (element.nodeName === "DIV" && /dex-entry/.test(element.className) && !(/setState/.test(element.id))) {
-				event.preventDefault(); // Prevents normal right-click menu from showing up
+				document.getElementById('bugnote').style.display = 'block';
 				setStateModalOpen(element.id, 'grid');
 				break;
 			} else if (element.nodeName === "IMG" && /dex-entry-img/.test(element.parentNode.parentNode.className) && !(/setState/.test(element.parentNode.parentNode.id))) {
-				event.preventDefault(); // Prevents normal right-click menu from showing up
+				document.getElementById('bugnote').style.display = 'block';
 				setStateModalOpen(element.parentNode.id, 'list');
 				break;
 			} else if (element.nodeName === "DIV" && /dex-entry-list/.test(element.className) && !(/setState/.test(element.id))) {
-				event.preventDefault(); // Prevents normal right-click menu from showing up
+				document.getElementById('bugnote').style.display = 'block';
 				setStateModalOpen(element.id);
 				break;
 			}

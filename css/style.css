@@ -124,6 +124,9 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 .dex-entry.lv100:before { content: url(/assets/icons/lv100.svg); height: 1.5em; width: 1.5em; position: absolute; right: 0.5em; z-index: 5; top: 10vw; }
 .dex-entry-list td.dex-entry-img div.lv100:before { content: url(/assets/icons/lv100.svg); height: 1.25em; width: 1.25em; position: absolute; right: 0.25em; top: 2em; z-index: 5; }
 
+.dex-entry.go:before { content: url(/assets/icons/go.svg); height: 1.5em; width: 1.5em; position: absolute; left: 0.5em; z-index: 5; top: 10vw; }
+.dex-entry-list td.dex-entry-img div.go:before { content: url(/assets/icons/go.svg); height: 1.25em; width: 1.25em; position: absolute; right: 0.25em; top: 2em; z-index: 5; }
+
 .box-alt-info { float: right; margin-right: 1em; margin-top: 0.5em; font-size: 0.8em; }
 
 /* --------------------------------- EVOLUTIONS --------------------------------- */
@@ -189,6 +192,7 @@ table.evo-table input { height: 16px; width: 16px; margin-left: -2.5rem!importan
 	.toggle-switch { right: calc(((100vw - 540px) / 2) + 5.25rem); }
 	nav button.navbar-toggler { left: calc(((100vw - 540px) / 2) + 0.75rem); }
 	.dex-entry.lv100:before { top: 3em; }
+	.dex-entry.go:before { top: 3em; }
 }
 
 @media only screen and (min-width: 768px) {
