@@ -117,7 +117,7 @@ h4.dex-entry-form { text-align: center; font-size: 0.6em; text-transform: capita
 .dex-entry-list td.dex-entry-img img { width: 3em; height: auto; opacity: 0.2; }
 .dex-entry-list td.dex-entry-status { width: 35%; vertical-align: middle; }
 
-.caught img, .dex-entry-list td.dex-entry-img div.caught img, .lv100 img, .dex-entry-list td.dex-entry-img div.lv100 img { opacity: 1; }
+.caught img, .dex-entry-list td.dex-entry-img div.caught img, .lv100 img, .dex-entry-list td.dex-entry-img div.lv100 img { opacity: 1!important; }
 .caught h4, .lv100 h4 { color: black; }
 
 .dex-entry.trade:before { content: url(/assets/icons/trade.svg); height: 1.5em; width: 1.5em; position: absolute; left: 0.5em; z-index: 5; }
